@@ -1,0 +1,50 @@
+:root {
+  --bg-main: #05080B;
+  --primary: #ef3800;
+  --primary-hover: #b46f59;
+  --card-bg: rgba(255,255,255,0.05);
+  --card-border: rgba(255,255,255,0.10);
+
+  /* --secondary-btn: rgba(255,255,255,0.10);
+  --secondary-btn-hover: rgba(255,255,255,0.20); */
+
+  --whatsapp: #25D366;
+  --star: #facc15;
+}
+
+/* Button Colors & Hover */
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-primary:hover {
+  background-color: var(--primary-hover);
+}
+
+.bg-secondary {
+  background-color: var(--secondary-btn);
+}
+
+.bg-secondary:hover {
+  background-color: var(--secondary-btn-hover);
+}
+
+.bg-whatsapp {
+  background-color: var(--whatsapp);
+  transition: opacity 0.3s;
+}
+
+.bg-whatsapp:hover {
+  opacity: 0.9;
+}
+
+/* Card background */
+.bg-card {
+  background-color: var(--card-bg);
+  border-color: var(--card-border);
+}
+
+/* Star color */
+.text-star {
+  color: var(--star);
+}
