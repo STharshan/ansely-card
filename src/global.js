@@ -22,7 +22,7 @@ export const digitalCardData = {
     "SEO & Digital Marketing",
   ],
   rating: {
-    value: 5.0,
+    value: "5.0",
     text: "Professional and reliable service.",
   },
   location: "Leicester & Midlands",
