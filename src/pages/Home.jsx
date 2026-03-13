@@ -67,7 +67,7 @@ export default function DigitalCard() {
           {/* Headline Overlay */}
           <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none px-4 text-center">
             <div>
-              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight text-white drop-shadow-[0_0_20px_rgba(0,0,0,0.8)]">
+              <h1 className="text-3xl md:text-5xl uppercase lg:text-6xl font-bold leading-tight text-white drop-shadow-[0_0_20px_rgba(0,0,0,0.8)]">
                 {company.name}
               </h1>
               <p className="text-gray-200 text-sm md:text-base mt-2">{company.tagline}</p>
