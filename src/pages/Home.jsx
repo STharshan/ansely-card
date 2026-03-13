@@ -80,10 +80,10 @@ export default function DigitalCard() {
 
         {/* Services */}
         <section className="mb-10">
-          <h3 className="text-lg font-semibold mb-4">Key Services</h3>
+          <h3 className="text-lg font-semibold mb-4 text-center">Key Services</h3>
           <ul className="space-y-3">
             {services.map((service) => (
-              <li key={service} className="flex items-center gap-3">
+              <li key={service} className="flex text-center justify-center items-center gap-3">
                 <span className="h-2 w-2 rounded-full bg-primary" />
                 <span className="text-gray-400">{service}</span>
               </li>
