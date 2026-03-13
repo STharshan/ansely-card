@@ -38,7 +38,7 @@ export default function DigitalCard() {
         {/* Logo */}
         <header className="text-center mb-10">
           <div className="flex justify-center mb-6">
-            <div className="w-40 h-20 flex items-center justify-center overflow-hidden ">
+            <div className="w-60 h-20 flex items-center justify-center overflow-hidden ">
               <img src={company.logo} alt={`${company.name} Logo`} className="w-full h-full rounded-xl object-cover" />
             </div>
           </div>
