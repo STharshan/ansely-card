@@ -1,12 +1,14 @@
 :root {
   --bg-main: #05080B;
-  --primary: #ef3800;
-  --primary-hover: #b46f59;
+
+  --primary: #0045EF;
+  --primary-hover: #3763d1;
+
   --card-bg: rgba(255,255,255,0.05);
   --card-border: rgba(255,255,255,0.10);
 
-  /* --secondary-btn: rgba(255,255,255,0.10);
-  --secondary-btn-hover: rgba(255,255,255,0.20); */
+  --secondary-btn: rgba(255,255,255,0.10);
+  --secondary-btn-hover: rgba(255,255,255,0.20);
 
   --whatsapp: #25D366;
   --star: #facc15;
