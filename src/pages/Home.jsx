@@ -67,19 +67,26 @@ export default function DigitalCard() {
           {/* Headline Overlay */}
           <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none px-4 text-center">
             <div>
-              <h1 className="text-3xl md:text-5xl text-[#0045EF] uppercase lg:text-6xl font-bold leading-tight  drop-shadow-[0_0_20px_rgba(0,0,0,0.8)]">
+              <h1
+                className="text-4xl md:text-6xl font-bold tracking-[0.25em] text-white uppercase drop-shadow-lg"
+                style={{ fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif' }}
+              >
                 {company.name}
               </h1>
-              <p className="text-gray-200 text-sm md:text-base mt-2">{company.tagline}</p>
+              <div className="text-center mt-5">
+                <p className="text-white text-[24px] md:text-[28px] tracking-tight leading-snug">
+                  {company.tagline}
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <div className="w-full mx-auto max-w-md px-4 py-10">
+        <div className="w-full mx-auto max-w-md px-4 py-5">
 
           {/* Founder */}
           <section className="text-center mb-10">
             <h2 className="text-2xl font-semibold">{founder.name}</h2>
-            <p className="text-gray-400 mt-1">{founder.title}</p>
+            <p className="text-gray-200 mt-1">{founder.title}</p>
           </section>
 
           {/* Contact Buttons */}
@@ -114,7 +121,7 @@ export default function DigitalCard() {
               {services.map((service) => (
                 <li key={service} className="flex text-center justify-center items-center gap-3">
                   <span className="h-2 w-2 rounded-full bg-primary" />
-                  <span className="text-gray-400">{service}</span>
+                  <span className="text-white">{service}</span>
                 </li>
               ))}
             </ul>
@@ -129,11 +136,11 @@ export default function DigitalCard() {
             </div>
 
             <p className="font-semibold mt-7">{rating.value} Google Rating</p>
-            <p className="text-sm text-gray-400 italic mt-7">{rating.text}</p>
+            <p className="text-sm text-white italic mt-7">{rating.text}</p>
           </div>
 
           {/* Location */}
-          <section className="flex justify-center items-center gap-2 text-gray-400 mb-10">
+          <section className="flex justify-center items-center gap-2 text-white mb-10">
             <MapPin className="w-5 h-5" style={{ color: "var(--primary)" }} />
             {location}
           </section>
@@ -162,7 +169,7 @@ export default function DigitalCard() {
           </section>
 
           {/* Footer */}
-          <footer className="text-center text-sm text-gray-500">
+          <footer className="text-center text-sm text-gray-200">
             <p>&copy; {new Date().getFullYear()} {company.name}. All rights reserved.</p>
           </footer>
         </div>
