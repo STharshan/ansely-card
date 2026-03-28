@@ -446,7 +446,13 @@ export default function FloatingLines({
 
     setSize();
 
-    const ro = typeof ResizeObserver !== 'undefined' ? new ResizeObserver(setSize) : null;
+    let resizeTimer: ReturnType<typeof setTimeout> | null = null;
+    const debouncedSetSize = () => {
+      if (resizeTimer) clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(setSize, 150);
+    };
+
+    const ro = typeof ResizeObserver !== 'undefined' ? new ResizeObserver(debouncedSetSize) : null;
 
     if (ro && containerRef.current) {
       ro.observe(containerRef.current);
@@ -513,6 +519,7 @@ export default function FloatingLines({
 
     return () => {
       cancelAnimationFrame(raf);
+      if (resizeTimer) clearTimeout(resizeTimer);
       if (ro && containerRef.current) {
         ro.disconnect();
       }
