@@ -1,0 +1,112 @@
+import { FaMusic } from "react-icons/fa6";
+import { FaTiktok } from "react-icons/fa";
+
+const artists = [
+  {
+    name: "Sonus Musicalia",
+    image:
+      "sonus.jpg",
+    appleMusicUrl: "https://music.apple.com/gb/artist/sonus-musicalia/1857203308",
+    tiktokUrl: "",
+  },
+  {
+    name: "Sonus Wave",
+    image:
+      "wave.jpg",
+    appleMusicUrl: "https://music.apple.com/gb/artist/sonus-wave/1832542607",
+    tiktokUrl: "https://www.tiktok.com/@sonus.wave?_r=1&_t=ZN-96lpb6aZUMY",
+  },
+  {
+    name: "Shine Bright",
+    image:
+      "shine.jpg",
+    appleMusicUrl: "https://music.apple.com/gb/artist/shine-bright/1896730906",
+    tiktokUrl: "",
+  },
+  {
+    name: "Darryn Official",
+    image:
+      "darryn.jpg",
+    appleMusicUrl: "https://music.apple.com/gb/artist/darryn-official/1820791619",
+    tiktokUrl: "https://www.tiktok.com/@darrynofficial?_r=1&_t=ZN-96lpcRgW7Ne",
+  },
+];
+
+function PlatformButton({ href, children, className }) {
+  if (!href) return null;
+
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`inline-flex items-center justify-center gap-1.5 rounded-lg px-3 py-2 text-sm font-medium transition-all duration-200 hover:brightness-110 active:scale-95 ${className}`}
+    >
+      {children}
+    </a>
+  );
+}
+
+export default function MusicHubPage() {
+  return (
+    <main className="h-screen bg-[#311153] bg-linear-to-br from-slate-900 via-purple-900 to-slate-900 px-4 py-12 text-white">
+      <div className="mx-auto w-full max-w-163">
+        {/* Header Updated to Match Text Sizes and Order */}
+        <header className="mb-7 text-center">
+          <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            Music Hub
+          </h1>
+          <p className="mt-2 text-sm text-white/80">
+            Discover our artists
+          </p>
+        </header>
+
+        {/* Artist Container */}
+        <section className="flex flex-col gap-4">
+          {artists.map((artist) => (
+            <article
+              key={artist.name}
+              className="rounded-xl border border-white/10 bg-white/6 p-6 shadow-lg backdrop-blur-md transition-all duration-200 hover:bg-white/9"
+            >
+              {/* Row Layout Fixing Image alignment */}
+              <div className="flex items-center gap-5">
+                <div className="h-19 w-19 shrink-0 overflow-hidden rounded-lg bg-black shadow-inner">
+                  <img
+                    src={artist.image}
+                    alt={artist.name}
+                    className="h-full w-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div className="flex flex-col gap-2">
+                  <h2 className="text-xl font-semibold text-white tracking-wide">
+                    {artist.name}
+                  </h2>
+
+                  {/* Updated Button Colors and Sizing */}
+                  <div className="flex flex-wrap gap-2 text-lg">
+                    <PlatformButton
+                      href={artist.appleMusicUrl}
+                      className="bg-[#782c69]  text-pink-100/90 border border-pink-400/20"
+                    >
+                      <FaMusic className="h-3.5 w-3.5" aria-hidden="true" />
+                      Apple Music
+                    </PlatformButton>
+                    <PlatformButton
+                      href={artist.tiktokUrl}
+                      className="bg-[#2a457a] text-blue-100/90 border border-blue-400/20"
+                    >
+                      <FaTiktok className="h-3.5 w-3.5" aria-hidden="true" />
+                      TikTok
+                    </PlatformButton>
+                  </div>
+                </div>
+              </div>
+            </article>
+          ))}
+        </section>
+      </div>
+    </main>
+  );
+}
