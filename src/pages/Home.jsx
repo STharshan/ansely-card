@@ -18,7 +18,7 @@ import { lazy, Suspense } from "react";
 const FloatingLines = lazy(() => import("../components/FloatingLines.jsx"));
 
 const WebGLPlaceholder = () => (
-  <div className="fixed inset-0 bg-[var(--bg-main)]" />
+  <div className="fixed inset-0 bg-(--bg-main)" />
 );
 
 const iconMap = { Phone, MessageCircle, Mail, Globe, Instagram, Facebook, Linkedin };
@@ -36,7 +36,7 @@ export default function DigitalCard() {
   } = digitalCardData;
 
   return (
-    <main className="relative min-h-screen text-white flex justify-center bg-[var(--bg-main)]">
+    <main className="relative min-h-screen text-white flex justify-center bg-(--bg-main)">
 
       {/* Background Animation */}
       <div className="fixed inset-0 z-0 pointer-events-none">
@@ -148,7 +148,7 @@ export default function DigitalCard() {
                 <a
                   key={social.icon}
                   href={social.href}
-                  className="h-12 w-12 rounded-full flex items-center justify-center transition bg-white/10 hover:bg-[var(--primary)]"
+                  className="h-12 w-12 rounded-full flex items-center justify-center transition bg-white/10 hover:bg-(--primary)"
                 >
                   <IconComponent className="w-5 h-5" />
                 </a>

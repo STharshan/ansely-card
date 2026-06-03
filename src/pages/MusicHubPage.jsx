@@ -1,5 +1,12 @@
+import { lazy, Suspense } from "react";
 import { FaMusic } from "react-icons/fa6";
 import { FaTiktok } from "react-icons/fa";
+
+const FloatingLines = lazy(() => import("../components/FloatingLines"));
+
+const WebGLPlaceholder = () => (
+  <div className="fixed inset-0 bg-(--bg-main)" />
+);
 
 const artists = [
   {
@@ -49,15 +56,30 @@ function PlatformButton({ href, children, className }) {
 
 export default function MusicHubPage() {
   return (
-    <main className="h-screen bg-[#311153] bg-linear-to-br from-slate-900 via-purple-900 to-slate-900 px-4 py-12 text-white">
-      <div className="mx-auto w-full max-w-163">
+    <main className="relative min-h-screen overflow-hidden bg-(--bg-main) px-4 py-12 text-white flex justify-center">
+      <div className="fixed inset-0 z-0 pointer-events-none">
+        <Suspense fallback={<WebGLPlaceholder />}>
+          <FloatingLines
+            enabledWaves={["top", "middle", "bottom"]}
+            lineCount={[4, 8, 12]}
+            lineDistance={[8, 6, 4]}
+            bendRadius={5.0}
+            bendStrength={4}
+            interactive={true}
+            parallax={true}
+            linesGradient={["#001F7F", "#0045EF", "#0066FF", "#3399FF", "#66B3FF"]}
+          />
+        </Suspense>
+      </div>
+
+      <div className="relative z-10 mx-auto w-full max-w-163">
         {/* Header Updated to Match Text Sizes and Order */}
         <header className="mb-7 text-center">
           <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Music Hub
+            Ansely
           </h1>
           <p className="mt-2 text-sm text-white/80">
-            Discover our artists
+            Entering the Digital World Together
           </p>
         </header>
 
