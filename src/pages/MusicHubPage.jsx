@@ -8,6 +8,11 @@ const WebGLPlaceholder = () => (
   <div className="fixed inset-0 bg-(--bg-main)" />
 );
 
+const brandFontStyle = {
+  fontFamily:
+    'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+};
+
 const artists = [
   {
     name: "Sonus Musicalia",
@@ -74,13 +79,18 @@ export default function MusicHubPage() {
 
       <div className="relative z-10 mx-auto w-full max-w-163">
         {/* Header Updated to Match Text Sizes and Order */}
-        <header className="mb-7 text-center">
-          <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Ansely
+        <header className="mb-10 text-center" style={brandFontStyle}>
+          <h1
+            className="text-4xl md:text-6xl font-bold tracking-[0.25em] text-white uppercase drop-shadow-lg"
+            style={{ fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif' }}
+          >
+            Music Hub
           </h1>
-          <p className="mt-2 text-sm text-white/80">
-            Entering the Digital World Together
-          </p>
+          <div className="text-center mb-10">
+            <p className="text-white text-[24px] md:text-[28px] tracking-tight leading-snug">
+              Discover our artists
+            </p>
+          </div>
         </header>
 
         {/* Artist Container */}
