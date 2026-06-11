@@ -2,18 +2,15 @@ import React, { lazy, Suspense } from "react";
 import {
   Phone,
   MessageCircle,
-  Mail,
   Globe,
   MapPin,
   Instagram,
-  Facebook,
-  Linkedin,
+  Music2,
   Download,
   Star,
 } from "lucide-react";
 
-// Assuming downloadVCF logic is either internal or imported from your local setup
-import { downloadVCF } from "../pages/daimanvcf.js";
+import { digitalCardDataHarrisonSpice, downloadVCF } from "./HarrisonSpice.js";
 
 const FloatingLines = lazy(() => import("../components/FloatingLines.jsx"));
 
@@ -21,45 +18,9 @@ const WebGLPlaceholder = () => (
   <div className="fixed inset-0 bg-[#05080B]" />
 );
 
-// --- ALL DATA INTEGRATED HERE ---
-const digitalCardData = {
-  company: {
-    name: "Ansely",
-    tagline: "Let's Grow Your Business Together",
-    logo: "/logo.png",
-  },
-  founder: {
-    name: "Damien",
-    title: "Chief of Sales: Ansely Digital",
-  },
-  contacts: [
-    { type: "Call", href: "tel:+447568724521", icon: "Phone", styleClass: "bg-blue-600" },
-    { type: "WhatsApp", href: "https://wa.me/447568724521", icon: "MessageCircle", styleClass: "bg-[#25D366]" },
-    { type: "Email", href: "mailto:contact@ansely.co.uk", icon: "Mail", styleClass: "bg-blue-600" },
-    { type: "Website", href: "https://www.ansely.co.uk/", icon: "Globe", styleClass: "bg-blue-600" },
-  ],
-  about: "Ready to take your business to the next level? I work with local businesses to find the right digital solutions and make sure they deliver real results.",
-  services: [
-    "Website Development",
-    "E-commerce Systems",
-    "Software & Automation",
-    "SEO & Digital Marketing",
-  ],
-  rating: {
-    value: "5.0",
-    text: "Professional and reliable service.",
-  },
-  location: "Leicester & Midlands",
-  socialLinks: [
-    { icon: "Instagram", href: "#" },
-    { icon: "Facebook", href: "#" },
-    { icon: "Linkedin", href: "#" },
-  ],
-};
+const iconMap = { Phone, MessageCircle, Globe, Instagram, Music2 };
 
-const iconMap = { Phone, MessageCircle, Mail, Globe, Instagram, Facebook, Linkedin };
-
-export default function Damien() {
+export default function HarrisonSpice() {
   const {
     company,
     founder,
@@ -69,7 +30,7 @@ export default function Damien() {
     rating,
     location,
     socialLinks,
-  } = digitalCardData;
+  } = digitalCardDataHarrisonSpice;
 
   return (
     <main className="relative min-h-screen text-white flex justify-center bg-[#05080B]">
@@ -98,8 +59,8 @@ export default function Damien() {
           <div className="relative shrink-0">
             <div className="absolute inset-0 blur-2xl rounded-full scale-110" />
             <img
-              src="/damien-image.jpg"
-              alt={founder.name}
+              src="/tab.png"
+              alt={company.name}
               loading="lazy"
               className="relative w-20 h-20 md:w-28 md:h-28 rounded-full object-cover border-2 border-white/10 shadow-2xl"
             />
@@ -138,6 +99,7 @@ export default function Damien() {
                     key={contact.type}
                     href={contact.href}
                     target={contact.type === "Website" || contact.type === "WhatsApp" ? "_blank" : "_self"}
+                    rel={contact.type === "Website" || contact.type === "WhatsApp" ? "noopener noreferrer" : undefined}
                     className={`flex items-center justify-center gap-2 h-14 rounded-lg transition hover:scale-[1.02] active:scale-95 ${contact.styleClass}`}
                   >
                     <IconComponent className="w-5 h-5" />
@@ -191,6 +153,8 @@ export default function Damien() {
                 <a
                   key={social.icon}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="h-12 w-12 rounded-full flex items-center justify-center transition bg-white/10 hover:bg-[#0045EF]"
                 >
                   <IconComponent className="w-5 h-5" />
@@ -212,7 +176,7 @@ export default function Damien() {
 
           {/* Footer Branding */}
           <footer className="text-center text-sm text-gray-100 opacity-60">
-            <p>&copy; {new Date().getFullYear()}Ansely. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Harrison's Spice. All rights reserved.</p>
           </footer>
         </div>
       </div>
