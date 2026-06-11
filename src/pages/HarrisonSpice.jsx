@@ -57,16 +57,16 @@ export default function HarrisonSpice() {
         {/* Company Header */}
         <header className="w-full max-w-md px-6 pt-16 pb-6 flex items-center justify-center gap-5 md:gap-8">
           <div className="relative shrink-0">
-            <div className="absolute inset-0 blur-2xl rounded-full scale-110" />
+            <div className="absolute inset-0  scale-110" />
             <img
               src="/tab.png"
               alt={company.name}
               loading="lazy"
-              className="relative w-20 h-20 md:w-28 md:h-28 rounded-full object-cover border-2 border-white/10 shadow-2xl"
+              className="relative w-30 h-20 md:w-45 md:h-30 object-cover"
             />
           </div>
           <h1
-            className="text-4xl md:text-6xl font-bold tracking-[0.25em] text-white uppercase drop-shadow-lg"
+            className="text-2xl md:text-6xl font-bold tracking-[0.25em] text-white uppercase drop-shadow-lg"
             style={{ fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif' }}
           >
             {company.name}
