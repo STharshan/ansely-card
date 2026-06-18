@@ -182,39 +182,39 @@ export default function HarrisonsSpice() {
                     ref={(el) => {
                       cardRefs.current[index] = el;
                     }}
-                    className="flex-shrink-0 w-full sm:w-96 md:w-[400px] rounded-2xl overflow-hidden bg-[#242424] border border-[#3a3a3a] transition-all duration-300 cursor-pointer group shadow-lg snap-center flex flex-col"
+                    className="shrink-0 w-full sm:w-96 md:w-100 rounded-2xl overflow-hidden bg-[#242424] border border-[#3a3a3a] transition-all duration-300 cursor-pointer group shadow-lg snap-center flex flex-col"
                   >
                     {/* Visual Media Section */}
-                    <div className="relative h-48 md:h-56 overflow-hidden p-3 pb-0 flex-shrink-0">
+                    <div className="relative h-48 md:h-56 overflow-hidden p-3 pb-0 shrink-0">
                       <img 
                         alt={location.name} 
                         loading="lazy" 
                         className="object-cover w-full h-full rounded-xl group-hover:scale-105 transition-transform duration-500"
                         src={location.image}
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                      <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent"></div>
                     </div>
 
                     {/* Metadata Information Blocks */}
-                    <div className="p-5 md:p-6 flex flex-col flex-grow">
+                    <div className="p-5 md:p-6 flex flex-col grow">
                       <h3 className="text-lg md:text-xl font-bold text-[#FFD700] mb-2">{location.name}</h3>
                       <p className="text-white/80 text-sm md:text-base mb-4 line-clamp-2">{location.description}</p>
                       
                       <div className="space-y-2.5 mb-5 text-white/90">
                         <div className="flex items-center gap-2.5">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[#FFD700] flex-shrink-0"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[#FFD700] shrink-0"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
                           <span className="text-sm">{location.locationName}</span>
                         </div>
                         <div className="flex items-center gap-2.5">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[#FFD700] flex-shrink-0"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[#FFD700] shrink-0"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
                           <a href={location.telUrl} className="text-sm hover:text-[#FFD700] transition-colors">{location.phone}</a>
                         </div>
                         <div className="flex items-center gap-2.5">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[#FFD700] flex-shrink-0"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path></svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[#FFD700] shrink-0"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path></svg>
                           <a href={location.whatsappUrl} target="_blank" rel="noopener noreferrer" className="text-sm hover:text-[#FFD700] transition-colors">WhatsApp</a>
                         </div>
                         <div className="flex items-center gap-2.5">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[#FFD700] flex-shrink-0"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[#FFD700] shrink-0"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
                           <a href={location.websiteUrl} target="_blank" rel="noopener noreferrer" className="text-sm hover:text-[#FFD700] transition-colors">Visit Website</a>
                         </div>
                       </div>
