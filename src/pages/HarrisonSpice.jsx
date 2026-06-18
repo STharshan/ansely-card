@@ -30,7 +30,7 @@ const LOCATIONS_DATA = [
     name: 'Coalville',
     description: 'Modern Indian dining with warm hospitality',
     locationName: 'Coalville, Leicestershire',
-    image: '/coalville.png',
+    image: '/harrison-location.jpeg',
     phone: '+44 1530 XXXX XXXX',
     telUrl: 'tel:+441530000000',
     whatsappUrl: 'https://wa.me/+441530000000',
