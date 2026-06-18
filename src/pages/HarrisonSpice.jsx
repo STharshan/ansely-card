@@ -7,6 +7,7 @@ import {
   FaStar,
 } from 'react-icons/fa6';
 import { HiArrowDownTray } from 'react-icons/hi2';
+import { downloadVCF } from "./HarrisonSpice.js";
 
 const FloatingLines = lazy(() => import("../components/FloatingLines.tsx"));
 
@@ -292,7 +293,10 @@ export default function HarrisonsSpice() {
         {/* Action / Contact Card Download */}
         <div className="w-full px-4 pb-8">
           <div className="max-w-4xl mx-auto">
-            <button className="w-full py-3.5 rounded-lg bg-[#E1B700] hover:bg-[#FFD700] text-black font-bold transition-all flex items-center justify-center gap-2 text-sm md:text-base shadow-md">
+            <button
+              onClick={downloadVCF}
+              className="w-full py-3.5 rounded-lg bg-[#E1B700] hover:bg-[#FFD700] text-black font-bold transition-all flex items-center justify-center gap-2 text-sm md:text-base shadow-md"
+            >
               <HiArrowDownTray className="w-5 h-5 text-black stroke-2" />
               Download Contact
             </button>
