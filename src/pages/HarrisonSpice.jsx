@@ -1,62 +1,42 @@
-import React, { lazy, Suspense, useRef, useState } from 'react';
-import { 
-  FaInstagram, 
-  FaTiktok, 
-  FaFacebookF, 
-  FaWhatsapp, 
+import React, { lazy, Suspense, useRef, useState } from "react";
+import {
+  FaInstagram,
+  FaTiktok,
+  FaWhatsapp,
   FaStar,
-} from 'react-icons/fa6';
-import { HiArrowDownTray } from 'react-icons/hi2';
-import { downloadVCF } from "./HarrisonSpice.js";
+  FaCheck,
+} from "react-icons/fa6";
+import { HiArrowDownTray } from "react-icons/hi2";
+import { downloadVCF, harrisonSpiceLocations as LOCATIONS_DATA } from "./HarrisonSpice.js";
 
 const FloatingLines = lazy(() => import("../components/FloatingLines.tsx"));
 
 const WebGLPlaceholder = () => <div className="fixed inset-0 bg-[var(--bg-main)]" />;
-
-const LOCATIONS_DATA = [
-  {
-    id: 1,
-    name: 'Ratby',
-    description: 'Refined Indian cuisine with a modern twist in the heart of Ratby',
-    locationName: 'Ratby, Leicester',
-    image: '/ratby.png',
-    phone: '+44 116 XXXX XXXX',
-    telUrl: 'tel:+441164000000',
-    whatsappUrl: 'https://wa.me/+441164000000',
-    websiteUrl: 'https://harrisonspice.com/ratby'
-  },
-  {
-    id: 2,
-    name: 'Coalville',
-    description: 'Modern Indian dining with warm hospitality',
-    locationName: 'Coalville, Leicestershire',
-    image: '/harrison-location.jpeg',
-    phone: '+44 1530 XXXX XXXX',
-    telUrl: 'tel:+441530000000',
-    whatsappUrl: 'https://wa.me/+441530000000',
-    websiteUrl: 'https://harrisonspice.com/coalville'
-  },
-  {
-    id: 3,
-    name: 'Leicester',
-    description: 'Contemporary Indian cuisine in vibrant Leicester City Center context.',
-    locationName: 'Leicester City Centre',
-    image: '/leicester.png',
-    phone: '+44 116 XXXX XXXX',
-    telUrl: 'tel:+441164000001',
-    whatsappUrl: 'https://wa.me/+441164000001',
-    websiteUrl: 'https://harrisonspice.com/leicester'
-  }
-];
 
 export default function HarrisonsSpice() {
   const scrollContainerRef = useRef(null);
   const cardRefs = useRef([]);
   const [scrollProgress, setScrollProgress] = useState(0);
   const [activeIndex, setActiveIndex] = useState(0);
+  const [selectedIndex, setSelectedIndex] = useState(0);
   const [isClickScrolling, setIsClickScrolling] = useState(false);
 
-  // Tracking dynamic scroll indicator fill progress
+  const selectedLocation = LOCATIONS_DATA[selectedIndex] ?? LOCATIONS_DATA[0];
+  const selectedHasContact = Boolean(
+    selectedLocation?.phone || selectedLocation?.websiteUrl || selectedLocation?.whatsappUrl,
+  );
+
+  const getDirectionsUrl = (location) => {
+    if (!location?.address) return null;
+    return `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(location.address)}`;
+  };
+
+  const handleGetDirections = (location) => {
+    const url = getDirectionsUrl(location);
+    if (!url) return;
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+
   const handleScroll = () => {
     const container = scrollContainerRef.current;
     if (!container) return;
@@ -65,7 +45,6 @@ export default function HarrisonsSpice() {
     const progress = totalScroll > 0 ? (container.scrollLeft / totalScroll) * 100 : 0;
     setScrollProgress(progress);
 
-    // Track active pagination index relative to mid-viewport
     const containerCenter = container.scrollLeft + container.clientWidth / 2;
     let closestIndex = 0;
     let closestDistance = Number.POSITIVE_INFINITY;
@@ -83,35 +62,33 @@ export default function HarrisonsSpice() {
     });
 
     setActiveIndex(closestIndex);
+    setSelectedIndex(closestIndex);
   };
 
-  // Fluid transition logic mirroring the custom slider video reference
-  const scroll = (direction) => {
-    const container = scrollContainerRef.current;
-    if (!container) return;
+  const selectLocation = (index) => {
+    setActiveIndex(index);
+    setSelectedIndex(index);
+    cardRefs.current[index]?.scrollIntoView({
+      behavior: "smooth",
+      inline: "center",
+      block: "nearest",
+    });
+  };
 
+  const scroll = (direction) => {
     const nextIndex = Math.max(
       0,
-      Math.min(
-        LOCATIONS_DATA.length - 1,
-        activeIndex + (direction === 'left' ? -1 : 1)
-      )
+      Math.min(LOCATIONS_DATA.length - 1, activeIndex + (direction === "left" ? -1 : 1)),
     );
 
-    // Triggers click expansion elasticity feedback on track line indicator
     setIsClickScrolling(true);
     setTimeout(() => setIsClickScrolling(false), 350);
 
-    cardRefs.current[nextIndex]?.scrollIntoView({
-      behavior: 'smooth',
-      inline: 'center',
-      block: 'nearest'
-    });
+    selectLocation(nextIndex);
   };
 
   return (
     <main className="relative min-h-screen overflow-hidden bg-[var(--bg-main)] text-white">
-      {/* Dynamic Animated Wave Lines Layer */}
       <div className="fixed inset-0 z-0 pointer-events-none">
         <Suspense fallback={<WebGLPlaceholder />}>
           <FloatingLines
@@ -122,180 +99,212 @@ export default function HarrisonsSpice() {
             bendStrength={4}
             interactive={true}
             parallax={true}
-            linesGradient={["#2B1F00", "#6B4E00", "#A87900", "#D9A400", "#FFD700"]}
+            linesGradient={["#2B1F00", "#6B4E00", "#A87900", "#D9A400", "#E5B24E"]}
           />
         </Suspense>
       </div>
 
       <div className="relative z-10 min-h-screen py-8 md:py-16 px-4 flex flex-col items-center justify-center">
-        
-        {/* Logo Branding */}
         <div className="mb-8 md:mb-12">
-          <img 
-            src="/harrison.png" 
-            alt="Harrison's Spice Logo" 
+          <img
+            src="/harrison.png"
+            alt="Harrison's Spice Logo"
             className="h-24 md:h-32 w-auto drop-shadow-2xl mx-auto"
           />
         </div>
 
-        {/* Live Ratings Banner */}
         <div className="flex items-center justify-center gap-2 mb-8 px-4">
           <div className="flex gap-1">
             {[...Array(5)].map((_, i) => (
-              <FaStar key={i} className="w-4 h-4 fill-[#FFD700] text-[#FFD700]" aria-hidden="true" />
+              <FaStar key={i} className="w-4 h-4 fill-[#E5B24E] text-[#E5B24E]" aria-hidden="true" />
             ))}
           </div>
-          <span className="text-[#FFD700] font-semibold text-sm md:text-base">5.0 Google Rating</span>
+          <span className="text-[#E5B24E] font-semibold text-sm md:text-base">5.0 Google Rating</span>
         </div>
 
-        {/* Social Connection Badges */}
         <div className="flex items-center justify-center gap-4 md:gap-6 mb-12 px-4">
-          <a href="https://www.instagram.com/harrisonspice.official?igsh=dTA0eTBmdmZ2bDlu&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="p-3 md:p-4 rounded-full border border-white/10 bg-white/5 hover:bg-white/20 transition-all">
+          <a
+            href="https://www.instagram.com/harrisonspice.official?igsh=dTA0eTBmdmZ2bDlu&utm_source=qr"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            className="p-3 md:p-4 rounded-full border border-white/10 bg-white/5 hover:bg-white/20 transition-all"
+          >
             <FaInstagram className="w-5 h-5 text-white" />
           </a>
-          <a href="https://www.tiktok.com/@harrisonspiceofficial?_r=1&_t=ZN-93Ql2Nmc3L4" target="_blank" rel="noopener noreferrer" aria-label="TikTok" className="p-3 md:p-4 rounded-full border border-white/10 bg-white/5 hover:bg-white/20 transition-all">
+          <a
+            href="https://www.tiktok.com/@harrisonspiceofficial?_r=1&_t=ZN-93Ql2Nmc3L4"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="TikTok"
+            className="p-3 md:p-4 rounded-full border border-white/10 bg-white/5 hover:bg-white/20 transition-all"
+          >
             <FaTiktok className="w-5 h-5 text-white" />
           </a>
-          <a href="https://wa.me/447368384136" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="p-3 md:p-4 rounded-full border border-white/10 bg-white/5 hover:bg-white/20 transition-all">
+          <a
+            href="https://wa.me/447368384136"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="WhatsApp"
+            className="p-3 md:p-4 rounded-full border border-white/10 bg-white/5 hover:bg-white/20 transition-all"
+          >
             <FaWhatsapp className="w-5 h-5 text-white" />
           </a>
         </div>
 
-        {/* Restaurant Locations Horizontal Slider Container */}
         <div className="w-full px-4 mb-12">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-xl md:text-3xl font-bold mb-8 text-center text-white">
-              <span className="text-[#FFD700]">Check Out</span> Our Locations
+              <span className="text-[#E5B24E]">Check Out</span> Our Locations
             </h2>
-            
+
             <div className="relative">
-              {/* Cards Horizontal Wrapper */}
-              <div 
+              <div
                 ref={scrollContainerRef}
                 onScroll={handleScroll}
-                className="flex overflow-x-auto scroll-smooth gap-6 pb-4 no-scrollbar snap-x snap-mandatory items-stretch" 
-                style={{ scrollBehavior: 'smooth', WebkitOverflowScrolling: 'touch' }}
+                className="flex overflow-x-auto scroll-smooth gap-6 pb-4 no-scrollbar snap-x snap-mandatory items-stretch"
+                style={{ scrollBehavior: "smooth", WebkitOverflowScrolling: "touch" }}
               >
-                {LOCATIONS_DATA.map((location, index) => (
-                  <div 
-                    key={location.id} 
-                    ref={(el) => {
-                      cardRefs.current[index] = el;
-                    }}
-                    className="shrink-0 w-full sm:w-96 md:w-100 rounded-2xl overflow-hidden bg-[#242424] border border-[#3a3a3a] transition-all duration-300 cursor-pointer group shadow-lg snap-center flex flex-col"
-                  >
-                    {/* Visual Media Section */}
-                    <div className="relative h-48 md:h-56 overflow-hidden p-3 pb-0 shrink-0">
-                      <img 
-                        alt={location.name} 
-                        loading="lazy" 
-                        className="object-cover w-full h-full rounded-xl group-hover:scale-105 transition-transform duration-500"
-                        src={location.image}
-                      />
-                      <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent"></div>
-                    </div>
+                {LOCATIONS_DATA.map((location, index) => {
+                  const isSelected = selectedIndex === index;
 
-                    {/* Metadata Information Blocks */}
-                    <div className="p-5 md:p-6 flex flex-col grow">
-                      <h3 className="text-lg md:text-xl font-bold text-[#FFD700] mb-2">{location.name}</h3>
-                      <p className="text-white/80 text-sm md:text-base mb-4 line-clamp-2">{location.description}</p>
-                      
-                      <div className="space-y-2.5 mb-5 text-white/90">
-                        <div className="flex items-center gap-2.5">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[#FFD700] shrink-0"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                          <span className="text-sm">{location.locationName}</span>
+                  return (
+                    <div
+                      key={location.id}
+                      ref={(el) => {
+                        cardRefs.current[index] = el;
+                      }}
+                      onClick={() => selectLocation(index)}
+                      onKeyDown={(event) => {
+                        if (event.key === "Enter" || event.key === " ") {
+                          event.preventDefault();
+                          selectLocation(index);
+                        }
+                      }}
+                      role="button"
+                      tabIndex={0}
+                      aria-pressed={isSelected}
+                      className={`relative shrink-0 w-full sm:w-96 md:w-100 rounded-2xl overflow-hidden bg-[#242424] border transition-all duration-300 cursor-pointer group shadow-lg snap-center flex flex-col ${
+                        isSelected
+                          ? "border-[#E5B24E] ring-2 ring-[#E5B24E]/60"
+                          : "border-[#3a3a3a]"
+                      }`}
+                    >
+                      {isSelected && (
+                        <div className="absolute top-3 right-3 z-30 flex items-center gap-1 bg-[#E5B24E] text-black text-[11px] md:text-xs font-bold px-2.5 py-1 rounded-full shadow-md">
+                          <FaCheck className="w-2.5 h-2.5" aria-hidden="true" />
+                          Selected
                         </div>
-                        <div className="flex items-center gap-2.5">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[#FFD700] shrink-0"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
-                          <a href={location.telUrl} className="text-sm hover:text-[#FFD700] transition-colors">{location.phone}</a>
-                        </div>
-                        <div className="flex items-center gap-2.5">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[#FFD700] shrink-0"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path></svg>
-                          <a href={location.whatsappUrl} target="_blank" rel="noopener noreferrer" className="text-sm hover:text-[#FFD700] transition-colors">WhatsApp</a>
-                        </div>
-                        <div className="flex items-center gap-2.5">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[#FFD700] shrink-0"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
-                          <a href={location.websiteUrl} target="_blank" rel="noopener noreferrer" className="text-sm hover:text-[#FFD700] transition-colors">Visit Website</a>
-                        </div>
+                      )}
+
+                      <div className="relative h-48 md:h-56 overflow-hidden p-3 pb-0 shrink-0">
+                        <img
+                          alt={location.name}
+                          loading="lazy"
+                          className="object-cover w-full h-full rounded-xl group-hover:scale-105 transition-transform duration-500"
+                          src={location.image}
+                        />
+                        <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent"></div>
                       </div>
-                      <button className="w-full mt-auto py-3 rounded-xl bg-[#E6C200] text-black font-bold hover:bg-[#FFD700] transition-all text-sm md:text-base shadow-md">
-                        Get Directions
-                      </button>
+
+                      <div className="p-5 md:p-6 flex flex-col grow">
+                        <h3 className="text-lg md:text-xl font-bold text-[#E5B24E] mb-2">{location.name}</h3>
+                        <p className="text-white/80 text-sm md:text-base mb-4 line-clamp-2">{location.description}</p>
+
+                        <div className="space-y-2.5 mb-5 text-white/90">
+                          <div className="flex items-center gap-2.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[#E5B24E] shrink-0"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <span className="text-sm">{location.locationName}</span>
+                          </div>
+                          <div className="flex items-center gap-2.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[#E5B24E] shrink-0"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
+                            <a href={location.telUrl} className="text-sm hover:text-[#E5B24E] transition-colors">{location.phone}</a>
+                          </div>
+                          <div className="flex items-center gap-2.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[#E5B24E] shrink-0"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path></svg>
+                            <a href={location.whatsappUrl} target="_blank" rel="noopener noreferrer" className="text-sm hover:text-[#E5B24E] transition-colors">WhatsApp</a>
+                          </div>
+                          <div className="flex items-center gap-2.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[#E5B24E] shrink-0"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+                            <a href={location.websiteUrl} target="_blank" rel="noopener noreferrer" className="text-sm hover:text-[#E5B24E] transition-colors">Visit Website</a>
+                          </div>
+                        </div>
+
+                        <button
+                          onClick={(event) => {
+                            event.stopPropagation();
+                            handleGetDirections(location);
+                          }}
+                          disabled={!location.address}
+                          className="w-full mt-auto py-3 rounded-xl bg-[#E5B24E] text-black font-bold hover:bg-[#E5B24E] transition-all text-sm md:text-base shadow-md disabled:opacity-40 disabled:cursor-not-allowed"
+                        >
+                          {location.address ? "Get Directions" : "Coming Soon"}
+                        </button>
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
 
-              {/* Exact Video Match: Premium Full-Width Inline Slider Track */}
               <div className="relative flex items-center mt-6 w-full bg-[#161616] h-2 rounded-full overflow-hidden">
-                {/* Left Navigation Arrow nested into track border */}
-                <button 
-                  onClick={() => scroll('left')} 
-                  className="absolute left-0 top-0 bottom-0 px-2.5 z-20 text-[#FFD700] hover:text-white bg-[#161616]/90 flex items-center justify-center transition-colors"
+                <button
+                  onClick={() => scroll("left")}
+                  className="absolute left-0 top-0 bottom-0 px-2.5 z-20 text-[#E5B24E] hover:text-white bg-[#161616]/90 flex items-center justify-center transition-colors"
                   aria-label="Scroll left"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M14 7l-5 5 5 5V7z"/></svg>
                 </button>
-                
-                {/* Fluid, Expanding Custom Progress Filler Bar */}
-                <div 
-                  className="absolute top-0 bottom-0 bg-[#FFD700] rounded-full transition-all duration-300 ease-out"
-                  style={{ 
+
+                <div
+                  className="absolute top-0 bottom-0 bg-[#E5B24E] rounded-full transition-all duration-300 ease-out"
+                  style={{
                     left: `${(scrollProgress / 100) * 64 + 4}%`,
-                    width: isClickScrolling ? '36%' : '32%'
+                    width: isClickScrolling ? "36%" : "32%",
                   }}
                 />
 
-                {/* Right Navigation Arrow nested into track border */}
-                <button 
-                  onClick={() => scroll('right')} 
-                  className="absolute right-0 top-0 bottom-0 px-2.5 z-20 text-[#FFD700] hover:text-white bg-[#161616]/90 flex items-center justify-center transition-colors"
+                <button
+                  onClick={() => scroll("right")}
+                  className="absolute right-0 top-0 bottom-0 px-2.5 z-20 text-[#E5B24E] hover:text-white bg-[#161616]/90 flex items-center justify-center transition-colors"
                   aria-label="Scroll right"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M10 17l5-5-5-5v10z"/></svg>
                 </button>
               </div>
 
-              {/* Center Navigation Pagination Indicators */}
               <div className="flex justify-center gap-1.5 mt-6">
                 {LOCATIONS_DATA.map((_, idx) => (
                   <button
                     key={idx}
-                    onClick={() => cardRefs.current[idx]?.scrollIntoView({
-                      behavior: 'smooth',
-                      inline: 'center',
-                      block: 'nearest'
-                    })}
+                    onClick={() => selectLocation(idx)}
                     className={`h-1.5 rounded-full transition-all duration-300 ${
-                      activeIndex === idx ? 'bg-[#FFD700] w-7' : 'bg-[#3a3a3a] w-2.5'
+                      activeIndex === idx ? "bg-[#E5B24E] w-7" : "bg-[#3a3a3a] w-2.5"
                     }`}
                     aria-label={`Go to slide ${idx + 1}`}
                   />
                 ))}
               </div>
-
             </div>
           </div>
         </div>
 
-        {/* Why Choose Us Highlight Box */}
         <div className="w-full px-4 pb-12">
           <div className="max-w-4xl mx-auto">
             <div className="bg-[#242424] border border-[#3a3a3a] rounded-xl p-6 md:p-8">
-              <h3 className="text-lg md:text-xl font-bold mb-4 text-[#FFD700]">Why Choose Us?</h3>
+              <h3 className="text-lg md:text-xl font-bold mb-4 text-[#E5B24E]">Why Choose Us?</h3>
               <p className="text-white/80 text-sm md:text-base leading-relaxed">
-                We deliver exceptional food, service, and ambiance for an unforgettable dining experience. Our carefully curated menu features refined Indian cuisine with a modern twist, prepared by expert chefs using premium ingredients. Each location offers a warm, welcoming atmosphere perfect for family gatherings, business dinners, or special celebrations.
+                {selectedLocation?.whyChooseUs}
               </p>
             </div>
           </div>
         </div>
 
-        {/* Action / Contact Card Download */}
         <div className="w-full px-4 pb-8">
           <div className="max-w-4xl mx-auto">
             <button
-              onClick={downloadVCF}
-              className="w-full py-3.5 rounded-lg bg-[#E1B700] hover:bg-[#FFD700] text-black font-bold transition-all flex items-center justify-center gap-2 text-sm md:text-base shadow-md"
+              onClick={() => downloadVCF(selectedLocation)}
+              disabled={!selectedHasContact}
+              className="w-full py-3.5 rounded-lg bg-[#E5B24E] hover:bg-[#E5B24E] text-black font-bold transition-all flex items-center justify-center gap-2 text-sm md:text-base shadow-md disabled:opacity-40 disabled:cursor-not-allowed"
             >
               <HiArrowDownTray className="w-5 h-5 text-black stroke-2" />
               Download Contact
@@ -303,7 +312,6 @@ export default function HarrisonsSpice() {
           </div>
         </div>
 
-        {/* Footer Area */}
         <footer className="w-full max-w-4xl border-t border-white/10 pt-6 px-4 text-center text-white/50 text-xs">
           <p>© 2026 Harrison's Spice. All rights reserved.</p>
         </footer>
