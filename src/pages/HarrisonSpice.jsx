@@ -314,7 +314,7 @@ export default function HarrisonsSpice() {
 
         <footer className="w-full max-w-4xl border-t border-white/10 pt-6 px-4 text-center text-white/50 text-xs">
           <p>© 2026 Harrison's Spice. All rights reserved.</p>
-          <p className="mt-2">Powered By <span className="cursor-pointer hover:text-[#E5B24E] hover:underline">Ansely</span></p>
+          <p className="mt-2">Powered By <a href="https://ansely.co.uk/" target="_blank" className="cursor-pointer hover:text-[#E5B24E] hover:underline">Ansely</span></p>
         </footer>
       </div>
     </main>
