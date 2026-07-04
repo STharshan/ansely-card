@@ -197,7 +197,7 @@ export default function HarrisonsSpice() {
                         </div>
                       )}
 
-                      <div className="relative h-48 md:h-56 overflow-hidden p-3 pb-0 shrink-0">
+                      <div className="relative h-48 sm:h-65 lg:h-65 overflow-hidden p-2 shrink-0">
                         <img
                           alt={location.name}
                           loading="lazy"
@@ -214,7 +214,7 @@ export default function HarrisonsSpice() {
                         <div className="space-y-2.5 mb-5 text-white/90">
                           <div className="flex items-center gap-2.5">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[#E5B24E] shrink-0"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            <span className="text-sm">{location.locationName}</span>
+                            <span className="text-sm">{location.address}</span>
                           </div>
                           <div className="flex items-center gap-2.5">
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[#E5B24E] shrink-0"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
