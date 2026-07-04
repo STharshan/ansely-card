@@ -99,7 +99,7 @@ export default function HarrisonsSpice() {
             bendStrength={4}
             interactive={true}
             parallax={true}
-            linesGradient={["#2B1F00", "#6B4E00", "#A87900", "#D9A400", "#E5B24E"]}
+            linesGradient={["#2B1F00", "#E5B24E", "#A87900", "#E5B24E", "#E5B24E"]}
           />
         </Suspense>
       </div>
@@ -209,7 +209,7 @@ export default function HarrisonsSpice() {
 
                       <div className="p-5 md:p-6 flex flex-col grow">
                         <h3 className="text-lg md:text-xl font-bold text-[#E5B24E] mb-2">{location.name}</h3>
-                        <p className="text-white/80 text-sm md:text-base mb-4 line-clamp-2">{location.description}</p>
+                        <p className="text-white/80 text-sm md:text-base mb-4">{location.description}</p>
 
                         <div className="space-y-2.5 mb-5 text-white/90">
                           <div className="flex items-center gap-2.5">
@@ -314,6 +314,7 @@ export default function HarrisonsSpice() {
 
         <footer className="w-full max-w-4xl border-t border-white/10 pt-6 px-4 text-center text-white/50 text-xs">
           <p>© 2026 Harrison's Spice. All rights reserved.</p>
+          <p className="mt-2">Powered By <span className="cursor-pointer hover:text-[#E5B24E] hover:underline">Ansely</span></p>
         </footer>
       </div>
     </main>
