@@ -33,7 +33,7 @@ const harrisonSpiceLocations = [
   },
   {
     id: 3,
-    name: "Coalville",
+    name: "Coming soon",
     description: "Indo-Chinese Buffet Coming Soon",
     whyChooseUs:
       "Experience the best of Indo-Chinese cuisine at our Coalville buffet, where bold flavours meet unlimited choice. The buffet is constantly evolving, with a new signature dish introduced each week, inspired by talented chefs from around the world.",

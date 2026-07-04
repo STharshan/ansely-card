@@ -197,7 +197,7 @@ export default function HarrisonsSpice() {
                         </div>
                       )}
 
-                      <div className="relative h-48 sm:h-65 lg:h-65 overflow-hidden p-2 shrink-0">
+                      <div className="relative h-52 sm:h-65 lg:h-65 overflow-hidden p-3 shrink-0">
                         <img
                           alt={location.name}
                           loading="lazy"
