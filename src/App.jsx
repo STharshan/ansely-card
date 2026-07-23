@@ -12,6 +12,7 @@ import Baber from "./pages/cards/Baber/baber.jsx";
 import RS from "./pages/cards/RS/Rs.jsx";
 import Greystone from "./pages/cards/GeryStone/GreyStone.jsx";
 import ChocoholicsDesserts from "./pages/cards/ChocoholicsDesserts/ChocoholicsDesserts.jsx";
+import ShahzTyres from "./pages/cards/Shaz/Shaz.jsx";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/rs-mobile-services" element={<RS />} />
         <Route path="/greystone-automotive" element={<Greystone />} />
         <Route path="/chocoholics-desserts" element={<ChocoholicsDesserts />} />
+        <Route path="/shahz-tyres" element={<ShahzTyres />} />
       </Routes>
     </Router>
   );

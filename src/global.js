@@ -311,6 +311,38 @@ export const digitalCardDataGreystone = {
   socialLinks: [],
 };
 
+export const digitalCardDataShahzTyres = {
+  company: {
+    name: "Shahz Tyres",
+    tagline: "Tyres and welding solutions you can rely on.",
+    logo: "/shaz.png",
+  },
+  founder: {
+    name: "Shahz Tyres",
+    title: "Tyres & Welding Solutions",
+  },
+  contacts: [
+    { type: "Call", href: "tel:+447462163163", icon: "Phone", styleClass: "bg-primary" },
+    { type: "WhatsApp", href: "https://wa.me/447462163163", icon: "MessageCircle", styleClass: "bg-primary" },
+    { type: "Email", href: "mailto:info@shahztyres.co.uk", icon: "Mail", styleClass: "bg-primary" },
+    { type: "Website", href: "https://shahztyres.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+  ],
+  about: "Shahz Tyres this shop for tyres and welding solution.",
+  services: [
+    { label: "Tyres", href: "https://shahztyres.co.uk/tyres" },
+    { label: "Car Welding", href: "https://shahztyres.co.uk/car-welding" },
+    { label: "Home Welding", href: "https://shahztyres.co.uk/home-welding" },
+  ],
+  rating: {
+    value: "5.0",
+    text: "Trusted for tyres and welding solutions.",
+  },
+  location: "Leicester, United Kingdom",
+  locationUrl: "https://maps.app.goo.gl/owqKgsc8P73iPgV3A",
+  ratingUrl: "https://www.google.com/search?sca_esv=e1142bdc4d0a4f40&rlz=1C5CHFA_enCA1132CA1132&sxsrf=APpeQntYolb6WwwgVqTP7O5UJzaVJHW57w:1784825104813&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_2RtNHa5nFb6ZUaDI2WsS3UCc20SY82K2cXkVZZfFpkgzGOk8SAgvc6obLJNGi1_mby2RMn3cI8wC1pyJo1QRk79AIRAZ7V1BOe2hefnvkMR-Fu0G5uwTz8aEcU19A6rhpNFylo%3D&q=Shahz+Tyres+%26+wheel+welding+repair+Reviews&sa=X&ved=2ahUKEwi15u7Sn-mVAxV-bmwGHZ4YN9MQ0bkNegQIHRAI&biw=1366&bih=633&dpr=1",
+  socialLinks: [],
+};
+
 export const digitalCardDataChocoholicsDesserts = {
   company: {
     name: "Chocoholics Desserts",
