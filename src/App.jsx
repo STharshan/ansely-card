@@ -17,6 +17,7 @@ import Stoneleys from "./pages/stoneleys.jsx";
 import Tomas from "./pages/Tomas.jsx";
 import Empire from "./pages/empire.jsx";
 import Abbey from "./pages/Abbey.jsx";
+import Amma from "./pages/Amma-kitchen-coventry.jsx";
 function App() {
   return (
     <Router>
@@ -37,6 +38,7 @@ function App() {
         <Route path="/tomas" element={<Tomas />} />
         <Route path="/empire" element={<Empire />} />
         <Route path="/abbey" element={<Abbey />} />
+        <Route path="/amma-kitchen-coventry" element={<Amma />} />
       </Routes>
     </Router>
   );
