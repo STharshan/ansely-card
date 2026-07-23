@@ -10,6 +10,7 @@ import Boxfit from "./pages/Boxfit.jsx";
 import OviBodyShop from "./pages/OviBodyShop.jsx";
 import Afmok from "./pages/af-mokperformance.jsx";
 import Slsmartrepair from "./pages/slsmartrepair.jsx";
+import Nazmotors from "./pages/nazmotors.jsx";
 function App() {
   return (
     <Router>
@@ -24,6 +25,7 @@ function App() {
         <Route path="/ovi-body-shop" element={<OviBodyShop />} />
         <Route path="/af-mokperformance" element={<Afmok />} />
         <Route path="/slsmartrepair" element={<Slsmartrepair />} />
+        <Route path="/nazmotors" element={<Nazmotors />} />
       </Routes>
     </Router>
   );
