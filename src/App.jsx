@@ -12,6 +12,15 @@ import Afmok from "./pages/af-mokperformance.jsx";
 import Slsmartrepair from "./pages/slsmartrepair.jsx";
 import Nazmotors from "./pages/nazmotors.jsx";
 import Earwego from "./pages/earwego.jsx";
+import HairDressBurn from "./pages/cards/HairDressBurn/HairDressBurn.jsx";
+import ATB from "./pages/cards/ATB/ATB.jsx";
+import Nikita from "./pages/cards/Nikita/Nikita.jsx";
+import Baber from "./pages/cards/Baber/baber.jsx";
+import RS from "./pages/cards/RS/Rs.jsx";
+import Greystone from "./pages/cards/GeryStone/GreyStone.jsx";
+import ChocoholicsDesserts from "./pages/cards/ChocoholicsDesserts/ChocoholicsDesserts.jsx";
+import ShahzTyres from "./pages/cards/Shaz/Shaz.jsx";
+import MehranGarages from "./pages/cards/mehransgarage/mehransgarage.jsx";
 
 import Stoneleys from "./pages/stoneleys.jsx";
 import Tomas from "./pages/Tomas.jsx";
@@ -19,6 +28,7 @@ import Empire from "./pages/empire.jsx";
 import Abbey from "./pages/Abbey.jsx";
 import Amma from "./pages/Amma-kitchen-coventry.jsx";
 import TK from "./pages/Tk.jsx";
+
 function App() {
   return (
     <Router>
@@ -41,6 +51,15 @@ function App() {
         <Route path="/abbey" element={<Abbey />} />
         <Route path="/amma-kitchen-coventry" element={<Amma />} />
         <Route path="/tkautomotive" element={<TK />} />
+        <Route path="/Burns-Hair-Design" element={<HairDressBurn />} />  
+        <Route path="/atb-motor-engineers" element={<ATB />} />
+        <Route path="/nikita-autocraft" element={<Nikita />} />
+        <Route path="/twenty-eight-barbers" element={<Baber />} />
+        <Route path="/rs-mobile-services" element={<RS />} />
+        <Route path="/greystone-automotive" element={<Greystone />} />
+        <Route path="/chocoholics-desserts" element={<ChocoholicsDesserts />} />
+        <Route path="/shahz-tyres" element={<ShahzTyres />} />
+        <Route path="/mehran-garages" element={<MehranGarages />} />
       </Routes>
     </Router>
   );
