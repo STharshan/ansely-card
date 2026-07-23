@@ -12,6 +12,8 @@ import Afmok from "./pages/af-mokperformance.jsx";
 import Slsmartrepair from "./pages/slsmartrepair.jsx";
 import Nazmotors from "./pages/nazmotors.jsx";
 import Earwego from "./pages/earwego.jsx";
+import stoneleys from "./pages/stoneleys.jsx";
+import Stoneleys from "./pages/stoneleys.jsx";
 function App() {
   return (
     <Router>
@@ -28,6 +30,7 @@ function App() {
         <Route path="/slsmartrepair" element={<Slsmartrepair />} />
         <Route path="/nazmotors" element={<Nazmotors />} />
         <Route path="/earwego" element={<Earwego />} />
+        <Route path="/stoneleys" element={<Stoneleys />} />
       </Routes>
     </Router>
   );
