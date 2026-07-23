@@ -129,3 +129,75 @@ export const digitalCardDataBurnsHairDesign = {
   ratingUrl: "https://www.google.com/search?sca_esv=0aa30729732e2704&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=APpeQnszvAe4HDb8hG9-wg_PjOe6KDT-5g:1784817474916&si=APenkKn5T4YN59srr511wD6k6Pufj9DEzRUvB1XJSwUeeT5afm0ofCotfUkZyppiwgr8oO2dhkKsMDmd8w0PPMKgHTjtWg-fEvWexW5wlv5CuodNmQ83d-tKlWrfP6iTwGAtL9GhP3ju&q=Burns+Hair+Design+Reviews&sa=X&ved=2ahUKEwis8dKcg-mVAxWXT2wGHY7kGg8Q0bkNegQIJBAI&biw=1366&bih=633&dpr=1",
   socialLinks: [],
 };
+
+export const digitalCardDataATB = {
+  company: {
+    name: "ATB Motor Engineers",
+    tagline: "Reliability, performance, and complete automotive care.",
+    logo: "/atb.png",
+  },
+  founder: {
+    name: "ATB Motor Engineers",
+    title: "MOT, Service & Repair Specialists",
+  },
+  contacts: [
+    { type: "Call", href: "tel:01332224229", icon: "Phone", styleClass: "bg-primary" },
+    { type: "WhatsApp", href: "https://wa.me/447934201943", icon: "MessageCircle", styleClass: "bg-primary" },
+    { type: "Email", href: "mailto:atbmotorengineers@gmail.com", icon: "Mail", styleClass: "bg-primary" },
+    { type: "Website", href: "https://atbmotorengineers.com/", icon: "Globe", styleClass: "bg-primary" },
+  ],
+  
+  about: "Join hundreds of satisfied customers who trust ATB Motor Engineers for reliability, performance, and complete automotive care.",
+    services: [
+      { label: "MOT", href: "https://atbmotorengineers.com/services/mot" },
+      { label: "Service", href: "https://atbmotorengineers.com/services/service" },
+      { label: "Chain/Belts", href: "https://atbmotorengineers.com/services/chain-belts" },
+      { label: "Welding", href: "https://atbmotorengineers.com/services/welding" },
+      { label: "Mechanical Repair", href: "https://atbmotorengineers.com/services/mechanical-repair" },
+    ],
+    rating: {
+      value: "5.0",
+      text: "Professional and reliable automotive care.",
+    },
+  socialLinks: [
+    { icon: "Facebook", href: "https://www.facebook.com/profile.php?id=100054506707364" },
+  ],
+};
+
+export const digitalCardDataNikita = {
+  company: {
+    name: "nikita-autocraft",
+    tagline: "Precision repairs, trusted care, and expert automotive finishes.",
+    logo: "/nikita.png",
+  },
+  founder: {
+    name: "Nikita Autocraft",
+    title: "Paint, Repair & Diagnostic Specialists",
+  },
+  contacts: [
+    { type: "Call", href: "tel:01162512277", icon: "Phone", styleClass: "bg-primary" },
+    { type: "WhatsApp", href: "https://wa.me/447930105858", icon: "MessageCircle", styleClass: "bg-primary" },
+    { type: "Email", href: "mailto:Gags@nikitaautocraft.co.uk", icon: "Mail", styleClass: "bg-primary" },
+    { type: "Website", href: "https://nikita-autocraft.co.uk", icon: "Globe", styleClass: "bg-primary" },
+  ],
+  about: "Precision repairs, trusted care, and expert automotive finishes for drivers who want quality that lasts.",
+  services: [
+    { label: "Paint Services", href: "https://darkorange-goldfish-447565.hostingersite.com/services/paint-services" },
+    { label: "AC Service", href: "https://darkorange-goldfish-447565.hostingersite.com/services/ac-service" },
+    { label: "MOT", href: "https://darkorange-goldfish-447565.hostingersite.com/services/mot" },
+    { label: "Mechanical Repairs", href: "https://darkorange-goldfish-447565.hostingersite.com/services/mechanical-repairs" },
+    { label: "Smart Repairs", href: "https://darkorange-goldfish-447565.hostingersite.com/services/body-smart-repairs" },
+    { label: "Diagnostics", href: "https://darkorange-goldfish-447565.hostingersite.com/services/diagnostics" },
+    { label: "Dent Repair", href: "https://darkorange-goldfish-447565.hostingersite.com/services/dent-repair" },
+  ],
+  rating: {
+    value: "5.0",
+    text: "Highly rated for quality workmanship and dependable service.",
+  },
+  location: "Leicester, United Kingdom",
+  locationUrl: "https://maps.app.goo.gl/5tZNA18BXc557Gxb6",
+  ratingUrl: "https://www.google.com/search?sca_esv=0aa30729732e2704&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=APpeQnsBFQKDtNJnBrCPBWlzuQBLCmOaMg:1784819566604&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_4xsekt8XjaaWEbakCFiCIEBP0Byohb7tFCB2BudWjvts7XK4ujtqj-EdPlNcIlm4COJLAvaqvyrhjqKCoU_eflAIP8PAkU_ai_hKwd7iBUJE2YSug%3D%3D&q=Nikita+Autocraft+Reviews&sa=X&ved=2ahUKEwjfpIWCi-mVAxUEklYBHWlgKa4Q0bkNegQIIhAI&biw=1366&bih=633&dpr=1",
+  socialLinks: [
+    { icon: "Instagram", href: "https://www.instagram.com/nikitaautocraft/" },
+  ],
+};
