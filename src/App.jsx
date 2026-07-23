@@ -16,6 +16,7 @@ import Earwego from "./pages/earwego.jsx";
 import Stoneleys from "./pages/stoneleys.jsx";
 import Tomas from "./pages/Tomas.jsx";
 import Empire from "./pages/empire.jsx";
+import Abbey from "./pages/Abbey.jsx";
 function App() {
   return (
     <Router>
@@ -35,6 +36,7 @@ function App() {
         <Route path="/stoneleys" element={<Stoneleys />} />
         <Route path="/tomas" element={<Tomas />} />
         <Route path="/empire" element={<Empire />} />
+        <Route path="/abbey" element={<Abbey />} />
       </Routes>
     </Router>
   );
