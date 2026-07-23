@@ -9,6 +9,7 @@ import BroadwayRemapping from "./pages/BroadwayRemapping.jsx";
 import Boxfit from "./pages/Boxfit.jsx";
 import OviBodyShop from "./pages/OviBodyShop.jsx";
 import Afmok from "./pages/af-mokperformance.jsx";
+import Slsmartrepair from "./pages/slsmartrepair.jsx";
 function App() {
   return (
     <Router>
@@ -22,6 +23,7 @@ function App() {
         <Route path="/boxfitcoaching" element={<Boxfit />} />
         <Route path="/ovi-body-shop" element={<OviBodyShop />} />
         <Route path="/af-mokperformance" element={<Afmok />} />
+        <Route path="/slsmartrepair" element={<Slsmartrepair />} />
       </Routes>
     </Router>
   );
