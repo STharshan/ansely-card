@@ -59,7 +59,7 @@ export default function Slsmartrepair() {
       <div className="relative z-10 w-full flex flex-col items-center">
 
         {/* Company Name - Usually wider/full width for impact */}
-        <header className="w-full max-w-md px-6 pt-16 pb-6 flex items-center justify-center gap-5 md:gap-8">
+        <header className="w-full max-w-md px-4 pt-16 pb-6 flex items-center justify-center gap-3 md:gap-8">
           <div className="relative shrink-0">
             <div className="absolute inset-0 rounded-3xl bg-cyan-400/15 blur-2xl scale-110" />
             {logoFailed ? (
@@ -72,7 +72,7 @@ export default function Slsmartrepair() {
                 </div>
               </div>
             ) : (
-              <div className="relative flex w-24 h-24 md:w-32 md:h-32 items-center justify-center rounded-3xl bg-slate-950/80 p-1.5 shadow-2xl shadow-black/40 ring-1 ring-red-500/15">
+              <div className="relative flex w-20 h-20 md:w-32 md:h-32 items-center justify-center rounded-3xl bg-slate-950/80 p-1 md:p-1.5 shadow-2xl shadow-black/40 ring-1 ring-red-500/15">
                 <img
                   src={company.logo}
                   alt={company.name}
@@ -84,7 +84,7 @@ export default function Slsmartrepair() {
             )}
           </div>
           <h1
-            className="text-[2rem] md:text-5xl font-bold tracking-[0.1em] text-white uppercase drop-shadow-lg whitespace-nowrap"
+            className="min-w-0 text-[1.35rem] leading-tight md:text-5xl font-bold tracking-[0.08em] md:tracking-[0.1em] text-white uppercase drop-shadow-lg"
             style={{ fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif' }}
           >
             {company.name}

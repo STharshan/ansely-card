@@ -59,7 +59,7 @@ export default function OviBodyShop() {
       <div className="relative z-10 w-full flex flex-col items-center">
 
         {/* Company Name - Usually wider/full width for impact */}
-        <header className="w-full max-w-md px-6 pt-16 pb-6 flex items-center justify-center gap-5 md:gap-8">
+        <header className="w-full max-w-md px-4 pt-16 pb-6 flex items-center justify-center gap-3 md:gap-8">
           <div className="relative shrink-0">
             <div className="absolute inset-0 rounded-3xl bg-cyan-400/15 blur-2xl scale-110" />
             {logoFailed ? (
@@ -72,7 +72,7 @@ export default function OviBodyShop() {
                 </div>
               </div>
             ) : (
-              <div className="relative flex w-20 h-20 md:w-28 md:h-28 items-center justify-center rounded-3xl p-1 shadow-2xl shadow-black/30">
+              <div className="relative flex w-18 h-18 md:w-28 md:h-28 items-center justify-center rounded-3xl p-1 shadow-2xl shadow-black/30">
                 <img
                   src={company.logo}
                   alt={company.name}
@@ -84,7 +84,7 @@ export default function OviBodyShop() {
             )}
           </div>
           <h1
-            className="text-[2.15rem] md:text-5xl font-bold tracking-[0.12em] text-white uppercase drop-shadow-lg whitespace-nowrap"
+            className="min-w-0 text-[1.3rem] leading-tight md:text-5xl font-bold tracking-[0.06em] md:tracking-[0.12em] text-white uppercase drop-shadow-lg"
             style={{ fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif' }}
           >
             {company.name}
