@@ -5,7 +5,7 @@ import Damien from "./pages/Daiman";
 import HarrisonSpice from "./pages/HarrisonSpice.jsx";
 import Josh from "./pages/Josh";
 import MusicHubPage from "./pages/MusicHubPage";
-
+import BroadwayRemapping from "./pages/BroadwayRemapping.jsx";
 function App() {
   return (
     <Router>
@@ -15,6 +15,7 @@ function App() {
         <Route path="/harrison-spice" element={<HarrisonSpice />} />
         <Route path="/josh" element={<Josh />} />
         <Route path="/music-hub" element={<MusicHubPage />} />
+        <Route path="/broadway-remapping" element={<BroadwayRemapping />} />
       </Routes>
     </Router>
   );
