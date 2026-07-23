@@ -13,6 +13,7 @@ import RS from "./pages/cards/RS/Rs.jsx";
 import Greystone from "./pages/cards/GeryStone/GreyStone.jsx";
 import ChocoholicsDesserts from "./pages/cards/ChocoholicsDesserts/ChocoholicsDesserts.jsx";
 import ShahzTyres from "./pages/cards/Shaz/Shaz.jsx";
+import MehranGarages from "./pages/cards/mehransgarage/mehransgarage.jsx";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="/greystone-automotive" element={<Greystone />} />
         <Route path="/chocoholics-desserts" element={<ChocoholicsDesserts />} />
         <Route path="/shahz-tyres" element={<ShahzTyres />} />
+        <Route path="/mehran-garages" element={<MehranGarages />} />
       </Routes>
     </Router>
   );

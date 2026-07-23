@@ -343,6 +343,40 @@ export const digitalCardDataShahzTyres = {
   socialLinks: [],
 };
 
+export const digitalCardDataMehranGarages = {
+  company: {
+    name: "Mehran Garages",
+    tagline: "Professional automotive repair services that restore your vehicle to perfect condition.",
+    logo: "/mehran.png",
+  },
+  founder: {
+    name: "Mehran Garages",
+    title: "Automotive Repair Specialists",
+  },
+  contacts: [
+    { type: "Call", href: "tel:07846953888", icon: "Phone", styleClass: "bg-primary" },
+    { type: "WhatsApp", href: "https://wa.me/447846953888", icon: "MessageCircle", styleClass: "bg-primary" },
+    { type: "Website", href: "https://mehransgarage.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+  ],
+  about: "Professional automotive repair services that restore your vehicle to perfect condition.",
+  services: [
+    { label: "MOT Testing", href: "https://mehransgarage.co.uk/services/mot-testing" },
+    { label: "Vehicle Service", href: "https://mehransgarage.co.uk/services/vehicle-service" },
+    { label: "Diagnostics", href: "https://mehransgarage.co.uk/services/diagnostics" },
+    { label: "Braking Systems", href: "https://mehransgarage.co.uk/services/brake" },
+    { label: "Suspension", href: "https://mehransgarage.co.uk/services/suspension" },
+    { label: "Air Conditioning", href: "https://mehransgarage.co.uk/services/air-condition" },
+  ],
+  rating: {
+    value: "5.0",
+    text: "Trusted by drivers for expert repairs and reliable service.",
+  },
+  location: "Nottingham, United Kingdom",
+  locationUrl: "https://maps.app.goo.gl/NELA6aiDmvz4rixo8",
+  ratingUrl: "https://www.google.com/search?sca_esv=fc2a7f6adb56bd6b&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=APpeQnvrTyyGkvBZbsvi_nNC_jzO_eC_Bg:1784826282346&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_xPrJ2FVtvTinEWN32KLEwuVOXefpGw7ZwbY2HS6JLXGa7cLWrqOmu9kZ51NPfwkpl7DYsPbL8IiYCIQ-gWW12QnKmyi8kgvK3uZjbMyRzx-KOKByQ%3D%3D&q=Mehrans+Garage+MOT+Centre+Reviews&sa=X&ved=2ahUKEwi73K2EpOmVAxUtslYBHXxZK1IQ0bkNegQIJBAI&biw=1366&bih=633&dpr=1",
+  socialLinks: [],
+};
+
 export const digitalCardDataChocoholicsDesserts = {
   company: {
     name: "Chocoholics Desserts",
@@ -379,3 +413,4 @@ export const digitalCardDataChocoholicsDesserts = {
     { icon: "TikTok", href: "https://www.tiktok.com/@chocoholics.desserts" },
   ],
 };
+
