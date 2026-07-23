@@ -1,13 +1,12 @@
 import {
   Phone,
-  Mail,
   Globe,
   MapPin,
   Download,
   Star,
 } from "lucide-react";
 
-import { digitalCardData ,downloadVCF } from "../data/earwego/earwego.js";
+import { digitalCardData ,downloadVCF } from "../data/TK/tk.js";
 import { lazy, Suspense, useState } from "react";
 
 const FloatingLines = lazy(() => import("../components/FloatingLines.jsx"));
@@ -16,9 +15,9 @@ const WebGLPlaceholder = () => (
   <div className="fixed inset-0 bg-[var(--bg-main)]" />
 );
 
-const iconMap = { Phone, Mail, Globe, MapPin };
+const iconMap = { Phone, Globe };
 
-export default function Earwego() {
+export default function TK() {
   const [logoFailed, setLogoFailed] = useState(false);
   const {
     company,
@@ -61,26 +60,26 @@ export default function Earwego() {
             {logoFailed ? (
               <div className="relative flex w-20 h-20 md:w-28 md:h-28 items-center justify-center rounded-3xl border border-white/10 bg-slate-950 shadow-2xl">
                 <div className="text-center leading-none">
-                  <div className="text-2xl md:text-3xl font-black tracking-[0.18em] text-white">EAR</div>
+                  <div className="text-2xl md:text-3xl font-black tracking-[0.18em] text-white">TK</div>
                   <div className="mt-1 text-[0.48rem] md:text-[0.58rem] font-semibold uppercase tracking-[0.28em] text-cyan-200">
-                    Care
+                    Auto
                   </div>
                 </div>
               </div>
             ) : (
-              <div className="relative flex w-22 h-22 md:w-30 md:h-30 items-center justify-center rounded-3xl bg-white/92 p-2 shadow-2xl shadow-black/30 ring-1 ring-white/20">
+              <div className="relative flex w-16 h-16 md:w-28 md:h-28 items-center justify-center rounded-3xl p-1 shadow-2xl shadow-black/30">
                 <img
                   src={company.logo}
                   alt={company.name}
                   loading="lazy"
                   onError={() => setLogoFailed(true)}
-                  className="h-full w-full object-contain drop-shadow-[0_4px_18px_rgba(15,23,42,0.2)]"
+                  className="h-full w-full object-contain drop-shadow-[0_4px_18px_rgba(15,23,42,0.35)]"
                 />
               </div>
             )}
           </div>
           <h1
-            className="min-w-0 text-[1.7rem] leading-none md:text-5xl font-bold tracking-[0.06em] md:tracking-[0.08em] text-white uppercase drop-shadow-lg whitespace-nowrap"
+            className="min-w-0 text-[1rem] leading-none md:text-5xl font-bold tracking-[0.03em] md:tracking-[0.1em] text-white uppercase drop-shadow-lg whitespace-nowrap"
             style={{ fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif' }}
           >
             {company.name}
