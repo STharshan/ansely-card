@@ -201,3 +201,75 @@ export const digitalCardDataNikita = {
     { icon: "Instagram", href: "https://www.instagram.com/nikitaautocraft/" },
   ],
 };
+
+export const digitalCardDataTwentyEight = {
+  company: {
+    name: "Twenty Eight Barbers",
+    tagline: "Contemporary cuts, fresh colour, and a relaxed Saturday vibe.",
+    logo: "/baber.png",
+  },
+  founder: {
+    name: "Twenty Eight Barbers",
+    title: "Contemporary Barbershop",
+  },
+  contacts: [
+    { type: "Call", href: "tel:01159586628", icon: "Phone", styleClass: "bg-primary" },
+    { type: "WhatsApp", href: "https://wa.me/441159586628", icon: "MessageCircle", styleClass: "bg-primary" },
+    { type: "Email", href: "mailto:jaybo28@me.com", icon: "Mail", styleClass: "bg-primary" },
+    { type: "Website", href: "https://twentyeighthair.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+  ],
+  about: "Contemporary and modern with a resident DJ on Saturdays. Twenty Eight is the perfect atmosphere to relax, from cuts to colours we have your Barnett sorted.",
+  services: [
+    { label: "Student Cuts", href: "https://twentyeighthair.co.uk/#service" },
+    { label: "Gents Cuts", href: "https://twentyeighthair.co.uk/#service" },
+    { label: "Ladies Barber Cut", href: "https://twentyeighthair.co.uk/#service" },
+    { label: "Ladies Cuts", href: "https://twentyeighthair.co.uk/#service" },
+    { label: "Colours", href: "https://twentyeighthair.co.uk/#service" },
+  ],
+  rating: {
+    value: "5.0",
+    text: "Trusted by local clients for stylish, professional results.",
+  },
+  location: "Nottingham, UK",
+  locationUrl: "https://maps.app.goo.gl/LyVBMpxC5iu2FtyD9",
+  ratingUrl: "https://www.google.com/search?sca_esv=fc2a7f6adb56bd6b&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=APpeQnuL0DOKwdN5QzFk38U_hBsiDV6sSQ:1784821775968&si=APenkKn5T4YN59srr511wD6k6Pufj9DEzRUvB1XJSwUeeT5afqxFd7VP8YtELTeLXHuWIUEvYqhUkpu_0BRYDJnMs62MDwyimA3TJISEOIRaHt477sbR83q4jl-95b-Yq5mphrmm_LPO&q=Twenty+eight+Reviews&sa=X&ved=2ahUKEwihn8afk-mVAxVgyzQHHdFwMpcQ0bkNegQIIBAI&biw=1366&bih=633&dpr=1",
+  socialLinks: [
+    { icon: "Instagram", href: "https://www.instagram.com/twenty_eight_barbers" },
+    { icon: "Facebook", href: "https://web.facebook.com/twenty8barbers?_rdc=1&_rdr#" },
+  ],
+};
+
+export const digitalCardDataRS = {
+  company: {
+    name: "rsmobileservices",
+    tagline: "Mobile servicing and repairs, brought straight to you.",
+    logo: "/rs.png",
+  },
+  founder: {
+    name: "RS Mobile Services",
+    title: "Mobile Vehicle Service Specialists",
+  },
+  contacts: [
+    { type: "Call", href: "tel:+441780917600", icon: "Phone", styleClass: "bg-primary" },
+    { type: "WhatsApp", href: "https://wa.me/447300881440", icon: "MessageCircle", styleClass: "bg-primary" },
+    { type: "Email", href: "mailto:sam.ferries@rsmobileservices.co.uk", icon: "Mail", styleClass: "bg-primary" },
+    { type: "Website", href: "https://rsmobileservices.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+  ],
+  about: "From oil changes to engine diagnostics, our fully equipped vans ensure your vehicle runs smoothly without the hassle of visiting a workshop.",
+  services: [
+    { label: "MOT Repair", href: "https://rsmobileservices.co.uk/#services" },
+    { label: "Brakes", href: "https://rsmobileservices.co.uk/#services" },
+    { label: "Suspensions", href: "https://rsmobileservices.co.uk/#services" },
+    { label: "Car Services", href: "https://rsmobileservices.co.uk/#services" },
+    { label: "Diagnostics", href: "https://rsmobileservices.co.uk/#services" },
+    { label: "Fleet & Lease", href: "https://rsmobileservices.co.uk/#services" },
+  ],
+  rating: {
+    value: "5.0",
+    text: "Trusted by drivers who want fast, reliable mobile service.",
+  },
+  location: "Stamford, UK",
+  locationUrl: "https://maps.app.goo.gl/iKdvKUTdAeeVUPtQA",
+  ratingUrl: "https://www.google.com/search?sca_esv=fc2a7f6adb56bd6b&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=APpeQntRJbCBz7AfHeEVH7KE8XY0tfOiJg:1784822671279&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_-n-lnsNuLq4XDAV8m358U55WJ-NVX8BMTIzWWKHDaXvvu-fBbxnsaDswiJUsYcyMueoVsojhQ9tBZwLfI4U4ijS-tQ1R5TJZsSE6taiyeq7y6E27w%3D%3D&q=RS+Mobile+Services+LTD+Reviews&sa=X&ved=2ahUKEwi40LvKlumVAxVTs1YBHc37I34Q0bkNegQINRAI&biw=1366&bih=633&dpr=1",
+  socialLinks: [],
+};
