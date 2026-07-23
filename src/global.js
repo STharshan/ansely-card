@@ -310,3 +310,40 @@ export const digitalCardDataGreystone = {
   ratingUrl: "https://www.google.com/search?sca_esv=fc2a7f6adb56bd6b&hl=en-GB&sxsrf=APpeQntj-z1YUaBKZXP0SmV29VLfFi_EUw:1784823422094&si=APenkKn5T4YN59srr511wD6k6Pufj9DEzRUvB1XJSwUeeT5afh_xnDveUhyCxUcgFmsNnZgZO_DADbsTsUiRH4_rbdhllrICgcy5F4tUn2P56dse3cd-FnVAqvPpGNkDG4H3bFZeNJZxq-PPpKO-Cil-lGMdGvm_jWdPK51L22lwHrXVXLGwwPc%3D&q=Greystone+Automotive+Engineers+ltd+Reviews&sa=X&ved=2ahUKEwjQ4r2wmemVAxVoTWwGHRVLLTEQ0bkNegQIGhAI&biw=1366&bih=633&dpr=1",
   socialLinks: [],
 };
+
+export const digitalCardDataChocoholicsDesserts = {
+  company: {
+    name: "Chocoholics Desserts",
+    tagline: "Where comfort meets sweet cravings.",
+    logo: "/choco.png",
+  },
+  founder: {
+    name: "Chocoholics Desserts",
+    title: "Fresh Desserts, Rich Flavours & Sweet Treats",
+  },
+  contacts: [
+    { type: "Call", href: "tel:+441455721021", icon: "Phone", styleClass: "bg-primary" },
+    { type: "Email", href: "mailto:chocoholicsdesserts@gmail.com", icon: "Mail", styleClass: "bg-primary" },
+    { type: "Website", href: "https://chocoholicsdesserts.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+  ],
+  about: "Where comfort meets sweet cravings. Indulge in our signature desserts, rich flavours, and irresistible treats baked fresh in the heart of the city.",
+  services: [
+    { label: "Waffles", href: "https://chocoholicsdesserts.co.uk/" },
+    { label: "Brownies", href: "https://chocoholicsdesserts.co.uk/" },
+    { label: "Cookie Dough", href: "https://chocoholicsdesserts.co.uk/" },
+    { label: "Crepes", href: "https://chocoholicsdesserts.co.uk/" },
+    { label: "Gelato In A Tub", href: "https://chocoholicsdesserts.co.uk/" },
+    { label: "Sundaes", href: "https://chocoholicsdesserts.co.uk/" },
+  ],
+  rating: {
+    value: "5.0",
+    text: "Loved for indulgent desserts and friendly service.",
+  },
+  location: "Hinckley, United Kingdom",
+  locationUrl: "https://maps.app.goo.gl/7nf8Hw3NZKbAapiR8",
+  ratingUrl: "https://www.google.com/search?sca_esv=fc2a7f6adb56bd6b&rlz=1C5CHFA_enCA1132CA1132&sxsrf=APpeQnusD7zfgtEIjsptaXPDat_N_7nPqw:1784824585958&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_98BC8iW1ktltechEoztNFyjQyWMR0kI9qoz6mfbs3eR5G59xlMEx3ejRPF37mfaGfgI4Pj3-2zpv48sHzLg9uDcJOllgxFFolyzudKlOzNsGDGmCA%3D%3D&q=Chocoholics+Desserts+Reviews&sa=X&ved=2ahUKEwjyuLrbnemVAxUURWcHHRnuKjoQ0bkNegQIMBAH&biw=1366&bih=633&dpr=1",
+  socialLinks: [
+    { icon: "Facebook", href: "https://web.facebook.com/p/Chocoholic-desserts-61561513890525/?_rdc=1&_rdr#" },
+    { icon: "TikTok", href: "https://www.tiktok.com/@chocoholics.desserts" },
+  ],
+};
