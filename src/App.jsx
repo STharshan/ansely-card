@@ -8,6 +8,7 @@ import MusicHubPage from "./pages/MusicHubPage";
 import BroadwayRemapping from "./pages/BroadwayRemapping.jsx";
 import Boxfit from "./pages/Boxfit.jsx";
 import OviBodyShop from "./pages/OviBodyShop.jsx";
+import Afmok from "./pages/af-mokperformance.jsx";
 function App() {
   return (
     <Router>
@@ -20,6 +21,7 @@ function App() {
         <Route path="/broadway-remapping" element={<BroadwayRemapping />} />
         <Route path="/boxfitcoaching" element={<Boxfit />} />
         <Route path="/ovi-body-shop" element={<OviBodyShop />} />
+        <Route path="/af-mokperformance" element={<Afmok />} />
       </Routes>
     </Router>
   );
