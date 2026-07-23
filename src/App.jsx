@@ -10,6 +10,7 @@ import ATB from "./pages/cards/ATB/ATB.jsx";
 import Nikita from "./pages/cards/Nikita/Nikita.jsx";
 import Baber from "./pages/cards/Baber/baber.jsx";
 import RS from "./pages/cards/RS/Rs.jsx";
+import Greystone from "./pages/cards/GeryStone/GreyStone.jsx";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/nikita-autocraft" element={<Nikita />} />
         <Route path="/twenty-eight-barbers" element={<Baber />} />
         <Route path="/rs-mobile-services" element={<RS />} />
+        <Route path="/greystone-automotive" element={<Greystone />} />
       </Routes>
     </Router>
   );

@@ -273,3 +273,40 @@ export const digitalCardDataRS = {
   ratingUrl: "https://www.google.com/search?sca_esv=fc2a7f6adb56bd6b&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=APpeQntRJbCBz7AfHeEVH7KE8XY0tfOiJg:1784822671279&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_-n-lnsNuLq4XDAV8m358U55WJ-NVX8BMTIzWWKHDaXvvu-fBbxnsaDswiJUsYcyMueoVsojhQ9tBZwLfI4U4ijS-tQ1R5TJZsSE6taiyeq7y6E27w%3D%3D&q=RS+Mobile+Services+LTD+Reviews&sa=X&ved=2ahUKEwi40LvKlumVAxVTs1YBHc37I34Q0bkNegQINRAI&biw=1366&bih=633&dpr=1",
   socialLinks: [],
 };
+
+export const digitalCardDataGreystone = {
+  company: {
+    name: "Greystone Automotive",
+    tagline: "Keeping your vehicle safe, reliable, and running smoothly.",
+    logo: "/greystone.png",
+  },
+  founder: {
+    name: "Greystone Automotive",
+    title: "Automotive Service Provider",
+  },
+  contacts: [
+    { type: "Call", href: "tel:+447545213989", icon: "Phone", styleClass: "bg-primary" },
+    { type: "WhatsApp", href: "https://wa.me/447545213989", icon: "MessageCircle", styleClass: "bg-primary" },
+    { type: "Email", href: "mailto:justin.day@live.co.uk", icon: "Mail", styleClass: "bg-primary" },
+    { type: "Website", href: "https://www.greystoneauto.com/", icon: "Globe", styleClass: "bg-primary" },
+  ],
+  about: "Your trusted automotive service provider with over 20 years of experience. We're committed to keeping your vehicle safe, reliable, and running smoothly.",
+  services: [
+    { label: "MOT Testing", href: "https://www.greystoneauto.com/#services" },
+    { label: "Car Servicing", href: "https://www.greystoneauto.com/#services" },
+    { label: "Brake Repairs", href: "https://www.greystoneauto.com/#services" },
+    { label: "Clutch Replacement", href: "https://www.greystoneauto.com/#services" },
+    { label: "Air Conditioning", href: "https://www.greystoneauto.com/#services" },
+    { label: "Diagnostics", href: "https://www.greystoneauto.com/#services" },
+    { label: "Suspension Work", href: "https://www.greystoneauto.com/#services" },
+    { label: "Mechanical Repairs", href: "https://www.greystoneauto.com/#services" },
+  ],
+  rating: {
+    value: "5.0",
+    text: "Trusted by local drivers for dependable automotive care.",
+  },
+  location: "Sheffield, UK",
+  locationUrl: "https://maps.app.goo.gl/FhdbeXZ69d6Xx6vo7",
+  ratingUrl: "https://www.google.com/search?sca_esv=fc2a7f6adb56bd6b&hl=en-GB&sxsrf=APpeQntj-z1YUaBKZXP0SmV29VLfFi_EUw:1784823422094&si=APenkKn5T4YN59srr511wD6k6Pufj9DEzRUvB1XJSwUeeT5afh_xnDveUhyCxUcgFmsNnZgZO_DADbsTsUiRH4_rbdhllrICgcy5F4tUn2P56dse3cd-FnVAqvPpGNkDG4H3bFZeNJZxq-PPpKO-Cil-lGMdGvm_jWdPK51L22lwHrXVXLGwwPc%3D&q=Greystone+Automotive+Engineers+ltd+Reviews&sa=X&ved=2ahUKEwjQ4r2wmemVAxVoTWwGHRVLLTEQ0bkNegQIGhAI&biw=1366&bih=633&dpr=1",
+  socialLinks: [],
+};
