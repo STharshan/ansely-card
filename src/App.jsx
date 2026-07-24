@@ -37,6 +37,7 @@ import Scotland from "./pages/scotland.jsx";
 import Auraautocare from "./pages/auraautocare.jsx";
 import Rodnretros from "./pages/rodnretros.jsx";
 import Nandjmotcentre from "./pages/nandjmotcentre.jsx";
+import Nandjmotstation from "./pages/nandjmotstation.jsx";
 function App() {
   return (
     <Router>
@@ -76,6 +77,7 @@ function App() {
         <Route path="/auraautocare" element={<Auraautocare />} />
         <Route path="/rodnretros" element={<Rodnretros />} />  
         <Route path="/nandjmotcentre" element={<Nandjmotcentre />} />  
+        <Route path="/nandjmotstation" element={<Nandjmotstation />} />
       </Routes>
     </Router>
   );
