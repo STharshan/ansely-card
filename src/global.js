@@ -196,7 +196,7 @@ export const digitalCardDataNikita = {
   },
   location: "Leicester, United Kingdom",
   locationUrl: "https://maps.app.goo.gl/5tZNA18BXc557Gxb6",
-  ratingUrl: "https://www.google.com/search?sca_esv=0aa30729732e2704&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=APpeQnsBFQKDtNJnBrCPBWlzuQBLCmOaMg:1784819566604&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_4xsekt8XjaaWEbakCFiCIEBP0Byohb7tFCB2BudWjvts7XK4ujtqj-EdPlNcIlm4COJLAvaqvyrhjqKCoU_eflAIP8PAkU_ai_hKwd7iBUJE2YSug%3D%3D&q=Nikita+Autocraft+Reviews&sa=X&ved=2ahUKEwjfpIWCi-mVAxUEklYBHWlgKa4Q0bkNegQIIhAI&biw=1366&bih=633&dpr=1",
+  ratingUrl: "https://www.google.com/search?sca_esv=0aa30729732e2704&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=APpeQnsBFQKDtNJnBrCPBWlzuQBLCmOaMg:1784819566604&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_4xsekt8XjaaWEbakCFiCIEBP0Byohb7tFCB2BudWjvts7XK4ujtqj-EdPlNcIlm4COJLAvaqvyrhjqKCoU_eflAIP8PAkU_ai_hKwd7iBUJE2YSug%3D%3D&q=Nikita+Autocraft+Reviews&sa=X&ved=2ahUKEwjfpIWCi-mVAxVoTWwGHRVLLTEQ0bkNegQIIhAI&biw=1366&bih=633&dpr=1",
   socialLinks: [
     { icon: "Instagram", href: "https://www.instagram.com/nikitaautocraft/" },
   ],
@@ -232,7 +232,7 @@ export const digitalCardDataTwentyEight = {
   },
   location: "Nottingham, UK",
   locationUrl: "https://maps.app.goo.gl/LyVBMpxC5iu2FtyD9",
-  ratingUrl: "https://www.google.com/search?sca_esv=fc2a7f6adb56bd6b&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=APpeQnuL0DOKwdN5QzFk38U_hBsiDV6sSQ:1784821775968&si=APenkKn5T4YN59srr511wD6k6Pufj9DEzRUvB1XJSwUeeT5afqxFd7VP8YtELTeLXHuWIUEvYqhUkpu_0BRYDJnMs62MDwyimA3TJISEOIRaHt477sbR83q4jl-95b-Yq5mphrmm_LPO&q=Twenty+eight+Reviews&sa=X&ved=2ahUKEwihn8afk-mVAxVgyzQHHdFwMpcQ0bkNegQIIBAI&biw=1366&bih=633&dpr=1",
+  ratingUrl: "https://www.google.com/search?sca_esv=fc2a7f6adb56bd6b&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=APpeQnuL0DOKwdN5QzFk38U_hBsiDV6sSQ:1784821775968&si=APenkKn5T4YN59srr511wD6k6Pufj9DEzRUvB1XJSwUeeT5afqxFd7VP8YtELTeLXHuWIUEvYqhUkpu_0BRYDJnMs62MDwyimA3TJISEOIRaHt477sbR83q4jl-95b-Yq5mphrmm_LPO&q=Twenty+eight+Reviews&sa=X&ved=2ahUKEwihn8afk-mVAxUURWcHHRnuKjoQ0bkNegQIIBAI&biw=1366&bih=633&dpr=1",
   socialLinks: [
     { icon: "Instagram", href: "https://www.instagram.com/twenty_eight_barbers" },
     { icon: "Facebook", href: "https://web.facebook.com/twenty8barbers?_rdc=1&_rdr#" },
@@ -452,3 +452,74 @@ export const digitalCardDataRefurb = {
   socialLinks: [],
 };
 
+export const digitalCardDataSmash = {
+  company: {
+    name: "Smashed Burgers & Shakes",
+    tagline: "Where comfort meets crave-worthy.",
+    logo: "/smash.png",
+  },
+  founder: {
+    name: "Smashed Burgers & Shakes",
+    title: "Burgers & Shakes",
+  },
+  contacts: [
+    { type: "Call", href: "tel:01509416655", icon: "Phone", styleClass: "bg-primary" },
+    { type: "Email", href: "mailto:smashedashby@gmail.com", icon: "Mail", styleClass: "bg-primary" },
+    { type: "Website", href: "https://smashed-uk.com/", icon: "Globe", styleClass: "bg-primary" },
+  ],
+  about: "Where comfort meets crave-worthy. Bite into our signature burgers, golden fries, and urban-inspired eats in the heart of the city.",
+  services: [
+    { label: "Burger Special Meal", href: "https://smashed-uk.com/" },
+    { label: "Smashed Burgers", href: "https://smashed-uk.com/" },
+    { label: "Smashed Chicken Burgers", href: "https://smashed-uk.com/" },
+    { label: "Loaded Fries", href: "https://smashed-uk.com/" },
+    { label: "Sides", href: "https://smashed-uk.com/" },
+  ],
+  rating: {
+    value: "5.0",
+    text: "Loved for signature burgers and crave-worthy comfort food.",
+  },
+  location: "Ashby-de-la-Zouch, UK",
+  locationUrl: "https://maps.app.goo.gl/Yq7EqmDntHqm8fd27",
+  ratingUrl: "",
+  socialLinks: [
+    { icon: "Facebook", href: "https://www.facebook.com/people/Smashed-Ashby/61570892613518/?_rdr" },
+    { icon: "Instagram", href: "https://www.instagram.com/smashed.ashby/" },
+  ],
+};
+
+export const digitalCardDataCommit = {
+  company: {
+    name: "Committed Fitness",
+    tagline: "Experience personalized training with the power of community.",
+    logo: "/commited.png",
+  },
+  founder: {
+    name: "Committed Fitness",
+    title: "Personal Training Studio",
+  },
+  contacts: [
+    { type: "Call", href: "tel:+447936642246", icon: "Phone", styleClass: "bg-primary" },
+    { type: "WhatsApp", href: "https://wa.me/447936642246", icon: "MessageCircle", styleClass: "bg-primary" },
+    { type: "Email", href: "mailto:anthonyspalding@committedfitness.co.uk", icon: "Mail", styleClass: "bg-primary" },
+    { type: "Website", href: "https://committedfitness.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+  ],
+  about: "Experience personalized training with the power of community. Join up to 6 like-minded individuals on your journey to a better you with expert guidance, accountability, and support.",
+  services: [
+    { label: "Professional Equipment", href: "https://committedfitness.co.uk/" },
+    { label: "Private Environment", href: "https://committedfitness.co.uk/" },
+    { label: "Dedicated Spaces", href: "https://committedfitness.co.uk/" },
+    { label: "Experience Our Facility", href: "https://committedfitness.co.uk/" },
+  ],
+  rating: {
+    value: "5.0",
+    text: "Trusted for expert training and community support.",
+  },
+  location: "Derby, United Kingdom",
+  locationUrl: "https://maps.app.goo.gl/KdKoC5HLqCZUMKxAA",
+  ratingUrl: "https://www.google.com/search?rlz=1C1KNTJ_enLK1089LK1089&sca_esv=e2e7e970ec257fb4&sxsrf=APpeQntodSshwVZjy_Xssu-OCFGRMBuNfg:1784905931933&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_6flNBRGVprYellKGjBt20LnosWQfGCUeWkVFqL8YfEbhXDbI5_DGh9nbKbjY7cfg6CEvoPeIUIJhZR8IOEcHkPQ7geCx6fb9QkzfrsJ_d_3m8hgew%3D%3D&q=Committed+fitness+Reviews&sa=X&ved=2ahUKEwir2Z7gzOuVAxWHzDgGHSlcBcQQ0bkNegQIIBAI&biw=1366&bih=633&dpr=1",
+  socialLinks: [
+    { icon: "Facebook", href: "https://www.facebook.com/CommittedFitnessDerby/" },
+    { icon: "Instagram", href: "https://www.instagram.com/committedfitness_derby/" },
+  ],
+};

@@ -1,15 +1,15 @@
 import {
     Phone,
-    MessageCircle,
     Mail,
     Globe,
     MapPin,
     Download,
     Star,
 } from "lucide-react";
+import { FaFacebook, FaInstagram } from "react-icons/fa6";
 
-import { digitalCardDataRefurb } from "../../../global";
-import { downloadVCF } from "./Refurb.js";
+import { digitalCardDataSmash } from "../../../global";
+import { downloadVCF } from "./Smash.js";
 import { lazy, Suspense } from "react";
 
 const FloatingLines = lazy(() => import("../../../components/FloatingLines.tsx"));
@@ -18,9 +18,9 @@ const WebGLPlaceholder = () => (
     <div className="fixed inset-0 bg-[var(--bg-main)]" />
 );
 
-const iconMap = { Phone, MessageCircle, Mail, Globe };
+const iconMap = { Phone, Mail, Globe, Facebook: FaFacebook, Instagram: FaInstagram };
 
-export default function RefurbDoctor() {
+export default function Smashed() {
     const {
         company,
         founder,
@@ -32,7 +32,7 @@ export default function RefurbDoctor() {
         locationUrl,
         ratingUrl,
         socialLinks,
-    } = digitalCardDataRefurb;
+    } = digitalCardDataSmash;
 
     return (
         <main className="relative min-h-screen text-white flex justify-center bg-[var(--bg-main)]">
@@ -64,7 +64,7 @@ export default function RefurbDoctor() {
                             src={company.logo}
                             alt={founder.name}
                             loading="lazy"
-                            className="relative object-cover w-52 h-20 md:w-65 md:h-25"
+                            className="relative object-cover w-30 h-25 md:w-40 md:h-35"
                         />
                     </div>
                     <h1
@@ -75,9 +75,9 @@ export default function RefurbDoctor() {
                     </h1>
                 </header>
 
-                {/* Consistent Width Container 
-            All elements below this line will have the exact same width 
-        */}
+                {/* Consistent Width Container
+            All elements below this line will have the exact same width
+         */}
                 <div className="w-full max-w-md px-4 pb-20">
 
                     {/* Tagline - Now matched to the width of the cards/buttons */}
@@ -120,7 +120,7 @@ export default function RefurbDoctor() {
 
                     {/* Services */}
                     <section className="mb-10">
-                        <h3 className="text-lg font-semibold mb-4 text-center">Key Services</h3>
+                        <h3 className="text-lg font-semibold mb-4 text-center">Our Menu</h3>
                         <ul className="space-y-3">
                             {services.map((service) => (
                                 <li key={service.label} className="flex text-center justify-center items-center gap-3">

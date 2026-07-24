@@ -22,6 +22,8 @@ import ChocoholicsDesserts from "./pages/cards/ChocoholicsDesserts/ChocoholicsDe
 import ShahzTyres from "./pages/cards/Shaz/Shaz.jsx";
 import MehranGarages from "./pages/cards/mehransgarage/mehransgarage.jsx";
 import RefurbDoctor from "./pages/cards/Refurb/Refurb.jsx";
+import Smashed from "./pages/cards/Smash/Smash.jsx";
+import Commit from "./pages/cards/Commit/Commit.jsx";
 
 import Stoneleys from "./pages/stoneleys.jsx";
 import Tomas from "./pages/Tomas.jsx";
@@ -62,6 +64,8 @@ function App() {
         <Route path="/shahztyres" element={<ShahzTyres />} />
         <Route path="/mehrangarages" element={<MehranGarages />} />
         <Route path="/refurbdoctor" element={<RefurbDoctor />} />
+        <Route path="/smashedburgers" element={<Smashed />} />
+        <Route path="/committedfitness" element={<Commit />} />
       </Routes>
     </Router>
   );
