@@ -20,7 +20,11 @@ export const digitalCardData = {
     { label: "Special Memberships" },
     { label: "Day Passes" },
   ],
-  rating: null,
+  rating: {
+    value: "4.8",
+    text: "Tap to view Progress Works Gym on Google.",
+    href: "https://www.google.com/search?q=progress+works+gym",
+  },
   location: "132 Station Rd, Glenfield, Leicester LE3 8BR",
   locationHref: "https://maps.app.goo.gl/mDr3jiv8VKW1pu8f9",
   socialLinks: [
