@@ -41,6 +41,7 @@ import Nandjmotstation from "./pages/nandjmotstation.jsx";
 import Progressworksgym from "./pages/progressworksgym.jsx";
 import Dentmonkey from "./pages/Dentmonkey.jsx";
 import BerkleyEstates from "./pages/BerkleyEstates.jsx";
+import ACG from "./pages/ACG.jsx";
 function App() {
   return (
     <Router>
@@ -84,6 +85,7 @@ function App() {
         <Route path="/progressworksgym" element={<Progressworksgym />} />
         <Route path="/dentmonkey" element={<Dentmonkey />} />
         <Route path="/berkleyestates" element={<BerkleyEstates />} />
+        <Route path="/acg" element={<ACG />} />
       </Routes>
     </Router>
   );
