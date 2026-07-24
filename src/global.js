@@ -608,6 +608,7 @@ export const digitalCardDataCenturion = {
     { type: "Call", href: "tel:+442476638999", icon: "Phone", styleClass: "bg-primary" },
     { type: "WhatsApp", href: "https://wa.me/442476638999", icon: "MessageCircle", styleClass: "bg-primary" },
     { type: "Email", href: "mailto:centurionfastfit@gmail.com", icon: "Mail", styleClass: "bg-primary" },
+    { type: "Website", href: "https://centurionfastfit.uk/", icon: "Globe", styleClass: "bg-primary" },
   ],
   about: "Centurion Service Centre provides quality car service and repairs with experienced professionals using the latest technology.",
   services: [
@@ -632,5 +633,47 @@ export const digitalCardDataCenturion = {
   location: "Coventry, United Kingdom",
   locationUrl: "https://maps.app.goo.gl/wZRaVTtEWzRg71Sz6",
   ratingUrl: "https://www.google.com/search?sca_esv=5e5a5aecd8aab0b4&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=APpeQntoPg71ZLntASWQOuqjPPACapHC8A:1784912420077&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_5481r-aqaVq28LKSylz0OaMCbmF9ELLyCXPaohbACo3BRUnPkN74K49OD3k4GtEcyumicxCu2a8zLNTmazT05w2WkxysOH2C8PHrk5Y3NwYSyWR7A%3D%3D&q=Centurion+Fast+Fit+Reviews&sa=X&ved=2ahUKEwjAx4P25OuVAxWUT2wGHYggHikQ0bkNegQIIBAI&biw=1366&bih=633&dpr=1",
-  socialLinks: [],
+  socialLinks: [
+    { icon: "Facebook", href: "https://www.facebook.com/centurionfastfitcentre/?_rdr" },
+    { icon: "Instagram", href: "https://www.instagram.com/centurionfastfit?igsh=azhwMXk4amVhOXV0" },
+    { icon: "TikTok", href: "https://www.tiktok.com/@centfastfit?_t=ZN-8zfM4P4jRzi&_r=1" },
+  ],
+};
+
+export const digitalCardDataCollingwood = {
+  company: {
+    name: "Collingwood Motors",
+    tagline: "From oil changes to engine diagnostics, our fully equipped vans ensure your vehicle runs smoothly without the hassle of visiting a workshop.",
+    logo: "/collingwood.png",
+  },
+  founder: {
+    name: "Collingwood Motors",
+    title: "MOT, Service & Repair Specialists",
+  },
+  contacts: [
+    { type: "Call", href: "tel:+447564693973", icon: "Phone", styleClass: "bg-primary" },
+    { type: "WhatsApp", href: "https://wa.me/447564693973", icon: "MessageCircle", styleClass: "bg-primary" },
+    { type: "Email", href: "mailto:info@collingwoodmotors.com", icon: "Mail", styleClass: "bg-primary" },
+    { type: "Website", href: "https://collingwoodmotors.com/", icon: "Globe", styleClass: "bg-primary" },
+  ],
+  about: "From oil changes to engine diagnostics, our fully equipped vans ensure your vehicle runs smoothly without the hassle of visiting a workshop.",
+  services: [
+    { label: "MOT Repair", href: "https://collingwoodmotors.com/" },
+    { label: "Mechanical", href: "https://collingwoodmotors.com/" },
+    { label: "Car Services", href: "https://collingwoodmotors.com/" },
+    { label: "Diagnostics", href: "https://collingwoodmotors.com/" },
+    { label: "Wheel Alignment", href: "https://collingwoodmotors.com/" },
+    { label: "Window Tint", href: "https://collingwoodmotors.com/" },
+    { label: "Belts & Chains", href: "https://collingwoodmotors.com/" },
+  ],
+  rating: {
+    value: "5.0",
+    text: "Trusted for quality MOT, service and repair work.",
+  },
+  location: "21 Slater St, Leicester LE3 5AS, United Kingdom",
+  locationUrl: "https://maps.app.goo.gl/e8NNkMFqrKcTBUTF9",
+  ratingUrl: "https://www.google.com/search?sca_esv=5e5a5aecd8aab0b4&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=APpeQnuXT1zgWD35F2MGpUzl6r1jmibFtg:1784913626421&si=APenkKnzv9m99ToiohAuzpadUwbOz34nZJ3j2Ukmo5XOUYWAptt8ERr3AUXtj1gCLTG_hjVPcnAieEoeayjjf9SnW2zwCgtWqIhYfA9Yu7IIc4stIJj5BJbrLvccxWTn9ihOKWHJ2n1OtyCiiDE8Uwdg9m77k3cJhg%3D%3D&q=Collingwood+motors+Reviews&sa=X&ved=2ahUKEwifnaC16euVAxWPSGwGHRwFAoMQ0bkNegQIKhAI&biw=1366&bih=633&dpr=1",
+  socialLinks: [
+    { icon: "Facebook", href: "https://web.facebook.com/Collingwoodmotorsmotcentre/?_rdc=3&_rdr#" },
+  ],
 };
