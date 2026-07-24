@@ -414,3 +414,41 @@ export const digitalCardDataChocoholicsDesserts = {
   ],
 };
 
+
+export const digitalCardDataRefurb = {
+  company: {
+    name: "Refurb Doctor",
+    tagline: "Professional auto repair services for all makes and models. Quality work guaranteed.",
+    logo: "/refurb.png",
+  },
+  founder: {
+    name: "Refurb Doctor",
+    title: "Professional Auto Repair Specialist",
+  },
+  contacts: [
+    { type: "Call", href: "tel:+447795528849", icon: "Phone", styleClass: "bg-primary" },
+    { type: "WhatsApp", href: "https://wa.me/447581730734", icon: "MessageCircle", styleClass: "bg-[#25D366]" },
+    { type: "Email", href: "mailto:refurbdoctor@live.co.uk", icon: "Mail", styleClass: "bg-primary" },
+    { type: "Website", href: "https://refurbdoctor.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+  ],
+  about: "Professional auto repair services for all makes and models. Quality work guaranteed.",
+  services: [
+    { label: "Full Respray", href: "https://refurbdoctor.co.uk/" },
+    { label: "Car Part Damage", href: "https://refurbdoctor.co.uk/" },
+    { label: "Accident Repair", href: "https://refurbdoctor.co.uk/" },
+    { label: "Vandal Scratches", href: "https://refurbdoctor.co.uk/" },
+    { label: "Paintless Dent Removal", href: "https://refurbdoctor.co.uk/" },
+    { label: "Alloy Wheel Repair", href: "https://refurbdoctor.co.uk/" },
+    { label: "Machine Polishing", href: "https://refurbdoctor.co.uk/" },
+    { label: "Mobile Repair", href: "https://refurbdoctor.co.uk/" },
+  ],
+  rating: {
+    value: "5.0",
+    text: "Professional auto repair services for all makes and models. Quality work guaranteed.",
+  },
+  location: "Coventry, United Kingdom",
+  locationUrl: "https://maps.app.goo.gl/TXDXdqLJ68NBBXW27",
+  ratingUrl: "https://www.google.com/search?sca_esv=bc14e0ce34e04a14&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=APpeQns6FHzVTr95l8Nq0VYk7i-Wkld7XQ:1784902065825&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_y94f9sRgIMKHs-HrB1e3e0G3SqUoBBm6wnt2HPgxE8pDmivmpzsHSsdVJbhuLjG-BgEhO6solUu3lqC4Ucf91L_Ji8V&q=Refurbdoctor+Reviews&sa=X&ved=2ahUKEwj9ld6svuuVAxUGyDgGHVP5IGIQ0bkNegQIIBAI&biw=1366&bih=633&dpr=1",
+  socialLinks: [],
+};
+

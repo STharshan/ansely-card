@@ -21,6 +21,7 @@ import Greystone from "./pages/cards/GeryStone/GreyStone.jsx";
 import ChocoholicsDesserts from "./pages/cards/ChocoholicsDesserts/ChocoholicsDesserts.jsx";
 import ShahzTyres from "./pages/cards/Shaz/Shaz.jsx";
 import MehranGarages from "./pages/cards/mehransgarage/mehransgarage.jsx";
+import RefurbDoctor from "./pages/cards/Refurb/Refurb.jsx";
 
 import Stoneleys from "./pages/stoneleys.jsx";
 import Tomas from "./pages/Tomas.jsx";
@@ -60,6 +61,7 @@ function App() {
         <Route path="/chocoholicsdesserts" element={<ChocoholicsDesserts />} />
         <Route path="/shahztyres" element={<ShahzTyres />} />
         <Route path="/mehrangarages" element={<MehranGarages />} />
+        <Route path="/refurbdoctor" element={<RefurbDoctor />} />
       </Routes>
     </Router>
   );

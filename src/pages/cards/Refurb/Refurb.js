@@ -1,7 +1,7 @@
-import { digitalCardDataGreystone } from "../../../global";
+import { digitalCardDataRefurb } from "../../../global";
 
 export function downloadVCF() {
-  const { founder, company, contacts, location } = digitalCardDataGreystone;
+  const { founder, company, contacts, location } = digitalCardDataRefurb;
 
   // Extract phone, email, and website
   const phone = contacts.find(c => c.type === "Call")?.href.replace("tel:", "") || "";

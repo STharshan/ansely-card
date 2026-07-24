@@ -8,8 +8,8 @@ import {
     Star,
 } from "lucide-react";
 
-import { digitalCardDataGreystone } from "../../../global";
-import { downloadVCF } from "./GreyStone.js";
+import { digitalCardDataRefurb } from "../../../global";
+import { downloadVCF } from "./Refurb.js";
 import { lazy, Suspense } from "react";
 
 const FloatingLines = lazy(() => import("../../../components/FloatingLines.tsx"));
@@ -20,7 +20,7 @@ const WebGLPlaceholder = () => (
 
 const iconMap = { Phone, MessageCircle, Mail, Globe };
 
-export default function Greystone() {
+export default function RefurbDoctor() {
     const {
         company,
         founder,
@@ -32,7 +32,7 @@ export default function Greystone() {
         locationUrl,
         ratingUrl,
         socialLinks,
-    } = digitalCardDataGreystone;
+    } = digitalCardDataRefurb;
 
     return (
         <main className="relative min-h-screen text-white flex justify-center bg-[var(--bg-main)]">
@@ -64,7 +64,7 @@ export default function Greystone() {
                             src={company.logo}
                             alt={founder.name}
                             loading="lazy"
-                            className="relative object-cover w-92 h-20 md:w-95 md:h-24"
+                            className="relative object-cover w-52 h-20 md:w-65 md:h-25"
                         />
                     </div>
                     <h1
@@ -194,7 +194,7 @@ export default function Greystone() {
 
                     {/* Footer */}
                     <footer className="text-center text-sm text-gray-400 opacity-60">
-                        <p>&copy; {new Date().getFullYear()} Ansely. All rights reserved.</p>
+                        <p>&copy; {new Date().getFullYear()} Refurb Doctor. All rights reserved.</p>
                     </footer>
                 </div>
             </div>
