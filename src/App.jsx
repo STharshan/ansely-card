@@ -41,7 +41,7 @@ function App() {
         <Route path="/broadway-remapping" element={<BroadwayRemapping />} />
         <Route path="/boxfitcoaching" element={<Boxfit />} />
         <Route path="/ovi-body-shop" element={<OviBodyShop />} />
-        <Route path="/af-mokperformance" element={<Afmok />} />
+        <Route path="/afmokperformance" element={<Afmok />} />
         <Route path="/slsmartrepair" element={<Slsmartrepair />} />
         <Route path="/nazmotors" element={<Nazmotors />} />
         <Route path="/earwego" element={<Earwego />} />
@@ -51,15 +51,15 @@ function App() {
         <Route path="/abbey" element={<Abbey />} />
         <Route path="/amma-kitchen-coventry" element={<Amma />} />
         <Route path="/tkautomotive" element={<TK />} />
-        <Route path="/Burns-Hair-Design" element={<HairDressBurn />} />  
-        <Route path="/atb-motor-engineers" element={<ATB />} />
-        <Route path="/nikita-autocraft" element={<Nikita />} />
-        <Route path="/twenty-eight-barbers" element={<Baber />} />
-        <Route path="/rs-mobile-services" element={<RS />} />
-        <Route path="/greystone-automotive" element={<Greystone />} />
-        <Route path="/chocoholics-desserts" element={<ChocoholicsDesserts />} />
-        <Route path="/shahz-tyres" element={<ShahzTyres />} />
-        <Route path="/mehran-garages" element={<MehranGarages />} />
+        <Route path="/BurnsHairDesign" element={<HairDressBurn />} />  
+        <Route path="/atbmotorengineers" element={<ATB />} />
+        <Route path="/nikitaautocraft" element={<Nikita />} />
+        <Route path="/twentyeightbarbers" element={<Baber />} />
+        <Route path="/rsmobileservices" element={<RS />} />
+        <Route path="/greystoneautomotive" element={<Greystone />} />
+        <Route path="/chocoholicsdesserts" element={<ChocoholicsDesserts />} />
+        <Route path="/shahztyres" element={<ShahzTyres />} />
+        <Route path="/mehrangarages" element={<MehranGarages />} />
       </Routes>
     </Router>
   );
