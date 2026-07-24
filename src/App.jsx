@@ -26,6 +26,7 @@ import Smashed from "./pages/cards/Smash/Smash.jsx";
 import Commit from "./pages/cards/Commit/Commit.jsx";
 import SRK from "./pages/cards/SRK/srk.jsx";
 import UNIT4 from "./pages/cards/Unit/Unit.jsx";
+import UNIT3 from "./pages/cards/unit3/unit3.jsx";
 import CenturionFastFit from "./pages/Centurian/centurian.jsx";
 import Collingwood from "./pages/cards/CollingWood/Collingwood.jsx";
 import Cambridge from "./pages/cards/cambridge/Cambridge.jsx";
@@ -102,7 +103,8 @@ function App() {
         <Route path="/unit4" element={<UNIT4 />} />
         <Route path="/centurionfastfit" element={<CenturionFastFit />} />
         <Route path="/collingwood" element={<Collingwood />} />
-        <Route path="/cambridge automotive" element={<Cambridge />} />
+        <Route path="/cambridgeautomotive" element={<Cambridge />} />
+        <Route path="/unit3" element={<UNIT3 />} />
 
         <Route path="/yorkshire-insulation" element={<YorkshireInsulation />} />
         <Route path="/jwcambridge" element={<JWcambridge />} />

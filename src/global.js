@@ -709,3 +709,37 @@ export const digitalCardDataCambridge = {
   ratingUrl: "https://www.google.com/search?sca_esv=128d3fbf1687292d&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=APpeQntxRoyDcNEEo7bTMvMwUwwQPTrbYQ:1784915309285&si=APenkKn5T4YN59srr511wD6k6Pufj9DEzRUvB1XJSwUeeT5afnWPhI9xAd0oT4UmnyghhEvAkHgb4fKl1fex6U2iw_zLpdvk0kcGSBnbZpiFvNnPqXYnnEtwh3HmrmFPpbljztCoAkOiHmBNi9FQCXzOjQw_dgdcnQ%3D%3D&q=Cambridge+Vehicle+Services+Ltd+Reviews&sa=X&ved=2ahUKEwja7NrX7-uVAxVVSmwGHS6YDdEQ0bkNegQIFxAI&biw=1366&bih=633&dpr=1",
   socialLinks: [],
 };
+
+export const digitalCardDataUnit3 = {
+  company: {
+    name: "Unit Three MOTs",
+    tagline: "Feel free to get in touch with us. We'll be happy to answer any questions about our services and products.",
+    logo: "/unit3.png",
+  },
+  founder: {
+    name: "Unit Three MOTs",
+    title: "MOT Testing (Class 4 & 7)",
+  },
+  contacts: [
+    { type: "Call", href: "tel:01162669749", icon: "Phone", styleClass: "bg-primary" },
+    { type: "Website", href: "https://unitthreemot.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+  ],
+  about: "Feel free to get in touch with us. We'll be happy to answer any questions about our services and products.",
+  services: [
+    { label: "Diagnostics" },
+    { label: "Repairs" },
+    { label: "Servicing" },
+    { label: "Timing Chains & Wet Belts" },
+    { label: "MOT Testing (Class 4 & 7)" },
+  ],
+  rating: {
+    value: "5.0",
+    text: "Trusted for quality MOT and automotive services.",
+  },
+  location: "Leicester, United Kingdom",
+  locationUrl: "https://maps.app.goo.gl/M5ubPDEKqHwkEcQ98",
+  ratingUrl: "https://www.google.com/search?sca_esv=2576bb2322190117&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=APpeQnsNGw4_4k0aoPAqh_rwMzEKHT5eFA:1784917142030&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_0b1OfD2gdKw2Uja9fqceMUCCYDN0mMoBZlxOtI0Z5U7uMEgXmssAq95V8-p6504K38wWIYbzT6vk3mqsfxKiK9FQ6MK-kNTbkiIDU3dEx7kbI63Eg%3D%3D&q=Unit+Three+MOTs+Ltd+Reviews&sa=X&ved=2ahUKEwiF4tDB9uuVAxXUqVYBHZEIL8IQ0bkNegQIKxAI&biw=1366&bih=633&dpr=1",
+  socialLinks: [
+    { icon: "Instagram", href: "https://www.instagram.com/unit_three_mots" },
+  ],
+};
