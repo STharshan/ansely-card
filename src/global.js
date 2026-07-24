@@ -592,3 +592,45 @@ export const digitalCardDataUnit4 = {
   ratingUrl: "",
   socialLinks: [],
 };
+
+
+export const digitalCardDataCenturion = {
+  company: {
+    name: "Centurion Fast Fit",
+    tagline: "Centurion Service Centre provides quality car service and repairs with experienced professionals using the latest technology.",
+    logo: "/centurian.png",
+  },
+  founder: {
+    name: "Centurion Fast Fit",
+    title: "Service Centre",
+  },
+  contacts: [
+    { type: "Call", href: "tel:+442476638999", icon: "Phone", styleClass: "bg-primary" },
+    { type: "WhatsApp", href: "https://wa.me/442476638999", icon: "MessageCircle", styleClass: "bg-primary" },
+    { type: "Email", href: "mailto:centurionfastfit@gmail.com", icon: "Mail", styleClass: "bg-primary" },
+  ],
+  about: "Centurion Service Centre provides quality car service and repairs with experienced professionals using the latest technology.",
+  services: [
+    { label: "MOT & Car Servicing" },
+    { label: "Tyres" },
+    { label: "Smart Repairs" },
+    { label: "OEM Diagnostic Tools" },
+    { label: "Ghost Immobiliser Fitting" },
+    { label: "Shock Absorbers & Suspension" },
+    { label: "Coventry Exhausts" },
+    { label: "Brake Discs & Brake Pads" },
+    { label: "Car Batteries" },
+    { label: "Clutch Fitting" },
+    { label: "Timing Belt Fitting Service" },
+    { label: "Aircon Re-gas & Repairs" },
+    { label: "Vehicle Safety Assessments" },
+  ],
+  rating: {
+    value: "5.0",
+    text: "Centurion Service Centre provides quality car service and repairs with experienced professionals using the latest technology.",
+  },
+  location: "Coventry, United Kingdom",
+  locationUrl: "https://maps.app.goo.gl/wZRaVTtEWzRg71Sz6",
+  ratingUrl: "https://www.google.com/search?sca_esv=5e5a5aecd8aab0b4&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=APpeQntoPg71ZLntASWQOuqjPPACapHC8A:1784912420077&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_5481r-aqaVq28LKSylz0OaMCbmF9ELLyCXPaohbACo3BRUnPkN74K49OD3k4GtEcyumicxCu2a8zLNTmazT05w2WkxysOH2C8PHrk5Y3NwYSyWR7A%3D%3D&q=Centurion+Fast+Fit+Reviews&sa=X&ved=2ahUKEwjAx4P25OuVAxWUT2wGHYggHikQ0bkNegQIIBAI&biw=1366&bih=633&dpr=1",
+  socialLinks: [],
+};

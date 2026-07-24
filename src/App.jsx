@@ -26,6 +26,7 @@ import Smashed from "./pages/cards/Smash/Smash.jsx";
 import Commit from "./pages/cards/Commit/Commit.jsx";
 import SRK from "./pages/cards/SRK/srk.jsx";
 import UNIT4 from "./pages/cards/Unit/Unit.jsx";
+import CenturionFastFit from "./pages/Centurian/centurian.jsx";
 
 import Stoneleys from "./pages/stoneleys.jsx";
 import Tomas from "./pages/Tomas.jsx";
@@ -71,6 +72,7 @@ function App() {
         <Route path="/committedfitness" element={<Commit />} />
         <Route path="/srkhospitality" element={<SRK />} />
         <Route path="/unit4" element={<UNIT4 />} />
+        <Route path="/centurionfastfit" element={<CenturionFastFit />} />
       </Routes>
     </Router>
   );
