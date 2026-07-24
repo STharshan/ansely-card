@@ -38,6 +38,7 @@ import Auraautocare from "./pages/auraautocare.jsx";
 import Rodnretros from "./pages/rodnretros.jsx";
 import Nandjmotcentre from "./pages/nandjmotcentre.jsx";
 import Nandjmotstation from "./pages/nandjmotstation.jsx";
+import Progressworksgym from "./pages/progressworksgym.jsx";
 function App() {
   return (
     <Router>
@@ -78,6 +79,7 @@ function App() {
         <Route path="/rodnretros" element={<Rodnretros />} />  
         <Route path="/nandjmotcentre" element={<Nandjmotcentre />} />  
         <Route path="/nandjmotstation" element={<Nandjmotstation />} />
+        <Route path="/progressworksgym" element={<Progressworksgym />} />
       </Routes>
     </Router>
   );
