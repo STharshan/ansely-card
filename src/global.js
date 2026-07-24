@@ -523,3 +523,72 @@ export const digitalCardDataCommit = {
     { icon: "Instagram", href: "https://www.instagram.com/committedfitness_derby/" },
   ],
 };
+
+export const digitalCardDataSRK = {
+  company: {
+    name: "SRK HOSPITALITY LIMITED",
+    tagline: "Symbol of independent hospitality and heartfelt service.",
+    logo: "/srk.png",
+  },
+  founder: {
+    name: "SRK HOSPITALITY LIMITED",
+    title: "Hospitality & Dining",
+  },
+  contacts: [
+    { type: "Call", href: "tel:07466093996", icon: "Phone", styleClass: "bg-primary" },
+    { type: "WhatsApp", href: "https://wa.me/447466093996", icon: "MessageCircle", styleClass: "bg-primary" },
+    { type: "Email", href: "mailto:info@srkhospitality.co.uk", icon: "Mail", styleClass: "bg-primary" },
+    { type: "Website", href: "https://srkhospitality.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+  ],
+  about: "SRK stands as a symbol of independent hospitality and heartfelt service. With over two decades of experience",
+  services: [
+    { label: "Premium Steaks", href: "https://srkhospitality.co.uk/" },
+    { label: "Dance the Night Away", href: "https://srkhospitality.co.uk/" },
+    { label: "Exotic Indian Cuisine", href: "https://srkhospitality.co.uk/" },
+    { label: "Start Your Day Right", href: "https://srkhospitality.co.uk/" },
+  ],
+  rating: {
+    value: "5.0",
+    text: "Trusted for exceptional hospitality and dining experiences.",
+  },
+  location: "United Kingdom",
+  locationUrl: "https://srkhospitality.co.uk/",
+  ratingUrl: "",
+  socialLinks: [],
+};
+
+
+
+export const digitalCardDataUnit4 = {
+  company: {
+    name: "UNIT 4",
+    tagline: "Based in the heart of Leicester, Unit Four specialises in enhancing vehicle performance, reliability, and efficiency.",
+    logo: "/unit.png",
+  },
+  founder: {
+    name: "UNIT 4",
+    title: "UNIT 4",
+  },
+  contacts: [
+    { type: "Call", href: "tel:01162669749", icon: "Phone", styleClass: "bg-primary" },
+    { type: "Email", href: "mailto:info@unit-three.co.uk", icon: "Mail", styleClass: "bg-primary" },
+    { type: "Website", href: "https://unit4remaps.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+  ],
+  about: "Based in the heart of Leicester, Unit Four specialises in enhancing vehicle performance, reliability, and efficiency.",
+  services: [
+    { label: "DPF Solutions" },
+    { label: "EGR Solutions"},
+    { label: "AdBlue Solutions"},
+    { label: "Servicing",  },
+    { label: "Stop-Start System Repairs" },
+    { label: "Speed Limiter Adjustments"  },
+  ],
+  rating: {
+    value: "5.0",
+    text: "Trusted for exceptional hospitality and dining experiences.",
+  },
+  location: "Leicester, UK",
+  locationUrl: "https://maps.app.goo.gl/CKVh6eQQQeg2eCgc6",
+  ratingUrl: "",
+  socialLinks: [],
+};

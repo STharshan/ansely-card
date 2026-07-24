@@ -24,6 +24,8 @@ import MehranGarages from "./pages/cards/mehransgarage/mehransgarage.jsx";
 import RefurbDoctor from "./pages/cards/Refurb/Refurb.jsx";
 import Smashed from "./pages/cards/Smash/Smash.jsx";
 import Commit from "./pages/cards/Commit/Commit.jsx";
+import SRK from "./pages/cards/SRK/srk.jsx";
+import UNIT4 from "./pages/cards/Unit/Unit.jsx";
 
 import Stoneleys from "./pages/stoneleys.jsx";
 import Tomas from "./pages/Tomas.jsx";
@@ -31,6 +33,7 @@ import Empire from "./pages/empire.jsx";
 import Abbey from "./pages/Abbey.jsx";
 import Amma from "./pages/Amma-kitchen-coventry.jsx";
 import TK from "./pages/Tk.jsx";
+
 
 function App() {
   return (
@@ -66,6 +69,8 @@ function App() {
         <Route path="/refurbdoctor" element={<RefurbDoctor />} />
         <Route path="/smashedburgers" element={<Smashed />} />
         <Route path="/committedfitness" element={<Commit />} />
+        <Route path="/srkhospitality" element={<SRK />} />
+        <Route path="/unit4" element={<UNIT4 />} />
       </Routes>
     </Router>
   );
