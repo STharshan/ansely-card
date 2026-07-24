@@ -29,6 +29,8 @@ import Abbey from "./pages/Abbey.jsx";
 import Amma from "./pages/Amma-kitchen-coventry.jsx";
 import TK from "./pages/Tk.jsx";
 
+import YorkshireInsulation from "./pages/YorkshireInsulation.jsx";
+
 function App() {
   return (
     <Router>
@@ -60,6 +62,7 @@ function App() {
         <Route path="/chocoholics-desserts" element={<ChocoholicsDesserts />} />
         <Route path="/shahz-tyres" element={<ShahzTyres />} />
         <Route path="/mehran-garages" element={<MehranGarages />} />
+        <Route path="/yorkshire-insulation" element={<YorkshireInsulation />} />
       </Routes>
     </Router>
   );
