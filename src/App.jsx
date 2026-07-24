@@ -30,7 +30,7 @@ import Amma from "./pages/Amma-kitchen-coventry.jsx";
 import TK from "./pages/Tk.jsx";
 
 import YorkshireInsulation from "./pages/YorkshireInsulation.jsx";
-
+import JWcambridge from "./pages/JWcambridge.jsx";
 function App() {
   return (
     <Router>
@@ -63,6 +63,7 @@ function App() {
         <Route path="/shahz-tyres" element={<ShahzTyres />} />
         <Route path="/mehran-garages" element={<MehranGarages />} />
         <Route path="/yorkshire-insulation" element={<YorkshireInsulation />} />
+        <Route path="/jwcambridge" element={<JWcambridge />} />
       </Routes>
     </Router>
   );
