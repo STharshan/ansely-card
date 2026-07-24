@@ -21,6 +21,12 @@ import Greystone from "./pages/cards/GeryStone/GreyStone.jsx";
 import ChocoholicsDesserts from "./pages/cards/ChocoholicsDesserts/ChocoholicsDesserts.jsx";
 import ShahzTyres from "./pages/cards/Shaz/Shaz.jsx";
 import MehranGarages from "./pages/cards/mehransgarage/mehransgarage.jsx";
+import RefurbDoctor from "./pages/cards/Refurb/Refurb.jsx";
+import Smashed from "./pages/cards/Smash/Smash.jsx";
+import Commit from "./pages/cards/Commit/Commit.jsx";
+import SRK from "./pages/cards/SRK/srk.jsx";
+import UNIT4 from "./pages/cards/Unit/Unit.jsx";
+import CenturionFastFit from "./pages/Centurian/centurian.jsx";
 
 import Stoneleys from "./pages/stoneleys.jsx";
 import Tomas from "./pages/Tomas.jsx";
@@ -43,11 +49,12 @@ import Dentmonkey from "./pages/Dentmonkey.jsx";
 import BerkleyEstates from "./pages/BerkleyEstates.jsx";
 import ACG from "./pages/ACG.jsx";
 import Nottscarboncleaning from "./pages/nottscarboncleaning.jsx";
+
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/g.selva" element={<Ansely/>} />
+        <Route path="/g.selva" element={<Ansely />} />
         <Route path="/damien" element={<Damien />} />
         <Route path="/harrison-spice" element={<HarrisonSpice />} />
         <Route path="/josh" element={<Josh />} />
@@ -56,6 +63,7 @@ function App() {
         <Route path="/boxfitcoaching" element={<Boxfit />} />
         <Route path="/ovi-body-shop" element={<OviBodyShop />} />
         <Route path="/af-mokperformance" element={<Afmok />} />
+        <Route path="/afmokperformance" element={<Afmok />} />
         <Route path="/slsmartrepair" element={<Slsmartrepair />} />
         <Route path="/nazmotors" element={<Nazmotors />} />
         <Route path="/earwego" element={<Earwego />} />
@@ -65,23 +73,41 @@ function App() {
         <Route path="/abbey" element={<Abbey />} />
         <Route path="/amma-kitchen-coventry" element={<Amma />} />
         <Route path="/tkautomotive" element={<TK />} />
-        <Route path="/Burns-Hair-Design" element={<HairDressBurn />} />  
+
+        <Route path="/Burns-Hair-Design" element={<HairDressBurn />} />
+        <Route path="/BurnsHairDesign" element={<HairDressBurn />} />
         <Route path="/atb-motor-engineers" element={<ATB />} />
+        <Route path="/atbmotorengineers" element={<ATB />} />
         <Route path="/nikita-autocraft" element={<Nikita />} />
+        <Route path="/nikitaautocraft" element={<Nikita />} />
         <Route path="/twenty-eight-barbers" element={<Baber />} />
+        <Route path="/twentyeightbarbers" element={<Baber />} />
         <Route path="/rs-mobile-services" element={<RS />} />
+        <Route path="/rsmobileservices" element={<RS />} />
         <Route path="/greystone-automotive" element={<Greystone />} />
+        <Route path="/greystoneautomotive" element={<Greystone />} />
         <Route path="/chocoholics-desserts" element={<ChocoholicsDesserts />} />
+        <Route path="/chocoholicsdesserts" element={<ChocoholicsDesserts />} />
         <Route path="/shahz-tyres" element={<ShahzTyres />} />
+        <Route path="/shahztyres" element={<ShahzTyres />} />
         <Route path="/mehran-garages" element={<MehranGarages />} />
+        <Route path="/mehrangarages" element={<MehranGarages />} />
+
+        <Route path="/refurbdoctor" element={<RefurbDoctor />} />
+        <Route path="/smashedburgers" element={<Smashed />} />
+        <Route path="/committedfitness" element={<Commit />} />
+        <Route path="/srkhospitality" element={<SRK />} />
+        <Route path="/unit4" element={<UNIT4 />} />
+        <Route path="/centurionfastfit" element={<CenturionFastFit />} />
+
         <Route path="/yorkshire-insulation" element={<YorkshireInsulation />} />
         <Route path="/jwcambridge" element={<JWcambridge />} />
         <Route path="/dtdetails" element={<Dtdetails />} />
         <Route path="/masseydetailing" element={<Masseydetailing />} />
         <Route path="/scotland" element={<Scotland />} />
         <Route path="/auraautocare" element={<Auraautocare />} />
-        <Route path="/rodnretros" element={<Rodnretros />} />  
-        <Route path="/nandjmotcentre" element={<Nandjmotcentre />} />  
+        <Route path="/rodnretros" element={<Rodnretros />} />
+        <Route path="/nandjmotcentre" element={<Nandjmotcentre />} />
         <Route path="/nandjmotstation" element={<Nandjmotstation />} />
         <Route path="/progressworksgym" element={<Progressworksgym />} />
         <Route path="/dentmonkey" element={<Dentmonkey />} />

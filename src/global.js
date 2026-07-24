@@ -196,7 +196,7 @@ export const digitalCardDataNikita = {
   },
   location: "Leicester, United Kingdom",
   locationUrl: "https://maps.app.goo.gl/5tZNA18BXc557Gxb6",
-  ratingUrl: "https://www.google.com/search?sca_esv=0aa30729732e2704&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=APpeQnsBFQKDtNJnBrCPBWlzuQBLCmOaMg:1784819566604&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_4xsekt8XjaaWEbakCFiCIEBP0Byohb7tFCB2BudWjvts7XK4ujtqj-EdPlNcIlm4COJLAvaqvyrhjqKCoU_eflAIP8PAkU_ai_hKwd7iBUJE2YSug%3D%3D&q=Nikita+Autocraft+Reviews&sa=X&ved=2ahUKEwjfpIWCi-mVAxUEklYBHWlgKa4Q0bkNegQIIhAI&biw=1366&bih=633&dpr=1",
+  ratingUrl: "https://www.google.com/search?sca_esv=0aa30729732e2704&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=APpeQnsBFQKDtNJnBrCPBWlzuQBLCmOaMg:1784819566604&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_4xsekt8XjaaWEbakCFiCIEBP0Byohb7tFCB2BudWjvts7XK4ujtqj-EdPlNcIlm4COJLAvaqvyrhjqKCoU_eflAIP8PAkU_ai_hKwd7iBUJE2YSug%3D%3D&q=Nikita+Autocraft+Reviews&sa=X&ved=2ahUKEwjfpIWCi-mVAxVoTWwGHRVLLTEQ0bkNegQIIhAI&biw=1366&bih=633&dpr=1",
   socialLinks: [
     { icon: "Instagram", href: "https://www.instagram.com/nikitaautocraft/" },
   ],
@@ -232,7 +232,7 @@ export const digitalCardDataTwentyEight = {
   },
   location: "Nottingham, UK",
   locationUrl: "https://maps.app.goo.gl/LyVBMpxC5iu2FtyD9",
-  ratingUrl: "https://www.google.com/search?sca_esv=fc2a7f6adb56bd6b&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=APpeQnuL0DOKwdN5QzFk38U_hBsiDV6sSQ:1784821775968&si=APenkKn5T4YN59srr511wD6k6Pufj9DEzRUvB1XJSwUeeT5afqxFd7VP8YtELTeLXHuWIUEvYqhUkpu_0BRYDJnMs62MDwyimA3TJISEOIRaHt477sbR83q4jl-95b-Yq5mphrmm_LPO&q=Twenty+eight+Reviews&sa=X&ved=2ahUKEwihn8afk-mVAxVgyzQHHdFwMpcQ0bkNegQIIBAI&biw=1366&bih=633&dpr=1",
+  ratingUrl: "https://www.google.com/search?sca_esv=fc2a7f6adb56bd6b&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=APpeQnuL0DOKwdN5QzFk38U_hBsiDV6sSQ:1784821775968&si=APenkKn5T4YN59srr511wD6k6Pufj9DEzRUvB1XJSwUeeT5afqxFd7VP8YtELTeLXHuWIUEvYqhUkpu_0BRYDJnMs62MDwyimA3TJISEOIRaHt477sbR83q4jl-95b-Yq5mphrmm_LPO&q=Twenty+eight+Reviews&sa=X&ved=2ahUKEwihn8afk-mVAxUURWcHHRnuKjoQ0bkNegQIIBAI&biw=1366&bih=633&dpr=1",
   socialLinks: [
     { icon: "Instagram", href: "https://www.instagram.com/twenty_eight_barbers" },
     { icon: "Facebook", href: "https://web.facebook.com/twenty8barbers?_rdc=1&_rdr#" },
@@ -414,3 +414,223 @@ export const digitalCardDataChocoholicsDesserts = {
   ],
 };
 
+
+export const digitalCardDataRefurb = {
+  company: {
+    name: "Refurb Doctor",
+    tagline: "Professional auto repair services for all makes and models. Quality work guaranteed.",
+    logo: "/refurb.png",
+  },
+  founder: {
+    name: "Refurb Doctor",
+    title: "Professional Auto Repair Specialist",
+  },
+  contacts: [
+    { type: "Call", href: "tel:+447795528849", icon: "Phone", styleClass: "bg-primary" },
+    { type: "WhatsApp", href: "https://wa.me/447581730734", icon: "MessageCircle", styleClass: "bg-[#25D366]" },
+    { type: "Email", href: "mailto:refurbdoctor@live.co.uk", icon: "Mail", styleClass: "bg-primary" },
+    { type: "Website", href: "https://refurbdoctor.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+  ],
+  about: "Professional auto repair services for all makes and models. Quality work guaranteed.",
+  services: [
+    { label: "Full Respray", href: "https://refurbdoctor.co.uk/" },
+    { label: "Car Part Damage", href: "https://refurbdoctor.co.uk/" },
+    { label: "Accident Repair", href: "https://refurbdoctor.co.uk/" },
+    { label: "Vandal Scratches", href: "https://refurbdoctor.co.uk/" },
+    { label: "Paintless Dent Removal", href: "https://refurbdoctor.co.uk/" },
+    { label: "Alloy Wheel Repair", href: "https://refurbdoctor.co.uk/" },
+    { label: "Machine Polishing", href: "https://refurbdoctor.co.uk/" },
+    { label: "Mobile Repair", href: "https://refurbdoctor.co.uk/" },
+  ],
+  rating: {
+    value: "5.0",
+    text: "Professional auto repair services for all makes and models. Quality work guaranteed.",
+  },
+  location: "Coventry, United Kingdom",
+  locationUrl: "https://maps.app.goo.gl/TXDXdqLJ68NBBXW27",
+  ratingUrl: "https://www.google.com/search?sca_esv=bc14e0ce34e04a14&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=APpeQns6FHzVTr95l8Nq0VYk7i-Wkld7XQ:1784902065825&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_y94f9sRgIMKHs-HrB1e3e0G3SqUoBBm6wnt2HPgxE8pDmivmpzsHSsdVJbhuLjG-BgEhO6solUu3lqC4Ucf91L_Ji8V&q=Refurbdoctor+Reviews&sa=X&ved=2ahUKEwj9ld6svuuVAxUGyDgGHVP5IGIQ0bkNegQIIBAI&biw=1366&bih=633&dpr=1",
+  socialLinks: [],
+};
+
+export const digitalCardDataSmash = {
+  company: {
+    name: "Smashed Burgers & Shakes",
+    tagline: "Where comfort meets crave-worthy.",
+    logo: "/smash.png",
+  },
+  founder: {
+    name: "Smashed Burgers & Shakes",
+    title: "Burgers & Shakes",
+  },
+  contacts: [
+    { type: "Call", href: "tel:01509416655", icon: "Phone", styleClass: "bg-primary" },
+    { type: "Email", href: "mailto:smashedashby@gmail.com", icon: "Mail", styleClass: "bg-primary" },
+    { type: "Website", href: "https://smashed-uk.com/", icon: "Globe", styleClass: "bg-primary" },
+  ],
+  about: "Where comfort meets crave-worthy. Bite into our signature burgers, golden fries, and urban-inspired eats in the heart of the city.",
+  services: [
+    { label: "Burger Special Meal", href: "https://smashed-uk.com/" },
+    { label: "Smashed Burgers", href: "https://smashed-uk.com/" },
+    { label: "Smashed Chicken Burgers", href: "https://smashed-uk.com/" },
+    { label: "Loaded Fries", href: "https://smashed-uk.com/" },
+    { label: "Sides", href: "https://smashed-uk.com/" },
+  ],
+  rating: {
+    value: "5.0",
+    text: "Loved for signature burgers and crave-worthy comfort food.",
+  },
+  location: "Ashby-de-la-Zouch, UK",
+  locationUrl: "https://maps.app.goo.gl/Yq7EqmDntHqm8fd27",
+  ratingUrl: "",
+  socialLinks: [
+    { icon: "Facebook", href: "https://www.facebook.com/people/Smashed-Ashby/61570892613518/?_rdr" },
+    { icon: "Instagram", href: "https://www.instagram.com/smashed.ashby/" },
+  ],
+};
+
+export const digitalCardDataCommit = {
+  company: {
+    name: "Committed Fitness",
+    tagline: "Experience personalized training with the power of community.",
+    logo: "/commited.png",
+  },
+  founder: {
+    name: "Committed Fitness",
+    title: "Personal Training Studio",
+  },
+  contacts: [
+    { type: "Call", href: "tel:+447936642246", icon: "Phone", styleClass: "bg-primary" },
+    { type: "WhatsApp", href: "https://wa.me/447936642246", icon: "MessageCircle", styleClass: "bg-primary" },
+    { type: "Email", href: "mailto:anthonyspalding@committedfitness.co.uk", icon: "Mail", styleClass: "bg-primary" },
+    { type: "Website", href: "https://committedfitness.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+  ],
+  about: "Experience personalized training with the power of community. Join up to 6 like-minded individuals on your journey to a better you with expert guidance, accountability, and support.",
+  services: [
+    { label: "Professional Equipment", href: "https://committedfitness.co.uk/" },
+    { label: "Private Environment", href: "https://committedfitness.co.uk/" },
+    { label: "Dedicated Spaces", href: "https://committedfitness.co.uk/" },
+    { label: "Experience Our Facility", href: "https://committedfitness.co.uk/" },
+  ],
+  rating: {
+    value: "5.0",
+    text: "Trusted for expert training and community support.",
+  },
+  location: "Derby, United Kingdom",
+  locationUrl: "https://maps.app.goo.gl/KdKoC5HLqCZUMKxAA",
+  ratingUrl: "https://www.google.com/search?rlz=1C1KNTJ_enLK1089LK1089&sca_esv=e2e7e970ec257fb4&sxsrf=APpeQntodSshwVZjy_Xssu-OCFGRMBuNfg:1784905931933&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_6flNBRGVprYellKGjBt20LnosWQfGCUeWkVFqL8YfEbhXDbI5_DGh9nbKbjY7cfg6CEvoPeIUIJhZR8IOEcHkPQ7geCx6fb9QkzfrsJ_d_3m8hgew%3D%3D&q=Committed+fitness+Reviews&sa=X&ved=2ahUKEwir2Z7gzOuVAxWHzDgGHSlcBcQQ0bkNegQIIBAI&biw=1366&bih=633&dpr=1",
+  socialLinks: [
+    { icon: "Facebook", href: "https://www.facebook.com/CommittedFitnessDerby/" },
+    { icon: "Instagram", href: "https://www.instagram.com/committedfitness_derby/" },
+  ],
+};
+
+export const digitalCardDataSRK = {
+  company: {
+    name: "SRK HOSPITALITY LIMITED",
+    tagline: "Symbol of independent hospitality and heartfelt service.",
+    logo: "/srk.png",
+  },
+  founder: {
+    name: "SRK HOSPITALITY LIMITED",
+    title: "Hospitality & Dining",
+  },
+  contacts: [
+    { type: "Call", href: "tel:07466093996", icon: "Phone", styleClass: "bg-primary" },
+    { type: "WhatsApp", href: "https://wa.me/447466093996", icon: "MessageCircle", styleClass: "bg-primary" },
+    { type: "Email", href: "mailto:info@srkhospitality.co.uk", icon: "Mail", styleClass: "bg-primary" },
+    { type: "Website", href: "https://srkhospitality.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+  ],
+  about: "SRK stands as a symbol of independent hospitality and heartfelt service. With over two decades of experience",
+  services: [
+    { label: "Premium Steaks", href: "https://srkhospitality.co.uk/" },
+    { label: "Dance the Night Away", href: "https://srkhospitality.co.uk/" },
+    { label: "Exotic Indian Cuisine", href: "https://srkhospitality.co.uk/" },
+    { label: "Start Your Day Right", href: "https://srkhospitality.co.uk/" },
+  ],
+  rating: {
+    value: "5.0",
+    text: "Trusted for exceptional hospitality and dining experiences.",
+  },
+  location: "United Kingdom",
+  locationUrl: "https://srkhospitality.co.uk/",
+  ratingUrl: "",
+  socialLinks: [],
+};
+
+
+
+export const digitalCardDataUnit4 = {
+  company: {
+    name: "UNIT 4",
+    tagline: "Based in the heart of Leicester, Unit Four specialises in enhancing vehicle performance, reliability, and efficiency.",
+    logo: "/unit.png",
+  },
+  founder: {
+    name: "UNIT 4",
+    title: "UNIT 4",
+  },
+  contacts: [
+    { type: "Call", href: "tel:01162669749", icon: "Phone", styleClass: "bg-primary" },
+    { type: "Email", href: "mailto:info@unit-three.co.uk", icon: "Mail", styleClass: "bg-primary" },
+    { type: "Website", href: "https://unit4remaps.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+  ],
+  about: "Based in the heart of Leicester, Unit Four specialises in enhancing vehicle performance, reliability, and efficiency.",
+  services: [
+    { label: "DPF Solutions" },
+    { label: "EGR Solutions"},
+    { label: "AdBlue Solutions"},
+    { label: "Servicing",  },
+    { label: "Stop-Start System Repairs" },
+    { label: "Speed Limiter Adjustments"  },
+  ],
+  rating: {
+    value: "5.0",
+    text: "Trusted for exceptional hospitality and dining experiences.",
+  },
+  location: "Leicester, UK",
+  locationUrl: "https://maps.app.goo.gl/CKVh6eQQQeg2eCgc6",
+  ratingUrl: "",
+  socialLinks: [],
+};
+
+
+export const digitalCardDataCenturion = {
+  company: {
+    name: "Centurion Fast Fit",
+    tagline: "Centurion Service Centre provides quality car service and repairs with experienced professionals using the latest technology.",
+    logo: "/centurian.png",
+  },
+  founder: {
+    name: "Centurion Fast Fit",
+    title: "Service Centre",
+  },
+  contacts: [
+    { type: "Call", href: "tel:+442476638999", icon: "Phone", styleClass: "bg-primary" },
+    { type: "WhatsApp", href: "https://wa.me/442476638999", icon: "MessageCircle", styleClass: "bg-primary" },
+    { type: "Email", href: "mailto:centurionfastfit@gmail.com", icon: "Mail", styleClass: "bg-primary" },
+  ],
+  about: "Centurion Service Centre provides quality car service and repairs with experienced professionals using the latest technology.",
+  services: [
+    { label: "MOT & Car Servicing" },
+    { label: "Tyres" },
+    { label: "Smart Repairs" },
+    { label: "OEM Diagnostic Tools" },
+    { label: "Ghost Immobiliser Fitting" },
+    { label: "Shock Absorbers & Suspension" },
+    { label: "Coventry Exhausts" },
+    { label: "Brake Discs & Brake Pads" },
+    { label: "Car Batteries" },
+    { label: "Clutch Fitting" },
+    { label: "Timing Belt Fitting Service" },
+    { label: "Aircon Re-gas & Repairs" },
+    { label: "Vehicle Safety Assessments" },
+  ],
+  rating: {
+    value: "5.0",
+    text: "Centurion Service Centre provides quality car service and repairs with experienced professionals using the latest technology.",
+  },
+  location: "Coventry, United Kingdom",
+  locationUrl: "https://maps.app.goo.gl/wZRaVTtEWzRg71Sz6",
+  ratingUrl: "https://www.google.com/search?sca_esv=5e5a5aecd8aab0b4&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=APpeQntoPg71ZLntASWQOuqjPPACapHC8A:1784912420077&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_5481r-aqaVq28LKSylz0OaMCbmF9ELLyCXPaohbACo3BRUnPkN74K49OD3k4GtEcyumicxCu2a8zLNTmazT05w2WkxysOH2C8PHrk5Y3NwYSyWR7A%3D%3D&q=Centurion+Fast+Fit+Reviews&sa=X&ved=2ahUKEwjAx4P25OuVAxWUT2wGHYggHikQ0bkNegQIIBAI&biw=1366&bih=633&dpr=1",
+  socialLinks: [],
+};
