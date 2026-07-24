@@ -34,6 +34,7 @@ import JWcambridge from "./pages/JWcambridge.jsx";
 import Dtdetails from "./pages/dtdetails.jsx";
 import Masseydetailing from "./pages/masseydetailing.jsx";
 import Scotland from "./pages/scotland.jsx";
+import Auraautocare from "./pages/auraautocare.jsx";
 function App() {
   return (
     <Router>
@@ -70,6 +71,7 @@ function App() {
         <Route path="/dtdetails" element={<Dtdetails />} />
         <Route path="/masseydetailing" element={<Masseydetailing />} />
         <Route path="/scotland" element={<Scotland />} />
+        <Route path="/auraautocare" element={<Auraautocare />} />
       </Routes>
     </Router>
   );
