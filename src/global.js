@@ -339,7 +339,7 @@ export const digitalCardDataShahzTyres = {
   },
   location: "Leicester, United Kingdom",
   locationUrl: "https://maps.app.goo.gl/owqKgsc8P73iPgV3A",
-  ratingUrl: "https://www.google.com/search?sca_esv=e1142bdc4d0a4f40&rlz=1C5CHFA_enCA1132CA1132&sxsrf=APpeQntYolb6WwwgVqTP7O5UJzaVJHW57w:1784825104813&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_2RtNHa5nFb6ZUaDI2WsS3UCc20SY82K2cXkVZZfFpkgzGOk8SAgvc6obLJNGi1_mby2RMn3cI8wC1pyJo1QRk79AIRAZ7V1BOe2hefnvkMR-Fu0G5uwTz8aEcU19A6rhpNFylo%3D&q=Shahz+Tyres+%26+wheel+welding+repair+Reviews&sa=X&ved=2ahUKEwi15u7Sn-mVAxV-bmwGHZ4YN9MQ0bkNegQIHRAI&biw=1366&bih=633&dpr=1",
+  ratingUrl: "https://www.google.com/search?sca_esv=e1142bdc4d0a4f40&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=APpeQntYolb6WwwgVqTP7O5UJzaVJHW57w:1784825104813&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_2RtNHa5nFb6ZUaDI2WsS3UCc20SY82K2cXkVZZfFpkgzGOk8SAgvc6obLJNGi1_mby2RMn3cI8wC1pyJo1QRk79AIRAZ7V1BOe2hefnvkMR-Fu0G5uwTz8aEcU19A6rhpNFylo%3D&q=Shahz+Tyres+%26+wheel+welding+repair+Reviews&sa=X&ved=2ahUKEwi15u7Sn-mVAxV-bmwGHZ4YN9MQ0bkNegQIIhAI&biw=1366&bih=633&dpr=1",
   socialLinks: [],
 };
 
@@ -676,4 +676,36 @@ export const digitalCardDataCollingwood = {
   socialLinks: [
     { icon: "Facebook", href: "https://web.facebook.com/Collingwoodmotorsmotcentre/?_rdc=3&_rdr#" },
   ],
+};
+
+export const digitalCardDataCambridge = {
+  company: {
+    name: "Cambridge Automotive",
+    tagline: "From oil changes and servicing to specialist engine diagnostics, our Cambridge-based workshop is fully equipped to keep your vehicle running at its best.",
+    logo: "/cambridge.png",
+  },
+  founder: {
+    name: "Cambridge Automotive",
+    title: "MOT, Service & Repair Specialists",
+  },
+  contacts: [
+    { type: "Call", href: "tel:01223362836", icon: "Phone", styleClass: "bg-primary" },
+    { type: "WhatsApp", href: "https://wa.me/441223362836", icon: "MessageCircle", styleClass: "bg-primary" },
+    { type: "Website", href: "https://cambridgeautomotive.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+  ],
+  about: "From oil changes and servicing to specialist engine diagnostics, our Cambridge-based workshop is fully equipped to keep your vehicle running at its best.",
+  services: [
+    { label: "Car Air Conditioning", href: "https://cambridgeautomotive.co.uk/" },
+    { label: "Car Brake Repair", href: "https://cambridgeautomotive.co.uk/" },
+    { label: "Car Suspension Repair", href: "https://cambridgeautomotive.co.uk/" },
+    { label: "Car Clutch Repair", href: "https://cambridgeautomotive.co.uk/" },
+  ],
+  rating: {
+    value: "5.0",
+    text: "Trusted for quality automotive care and diagnostics.",
+  },
+  location: "Cambridge, United Kingdom",
+  locationUrl: "https://maps.app.goo.gl/P2JYUWtnwvzh9EzFA",
+  ratingUrl: "https://www.google.com/search?sca_esv=128d3fbf1687292d&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=APpeQntxRoyDcNEEo7bTMvMwUwwQPTrbYQ:1784915309285&si=APenkKn5T4YN59srr511wD6k6Pufj9DEzRUvB1XJSwUeeT5afnWPhI9xAd0oT4UmnyghhEvAkHgb4fKl1fex6U2iw_zLpdvk0kcGSBnbZpiFvNnPqXYnnEtwh3HmrmFPpbljztCoAkOiHmBNi9FQCXzOjQw_dgdcnQ%3D%3D&q=Cambridge+Vehicle+Services+Ltd+Reviews&sa=X&ved=2ahUKEwja7NrX7-uVAxVVSmwGHS6YDdEQ0bkNegQIFxAI&biw=1366&bih=633&dpr=1",
+  socialLinks: [],
 };

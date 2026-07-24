@@ -28,6 +28,7 @@ import SRK from "./pages/cards/SRK/srk.jsx";
 import UNIT4 from "./pages/cards/Unit/Unit.jsx";
 import CenturionFastFit from "./pages/Centurian/centurian.jsx";
 import Collingwood from "./pages/cards/CollingWood/Collingwood.jsx";
+import Cambridge from "./pages/cards/cambridge/Cambridge.jsx";
 
 import Stoneleys from "./pages/stoneleys.jsx";
 import Tomas from "./pages/Tomas.jsx";
@@ -101,6 +102,7 @@ function App() {
         <Route path="/unit4" element={<UNIT4 />} />
         <Route path="/centurionfastfit" element={<CenturionFastFit />} />
         <Route path="/collingwood" element={<Collingwood />} />
+        <Route path="/cambridge automotive" element={<Cambridge />} />
 
         <Route path="/yorkshire-insulation" element={<YorkshireInsulation />} />
         <Route path="/jwcambridge" element={<JWcambridge />} />
