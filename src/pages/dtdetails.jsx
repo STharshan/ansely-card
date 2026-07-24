@@ -10,7 +10,7 @@ import {
   Music2,
 } from "lucide-react";
 
-import { digitalCardData ,downloadVCF } from "../data/JWcambridge/JWcambridge.js";
+import { digitalCardData ,downloadVCF } from "../data/dtdetails/dtdetails.js";
 import { lazy, Suspense, useState } from "react";
 
 const FloatingLines = lazy(() => import("../components/FloatingLines.jsx"));
@@ -21,7 +21,7 @@ const WebGLPlaceholder = () => (
 
 const iconMap = { Phone, MessageCircle, Mail, Globe, MapPin, Instagram, TikTok: Music2 };
 
-export default function JWcambridge() {
+export default function Dtdetails() {
   const [logoFailed, setLogoFailed] = useState(false);
   const {
     company,
@@ -64,26 +64,26 @@ export default function JWcambridge() {
             {logoFailed ? (
               <div className="relative flex w-20 h-20 md:w-28 md:h-28 items-center justify-center rounded-3xl border border-white/10 bg-slate-950 shadow-2xl">
                 <div className="text-center leading-none">
-                  <div className="text-2xl md:text-3xl font-black tracking-[0.18em] text-white">JW</div>
+                  <div className="text-2xl md:text-3xl font-black tracking-[0.18em] text-white">DT</div>
                   <div className="mt-1 text-[0.48rem] md:text-[0.58rem] font-semibold uppercase tracking-[0.28em] text-cyan-200">
-                    Cambridge
+                    Details
                   </div>
                 </div>
               </div>
             ) : (
-              <div className="relative flex w-22 h-22 md:w-30 md:h-30 items-center justify-center rounded-3xl bg-white/95 p-2 shadow-2xl shadow-black/30 ring-1 ring-white/20">
+              <div className="relative flex w-36 h-24 md:w-52 md:h-32 items-center justify-center overflow-hidden rounded-3xl bg-black/45 p-3 shadow-2xl shadow-black/30 ring-1 ring-white/10 backdrop-blur-sm">
                 <img
                   src={company.logo}
                   alt={company.name}
                   loading="lazy"
                   onError={() => setLogoFailed(true)}
-                  className="h-full w-full object-contain drop-shadow-[0_4px_18px_rgba(15,23,42,0.2)]"
+                  className="h-full w-full object-contain drop-shadow-[0_8px_24px_rgba(0,0,0,0.45)]"
                 />
               </div>
             )}
           </div>
           <h1
-            className="max-w-[11ch] min-w-0 text-[1.45rem] font-bold uppercase leading-tight tracking-[0.05em] text-white drop-shadow-lg md:max-w-none md:text-5xl md:tracking-[0.08em]"
+            className="max-w-[11ch] min-w-0 text-[1.7rem] font-bold uppercase leading-tight tracking-[0.06em] text-white drop-shadow-lg md:max-w-none md:text-5xl md:tracking-[0.08em] md:leading-none"
             style={{ fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif' }}
           >
             {company.name}
@@ -173,23 +173,25 @@ export default function JWcambridge() {
                   <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                 ))}
               </div>
-              <p className="font-semibold mt-4">{rating.value} Google Rating</p>
+              <p className="font-semibold mt-4">{rating.value}</p>
               <p className="text-sm text-gray-400 italic mt-2">{rating.text}</p>
             </a>
           ) : null}
 
           {/* Location */}
-          <a
-            href={locationHref}
-            target="_blank"
-            rel="noreferrer"
-            className="flex justify-center items-center gap-2 text-white mb-10 hover:text-cyan-300 transition text-center"
-          >
-            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/10">
-              <MapPin className="w-4 h-4 text-primary" />
-            </span>
-            {location}
-          </a>
+          {location && locationHref ? (
+            <a
+              href={locationHref}
+              target="_blank"
+              rel="noreferrer"
+              className="flex justify-center items-center gap-2 text-white mb-10 hover:text-cyan-300 transition text-center"
+            >
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/10">
+                <MapPin className="w-4 h-4 text-primary" />
+              </span>
+              {location}
+            </a>
+          ) : null}
 
           {/* Social */}
           {socialLinks.length ? (

@@ -31,6 +31,7 @@ import TK from "./pages/Tk.jsx";
 
 import YorkshireInsulation from "./pages/YorkshireInsulation.jsx";
 import JWcambridge from "./pages/JWcambridge.jsx";
+import Dtdetails from "./pages/dtdetails.jsx";
 function App() {
   return (
     <Router>
@@ -64,6 +65,7 @@ function App() {
         <Route path="/mehran-garages" element={<MehranGarages />} />
         <Route path="/yorkshire-insulation" element={<YorkshireInsulation />} />
         <Route path="/jwcambridge" element={<JWcambridge />} />
+        <Route path="/dtdetails" element={<Dtdetails />} />
       </Routes>
     </Router>
   );
