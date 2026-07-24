@@ -33,6 +33,7 @@ import YorkshireInsulation from "./pages/YorkshireInsulation.jsx";
 import JWcambridge from "./pages/JWcambridge.jsx";
 import Dtdetails from "./pages/dtdetails.jsx";
 import Masseydetailing from "./pages/masseydetailing.jsx";
+import Scotland from "./pages/scotland.jsx";
 function App() {
   return (
     <Router>
@@ -68,6 +69,7 @@ function App() {
         <Route path="/jwcambridge" element={<JWcambridge />} />
         <Route path="/dtdetails" element={<Dtdetails />} />
         <Route path="/masseydetailing" element={<Masseydetailing />} />
+        <Route path="/scotland" element={<Scotland />} />
       </Routes>
     </Router>
   );
