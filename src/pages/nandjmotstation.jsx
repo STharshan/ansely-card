@@ -130,8 +130,15 @@ export default function Nandjmotstation() {
             <ul className="space-y-3">
               {services.map((service) => (
                 <li key={service.label} className="flex text-center justify-center items-center gap-3">
-                  <span className="h-2 w-2 rounded-full bg-primary" />
-                  <span className="text-white">{service.label}</span>
+                  <a
+                    href={service.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center gap-3 text-white hover:text-cyan-300 transition w-full justify-center"
+                  >
+                    <span className="h-2 w-2 rounded-full bg-primary" />
+                    <span>{service.label}</span>
+                  </a>
                 </li>
               ))}
             </ul>

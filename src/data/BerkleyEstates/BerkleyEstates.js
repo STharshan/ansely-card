@@ -5,7 +5,7 @@ export const digitalCardData = {
     logo: "/BerkleyEstates.webp",
   },
   founder: {
-    name: "Berkley Estate & Letting Agents Ltd",
+    name: "Jake",
     title: "Estate and Letting Agency Services",
   },
   contacts: [

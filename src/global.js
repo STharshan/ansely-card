@@ -131,7 +131,10 @@ export const digitalCardDataBurnsHairDesign = {
   location: "Nottingham, UK",
   locationUrl: "https://maps.app.goo.gl/ow3AspknmLn8qBqV6",
   ratingUrl: "https://www.google.com/search?sca_esv=0aa30729732e2704&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=APpeQnszvAe4HDb8hG9-wg_PjOe6KDT-5g:1784817474916&si=APenkKn5T4YN59srr511wD6k6Pufj9DEzRUvB1XJSwUeeT5afm0ofCotfUkZyppiwgr8oO2dhkKsMDmd8w0PPMKgHTjtWg-fEvWexW5wlv5CuodNmQ83d-tKlWrfP6iTwGAtL9GhP3ju&q=Burns+Hair+Design+Reviews&sa=X&ved=2ahUKEwis8dKcg-mVAxWXT2wGHY7kGg8Q0bkNegQIJBAI&biw=1366&bih=633&dpr=1",
-  socialLinks: [],
+  socialLinks: [
+     { icon: "Facebook", href: "https://www.facebook.com/burnshairdesign" },
+     { icon: "Instagram", href: "https://www.instagram.com/burns_hair_design_/" }
+  ],
 };
 
 export const digitalCardDataATB = {
@@ -180,19 +183,19 @@ export const digitalCardDataNikita = {
   },
   contacts: [
     { type: "Call", href: "tel:01162512277", icon: "Phone", styleClass: "bg-primary" },
-    { type: "WhatsApp", href: "https://wa.me/447930105858", icon: "MessageCircle", styleClass: "bg-primary" },
+    { type: "WhatsApp", href: "https://wa.me/447930105858", icon: "MessageCircle", styleClass: "bg-[#25D366]" },
     { type: "Email", href: "mailto:Gags@nikitaautocraft.co.uk", icon: "Mail", styleClass: "bg-primary" },
     { type: "Website", href: "https://nikita-autocraft.co.uk", icon: "Globe", styleClass: "bg-primary" },
   ],
   about: "Precision repairs, trusted care, and expert automotive finishes for drivers who want quality that lasts.",
   services: [
-    { label: "Paint Services", href: "https://darkorange-goldfish-447565.hostingersite.com/services/paint-services" },
-    { label: "AC Service", href: "https://darkorange-goldfish-447565.hostingersite.com/services/ac-service" },
-    { label: "MOT", href: "https://darkorange-goldfish-447565.hostingersite.com/services/mot" },
-    { label: "Mechanical Repairs", href: "https://darkorange-goldfish-447565.hostingersite.com/services/mechanical-repairs" },
-    { label: "Smart Repairs", href: "https://darkorange-goldfish-447565.hostingersite.com/services/body-smart-repairs" },
-    { label: "Diagnostics", href: "https://darkorange-goldfish-447565.hostingersite.com/services/diagnostics" },
-    { label: "Dent Repair", href: "https://darkorange-goldfish-447565.hostingersite.com/services/dent-repair" },
+    { label: "Paint Services" },
+    { label: "AC Service", },
+    { label: "MOT" },
+    { label: "Mechanical Repairs" },
+    { label: "Smart Repairs", },
+    { label: "Diagnostics",},
+    { label: "Dent Repair"},
   ],
   rating: {
     value: "5.0",
@@ -213,12 +216,11 @@ export const digitalCardDataTwentyEight = {
     logo: "/baber.png",
   },
   founder: {
-    name: "Twenty Eight Barbers",
+    name: "Jay",
     title: "Contemporary Barbershop",
   },
   contacts: [
     { type: "Call", href: "tel:01159586628", icon: "Phone", styleClass: "bg-primary" },
-    { type: "WhatsApp", href: "https://wa.me/441159586628", icon: "MessageCircle", styleClass: "bg-primary" },
     { type: "Email", href: "mailto:jaybo28@me.com", icon: "Mail", styleClass: "bg-primary" },
     { type: "Website", href: "https://twentyeighthair.co.uk/", icon: "Globe", styleClass: "bg-primary" },
   ],
@@ -286,7 +288,7 @@ export const digitalCardDataGreystone = {
     logo: "/greystone.png",
   },
   founder: {
-    name: "Greystone Automotive",
+    name: "Justin",
     title: "Automotive Service Provider",
   },
   contacts: [
@@ -355,7 +357,7 @@ export const digitalCardDataMehranGarages = {
     logo: "/mehran.png",
   },
   founder: {
-    name: "Mehran Garages",
+    name: "Mehran",
     title: "Automotive Repair Specialists",
   },
   contacts: [
@@ -379,7 +381,9 @@ export const digitalCardDataMehranGarages = {
   location: "Nottingham, United Kingdom",
   locationUrl: "https://maps.app.goo.gl/NELA6aiDmvz4rixo8",
   ratingUrl: "https://www.google.com/search?sca_esv=fc2a7f6adb56bd6b&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=APpeQnvrTyyGkvBZbsvi_nNC_jzO_eC_Bg:1784826282346&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_xPrJ2FVtvTinEWN32KLEwuVOXefpGw7ZwbY2HS6JLXGa7cLWrqOmu9kZ51NPfwkpl7DYsPbL8IiYCIQ-gWW12QnKmyi8kgvK3uZjbMyRzx-KOKByQ%3D%3D&q=Mehrans+Garage+MOT+Centre+Reviews&sa=X&ved=2ahUKEwi73K2EpOmVAxUtslYBHXxZK1IQ0bkNegQIJBAI&biw=1366&bih=633&dpr=1",
-  socialLinks: [],
+  socialLinks: [
+    { icon: "Facebook", href: "https://www.facebook.com/p/Mehrans-Garage-100064103162650/" }
+  ],
 };
 
 export const digitalCardDataChocoholicsDesserts = {
@@ -389,7 +393,7 @@ export const digitalCardDataChocoholicsDesserts = {
     logo: "/choco.png",
   },
   founder: {
-    name: "Chocoholics Desserts",
+    name: "Raj",
     title: "Fresh Desserts, Rich Flavours & Sweet Treats",
   },
   contacts: [

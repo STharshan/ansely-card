@@ -5,7 +5,7 @@ export const digitalCardData = {
     logo: "/Abbey/abbey.webp",
   },
   founder: {
-    name: "Abbey Tyres Leicester",
+    name: "Sahera",
     title: "Tyres, MOT, and Vehicle Servicing Specialists",
   },
   contacts: [

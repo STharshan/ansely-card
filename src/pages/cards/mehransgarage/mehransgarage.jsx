@@ -6,6 +6,7 @@ import {
     MapPin,
     Download,
     Star,
+    Facebook
 } from "lucide-react";
 
 import { digitalCardDataMehranGarages } from "../../../global";
@@ -18,7 +19,7 @@ const WebGLPlaceholder = () => (
     <div className="fixed inset-0 bg-[var(--bg-main)]" />
 );
 
-const iconMap = { Phone, MessageCircle, Mail, Globe };
+const iconMap = { Phone, MessageCircle, Mail, Facebook };
 
 export default function MehranGarages() {
     const {
@@ -91,7 +92,7 @@ export default function MehranGarages() {
                     <section className="mb-10">
                         <div className="grid grid-cols-2 gap-3">
                             {contacts.map((contact) => {
-                                const IconComponent = iconMap[contact.icon];
+                                const IconComponent = iconMap[contact.icon] ?? Globe;
                                 return (
                                     <a
                                         key={contact.type}
@@ -160,13 +161,16 @@ export default function MehranGarages() {
                     </a>
 
                     {/* Social */}
+                    {socialLinks.length > 0 && (
                     <section className="flex justify-center gap-4 mb-10">
                         {socialLinks.map((social) => {
-                            const IconComponent = iconMap[social.icon];
+                            const IconComponent = iconMap[social.icon] ?? Globe;
                             return (
                                 <a
-                                    key={social.icon}
+                                    key={`${social.icon}-${social.href}`}
                                     href={social.href}
+                                    target="_blank"
+                                    rel="noreferrer"
                                     className="h-12 w-12 rounded-full flex items-center justify-center transition bg-white/10 hover:bg-[var(--primary)]"
                                 >
                                     <IconComponent className="w-5 h-5" />
@@ -174,6 +178,7 @@ export default function MehranGarages() {
                             );
                         })}
                     </section>
+                    )}
 
                     {/* Save Contact Button */}
                     <section className="mb-10">

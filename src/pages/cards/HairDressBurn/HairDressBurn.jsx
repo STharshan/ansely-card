@@ -1,11 +1,13 @@
 import {
   Phone,
+  MessageCircle,
   Mail,
   Globe,
   MapPin,
   Download,
   Star,
 } from "lucide-react";
+import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa6";
 
 import { digitalCardDataBurnsHairDesign } from "../../../global";
 import { downloadVCF } from "./HairdressBurn.js";
@@ -17,7 +19,12 @@ const WebGLPlaceholder = () => (
   <div className="fixed inset-0 bg-[var(--bg-main)]" />
 );
 
-const iconMap = { Phone, Mail, Globe };
+const iconMap = { Phone, MessageCircle, Mail, Globe };
+const socialIconMap = {
+  Facebook: FaFacebook,
+  Instagram: FaInstagram,
+  TikTok: FaTiktok,
+};
 
 export default function HairDressBurn() {
   const {
@@ -61,7 +68,7 @@ export default function HairDressBurn() {
               src="/burns-logo.webp"
               alt={founder.name}
               loading="lazy"
-              className="relative object-cover w-20 h-20 md:w-28 md:h-24"
+              className="relative object-cover h-20 w-35 md:h-24"
             />
           </div>
         </header>
@@ -88,7 +95,7 @@ export default function HairDressBurn() {
           <section className="mb-10">
             <div className="grid grid-cols-2 gap-3">
               {contacts.map((contact) => {
-                const IconComponent = iconMap[contact.icon];
+                const IconComponent = iconMap[contact.icon] ?? Globe;
                 return (
                   <a
                     key={contact.type}
@@ -114,9 +121,16 @@ export default function HairDressBurn() {
             <h3 className="text-lg font-semibold mb-4 text-center">Key Services</h3>
             <ul className="space-y-3">
               {services.map((service) => (
-                <li key={service} className="flex text-center justify-center items-center gap-3">
+                <li key={service.label} className="flex text-center justify-center items-center gap-3">
                   <span className="h-2 w-2 rounded-full bg-primary" />
-                  <span className="text-white">{service}</span>
+                  <a
+                    href={service.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-white hover:underline"
+                  >
+                    {service.label}
+                  </a>
                 </li>
               ))}
             </ul>
@@ -150,20 +164,30 @@ export default function HairDressBurn() {
           </a>
 
           {/* Social */}
-          <section className="flex justify-center gap-4 mb-10">
-            {socialLinks.map((social) => {
-              const IconComponent = iconMap[social.icon];
-              return (
-                <a
-                  key={social.icon}
-                  href={social.href}
-                  className="h-12 w-12 rounded-full flex items-center justify-center transition bg-white/10 hover:bg-[var(--primary)]"
-                >
-                  <IconComponent className="w-5 h-5" />
-                </a>
-              );
-            })}
-          </section>
+          {socialLinks.length > 0 && (
+            <section className="flex justify-center gap-4 mb-10">
+              {socialLinks.map((social) => {
+                const SocialIcon = socialIconMap[social.icon];
+
+                if (!SocialIcon) {
+                  return null;
+                }
+
+                return (
+                  <a
+                    key={`${social.icon}-${social.href}`}
+                    href={social.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="h-12 w-12 rounded-full flex items-center justify-center transition bg-white/10 hover:bg-[var(--primary)]"
+                    aria-label={social.icon}
+                  >
+                    <SocialIcon className="w-5 h-5" />
+                  </a>
+                );
+              })}
+            </section>
+          )}
 
           {/* Save Contact Button */}
           <section className="mb-10">

@@ -5,7 +5,7 @@ export const digitalCardData = {
     logo: "/nandjmotstation.png",
   },
   founder: {
-    name: "N&J MOT Testing station",
+    name: "Jen",
     title: "Vehicle Testing, Repairs, and Specialist Garage Services",
   },
   contacts: [
@@ -16,11 +16,11 @@ export const digitalCardData = {
   about:
     "N&J MOT Testing station supports drivers in St Helens with MOT testing, servicing, repairs, air con regass, engine tuning, and wet belt work from its local family-run site.",
   services: [
-    { label: "Services & Repairs" },
-    { label: "Air Con Regass" },
-    { label: "Engine Tuning" },
-    { label: "MOT Class 4" },
-    { label: "Wet Belts" },
+    { label: "Services & Repairs", href: "https://nandjmotstation.co.uk/service" },
+    { label: "Air Con Regass", href: "https://nandjmotstation.co.uk/service" },
+    { label: "Engine Tuning", href: "https://nandjmotstation.co.uk/service" },
+    { label: "MOT Class 4", href: "https://nandjmotstation.co.uk/service" },
+    { label: "Wet Belts", href: "https://nandjmotstation.co.uk/service" },
   ],
   rating: null,
   location: "41 Dentons Green Ln, Windle, Saint Helens WA10 2QF, United Kingdom",
