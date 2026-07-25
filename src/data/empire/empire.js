@@ -5,7 +5,7 @@ export const digitalCardData = {
     logo: "/empire/empire.png",
   },
   founder: {
-    name: "Empire Scaffolding (GB) Ltd",
+    name: "Claire",
     title: "Scaffolding Supply, Erection, and Access Specialists",
   },
   contacts: [

@@ -1,6 +1,7 @@
 import {
   Phone,
   Mail,
+  MessageCircle,
   Globe,
   MapPin,
   Download,
@@ -18,7 +19,7 @@ const WebGLPlaceholder = () => (
   <div className="fixed inset-0 bg-[var(--bg-main)]" />
 );
 
-const iconMap = { Phone, Mail, Globe, MapPin, Instagram, Facebook };
+const iconMap = { Phone, Mail, MessageCircle, Globe, MapPin, Instagram, Facebook };
 
 export default function Masseydetailing() {
   const [logoFailed, setLogoFailed] = useState(false);

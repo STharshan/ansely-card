@@ -5,7 +5,7 @@ export const digitalCardData = {
     logo: "/auraauto.png",
   },
   founder: {
-    name: "Aura Auto Care",
+    name: "Adam",
     title: "Valeting and Detailing Specialists",
   },
   contacts: [

@@ -129,7 +129,6 @@ export default function Nandjmotstation() {
             <h3 className="text-lg font-semibold mb-4 text-center">Services</h3>
             <ul className="space-y-3">
               {services.map((service) => (
-<<<<<<< HEAD
                 <li key={service.label} className="flex text-center justify-center items-center gap-3">
                   <a
                     href={service.href}
@@ -140,10 +139,6 @@ export default function Nandjmotstation() {
                     <span className="h-2 w-2 rounded-full bg-primary" />
                     <span>{service.label}</span>
                   </a>
-=======
-                <li key={service.label} className="flex text-center justify-center items-center rounded-lg border border-white/10 bg-white/5 px-4 py-3">
-                  <span className="text-white">{service.label}</span>
->>>>>>> c53a8d7fed9df103d4cc6cdb632e5cbcaa8f33cb
                 </li>
               ))}
             </ul>

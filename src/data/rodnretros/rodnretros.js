@@ -5,11 +5,12 @@ export const digitalCardData = {
     logo: "/rodnretros.png",
   },
   founder: {
-    name: "Rods N Retros",
+    name: "Dec",
     title: "Restoration and Bodywork Specialists",
   },
   contacts: [
     { type: "Call", href: "tel:+447521224620", icon: "Phone", styleClass: "bg-primary" },
+    { type: "WhatsApp", href: "https://wa.me/447521224620", icon: "MessageCircle", styleClass: "bg-green-400" },
     { type: "Email", href: "mailto:RodsnRetros@hotmail.com", icon: "Mail", styleClass: "bg-primary" },
     { type: "Website", href: "https://rodsnretros.co.uk/", icon: "Globe", styleClass: "bg-primary" },
   ],

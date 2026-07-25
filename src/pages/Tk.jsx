@@ -67,7 +67,7 @@ export default function TK() {
                 </div>
               </div>
             ) : (
-              <div className="relative flex w-16 h-16 md:w-28 md:h-28 items-center justify-center rounded-3xl p-1 shadow-2xl shadow-black/30">
+              <div className="relative flex">
                 <img
                   src={company.logo}
                   alt={company.name}

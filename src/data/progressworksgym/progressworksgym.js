@@ -5,7 +5,7 @@ export const digitalCardData = {
     logo: "/progressworksgym.png",
   },
   founder: {
-    name: "Progress Works Gym",
+    name: "Neil",
     title: "Strength, Fitness, and Membership Training Space",
   },
   contacts: [

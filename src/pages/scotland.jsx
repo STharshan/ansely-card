@@ -83,12 +83,7 @@ export default function Scotland() {
               </div>
             )}
           </div>
-          <h1
-            className="max-w-[11ch] min-w-0 text-[1.35rem] font-bold uppercase leading-tight tracking-[0.08em] text-white drop-shadow-lg md:max-w-none md:text-5xl md:tracking-[0.1em]"
-            style={{ fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif' }}
-          >
-            {company.name}
-          </h1>
+
         </header>
 
         {/* Consistent Width Container 

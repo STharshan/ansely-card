@@ -5,7 +5,7 @@ export const digitalCardData = {
     logo: "/Tomas/Tomas.webp",
   },
   founder: {
-    name: "Tomas Exteriors",
+    name: "Tom",
     title: "Professional Window Tinting and Exterior Enhancement Specialists",
   },
   contacts: [

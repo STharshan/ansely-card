@@ -5,7 +5,7 @@ export const digitalCardData = {
     logo: "/stoneleys/stoneleys.webp",
   },
   founder: {
-    name: "Stoneley's Garage",
+    name: "Adam",
     title: "Garage Services, Diagnostics, and Vehicle Repair Specialists",
   },
   contacts: [

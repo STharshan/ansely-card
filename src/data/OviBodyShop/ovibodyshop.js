@@ -5,7 +5,7 @@ export const digitalCardData = {
     logo: "/ovi/ovi-body-shop.png",
   },
   founder: {
-    name: "Ovi Body Shop",
+    name: "Ovi",
     title: "Vehicle Body Repair and Refinishing Specialists",
   },
   contacts: [

@@ -5,13 +5,14 @@ export const digitalCardData = {
     logo: "/Amma-kitchen-coventry/amma.webp",
   },
   founder: {
-    name: "Amma Kitchen Coventry",
+    name: "Dharsha",
     title: "Freshly Prepared Food and Takeaway Specialists",
   },
   contacts: [
     { type: "Call", href: "tel:+442475090098", icon: "Phone", styleClass: "bg-primary" },
     { type: "Email", href: "mailto:earwegosales@gmail.com", icon: "Mail", styleClass: "bg-primary" },
     { type: "Website", href: "https://amma-kitchen.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "WhatsApp", href: "https://wa.me/447897550930", icon: "MessageCircle", styleClass: "bg-[#25D366]" },
   ],
   about:
     "Amma Kitchen brings together comforting home-style dishes, warm hospitality, and flavour-led cooking for guests looking for a satisfying local food stop in Coventry.",

@@ -5,7 +5,7 @@ export const digitalCardData = {
     logo: "/scotland.png",
   },
   founder: {
-    name: "Tune It Scotland",
+    name: "Darryn",
     title: "Tuning and Performance Specialists",
   },
   contacts: [

@@ -1,5 +1,6 @@
 import {
   Phone,
+  MessageCircle,
   Mail,
   Globe,
   MapPin,
@@ -16,7 +17,7 @@ const WebGLPlaceholder = () => (
   <div className="fixed inset-0 bg-[var(--bg-main)]" />
 );
 
-const iconMap = { Phone, Mail, Globe };
+const iconMap = { Phone, MessageCircle, Mail, Globe };
 
 export default function Amma() {
   const [logoFailed, setLogoFailed] = useState(false);
@@ -103,7 +104,7 @@ export default function Amma() {
           <section className="mb-10">
             <div className="grid grid-cols-2 gap-3">
               {contacts.map((contact) => {
-                const IconComponent = iconMap[contact.icon];
+                const IconComponent = iconMap[contact.icon] ?? Globe;
                 return (
                   <a
                     key={contact.type}

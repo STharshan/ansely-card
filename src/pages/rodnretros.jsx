@@ -2,6 +2,7 @@ import {
   Phone,
   Mail,
   Globe,
+  MessageCircle,
   MapPin,
   Download,
   Star,
@@ -16,7 +17,7 @@ const WebGLPlaceholder = () => (
   <div className="fixed inset-0 bg-[var(--bg-main)]" />
 );
 
-const iconMap = { Phone, Mail, Globe, MapPin };
+const iconMap = { Phone, Mail, Globe, MapPin, MessageCircle };
 
 export default function Rodnretros() {
   const [logoFailed, setLogoFailed] = useState(false);
@@ -91,7 +92,7 @@ export default function Rodnretros() {
           <section className="mb-10">
             <div className="grid grid-cols-2 gap-3">
               {contacts.map((contact) => {
-                const IconComponent = iconMap[contact.icon];
+                const IconComponent = iconMap[contact.icon] ?? Globe;
                 return (
                   <a
                     key={contact.type}

@@ -5,7 +5,7 @@ export const digitalCardData = {
     logo: "/dtdetails.png",
   },
   founder: {
-    name: "DT Details",
+    name: "Dom",
     title: "Detailing, Paint Enhancement, and Ceramic Coating Specialists",
   },
   contacts: [

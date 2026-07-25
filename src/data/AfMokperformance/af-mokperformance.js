@@ -5,7 +5,7 @@ export const digitalCardData = {
     logo: "/af-mokperformance/afmok.png",
   },
   founder: {
-    name: "AF MOK Performance",
+    name: "Florian",
     title: "Vehicle Performance and Repair Specialists",
   },
   contacts: [

@@ -5,7 +5,7 @@ export const digitalCardData = {
     logo: "/earwego/earwego.webp",
   },
   founder: {
-    name: "Ear We Go",
+    name: "Rab",
     title: "Micro Suction Ear Care Specialists",
   },
   contacts: [

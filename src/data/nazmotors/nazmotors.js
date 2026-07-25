@@ -5,7 +5,7 @@ export const digitalCardData = {
     logo: "/nazmotors/naz.png",
   },
   founder: {
-    name: "Naz Motors",
+    name: "Naz",
     title: "Garage Services, MOT Testing, and Vehicle Parts Specialists",
   },
   contacts: [

@@ -5,7 +5,7 @@ export const digitalCardData = {
     logo: "/slsmartrepair/slsmart.png",
   },
   founder: {
-    name: "SL Smart Repair",
+    name: "Shane",
     title: "Mobile Smart Repair and Detailing Specialists",
   },
   contacts: [
