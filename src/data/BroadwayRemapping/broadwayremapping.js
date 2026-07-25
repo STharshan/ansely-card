@@ -5,7 +5,7 @@ export const digitalCardData = {
     logo: "/broadway-remapping/broadway-remapping-logo.webp",
   },
   founder: {
-    name: "Broadway Remapping",
+    name: "Mark",
     title: "ECU Remapping and Performance Tuning Specialists",
   },
   contacts: [
@@ -41,9 +41,10 @@ export const digitalCardData = {
   rating: {
     value: "5.0",
     text: "Tap to view Broadway Remapping on Google.",
-    href: "https://www.google.com/search?q=broadwayremapping&rlz=1C1CHBD_enLK1213LK1213&oq=broadwayremapping&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIJCAEQABgNGIAEMgkIAhAAGA0YgAQyDQgDEAAYhgMYgAQYigUyDQgEEAAYhgMYgAQYigUyDQgFEAAYhgMYgAQYigUyBwgGEAAY7wUyBwgHEAAY7wUyCggIEAAYgAQYogQyCggJEAAYgAQYogTSAQg2NzBqMGoxNagCCLACAfEFOjdfDYR-qPE&sourceid=chrome&source=chrome.rb&ie=UTF-8",
+    href: "https://share.google/T67beIPKzaumQs0Kh",
   },
   location: "Unit B, Plas Ifan Farm, Alltami Road, Mold, CH7 6RH",
+  locationHref: "https://maps.app.goo.gl/xEUfKLc3T9enfscB7",
   socialLinks: [
     { icon: "Instagram", href: "https://www.instagram.com/broadway_remapping_/" },
     { icon: "Facebook", href: "https://web.facebook.com/people/Broadway-Remapping/100037206957303/" },
