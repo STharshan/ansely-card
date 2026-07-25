@@ -5,7 +5,7 @@ export const digitalCardData = {
     logo: "/notts-carboncleaning.webp",
   },
   founder: {
-    name: "Nottingham Carbon Cleaning",
+    name: "Darren",
     title: "Mobile Engine Carbon Cleaning Specialists",
   },
   contacts: [
@@ -27,10 +27,10 @@ export const digitalCardData = {
   rating: {
     value: "5.0",
     text: "Tap to view Nottingham Carbon Cleaning reviews.",
-    href: "https://share.google/kwLC6nb7mGT3PGRp9",
+    href: "https://share.google/j55wiX3yE9te9ky0o",
   },
   location: "Wendling Gardens, Nottingham NG5 5TD, United Kingdom",
-  locationHref: "https://maps.google.com/?q=Wendling+Gardens,+Nottingham+NG5+5TD,+United+Kingdom",
+  locationHref: "https://maps.app.goo.gl/4qo4pVF9c1nsfwAd8",
   socialLinks: [
     {
       icon: "Facebook",
