@@ -54,7 +54,7 @@ export default function HairDressBurn() {
       <div className="relative z-10 w-full flex flex-col items-center">
 
         {/* Company Name - Usually wider/full width for impact */}
-        <header className="w-full max-w-md px-6 pt-16 pb-6 flex items-center justify-center gap-5 md:gap-8">
+        <header className="w-full max-w-md px-6 pt-16 pb-6 flex items-center justify-center">
           <div className="relative shrink-0">
             <div className="absolute inset-0 blur-2xl rounded-full scale-110" />
             <img
@@ -64,12 +64,6 @@ export default function HairDressBurn() {
               className="relative object-cover w-20 h-20 md:w-28 md:h-24"
             />
           </div>
-          <h1
-            className="text-4xl md:text-5xl font-bold tracking-[0.25em] text-white uppercase drop-shadow-lg"
-            style={{ fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif' }}
-          >
-            {company.name}
-          </h1>
         </header>
 
         {/* Consistent Width Container 

@@ -39,7 +39,7 @@ export default function ATB() {
             </div>
 
             <div className="relative z-10 w-full flex flex-col items-center">
-                <header className="w-full max-w-md px-6 pt-16 pb-6 flex items-center justify-center gap-5 md:gap-8">
+                <header className="w-full max-w-md px-6 pt-16 pb-6 flex items-center justify-center">
                     <div className="relative shrink-0">
                         <div className="absolute inset-0 blur-2xl rounded-full scale-110 bg-[#1E5AA8]/30" />
                         <img
@@ -49,12 +49,6 @@ export default function ATB() {
                             className="relative w-20 h-20 md:w-28 md:h-28 object-coverg-white/5"
                         />
                     </div>
-                    <h1
-                        className="text-3xl md:text-5xl font-bold tracking-[0.18em] text-white uppercase drop-shadow-lg text-center"
-                        style={{ fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif' }}
-                    >
-                        {company.name}
-                    </h1>
                 </header>
 
                 <div className="w-full max-w-md px-4 pb-20">
