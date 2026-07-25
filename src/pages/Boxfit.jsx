@@ -32,6 +32,7 @@ export default function Boxfit() {
     services,
     rating,
     location,
+    locationHref,
     socialLinks,
   } = digitalCardData;
 
@@ -130,14 +131,16 @@ export default function Boxfit() {
           {/* Services */}
           <section className="mb-10">
             <h3 className="text-lg font-semibold mb-4 text-center">Services</h3>
-            <ul className="space-y-3">
+            <div className="space-y-3">
               {services.map((service) => (
-                <li key={service.label} className="flex text-center justify-center items-center gap-3">
-                  <span className="h-2 w-2 rounded-full bg-primary" />
-                  <span className="text-white">{service.label}</span>
-                </li>
+                <div
+                  key={service.label}
+                  className="flex min-h-14 items-center justify-center rounded-xl border border-white/10 bg-white/5 px-4 py-4 text-center text-white backdrop-blur-md"
+                >
+                  {service.label}
+                </div>
               ))}
-            </ul>
+            </div>
           </section>
 
           {/* Rating */}
@@ -159,10 +162,15 @@ export default function Boxfit() {
           ) : null}
 
           {/* Location */}
-          <section className="flex justify-center items-center gap-2 text-white mb-10">
+          <a
+            href={locationHref}
+            target="_blank"
+            rel="noreferrer"
+            className="mb-10 flex items-center justify-center gap-2 text-center text-white transition hover:text-cyan-300"
+          >
             <MapPin className="w-5 h-5 text-primary" />
-            {location}
-          </section>
+            <span>{location}</span>
+          </a>
 
           {/* Social */}
           <section className="flex justify-center gap-4 mb-10">

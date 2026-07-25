@@ -5,7 +5,7 @@ export const digitalCardData = {
     logo: "/box-fit/box-fit.png",
   },
   founder: {
-    name: "Boxfit Coaching",
+    name: "Adnan",
     title: "Coaching Academy and Community Boxing Programmes",
   },
   contacts: [
@@ -31,9 +31,10 @@ export const digitalCardData = {
   rating: {
     value: "5.0",
     text: "Tap to view Boxfit Coaching on Google.",
-    href: "https://www.google.com/search?q=boxfitcoaching&rlz=1C1CHBD_enLK1213LK1213&oq=boxfitcoaching&gs_lcrp=EgZjaHJvbWUqCggAEAAY4wIYgAQyCggAEAAY4wIYgAQyDQgBEC4YrwEYxwEYgAQyBwgCEAAY7wUyCggDEAAYgAQYogQyBwgEEAAY7wUyBwgFEAAY7wXSAQkxMDM3ajBqMTWoAgiwAgHxBYy4w7slggQZ&sourceid=chrome&source=chrome.rb&ie=UTF-8",
+    href: "https://share.google/yCwBWsxd1ruJsCIgP",
   },
   location: "69 Rea Street, Birmingham, B5 6BB, United Kingdom",
+  locationHref: "https://maps.app.goo.gl/2pYJvACtwRgHfDHf7",
   socialLinks: [
     { icon: "Facebook", href: "https://web.facebook.com/boxfitcoachingacademy?_rdc=1&_rdr#" },
     { icon: "Instagram", href: "https://www.instagram.com/Boxfitcoaching/#" },
