@@ -9,8 +9,8 @@ import {
 } from "lucide-react";
 import { FaFacebook, FaInstagram } from "react-icons/fa6";
 
-import { digitalCardDataCollingwood } from "../../../global";
-import { downloadVCF } from "./Collingwood.js";
+import { digitalCardDataCambridge } from "../../../global";
+import { downloadVCF } from "./Cambridge.js";
 import { lazy, Suspense } from "react";
 
 const FloatingLines = lazy(() => import("../../../components/FloatingLines.tsx"));
@@ -21,7 +21,7 @@ const WebGLPlaceholder = () => (
 
 const iconMap = { Phone, MessageCircle, Mail, Globe, Facebook: FaFacebook, Instagram: FaInstagram };
 
-export default function Collingwood() {
+export default function Cambridge() {
     const {
         company,
         founder,
@@ -33,7 +33,7 @@ export default function Collingwood() {
         locationUrl,
         ratingUrl,
         socialLinks,
-    } = digitalCardDataCollingwood;
+    } = digitalCardDataCambridge;
 
     return (
         <main className="relative min-h-screen text-white flex justify-center bg-[var(--bg-main)]">
@@ -65,7 +65,7 @@ export default function Collingwood() {
                             src={company.logo}
                             alt={founder.name}
                             loading="lazy"
-                            className="relative object-cover w-25 h-20 md:w-25 md:h-15"
+                            className="relative object-cover w-25 h-25 md:w-25 md:h-25"
                         />
                     </div>
                     <h1

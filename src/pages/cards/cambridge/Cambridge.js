@@ -1,7 +1,7 @@
-import { digitalCardDataCollingwood } from "../../../global";
+import { digitalCardDataCambridge } from "../../../global";
 
 export function downloadVCF() {
-  const { founder, company, contacts, location } = digitalCardDataCollingwood;
+  const { founder, company, contacts, location } = digitalCardDataCambridge;
 
   // Extract phone, email, and website
   const phone = contacts.find(c => c.type === "Call")?.href.replace("tel:", "") || "";
