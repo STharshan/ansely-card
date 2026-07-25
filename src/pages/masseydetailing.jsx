@@ -52,7 +52,7 @@ export default function Masseydetailing() {
       </div>
 
       <div className="relative z-10 w-full flex flex-col items-center">
-        <header className="w-full max-w-md px-6 pt-16 pb-6 flex flex-col items-center justify-center gap-4 text-center md:flex-row md:gap-8 md:text-left">
+        <header className="w-full max-w-md px-6 pt-16 pb-6 flex flex-col items-center justify-center gap-4 text-center">
           <div className="relative shrink-0">
             <div className="absolute inset-0 rounded-3xl bg-cyan-400/15 blur-2xl scale-110" />
             {logoFailed ? (
@@ -76,12 +76,6 @@ export default function Masseydetailing() {
               </div>
             )}
           </div>
-          <h1
-            className="max-w-[11ch] text-[2rem] font-bold uppercase leading-tight tracking-[0.12em] text-white drop-shadow-lg md:max-w-none md:text-5xl"
-            style={{ fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif' }}
-          >
-            {company.name}
-          </h1>
         </header>
 
         <div className="w-full max-w-md px-4 pb-20">

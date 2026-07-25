@@ -55,7 +55,7 @@ export default function Amma() {
       <div className="relative z-10 w-full flex flex-col items-center">
 
         {/* Company Name - Usually wider/full width for impact */}
-        <header className="w-full max-w-md px-4 pt-16 pb-6 flex flex-col items-center justify-center gap-4 text-center md:flex-row md:gap-8 md:text-left">
+        <header className="w-full max-w-md px-4 pt-16 pb-6 flex flex-col items-center justify-center gap-4 text-center">
           <div className="relative shrink-0">
             <div className="absolute inset-0 rounded-3xl bg-amber-300/20 blur-2xl scale-110" />
             {logoFailed ? (
@@ -79,12 +79,6 @@ export default function Amma() {
               </div>
             )}
           </div>
-          <h1
-            className="max-w-[11ch] min-w-0 text-[1.35rem] font-bold uppercase leading-tight tracking-[0.04em] text-white drop-shadow-lg md:max-w-none md:text-5xl md:tracking-[0.08em]"
-            style={{ fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif' }}
-          >
-            {company.name}
-          </h1>
         </header>
 
         {/* Consistent Width Container 

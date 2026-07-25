@@ -5,7 +5,7 @@ export const digitalCardData = {
     logo: "/JWcambridge.webp",
   },
   founder: {
-    name: "JW Cambridge",
+    name: "Jake",
     title: "Vehicle Diagnostics, Servicing, and Mercedes Repair Specialists",
   },
   contacts: [
@@ -17,20 +17,20 @@ export const digitalCardData = {
   about:
     "JW Cambridge helps drivers with vehicle diagnostics, servicing, repairs, MOT preparation, software updates, and specialist Mercedes fault-finding from their Cambridge workshop.",
   services: [
-    { label: "Any Car Problems" },
-    { label: "Maintenance & Servicing" },
-    { label: "Vehicle Diagnosis" },
-    { label: "Mercedes Diagnosis & Repair" },
-    { label: "MOT Preparation & Pre-MOT Checks" },
-    { label: "Software Updates & Control Modules" },
+    { label: "Any Car Problems", href: "https://www.jwcambridge.co.uk/service" },
+    { label: "Maintenance & Servicing", href: "https://www.jwcambridge.co.uk/service" },
+    { label: "Vehicle Diagnosis", href: "https://www.jwcambridge.co.uk/service" },
+    { label: "Mercedes Diagnosis & Repair", href: "https://www.jwcambridge.co.uk/service" },
+    { label: "MOT Preparation & Pre-MOT Checks", href: "https://www.jwcambridge.co.uk/service" },
+    { label: "Software Updates & Control Modules", href: "https://www.jwcambridge.co.uk/service" },
   ],
   rating: {
     value: "Google Reviews",
     text: "Tap to view JW Cambridge on Google.",
-    href: "https://www.google.com/search?q=JW+cambridge",
+    href: "https://share.google/ERHNjER85kBWj4HJA",
   },
   location: "Unit 1, 2 Swanns Rd, Cambridge CB5 8JZ",
-  locationHref: "https://maps.app.goo.gl/oHkixQgSx4GGL3Nv5",
+  locationHref: "https://maps.app.goo.gl/NJT1f4bXg6hgm39R6",
   socialLinks: [],
 };
 

@@ -32,6 +32,7 @@ export default function Boxfit() {
     services,
     rating,
     location,
+    locationHref,
     socialLinks,
   } = digitalCardData;
 
@@ -58,7 +59,7 @@ export default function Boxfit() {
       <div className="relative z-10 w-full flex flex-col items-center">
 
         {/* Company Name - Usually wider/full width for impact */}
-        <header className="w-full max-w-md px-6 pt-16 pb-6 flex flex-col items-center justify-center gap-4 text-center md:flex-row md:gap-8 md:text-left">
+        <header className="w-full max-w-md px-6 pt-16 pb-6 flex flex-col items-center justify-center gap-4 text-center">
           <div className="relative shrink-0">
             <div className="absolute inset-0 rounded-3xl bg-cyan-400/15 blur-2xl scale-110" />
             {logoFailed ? (
@@ -82,12 +83,6 @@ export default function Boxfit() {
               </div>
             )}
           </div>
-          <h1
-            className="max-w-[11ch] text-3xl font-bold uppercase leading-tight tracking-[0.14em] text-white drop-shadow-lg md:max-w-none md:text-5xl"
-            style={{ fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif' }}
-          >
-            {company.name}
-          </h1>
         </header>
 
         {/* Consistent Width Container 
@@ -136,14 +131,16 @@ export default function Boxfit() {
           {/* Services */}
           <section className="mb-10">
             <h3 className="text-lg font-semibold mb-4 text-center">Services</h3>
-            <ul className="space-y-3">
+            <div className="space-y-3">
               {services.map((service) => (
-                <li key={service.label} className="flex text-center justify-center items-center gap-3">
-                  <span className="h-2 w-2 rounded-full bg-primary" />
-                  <span className="text-white">{service.label}</span>
-                </li>
+                <div
+                  key={service.label}
+                  className="flex min-h-14 items-center justify-center rounded-xl border border-white/10 bg-white/5 px-4 py-4 text-center text-white backdrop-blur-md"
+                >
+                  {service.label}
+                </div>
               ))}
-            </ul>
+            </div>
           </section>
 
           {/* Rating */}
@@ -165,10 +162,15 @@ export default function Boxfit() {
           ) : null}
 
           {/* Location */}
-          <section className="flex justify-center items-center gap-2 text-white mb-10">
+          <a
+            href={locationHref}
+            target="_blank"
+            rel="noreferrer"
+            className="mb-10 flex items-center justify-center gap-2 text-center text-white transition hover:text-cyan-300"
+          >
             <MapPin className="w-5 h-5 text-primary" />
-            {location}
-          </section>
+            <span>{location}</span>
+          </a>
 
           {/* Social */}
           <section className="flex justify-center gap-4 mb-10">
