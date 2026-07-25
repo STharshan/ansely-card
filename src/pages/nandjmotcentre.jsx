@@ -79,12 +79,6 @@ export default function Nandjmotcentre() {
               </div>
             )}
           </div>
-          <h1
-            className="text-[2.35rem] font-bold uppercase leading-[0.95] tracking-[0.08em] text-white drop-shadow-lg sm:text-[2.75rem]"
-            style={{ fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif' }}
-          >
-            {company.name}
-          </h1>
         </header>
 
         {/* Consistent Width Container 
