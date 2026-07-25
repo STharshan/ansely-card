@@ -5,7 +5,7 @@ export const digitalCardData = {
     logo: "/Dentmonkey.png",
   },
   founder: {
-    name: "Dent Monkey",
+    name: "nicky",
     title: "Paintless Dent Removal Specialists",
   },
   contacts: [
