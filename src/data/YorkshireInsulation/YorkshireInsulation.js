@@ -5,7 +5,7 @@ export const digitalCardData = {
     logo: "/YorkshireInsulation.png",
   },
   founder: {
-    name: "Yorkshire Insulation",
+    name: "Joe",
     title: "Home Insulation Specialists",
   },
   contacts: [
