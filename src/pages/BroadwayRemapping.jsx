@@ -168,10 +168,10 @@ export default function BroadwayRemapping() {
             href={locationHref}
             target="_blank"
             rel="noreferrer"
-            className="mb-10 flex items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-4 text-center text-white backdrop-blur-md transition hover:border-cyan-300/40 hover:bg-white/8"
+            className="mb-10 flex items-center justify-center gap-2 text-center text-white transition hover:text-cyan-300"
           >
-            <MapPin className="w-5 h-5 text-primary" />
-            {location}
+            <MapPin className="h-5 w-5 shrink-0 text-primary" />
+            <span className="whitespace-nowrap">{location}</span>
           </a>
 
           {/* Social */}
