@@ -4,7 +4,9 @@ import {
   Mail,
   Globe,
   MapPin,
+  Instagram,
   Facebook,
+  Linkedin,
   Download,
   Star,
 } from "lucide-react";
@@ -12,13 +14,13 @@ import {
 import { digitalCardData ,downloadVCF } from "../data/scotland/scotland.js";
 import { lazy, Suspense, useState } from "react";
 
-const FloatingLines = lazy(() => import("../components/FloatingLines.jsx"));
+const FloatingLines = lazy(() => import("../components/FloatingLines.js"));
 
 const WebGLPlaceholder = () => (
   <div className="fixed inset-0 bg-[var(--bg-main)]" />
 );
 
-const iconMap = { Phone, MessageCircle, Mail, Globe, MapPin, Facebook };
+const iconMap = { Phone, MessageCircle, Mail, Globe, Instagram, Facebook, Linkedin };
 
 export default function Scotland() {
   const [logoFailed, setLogoFailed] = useState(false);
@@ -57,20 +59,20 @@ export default function Scotland() {
       <div className="relative z-10 w-full flex flex-col items-center">
 
         {/* Company Name - Usually wider/full width for impact */}
-        <header className="w-full max-w-md px-4 pt-16 pb-6 flex flex-col items-center justify-center gap-5 text-center">
+        <header className="w-full max-w-md px-4 pt-16 pb-6 flex flex-col items-center justify-center gap-4 text-center md:flex-row md:gap-8 md:text-left">
           <div className="relative shrink-0">
             <div className="absolute inset-0 rounded-3xl bg-cyan-400/15 blur-2xl scale-110" />
             {logoFailed ? (
               <div className="relative flex w-20 h-20 md:w-28 md:h-28 items-center justify-center rounded-3xl border border-white/10 bg-slate-950 shadow-2xl">
                 <div className="text-center leading-none">
-                  <div className="text-2xl md:text-3xl font-black tracking-[0.18em] text-white">TIS</div>
+                  <div className="text-2xl md:text-3xl font-black tracking-[0.18em] text-white">SL</div>
                   <div className="mt-1 text-[0.48rem] md:text-[0.58rem] font-semibold uppercase tracking-[0.28em] text-cyan-200">
-                    Scotland
+                    Repair
                   </div>
                 </div>
               </div>
             ) : (
-              <div className="relative flex w-44 h-28 md:w-56 md:h-36 items-center justify-center overflow-hidden rounded-3xl bg-slate-950/80 p-2 md:p-3 shadow-2xl shadow-black/40 ring-1 ring-white/10">
+              <div className="relative flex w-20 h-20 md:w-32 md:h-32 items-center justify-center rounded-3xl bg-slate-950/80 p-1 md:p-1.5 shadow-2xl shadow-black/40 ring-1 ring-red-500/15">
                 <img
                   src={company.logo}
                   alt={company.name}
@@ -81,6 +83,12 @@ export default function Scotland() {
               </div>
             )}
           </div>
+          <h1
+            className="max-w-[11ch] min-w-0 text-[1.35rem] font-bold uppercase leading-tight tracking-[0.08em] text-white drop-shadow-lg md:max-w-none md:text-5xl md:tracking-[0.1em]"
+            style={{ fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif' }}
+          >
+            {company.name}
+          </h1>
         </header>
 
         {/* Consistent Width Container 
@@ -111,7 +119,6 @@ export default function Scotland() {
                     key={contact.type}
                     href={contact.href}
                     target={contact.type === "Website" || contact.type === "WhatsApp" ? "_blank" : "_self"}
-                    rel={contact.type === "Website" || contact.type === "WhatsApp" ? "noreferrer" : undefined}
                     className={`flex items-center justify-center gap-2 h-14 rounded-lg transition hover:scale-[1.02] active:scale-95 ${contact.styleClass}`}
                   >
                     <IconComponent className="w-5 h-5" />
@@ -172,24 +179,22 @@ export default function Scotland() {
           </a>
 
           {/* Social */}
-          {socialLinks.length ? (
-            <section className="flex justify-center gap-4 mb-10">
-              {socialLinks.map((social) => {
-                const IconComponent = iconMap[social.icon];
-                return (
-                  <a
-                    key={social.label}
-                    href={social.href}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="h-12 w-12 rounded-full flex items-center justify-center transition bg-white/10 hover:bg-[var(--primary)]"
-                  >
-                    <IconComponent className="w-5 h-5" />
-                  </a>
-                );
-              })}
-            </section>
-          ) : null}
+          <section className="flex justify-center gap-4 mb-10">
+            {socialLinks.map((social) => {
+              const IconComponent = iconMap[social.icon];
+              return (
+                <a
+                  key={social.label}
+                  href={social.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="h-12 w-12 rounded-full flex items-center justify-center transition bg-white/10 hover:bg-[var(--primary)]"
+                >
+                  <IconComponent className="w-5 h-5" />
+                </a>
+              );
+            })}
+          </section>
 
           {/* Save Contact Button */}
           <section className="mb-10">
