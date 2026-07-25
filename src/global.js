@@ -110,7 +110,7 @@ export const digitalCardDataBurnsHairDesign = {
     logo: "/burns-logo.webp",
   },
   founder: {
-    name: "Harriet Burns",
+    name: "Harriet",
     title: "Owner & Stylist",
   },
   contacts: [
@@ -119,7 +119,11 @@ export const digitalCardDataBurnsHairDesign = {
     { type: "Website", href: "https://burnshairdesign.com/", icon: "Globe", styleClass: "bg-primary" }
   ],
   about: "Established in 1956 — Burns Hair Design continues a tradition of three generations delivering exceptional hair care and styling.",
-  services: ["Hair Services", "Color Services"],
+
+  services: [
+    { label: "Hair Services", href: "https://burnshairdesign.com/" },
+    { label: "Color Services", href: "https://burnshairdesign.com/" },
+  ],
   rating: {
     value: "5.0",
     text: "Professional hair care in Keyworth, Nottingham.",
@@ -146,19 +150,19 @@ export const digitalCardDataATB = {
     { type: "Email", href: "mailto:atbmotorengineers@gmail.com", icon: "Mail", styleClass: "bg-primary" },
     { type: "Website", href: "https://atbmotorengineers.com/", icon: "Globe", styleClass: "bg-primary" },
   ],
-  
+
   about: "Join hundreds of satisfied customers who trust ATB Motor Engineers for reliability, performance, and complete automotive care.",
-    services: [
-      { label: "MOT", href: "https://atbmotorengineers.com/services/mot" },
-      { label: "Service", href: "https://atbmotorengineers.com/services/service" },
-      { label: "Chain/Belts", href: "https://atbmotorengineers.com/services/chain-belts" },
-      { label: "Welding", href: "https://atbmotorengineers.com/services/welding" },
-      { label: "Mechanical Repair", href: "https://atbmotorengineers.com/services/mechanical-repair" },
-    ],
-    rating: {
-      value: "5.0",
-      text: "Professional and reliable automotive care.",
-    },
+  services: [
+    { label: "MOT", href: "https://atbmotorengineers.com/services/mot" },
+    { label: "Service", href: "https://atbmotorengineers.com/services/service" },
+    { label: "Chain/Belts", href: "https://atbmotorengineers.com/services/chain-belts" },
+    { label: "Welding", href: "https://atbmotorengineers.com/services/welding" },
+    { label: "Mechanical Repair", href: "https://atbmotorengineers.com/services/mechanical-repair" },
+  ],
+  rating: {
+    value: "5.0",
+    text: "Professional and reliable automotive care.",
+  },
   socialLinks: [
     { icon: "Facebook", href: "https://www.facebook.com/profile.php?id=100054506707364" },
   ],
@@ -246,12 +250,12 @@ export const digitalCardDataRS = {
     logo: "/rs.png",
   },
   founder: {
-    name: "RS Mobile Services",
+    name: "Sam",
     title: "Mobile Vehicle Service Specialists",
   },
   contacts: [
     { type: "Call", href: "tel:+441780917600", icon: "Phone", styleClass: "bg-primary" },
-    { type: "WhatsApp", href: "https://wa.me/447300881440", icon: "MessageCircle", styleClass: "bg-primary" },
+    { type: "WhatsApp", href: "https://wa.me/447300881440", icon: "MessageCircle", styleClass: "bg-[#25D366]" },
     { type: "Email", href: "mailto:sam.ferries@rsmobileservices.co.uk", icon: "Mail", styleClass: "bg-primary" },
     { type: "Website", href: "https://rsmobileservices.co.uk/", icon: "Globe", styleClass: "bg-primary" },
   ],
@@ -271,7 +275,8 @@ export const digitalCardDataRS = {
   location: "Stamford, UK",
   locationUrl: "https://maps.app.goo.gl/iKdvKUTdAeeVUPtQA",
   ratingUrl: "https://www.google.com/search?sca_esv=fc2a7f6adb56bd6b&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=APpeQntRJbCBz7AfHeEVH7KE8XY0tfOiJg:1784822671279&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_-n-lnsNuLq4XDAV8m358U55WJ-NVX8BMTIzWWKHDaXvvu-fBbxnsaDswiJUsYcyMueoVsojhQ9tBZwLfI4U4ijS-tQ1R5TJZsSE6taiyeq7y6E27w%3D%3D&q=RS+Mobile+Services+LTD+Reviews&sa=X&ved=2ahUKEwi40LvKlumVAxVTs1YBHc37I34Q0bkNegQINRAI&biw=1366&bih=633&dpr=1",
-  socialLinks: [],
+  socialLinks: [
+    { icon: "Facebook", href: "https://www.facebook.com/people/RS-Mobile-Services/100092690151352/" }],
 };
 
 export const digitalCardDataGreystone = {
@@ -422,7 +427,7 @@ export const digitalCardDataRefurb = {
     logo: "/refurb.png",
   },
   founder: {
-    name: "Refurb Doctor",
+    name: "Darren",
     title: "Professional Auto Repair Specialist",
   },
   contacts: [
@@ -566,8 +571,8 @@ export const digitalCardDataUnit4 = {
     logo: "/unit.png",
   },
   founder: {
-    name: "UNIT 4",
-    title: "UNIT 4",
+    name: "Max",
+    title: "",
   },
   contacts: [
     { type: "Call", href: "tel:01162669749", icon: "Phone", styleClass: "bg-primary" },
@@ -576,12 +581,12 @@ export const digitalCardDataUnit4 = {
   ],
   about: "Based in the heart of Leicester, Unit Four specialises in enhancing vehicle performance, reliability, and efficiency.",
   services: [
-    { label: "DPF Solutions" },
-    { label: "EGR Solutions"},
-    { label: "AdBlue Solutions"},
-    { label: "Servicing",  },
-    { label: "Stop-Start System Repairs" },
-    { label: "Speed Limiter Adjustments"  },
+    { label: "DPF Solutions", href: "https://unit4remaps.co.uk/#services" },
+    { label: "EGR Solutions", href: "https://unit4remaps.co.uk/#services" },
+    { label: "AdBlue Solutions", href: "https://unit4remaps.co.uk/#services" },
+    { label: "Servicing", href: "https://unit4remaps.co.uk/#services" },
+    { label: "Stop-Start System Repairs", href: "https://unit4remaps.co.uk/#services" },
+    { label: "Speed Limiter Adjustments", href: "https://unit4remaps.co.uk/#services" },
   ],
   rating: {
     value: "5.0",
@@ -589,7 +594,7 @@ export const digitalCardDataUnit4 = {
   },
   location: "Leicester, UK",
   locationUrl: "https://maps.app.goo.gl/CKVh6eQQQeg2eCgc6",
-  ratingUrl: "",
+  ratingUrl: "https://www.google.com/maps/place/3+Wesley+St,+Leicester+LE4+5QG,+UK/@52.660242,-1.1308859,458m/data=!3m2!1e3!4b1!4m6!3m5!1s0x487761aeaa2d6a3b:0x5529a0d1328b039d!8m2!3d52.660242!4d-1.1308859!16s%2Fg%2F11zbs1qzmd?entry=ttu&g_ep=EgoyMDI2MDcyMi4wIKXMDSoASAFQAw%3D%3D",
   socialLinks: [],
 };
 
@@ -601,30 +606,29 @@ export const digitalCardDataCenturion = {
     logo: "/centurian.png",
   },
   founder: {
-    name: "Centurion Fast Fit",
+    name: "Kirit",
     title: "Service Centre",
   },
   contacts: [
     { type: "Call", href: "tel:+442476638999", icon: "Phone", styleClass: "bg-primary" },
-    { type: "WhatsApp", href: "https://wa.me/442476638999", icon: "MessageCircle", styleClass: "bg-primary" },
     { type: "Email", href: "mailto:centurionfastfit@gmail.com", icon: "Mail", styleClass: "bg-primary" },
     { type: "Website", href: "https://centurionfastfit.uk/", icon: "Globe", styleClass: "bg-primary" },
   ],
   about: "Centurion Service Centre provides quality car service and repairs with experienced professionals using the latest technology.",
   services: [
-    { label: "MOT & Car Servicing" },
-    { label: "Tyres" },
-    { label: "Smart Repairs" },
-    { label: "OEM Diagnostic Tools" },
-    { label: "Ghost Immobiliser Fitting" },
-    { label: "Shock Absorbers & Suspension" },
-    { label: "Coventry Exhausts" },
-    { label: "Brake Discs & Brake Pads" },
-    { label: "Car Batteries" },
-    { label: "Clutch Fitting" },
-    { label: "Timing Belt Fitting Service" },
-    { label: "Aircon Re-gas & Repairs" },
-    { label: "Vehicle Safety Assessments" },
+    { label: "MOT & Car Servicing", href: "https://centurionfastfit.uk/#services" },
+    { label: "Tyres", href: "https://centurionfastfit.uk/#services" },
+    { label: "Smart Repairs", href: "https://centurionfastfit.uk/#services" },
+    { label: "OEM Diagnostic Tools", href: "https://centurionfastfit.uk/#services" },
+    { label: "Ghost Immobiliser Fitting", href: "https://centurionfastfit.uk/#services" },
+    { label: "Shock Absorbers & Suspension", href: "https://centurionfastfit.uk/#services" },
+    { label: "Coventry Exhausts", href: "https://centurionfastfit.uk/#services" },
+    { label: "Brake Discs & Brake Pads", href: "https://centurionfastfit.uk/#services" },
+    { label: "Car Batteries", href: "https://centurionfastfit.uk/#services" },
+    { label: "Clutch Fitting", href: "https://centurionfastfit.uk/#services" },
+    { label: "Timing Belt Fitting Service", href: "https://centurionfastfit.uk/#services" },
+    { label: "Aircon Re-gas & Repairs", href: "https://centurionfastfit.uk/#services" },
+    { label: "Vehicle Safety Assessments", href: "https://centurionfastfit.uk/#services" },
   ],
   rating: {
     value: "5.0",
@@ -647,12 +651,12 @@ export const digitalCardDataCollingwood = {
     logo: "/collingwood.png",
   },
   founder: {
-    name: "Collingwood Motors",
+    name: "Simon",
     title: "MOT, Service & Repair Specialists",
   },
   contacts: [
     { type: "Call", href: "tel:+447564693973", icon: "Phone", styleClass: "bg-primary" },
-    { type: "WhatsApp", href: "https://wa.me/447564693973", icon: "MessageCircle", styleClass: "bg-primary" },
+    { type: "WhatsApp", href: "https://wa.me/447564693973", icon: "MessageCircle", styleClass: "bg-[#25D366]" },
     { type: "Email", href: "mailto:info@collingwoodmotors.com", icon: "Mail", styleClass: "bg-primary" },
     { type: "Website", href: "https://collingwoodmotors.com/", icon: "Globe", styleClass: "bg-primary" },
   ],
@@ -685,12 +689,12 @@ export const digitalCardDataCambridge = {
     logo: "/cambridge.png",
   },
   founder: {
-    name: "Cambridge Automotive",
+    name: "josh",
     title: "MOT, Service & Repair Specialists",
   },
   contacts: [
     { type: "Call", href: "tel:01223362836", icon: "Phone", styleClass: "bg-primary" },
-    { type: "WhatsApp", href: "https://wa.me/441223362836", icon: "MessageCircle", styleClass: "bg-primary" },
+    { type: "WhatsApp", href: "https://wa.me/447904713830", icon: "MessageCircle", styleClass: "bg-primary" },
     { type: "Website", href: "https://cambridgeautomotive.co.uk/", icon: "Globe", styleClass: "bg-primary" },
   ],
   about: "From oil changes and servicing to specialist engine diagnostics, our Cambridge-based workshop is fully equipped to keep your vehicle running at its best.",

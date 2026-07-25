@@ -115,7 +115,7 @@ export default function Cambridge() {
 
                     {/* Services */}
                     <section className="mb-10">
-                        <h3 className="text-lg font-semibold mb-4 text-center">What We Offer</h3>
+                        <h3 className="text-lg font-semibold mb-4 text-center">Key Services</h3>
                         <ul className="space-y-3">
                             {services.map((service) => (
                                 <li key={service.label} className="flex text-center justify-center items-center gap-3">

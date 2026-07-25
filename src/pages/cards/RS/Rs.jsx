@@ -7,6 +7,7 @@ import {
   Download,
   Star,
 } from "lucide-react";
+import { FaFacebook } from "react-icons/fa6";
 
 import { digitalCardDataRS } from "../../../global";
 import { downloadVCF } from "./RS.js";
@@ -18,7 +19,7 @@ const WebGLPlaceholder = () => (
   <div className="fixed inset-0 bg-[var(--bg-main)]" />
 );
 
-const iconMap = { Phone, MessageCircle, Mail, Globe };
+const iconMap = { Phone, MessageCircle, Mail, Globe, Facebook: FaFacebook };
 
 export default function RS() {
   const {
@@ -79,7 +80,7 @@ export default function RS() {
           <section className="mb-10">
             <div className="grid grid-cols-2 gap-3">
               {contacts.map((contact) => {
-                const IconComponent = iconMap[contact.icon];
+                const IconComponent = iconMap[contact.icon] ?? Globe;
                 return (
                   <a
                     key={contact.type}
@@ -146,6 +147,7 @@ export default function RS() {
           <section className="flex justify-center gap-4 mb-10">
             {socialLinks.map((social) => {
               const IconComponent = iconMap[social.icon];
+              const SocialIcon = IconComponent ?? FaFacebook;
               return (
                 <a
                   key={social.icon}
@@ -154,7 +156,7 @@ export default function RS() {
                   rel="noreferrer"
                   className="h-12 w-12 rounded-full flex items-center justify-center transition bg-white/10 hover:bg-[var(--primary)]"
                 >
-                  <IconComponent className="w-5 h-5" />
+                  <SocialIcon className="w-5 h-5" />
                 </a>
               );
             })}
