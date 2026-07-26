@@ -52,8 +52,17 @@ import Dentmonkey from "./pages/Dentmonkey.jsx";
 import BerkleyEstates from "./pages/BerkleyEstates.jsx";
 import ACG from "./pages/ACG.jsx";
 import Nottscarboncleaning from "./pages/nottscarboncleaning.jsx";
-
-import JMVehicleAssist from "./pages/cards/jm/jm.jsx"
+import EliteWheelsGlasgow from "./pages/elitewheelsglasgow.jsx";
+import Alansautodetailing from "./pages/alansautodetailing.jsx";
+import Sowafurniture from "./pages/sowafurniture.jsx";
+import Crystalclean from "./pages/crystalclean.jsx";
+import Maautoelectrics from "./pages/maautoelectrics.jsx";
+import Ttautosgarage from "./pages/ttautosgarage.jsx";
+import Jsautomotivedoncaster from "./pages/jsautomotivedoncaster.jsx";
+import Kmlaccidentrepaircentre from "./pages/kmlaccidentrepaircentre.jsx";
+import Kgpractice from "./pages/kgpractice.jsx";
+import Hnthefinestcarvalet from "./pages/hnthefinestcarvalet.jsx";
+import JMVehicleAssist from "./pages/cards/jm/jm.jsx";
 import Dog from "./pages/cards/Dog/Dog.jsx";
 import Santinos from "./pages/cards/Santinos/Santinos.jsx";
 import Braai from "./pages/cards/Braai/Braai.jsx";
@@ -127,7 +136,16 @@ function App() {
         <Route path="/berkleyestates" element={<BerkleyEstates />} />
         <Route path="/acg" element={<ACG />} />
         <Route path="/notts-carboncleaning" element={<Nottscarboncleaning />} />
-
+        <Route path="/elitewheelsglasgow" element={<EliteWheelsGlasgow />} />
+        <Route path="/alansautodetailing" element={<Alansautodetailing />} />
+        <Route path="/sowafurniture" element={<Sowafurniture />} />
+        <Route path="/crystalclean" element={<Crystalclean />} />
+        <Route path="/maautoelectrics" element={<Maautoelectrics />} />
+        <Route path="/ttautosgarage" element={<Ttautosgarage />} />
+        <Route path="/jsautomotivedoncaster" element={<Jsautomotivedoncaster />} />
+        <Route path="/kmlaccidentrepaircentre" element={<Kmlaccidentrepaircentre />} />
+        <Route path="/kgpractice" element={<Kgpractice />} />
+        <Route path="/hnthefinestcarvalet" element={<Hnthefinestcarvalet />} />
         <Route path="/jmvehicleasset" element={<JMVehicleAssist /> } />
         <Route path="/leicesterdoggrooming" element={<Dog />} />
         <Route path="/santinosgym" element={<Santinos />} />
