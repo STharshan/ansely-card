@@ -53,6 +53,8 @@ import BerkleyEstates from "./pages/BerkleyEstates.jsx";
 import ACG from "./pages/ACG.jsx";
 import Nottscarboncleaning from "./pages/nottscarboncleaning.jsx";
 
+import JMVehicleAssist from "./pages/cards/jm/jm.jsx"
+
 function App() {
   return (
     <Router>
@@ -120,6 +122,8 @@ function App() {
         <Route path="/berkleyestates" element={<BerkleyEstates />} />
         <Route path="/acg" element={<ACG />} />
         <Route path="/notts-carboncleaning" element={<Nottscarboncleaning />} />
+
+        <Route path="/jmvehicleasset" element={<JMVehicleAssist /> } /> 
       </Routes>
     </Router>
   );

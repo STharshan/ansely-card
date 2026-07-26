@@ -386,6 +386,44 @@ export const digitalCardDataMehranGarages = {
   ],
 };
 
+export const digitalCardDataJM = {
+  company: {
+    name: "JM Vehicle Assist",
+    tagline: "JM Vehicle Assist delivers precision performance solutions - driving innovation, efficiency, and excellence across industries.",
+    logo: "/jm.png",
+  },
+  founder: {
+    name: "Kris",
+    title: "Your Local Mobile Mechanic",
+  },
+  contacts: [
+    { type: "Call", href: "tel:+447477167363", icon: "Phone", styleClass: "bg-primary" },
+    { type: "WhatsApp", href: "https://wa.me/447477167363", icon: "MessageCircle", styleClass: "bg-[#25D366]" },
+    { type: "Email", href: "mailto:JMVehicleAssist@gmail.com", icon: "Mail", styleClass: "bg-primary" },
+    { type: "Website", href: "https://jmvehicleassist.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+  ],
+  about: "JM Vehicle Assist delivers precision performance solutions - driving innovation, efficiency, and excellence across industries.",
+  services: [
+    { label: "Battery Fitting", href: "https://jmvehicleassist.co.uk/services/battery-fitting" },
+    { label: "Vehicle Jump Start", href: "https://jmvehicleassist.co.uk/services/vehicle-jump-start" },
+    { label: "Mobile Tyre Fitting", href: "https://jmvehicleassist.co.uk/services/mobile-tyre-fitting-service" },
+    { label: "Emergency Fuel Delivery", href: "https://jmvehicleassist.co.uk/services/emergency-fuel-delivery" },
+    { label: "Vehicle Diagnostics", href: "https://jmvehicleassist.co.uk/services/vehicle-diagnostics-service" },
+  ],
+  rating: {
+    value: "5.0",
+    text: "Trusted for responsive mobile mechanic support and reliable service.",
+  },
+  location: "London",
+  locationUrl: "https://www.google.com/maps/search/London,+UK",
+  ratingUrl: "https://www.google.com/search?sca_esv=1e792a025b3d11d5&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=APpeQnsW1J92O-sh6oXJcynD9AXAYkyS6g:1785081841599&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_zwy5heWs7NE2LEXxaMRn5FzF2qkOAG-bEZN2INBqAtFVlA_rbHRQppW2an0Y2nh6wp4gz1Vo-ESEgKmL8-HN1I-3bsWATXYJOAxOEbPVpN27iwMhg%3D%3D&q=JM+Vehicle+Assist+Reviews&sa=X&ved=2ahUKEwiJ1MCI3PCVAxUISGwGHcsqIigQ0bkNegQILxAI&biw=1366&bih=633&dpr=1",
+  socialLinks: [
+    { icon: "Facebook", href: "https://web.facebook.com/JMVehicleAssist?_rdc=1&_rdr#" },
+    { icon: "Instagram", href: "https://www.instagram.com/jmvehicleassist/" },
+    { icon: "Twitter", href: "https://x.com/JMVehicleAssist" },
+  ],
+};
+
 export const digitalCardDataChocoholicsDesserts = {
   company: {
     name: "Chocoholics Desserts",
