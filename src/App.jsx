@@ -55,6 +55,7 @@ import Nottscarboncleaning from "./pages/nottscarboncleaning.jsx";
 
 
 import EliteWheelsGlasgow from "./pages/elitewheelsglasgow.jsx";
+import Alansautodetailing from "./pages/alansautodetailing.jsx";
 function App() {
   return (
     <Router>
@@ -123,6 +124,7 @@ function App() {
         <Route path="/acg" element={<ACG />} />
         <Route path="/notts-carboncleaning" element={<Nottscarboncleaning />} />
         <Route path="/elitewheelsglasgow" element={<EliteWheelsGlasgow />} />
+        <Route path="/alansautodetailing" element={<Alansautodetailing />} />
       </Routes>
     </Router>
   );
