@@ -17,18 +17,18 @@ export const digitalCardData = {
   about:
     "Massey Detailing is a mobile valeting and detailing business based in Wakefield, covering the surrounding Yorkshire areas with industry-leading products, careful technique, and premium car care.",
   services: [
-    { label: "Maintenance Scheme", href: "https://www.masseydetailing.co.uk/" },
-    { label: "Full Valet", href: "https://www.masseydetailing.co.uk/" },
-    { label: "Deep Clean", href: "https://www.masseydetailing.co.uk/" },
-    { label: "Full Detail", href: "https://www.masseydetailing.co.uk/" },
+    { label: "Maintenance Scheme", href: "https://www.masseydetailing.co.uk/services/maintenance-scheme" },
+    { label: "Full Valet", href: "https://www.masseydetailing.co.uk/services/full-valet" },
+    { label: "Deep Clean", href: "https://www.masseydetailing.co.uk/services/deep-clean" },
+    { label: "Full Detail", href: "https://www.masseydetailing.co.uk/services/full-detail" },
   ],
   rating: {
     value: "Google Reviews",
     text: "Tap to view Massey Detailing on Google.",
-    href: "https://www.google.com/search?q=massey+detailing",
+    href: "https://share.google/5hhTx99MTi07QKj6j",
   },
   location: "Wakefield and surrounding Yorkshire areas",
-  locationHref: "https://www.google.com/maps/search/Wakefield,+West+Yorkshire",
+  locationHref: "https://maps.app.goo.gl/q5KZ9npakiWJytWK9",
   socialLinks: [
     { label: "Facebook", icon: "Facebook", href: "https://web.facebook.com/people/Massey-Detailing/100083111173136/" },
     { label: "Instagram", icon: "Instagram", href: "https://www.instagram.com/masseydetailing" },

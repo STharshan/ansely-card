@@ -119,8 +119,21 @@ export default function Masseydetailing() {
             <h3 className="mb-4 text-center text-lg font-semibold">Services</h3>
             <ul className="space-y-3">
               {services.map((service) => (
-                <li key={service.label} className="flex text-center justify-center items-center rounded-lg border border-white/10 bg-white/5 px-4 py-3">
-                  <span className="text-white">{service.label}</span>
+                <li key={service.label}>
+                  {service.href ? (
+                    <a
+                      href={service.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center justify-center rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-center text-white transition hover:border-cyan-300/40 hover:bg-white/8"
+                    >
+                      <span>{service.label}</span>
+                    </a>
+                  ) : (
+                    <div className="flex items-center justify-center rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-center">
+                      <span className="text-white">{service.label}</span>
+                    </div>
+                  )}
                 </li>
               ))}
             </ul>
