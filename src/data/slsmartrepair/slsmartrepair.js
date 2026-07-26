@@ -27,7 +27,7 @@ export const digitalCardData = {
   rating: {
     value: "5.0",
     text: "Tap to view SL Smart Repair on Google.",
-    href: "https://www.google.com/search?q=SL+Smart+Repair&sca_esv=fc2a7f6adb56bd6b&rlz=1C1CHBD_enLK1213LK1213&sxsrf=APpeQnsZkPEJKY3GD_wbi6IsaP1LOzv_Sw%3A1784820690118&ei=0jNiatPeBv3vseMPk4zYgQ0&biw=1920&bih=945&ved=0ahUKEwjTj-OZj-mVAxX9d2wGHRMGNtAQ4dUDCBA&uact=5&oq=SL+Smart+Repair&gs_lp=Egxnd3Mtd2l6LXNlcnAiD1NMIFNtYXJ0IFJlcGFpcjIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDSOEIUL4DWL4DcAF4AJABAJgBgAKgAYACqgEDMi0xuAEDyAEA-AEB-AECmAICoAKjAqgCFMICBxAjGOoCGCfCAhAQABgDGI8BGOoCGLQC2AEBwgIQEC4YAxiPARjqAhi0AtgBAZgDF_EFZCe90PGtite6BgYIARABGAqSBwUxLjAuMaAHhwayBwMyLTG4B4wCwgcFMy0xLjHIBx2ACAE&sclient=gws-wiz-serp&zx=1784820774094",
+    href: "https://www.google.com/search?q=S.L+smart+repairs+30+Laxton+Close+Wigston+LE18+3WJ",
   },
   location: "30 Laxton Close, Leicester Wigston LE18 3WJ",
   locationHref: "https://www.google.com/maps/dir//Leicester,+Wigston+LE18+3WJ,+United+Kingdom",
