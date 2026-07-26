@@ -17,11 +17,11 @@ export const digitalCardData = {
   about:
     "Rods N Retros helps owners of classics and custom vehicles with restoration, paint, fabrication, and repair work, delivering careful craftsmanship from their Sheffield workshop.",
   services: [
-    { label: "Bare Metal Resprays" },
-    { label: "Full Restorations" },
-    { label: "Touch Ups & Smart Repairs" },
-    { label: "Welding & Fabrication" },
-    { label: "Fiberglass Repairs" },
+    { label: "Bare Metal Resprays", href: "https://rodsnretros.co.uk/" },
+    { label: "Full Restorations", href: "https://rodsnretros.co.uk/" },
+    { label: "Touch Ups & Smart Repairs", href: "https://rodsnretros.co.uk/" },
+    { label: "Welding & Fabrication", href: "https://rodsnretros.co.uk/" },
+    { label: "Fiberglass Repairs", href: "https://rodsnretros.co.uk/" },
   ],
   rating: {
     value: "Google Reviews",
