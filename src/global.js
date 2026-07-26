@@ -386,6 +386,44 @@ export const digitalCardDataMehranGarages = {
   ],
 };
 
+export const digitalCardDataJM = {
+  company: {
+    name: "JM Vehicle Assist",
+    tagline: "JM Vehicle Assist delivers precision performance solutions - driving innovation, efficiency, and excellence across industries.",
+    logo: "/jm.png",
+  },
+  founder: {
+    name: "Kris",
+    title: "Your Local Mobile Mechanic",
+  },
+  contacts: [
+    { type: "Call", href: "tel:+447477167363", icon: "Phone", styleClass: "bg-primary" },
+    { type: "WhatsApp", href: "https://wa.me/447477167363", icon: "MessageCircle", styleClass: "bg-[#25D366]" },
+    { type: "Email", href: "mailto:JMVehicleAssist@gmail.com", icon: "Mail", styleClass: "bg-primary" },
+    { type: "Website", href: "https://jmvehicleassist.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+  ],
+  about: "JM Vehicle Assist delivers precision performance solutions - driving innovation, efficiency, and excellence across industries.",
+  services: [
+    { label: "Battery Fitting", href: "https://jmvehicleassist.co.uk/services/battery-fitting" },
+    { label: "Vehicle Jump Start", href: "https://jmvehicleassist.co.uk/services/vehicle-jump-start" },
+    { label: "Mobile Tyre Fitting", href: "https://jmvehicleassist.co.uk/services/mobile-tyre-fitting-service" },
+    { label: "Emergency Fuel Delivery", href: "https://jmvehicleassist.co.uk/services/emergency-fuel-delivery" },
+    { label: "Vehicle Diagnostics", href: "https://jmvehicleassist.co.uk/services/vehicle-diagnostics-service" },
+  ],
+  rating: {
+    value: "5.0",
+    text: "Trusted for responsive mobile mechanic support and reliable service.",
+  },
+  location: "London",
+  locationUrl: "https://www.google.com/maps/search/London,+UK",
+  ratingUrl: "https://www.google.com/search?sca_esv=1e792a025b3d11d5&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=APpeQnsW1J92O-sh6oXJcynD9AXAYkyS6g:1785081841599&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_zwy5heWs7NE2LEXxaMRn5FzF2qkOAG-bEZN2INBqAtFVlA_rbHRQppW2an0Y2nh6wp4gz1Vo-ESEgKmL8-HN1I-3bsWATXYJOAxOEbPVpN27iwMhg%3D%3D&q=JM+Vehicle+Assist+Reviews&sa=X&ved=2ahUKEwiJ1MCI3PCVAxUISGwGHcsqIigQ0bkNegQILxAI&biw=1366&bih=633&dpr=1",
+  socialLinks: [
+    { icon: "Facebook", href: "https://web.facebook.com/JMVehicleAssist?_rdc=1&_rdr#" },
+    { icon: "Instagram", href: "https://www.instagram.com/jmvehicleassist/" },
+    { icon: "Twitter", href: "https://x.com/JMVehicleAssist" },
+  ],
+};
+
 export const digitalCardDataChocoholicsDesserts = {
   company: {
     name: "Chocoholics Desserts",
@@ -751,3 +789,154 @@ export const digitalCardDataUnit3 = {
     { icon: "Instagram", href: "https://www.instagram.com/unit_three_mots" },
   ],
 };
+
+export const digitalCardDataDogGrooming = {
+  company: {
+    name: "Leicester Dog Grooming",
+    tagline: "Professional grooming with personalised care in a warm",
+    logo: "/dog.png",
+  },
+  founder: {
+    name: "Leicester Dog Grooming",
+    title: "Dog Grooming",
+  },
+  contacts: [
+    { type: "Call", href: "tel:+447930549717", icon: "Phone", styleClass: "bg-primary" },
+    { type: "WhatsApp", href: "https://wa.me/447930549717", icon: "MessageCircle", styleClass: "bg-[#25D366]" },
+    { type: "Email", href: "mailto:bernieboo200@gmail.com", icon: "Mail", styleClass: "bg-primary" },
+    { type: "Website", href: "https://leicesterdoggrooming.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+  ],
+  about: "Leicester Dog Grooming offers professional grooming with personalised care in a warm, friendly environment your pup will love",
+  services: [
+    { label: "Dog Grooming", href: "https://leicesterdoggrooming.co.uk/" },
+  ],
+  rating: {
+    value: "5.0",
+    text: "Professional grooming with personalised care.",
+  },
+  location: "Leicestershire, UK",
+  locationUrl: "https://maps.app.goo.gl/Kz4LijXGAw1sPcBAA",
+  ratingUrl: "https://leicesterdoggrooming.co.uk/",
+  socialLinks: [
+    { icon: "Instagram", href: "https://www.instagram.com/leicesterdoggrooming/?igsh=ejVmOXZjc212NTZy" },
+    { icon: "Facebook", href: "https://web.facebook.com/profile.php?id=100093093552115#" },
+  ],
+};
+
+export const digitalCardDataSantinos = {
+  company: {
+    name: "Santino's GYM & STUDIO",
+    tagline: "Building strength, discipline, and community.",
+    logo: "/santino.png",
+  },
+  founder: {
+    name: "Santino's GYM & STUDIO",
+    title: "Gym & Studio",
+  },
+  contacts: [
+    { type: "Call", href: "tel:+447565603231", icon: "Phone", styleClass: "bg-primary" },
+    { type: "WhatsApp", href: "https://wa.me/447565603231", icon: "MessageCircle", styleClass: "bg-[#25D366]" },
+    { type: "Email", href: "mailto:santinosgym@gmail.com", icon: "Mail", styleClass: "bg-primary" },
+    { type: "Website", href: "https://santinosgym.com/", icon: "Globe", styleClass: "bg-primary" },
+  ],
+  about: "Building strength, discipline, and community. Join our family and start your fitness journey today.",
+  services: [
+    { label: "Standard Membership", href: "https://santinosgym.com/" },
+    { label: "Student/NHS Membership", href: "https://santinosgym.com/" },
+  ],
+  rating: {
+    value: "5.0",
+    text: "Read our Google reviews and see why members love training with us.",
+  },
+  location: "Derby, UK",
+  locationUrl: "https://maps.app.goo.gl/NTCH47BqqSWgYHD3A",
+  ratingUrl: "https://www.google.com/search?sca_esv=bac07e5fcd178b9a&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=APpeQnu4dCqZcOXTj2eUjruS69ouN0xemA:1785085580070&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_yvqpKLjFTfHD7Y59qeIY-fbPv6d525pEarOauHH9Ke-vX-DKJP2OBHVzPdPVRMI45ymCkC2PpMc6dhrTlPiDpdnWwv_uXTNX-gH49MKltsBiN_zTg%3D%3D&q=Santino%27s+Gym+%26+Studio+Reviews&sa=X&ved=2ahUKEwjs6pL_6fCVAxVMUPUHHcbwGMUQ0bkNegQIKRAI&biw=1366&bih=633&dpr=1",
+  socialLinks: [
+    { icon: "Facebook", href: "https://web.facebook.com/santinosgym?_rdc=1&_rdr#" },
+    { icon: "Instagram", href: "https://www.instagram.com/santinos_gym/" },
+  ],
+};
+
+export const digitalCardDataBraai = {
+  company: {
+    name: "Braai Master",
+    tagline: "Smoky flames, bold flavors, and barbecue done right in the heart of Leicester.",
+  },
+  founder: {
+    name: "Braai Master",
+    title: "BBQ & Fire-Inspired Cuisine",
+  },
+  contacts: [
+    { type: "Call", href: "tel:01162734557", icon: "Phone", styleClass: "bg-primary" },
+    { type: "Email", href: "mailto:braaimaster2020@icloud.com", icon: "Mail", styleClass: "bg-primary" },
+    { type: "Website", href: "https://thebraaimaster.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+  ],
+  about: "Where smoke meets flavor. Experience our signature BBQ meats and fire-inspired cuisine in the heart of the city.",
+  services: [
+    { label: "Chef Specials", href: "https://thebraaimaster.co.uk/#menu" },
+    { label: "Burgers", href: "https://thebraaimaster.co.uk/#menu" },
+    { label: "Tawa", href: "https://thebraaimaster.co.uk/#menu" },
+    { label: "Kebab Rolls", href: "https://thebraaimaster.co.uk/#menu" },
+    { label: "Biryani", href: "https://thebraaimaster.co.uk/#menu" },
+  ],
+  rating: {
+    value: "5.0",
+    text: "Loved for bold barbecue flavors and unforgettable fire-kissed dishes.",
+  },
+  location: "Leicester, UK",
+  locationUrl: "https://maps.app.goo.gl/ygKAU5bpYecrVmdZ7",
+  ratingUrl: "https://www.google.com/search?sca_esv=bac07e5fcd178b9a&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=APpeQnuYpgS3wYzKjd96qxC97tvNyNammw:1785086163090&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_-RVpfBxyBXToB-AP3pCDI06HYqAcAc1iPpejrIZX6gHyG4AM_6NZ05DKCqUR2LDLnbSOdCxSfqTqGkgYSQ-Fq1xpc3ucD4fWD_BW0PAHI-Y1x-kBw%3D%3D&q=Lahori+Chaska+The+Braai+Master+Reviews&sa=X&ved=2ahUKEwiIz5OV7PCVAxWPjeEIHcntDzkQ0bkNegQIIxAI&biw=1366&bih=633&dpr=1",
+  socialLinks: [
+    { icon: "Instagram", href: "https://www.instagram.com/braaimr/?hl=en" },
+  ],
+};
+
+export const digitalCardDataWongKwei = {
+  company: {
+    name: "Wong Kwei",
+    tagline: "Authentic Cantonese and Hong Kong flavors.",
+  },
+  founder: {
+    name: "Wong Kwei",
+    title: "Cantonese Restaurant",
+  },
+  contacts: [
+    { type: "Call", href: "tel:01530412394", icon: "Phone", styleClass: "bg-primary" },
+    { type: "Email", href: "mailto:wongkweiashby@gmail.com", icon: "Mail", styleClass: "bg-primary" },
+    { type: "Website", href: "https://wongkwei.com/", icon: "Globe", styleClass: "bg-primary" },
+  ],
+  about: "Savor the authentic taste of Cantonese and Hong Kong-style cuisine. Tradition meets excellence in every dish we serve.",
+  services: [
+    { label: "Set Menus" },
+    { label: "Appetisers" },
+    { label: "Soups" },
+    { label: "Seasonal Chef Recommendations" },
+    { label: "Seafood Dishes" },
+    { label: "Beef Dishes" },
+    { label: "Chicken Dishes" },
+    { label: "Duck Dishes" },
+    { label: "Pork Dishes" },
+    { label: "Curry Dishes" },
+    { label: "Vegetarian Dishes" },
+    { label: "Rice Dishes" },
+    { label: "Noodles (Chow Mein)" },
+    { label: "English & Egg Dishes" },
+    { label: "Foo Yung" },
+    { label: "Extras & Sides" },
+  ],
+  rating: {
+    value: "5.0",
+    text: "A favourite for authentic Cantonese dishes and generous portions.",
+  },
+  location: "Ashby, United Kingdom",
+  locationUrl: "https://maps.app.goo.gl/TXEo4woVAZMTXoBEA",
+  ratingUrl: "https://www.google.com/search?sca_esv=c2e363f2dc77113c&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=APpeQnsyPyHrplu907VTjht0lQsOZxMYZA:1785086736828&si=APenkKn5T4YN59srr511wD6k6Pufj9DEzRUvB1XJSwUeeT5afuFu_fiwLcGvLuZG-Rabv1MNHJxwt8DKCR8tlqMgB7YQflh6oh5utOgsmCQBRDAeCvlCnUCMHmDrsOmQckJdr1_LtSqCQ14YLm64Ju__1gNjsMyfVw%3D%3D&q=Wong+Kwei+Restaurant+Reviews&sa=X&ved=2ahUKEwiF5t2m7vCVAxXUiuEIHUEnA2wQ0bkNegQIJhAI&biw=1366&bih=633&dpr=1",
+  socialLinks: [
+    { icon: "Facebook", href: "https://web.facebook.com/wongkwei/" },
+    { icon: "Instagram", href: "https://www.instagram.com/wongkweiashby/" },
+  ],
+};
+
+
+
+

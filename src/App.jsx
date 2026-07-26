@@ -52,8 +52,6 @@ import Dentmonkey from "./pages/Dentmonkey.jsx";
 import BerkleyEstates from "./pages/BerkleyEstates.jsx";
 import ACG from "./pages/ACG.jsx";
 import Nottscarboncleaning from "./pages/nottscarboncleaning.jsx";
-
-
 import EliteWheelsGlasgow from "./pages/elitewheelsglasgow.jsx";
 import Alansautodetailing from "./pages/alansautodetailing.jsx";
 import Sowafurniture from "./pages/sowafurniture.jsx";
@@ -64,6 +62,11 @@ import Jsautomotivedoncaster from "./pages/jsautomotivedoncaster.jsx";
 import Kmlaccidentrepaircentre from "./pages/kmlaccidentrepaircentre.jsx";
 import Kgpractice from "./pages/kgpractice.jsx";
 import Hnthefinestcarvalet from "./pages/hnthefinestcarvalet.jsx";
+import JMVehicleAssist from "./pages/cards/jm/jm.jsx";
+import Dog from "./pages/cards/Dog/Dog.jsx";
+import Santinos from "./pages/cards/Santinos/Santinos.jsx";
+import Braai from "./pages/cards/Braai/Braai.jsx";
+import WongKwei from "./pages/cards/WongKwei/WongKwei.jsx";
 function App() {
   return (
     <Router>
@@ -131,8 +134,6 @@ function App() {
         <Route path="/berkleyestates" element={<BerkleyEstates />} />
         <Route path="/acg" element={<ACG />} />
         <Route path="/notts-carboncleaning" element={<Nottscarboncleaning />} />
-
-
         <Route path="/elitewheelsglasgow" element={<EliteWheelsGlasgow />} />
         <Route path="/alansautodetailing" element={<Alansautodetailing />} />
         <Route path="/sowafurniture" element={<Sowafurniture />} />
@@ -143,6 +144,12 @@ function App() {
         <Route path="/kmlaccidentrepaircentre" element={<Kmlaccidentrepaircentre />} />
         <Route path="/kgpractice" element={<Kgpractice />} />
         <Route path="/hnthefinestcarvalet" element={<Hnthefinestcarvalet />} />
+        <Route path="/jmvehicleasset" element={<JMVehicleAssist /> } />
+        <Route path="/leicesterdoggrooming" element={<Dog />} />
+        <Route path="/santinosgym" element={<Santinos />} />
+        <Route path="/santinos-gym-studio" element={<Santinos />} />
+        <Route path="/braai" element={<Braai />} />
+        <Route path="/wongkwei" element={<WongKwei />} />
       </Routes>
     </Router>
   );
