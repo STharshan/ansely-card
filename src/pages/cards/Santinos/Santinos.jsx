@@ -9,8 +9,8 @@ import {
 } from "lucide-react";
 import { FaFacebook, FaInstagram } from "react-icons/fa6";
 
-import { digitalCardDataDogGrooming } from "../../../global";
-import { downloadVCF } from "./Dog.js";
+import { digitalCardDataSantinos } from "../../../global";
+import { downloadVCF } from "./Santinos.js";
 import { lazy, Suspense } from "react";
 
 const FloatingLines = lazy(() => import("../../../components/FloatingLines.tsx"));
@@ -28,7 +28,7 @@ const iconMap = {
     Instagram: FaInstagram,
 };
 
-export default function Dog() {
+export default function Santinos() {
     const {
         company,
         founder,
@@ -40,12 +40,10 @@ export default function Dog() {
         locationUrl,
         ratingUrl,
         socialLinks,
-    } = digitalCardDataDogGrooming;
+    } = digitalCardDataSantinos;
 
     return (
         <main className="relative min-h-screen text-white flex justify-center bg-[var(--bg-main)]">
-
-            {/* Background Animation */}
             <div className="fixed inset-0 z-0 pointer-events-none">
                 <Suspense fallback={<WebGLPlaceholder />}>
                     <FloatingLines
@@ -61,10 +59,7 @@ export default function Dog() {
                 </Suspense>
             </div>
 
-            {/* Content Layer */}
             <div className="relative z-10 w-full flex flex-col items-center">
-
-                {/* Company Name - Usually wider/full width for impact */}
                 <header className="w-full max-w-md px-6 pt-16 pb-6 flex items-center justify-center text-center">
                     <div className="relative shrink-0">
                         <div className="absolute inset-0 blur-2xl rounded-full scale-110" />
@@ -72,30 +67,23 @@ export default function Dog() {
                             src={company.logo}
                             alt={founder.name}
                             loading="lazy"
-                            className="relative object-cover w-30 h-28"
+                            className="relative object-cover w-26 h-35"
                         />
                     </div>
                 </header>
 
-                {/* Consistent Width Container 
-            All elements below this line will have the exact same width 
-        */}
                 <div className="w-full max-w-md px-4 pb-20">
-
-                    {/* Tagline - Now matched to the width of the cards/buttons */}
                     <div className="text-center mb-10">
                         <p className="text-white text-[24px] md:text-[28px] tracking-tight leading-snug">
                             {company.tagline}
                         </p>
                     </div>
 
-                    {/* Founder */}
                     <section className="text-center mb-10">
                         <h2 className="text-2xl font-semibold">{founder.name}</h2>
                         <p className="text-white mt-1 opacity-80">{founder.title}</p>
                     </section>
 
-                    {/* Contact Buttons */}
                     <section className="mb-10">
                         <div className="grid grid-cols-2 gap-3">
                             {contacts.map((contact) => {
@@ -105,6 +93,7 @@ export default function Dog() {
                                         key={contact.type}
                                         href={contact.href}
                                         target={contact.type === "Website" || contact.type === "WhatsApp" ? "_blank" : "_self"}
+                                        rel="noreferrer"
                                         className={`flex items-center justify-center gap-2 h-14 rounded-lg transition hover:scale-[1.02] active:scale-95 ${contact.styleClass}`}
                                     >
                                         <IconComponent className="w-5 h-5" />
@@ -115,14 +104,12 @@ export default function Dog() {
                         </div>
                     </section>
 
-                    {/* About Card */}
                     <div className="rounded-xl p-6 text-center mb-10 border border-white/10 bg-white/5 backdrop-blur-md">
                         <p className="text-white font-bold leading-relaxed">{about}</p>
                     </div>
 
-                    {/* Services */}
                     <section className="mb-10">
-                        <h3 className="text-lg font-semibold mb-4 text-center">Key Services</h3>
+                        <h3 className="text-lg font-semibold mb-4 text-center">What We Offer</h3>
                         <ul className="space-y-3">
                             {services.map((service) => (
                                 <li key={service.label}>
@@ -139,7 +126,6 @@ export default function Dog() {
                         </ul>
                     </section>
 
-                    {/* Rating */}
                     <a
                         href={ratingUrl}
                         target="_blank"
@@ -155,7 +141,6 @@ export default function Dog() {
                         <p className="text-sm text-gray-400 italic mt-2">{rating.text}</p>
                     </a>
 
-                    {/* Location */}
                     <a
                         href={locationUrl}
                         target="_blank"
@@ -166,7 +151,6 @@ export default function Dog() {
                         {location}
                     </a>
 
-                    {/* Social */}
                     <section className="flex justify-center gap-4 mb-10">
                         {socialLinks.map((social) => {
                             const IconComponent = iconMap[social.icon] ?? Globe;
@@ -184,7 +168,6 @@ export default function Dog() {
                         })}
                     </section>
 
-                    {/* Save Contact Button */}
                     <section className="mb-10">
                         <button
                             onClick={downloadVCF}
@@ -195,7 +178,6 @@ export default function Dog() {
                         </button>
                     </section>
 
-                    {/* Footer */}
                     <footer className="text-center text-sm text-gray-400 opacity-60">
                         <p>&copy; {new Date().getFullYear()} Ansely. All rights reserved.</p>
                     </footer>

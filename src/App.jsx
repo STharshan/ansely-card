@@ -54,6 +54,10 @@ import ACG from "./pages/ACG.jsx";
 import Nottscarboncleaning from "./pages/nottscarboncleaning.jsx";
 
 import JMVehicleAssist from "./pages/cards/jm/jm.jsx"
+import Dog from "./pages/cards/Dog/Dog.jsx";
+import Santinos from "./pages/cards/Santinos/Santinos.jsx";
+import Braai from "./pages/cards/Braai/Braai.jsx";
+import WongKwei from "./pages/cards/WongKwei/WongKwei.jsx";
 
 function App() {
   return (
@@ -123,7 +127,12 @@ function App() {
         <Route path="/acg" element={<ACG />} />
         <Route path="/notts-carboncleaning" element={<Nottscarboncleaning />} />
 
-        <Route path="/jmvehicleasset" element={<JMVehicleAssist /> } /> 
+        <Route path="/jmvehicleasset" element={<JMVehicleAssist /> } />
+        <Route path="/leicesterdoggrooming" element={<Dog />} />
+        <Route path="/santinosgym" element={<Santinos />} />
+        <Route path="/santinos-gym-studio" element={<Santinos />} />
+        <Route path="/braai" element={<Braai />} />
+        <Route path="/wongkwei" element={<WongKwei />} />
       </Routes>
     </Router>
   );

@@ -9,8 +9,8 @@ import {
 } from "lucide-react";
 import { FaFacebook, FaInstagram } from "react-icons/fa6";
 
-import { digitalCardDataDogGrooming } from "../../../global";
-import { downloadVCF } from "./Dog.js";
+import { digitalCardDataUnit3 } from "../../../global";
+import { downloadVCF } from "./unit3.js";
 import { lazy, Suspense } from "react";
 
 const FloatingLines = lazy(() => import("../../../components/FloatingLines.tsx"));
@@ -19,16 +19,9 @@ const WebGLPlaceholder = () => (
     <div className="fixed inset-0 bg-[var(--bg-main)]" />
 );
 
-const iconMap = {
-    Phone,
-    MessageCircle,
-    Mail,
-    Globe,
-    Facebook: FaFacebook,
-    Instagram: FaInstagram,
-};
+const iconMap = { Phone, MessageCircle, Mail, Globe, Facebook: FaFacebook, Instagram: FaInstagram };
 
-export default function Dog() {
+export default function UNIT3() {
     const {
         company,
         founder,
@@ -40,7 +33,7 @@ export default function Dog() {
         locationUrl,
         ratingUrl,
         socialLinks,
-    } = digitalCardDataDogGrooming;
+    } = digitalCardDataUnit3;
 
     return (
         <main className="relative min-h-screen text-white flex justify-center bg-[var(--bg-main)]">
@@ -72,14 +65,14 @@ export default function Dog() {
                             src={company.logo}
                             alt={founder.name}
                             loading="lazy"
-                            className="relative object-cover w-30 h-28"
+                            className="relative object-cover w-35 h-20 md:w-45 md:h-20"
                         />
                     </div>
                 </header>
 
-                {/* Consistent Width Container 
-            All elements below this line will have the exact same width 
-        */}
+                {/* Consistent Width Container
+            All elements below this line will have the exact same width
+         */}
                 <div className="w-full max-w-md px-4 pb-20">
 
                     {/* Tagline - Now matched to the width of the cards/buttons */}
@@ -99,7 +92,7 @@ export default function Dog() {
                     <section className="mb-10">
                         <div className="grid grid-cols-2 gap-3">
                             {contacts.map((contact) => {
-                                const IconComponent = iconMap[contact.icon] ?? Globe;
+                                const IconComponent = iconMap[contact.icon];
                                 return (
                                     <a
                                         key={contact.type}
@@ -122,7 +115,7 @@ export default function Dog() {
 
                     {/* Services */}
                     <section className="mb-10">
-                        <h3 className="text-lg font-semibold mb-4 text-center">Key Services</h3>
+                        <h3 className="text-lg font-semibold mb-4 text-center">What We Offer</h3>
                         <ul className="space-y-3">
                             {services.map((service) => (
                                 <li key={service.label}>
@@ -169,13 +162,11 @@ export default function Dog() {
                     {/* Social */}
                     <section className="flex justify-center gap-4 mb-10">
                         {socialLinks.map((social) => {
-                            const IconComponent = iconMap[social.icon] ?? Globe;
+                            const IconComponent = iconMap[social.icon];
                             return (
                                 <a
-                                    key={social.href}
+                                    key={social.icon}
                                     href={social.href}
-                                    target="_blank"
-                                    rel="noreferrer"
                                     className="h-12 w-12 rounded-full flex items-center justify-center transition bg-white/10 hover:bg-[var(--primary)]"
                                 >
                                     <IconComponent className="w-5 h-5" />

@@ -1,7 +1,7 @@
-import { digitalCardDataDogGrooming } from "../../../global";
+import { digitalCardDataUnit3 } from "../../../global";
 
 export function downloadVCF() {
-  const { founder, company, contacts, location } = digitalCardDataDogGrooming;
+  const { founder, company, contacts, location } = digitalCardDataUnit3;
 
   // Extract phone, email, and website
   const phone = contacts.find(c => c.type === "Call")?.href.replace("tel:", "") || "";
