@@ -937,6 +937,40 @@ export const digitalCardDataWongKwei = {
   ],
 };
 
+export const digitalCardDataAlino = {
+  company: {
+    name: "ALINO",
+    tagline: "Hospitality made to feel like home.",
+  },
+  founder: {
+    name: "ALINO",
+    title: "Restaurant Bar",
+  },
+  contacts: [
+    { type: "Call", href: "tel:07737098045", icon: "Phone", styleClass: "bg-primary" },
+    { type: "WhatsApp", href: "https://wa.me/447737098045", icon: "MessageCircle", styleClass: "bg-[#25D366]" },
+    { type: "Email", href: "mailto:alinoltd@gmail.com", icon: "Mail", styleClass: "bg-primary" },
+    { type: "Website", href: "https://alino.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+  ],
+  about: "Serving delicious meals with love and passion. Enjoy our cozy ambiance, fast delivery, and gourmet menu.",
+  services: [
+    { label: "Chef’s Specialities" },
+    { label: "Okra Soup" },
+    { label: "Egussi with Assorted Meat" },
+    { label: "Fried Rice with Fish" },
+  ],
+  rating: {
+    value: "5.0",
+    text: "A favourite for flavorful meals, comfort, and friendly service.",
+  },
+  location: "Leicester, United Kingdom",
+  locationUrl: "https://maps.app.goo.gl/VQo7ENeLPW4HDmDj8",
+  ratingUrl: "https://www.google.com/search?sca_esv=c2e363f2dc77113c&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=APpeQnttmCjkC3CTfN5Lk89A7puk2givPg:1785088148025&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-__OY8GnCUK3nK49YHSkq03h7uCz_-Ja2wfBCrenLcok9-KtSr9joyudAldtArH8Fwj798-uiB_47G8y41rphCAOlD_fD&q=ALINO+Reviews&sa=X&ved=2ahUKEwikttLH8_CVAxW9UGwGHa_qBEwQ0bkNegQILhAH&biw=1366&bih=633&dpr=1",
+  socialLinks: [
+    { icon: "Facebook", href: "https://web.facebook.com/AlinoRestaurantBar/?locale=en_GB&_rdc=1&_rdr#" },
+  ],
+};
+
 
 
 
