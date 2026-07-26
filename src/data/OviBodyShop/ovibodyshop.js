@@ -17,11 +17,11 @@ export const digitalCardData = {
   about:
     "Ovi Body Shop handles everything from panel correction to full resprays, helping drivers restore their vehicles with careful workmanship and dependable service.",
   services: [
-    { label: "Panel Beating" },
-    { label: "Paint Respray" },
-    { label: "Dent & Scratch Repair" },
-    { label: "Accident Repairs" },
-    { label: "Insurance Jobs" },
+    { label: "Panel Beating", href: "https://ovicars.co.uk/panel-beating" },
+    { label: "Paint Respray", href: "https://ovicars.co.uk/paint-respray" },
+    { label: "Dent & Scratch Repair", href: "https://ovicars.co.uk/dent" },
+    { label: "Accident Repairs", href: "https://ovicars.co.uk/accident-repair" },
+    { label: "Insurance Jobs", href: "https://ovicars.co.uk/insurance-job" },
   ],
   rating: {
     value: "5.0",
