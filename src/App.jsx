@@ -61,6 +61,7 @@ import Crystalclean from "./pages/crystalclean.jsx";
 import Maautoelectrics from "./pages/maautoelectrics.jsx";
 import Ttautosgarage from "./pages/ttautosgarage.jsx";
 import Jsautomotivedoncaster from "./pages/jsautomotivedoncaster.jsx";
+import Kmlaccidentrepaircentre from "./pages/kmlaccidentrepaircentre.jsx";
 function App() {
   return (
     <Router>
@@ -137,6 +138,7 @@ function App() {
         <Route path="/maautoelectrics" element={<Maautoelectrics />} />
         <Route path="/ttautosgarage" element={<Ttautosgarage />} />
         <Route path="/jsautomotivedoncaster" element={<Jsautomotivedoncaster />} />
+        <Route path="/kmlaccidentrepaircentre" element={<Kmlaccidentrepaircentre />} />
       </Routes>
     </Router>
   );
