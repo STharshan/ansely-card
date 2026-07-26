@@ -30,7 +30,7 @@ export const digitalCardData = {
   rating: {
     value: "5.0",
     text: "Tap to view Tomas Exteriors on Google.",
-    href: "https://share.google/XCgcWkQW5iEqHywcW",
+    href: "https://share.google/TrkiETV9rdFjAWeVB",
   },
   location: "Unit 16 Croft St, Bury, BL9 7BG, United Kingdom",
   locationHref: "https://maps.app.goo.gl/GPi6frsETUX1cu4VA",
