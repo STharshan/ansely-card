@@ -117,17 +117,6 @@ export default function Rodnretros() {
             <h3 className="text-lg font-semibold mb-4 text-center">Services</h3>
             <ul className="space-y-3">
               {services.map((service) => (
-<<<<<<< HEAD
-                <li key={service.label} className="flex text-center justify-center items-center rounded-lg border border-white/10 bg-white/5 px-4 py-3 transition hover:border-cyan-300/40 hover:bg-white/8">
-                  <a
-                    href={service.href}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-white hover:text-cyan-300 hover:underline"
-                  >
-                    {service.label}
-                  </a>
-=======
                 <li key={service.label}>
                   {service.href ? (
                     <a
@@ -143,7 +132,6 @@ export default function Rodnretros() {
                       <span className="text-white">{service.label}</span>
                     </div>
                   )}
->>>>>>> 2c0e893adccf7d1e5371083bb349d20efc5c7fb6
                 </li>
               ))}
             </ul>
