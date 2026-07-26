@@ -58,6 +58,7 @@ import EliteWheelsGlasgow from "./pages/elitewheelsglasgow.jsx";
 import Alansautodetailing from "./pages/alansautodetailing.jsx";
 import Sowafurniture from "./pages/sowafurniture.jsx";
 import Crystalclean from "./pages/crystalclean.jsx";
+import Maautoelectrics from "./pages/maautoelectrics.jsx";
 function App() {
   return (
     <Router>
@@ -131,6 +132,7 @@ function App() {
         <Route path="/alansautodetailing" element={<Alansautodetailing />} />
         <Route path="/sowafurniture" element={<Sowafurniture />} />
         <Route path="/crystalclean" element={<Crystalclean />} />
+        <Route path="/maautoelectrics" element={<Maautoelectrics />} />
       </Routes>
     </Router>
   );
