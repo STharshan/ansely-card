@@ -16,12 +16,12 @@ export const digitalCardData = {
   about:
     "Ear We Go offers focused ear care services with a simple approach, helping clients access safe and comfortable micro suction treatment.",
   services: [
-    { label: "Micro Suction" },
+    { label: "Micro Suction", href: "https://earwego.co.uk/earwaxremovalpage/" },
   ],
   rating: {
     value: "5.0",
     text: "Tap to view Ear We Go on Google.",
-    href: "https://www.google.com/search?q=ear+we+go&sca_esv=fc2a7f6adb56bd6b&rlz=1C1CHBD_enLK1213LK1213&biw=1920&bih=945&sxsrf=APpeQnuxV_0FM8z3EdyAoa0kJwiruCz9Og%3A1784823496025&ei=yD5iau2dAY2YhvcP37Tw6QU&ved=0ahUKEwjtod7TmemVAxUNjOEIHV8aPF0Q4dUDCBA&uact=5&oq=ear+we+go&gs_lp=Egxnd3Mtd2l6LXNlcnAiCWVhciB3ZSBnbzIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIoFGIYDSNUeUABY1RxwAXgAkAEAmAGVAqABlxCqAQUwLjEuOLgBA8gBAPgBAZgCCqACghGoAhTCAgcQIxjqAhgnwgIQEAAYAxiPARjqAhi0AtgBAcICChAuGMcBGK8BGCfCAgQQIxgnwgIKEAAYgAQYigUYQ8ICFhAuGIAEGIoFGEMYsQMYgwEYxwEY0QPCAgsQABiABBixAxiDAcICFxAuGMcBGK8BGJcFGNwEGN4EGOAE2AEBwgIOEC4YgAQYigUYkQIYsQPCAgsQABiABBiKBRiRAsICERAuGIAEGIoFGJECGMcBGK8BwgIIEC4YgAQYsQPCAgQQLhgDwgIIEAAYgAQYsQPCAhoQLhiABBiKBRiRAhjHARivARiYBRieBRiZBcICDRAAGIAEGIoFGEMYsQPCAg0QLhiABBiKBRhDGLEDwgINEAAYgAQYigUYQxjJA8ICCBAAGIAEGJIDwgILEAAYgAQYigUYkgPCAggQABiABBiiBJgDEfEFt4G0CxspWou6BgYIARABGAqSBwUxLjEuOKAHn02yBwUwLjEuOLgH8RDCBwUyLTYuNMgHWIAIAQ&sclient=gws-wiz-serp#cobssid=s",
+    href: "",
   },
   location: "Great Northern Rd, Derby, DE1 1LR",
   locationHref: "https://maps.google.com/?q=Great+Northern+Rd,+Derby,+DE1+1LR",

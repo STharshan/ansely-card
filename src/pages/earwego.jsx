@@ -129,8 +129,21 @@ export default function Earwego() {
             <h3 className="text-lg font-semibold mb-4 text-center">Services</h3>
             <ul className="space-y-3">
               {services.map((service) => (
-                <li key={service.label} className="flex text-center justify-center items-center rounded-lg border border-white/10 bg-white/5 px-4 py-3">
-                  <span className="text-white">{service.label}</span>
+                <li key={service.label}>
+                  {service.href ? (
+                    <a
+                      href={service.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex w-full text-center justify-center items-center rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-white transition hover:border-cyan-300/40 hover:bg-white/8"
+                    >
+                      <span>{service.label}</span>
+                    </a>
+                  ) : (
+                    <div className="flex text-center justify-center items-center rounded-lg border border-white/10 bg-white/5 px-4 py-3">
+                      <span className="text-white">{service.label}</span>
+                    </div>
+                  )}
                 </li>
               ))}
             </ul>
@@ -138,34 +151,55 @@ export default function Earwego() {
 
           {/* Rating */}
           {rating ? (
-            <a
-              href={rating.href}
-              target="_blank"
-              rel="noreferrer"
-              className="block rounded-xl p-6 text-center mb-10 border border-white/10 bg-white/5 backdrop-blur-md transition hover:border-cyan-300/40 hover:bg-white/8"
-            >
-              <div className="flex justify-center gap-1 mb-2">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                ))}
+            rating.href ? (
+              <a
+                href={rating.href}
+                target="_blank"
+                rel="noreferrer"
+                className="block rounded-xl p-6 text-center mb-10 border border-white/10 bg-white/5 backdrop-blur-md transition hover:border-cyan-300/40 hover:bg-white/8"
+              >
+                <div className="flex justify-center gap-1 mb-2">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+                <p className="font-semibold mt-4">{rating.value} Google Rating</p>
+                <p className="text-sm text-gray-400 italic mt-2">{rating.text}</p>
+              </a>
+            ) : (
+              <div className="block rounded-xl p-6 text-center mb-10 border border-white/10 bg-white/5 backdrop-blur-md">
+                <div className="flex justify-center gap-1 mb-2">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+                <p className="font-semibold mt-4">{rating.value} Google Rating</p>
+                <p className="text-sm text-gray-400 italic mt-2">{rating.text}</p>
               </div>
-              <p className="font-semibold mt-4">{rating.value} Google Rating</p>
-              <p className="text-sm text-gray-400 italic mt-2">{rating.text}</p>
-            </a>
+            )
           ) : null}
 
           {/* Location */}
-          <a
-            href={locationHref}
-            target="_blank"
-            rel="noreferrer"
-            className="flex justify-center items-center gap-2 text-white mb-10 hover:text-cyan-300 transition text-center"
-          >
-            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/10">
-              <MapPin className="w-4 h-4 text-primary" />
-            </span>
-            {location}
-          </a>
+          {locationHref ? (
+            <a
+              href={locationHref}
+              target="_blank"
+              rel="noreferrer"
+              className="flex justify-center items-center gap-2 text-white mb-10 hover:text-cyan-300 transition text-center"
+            >
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/10">
+                <MapPin className="w-4 h-4 text-primary" />
+              </span>
+              {location}
+            </a>
+          ) : (
+            <div className="flex justify-center items-center gap-2 text-white mb-10 text-center">
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/10">
+                <MapPin className="w-4 h-4 text-primary" />
+              </span>
+              {location}
+            </div>
+          )}
 
           {/* Social */}
           {socialLinks.length ? (
