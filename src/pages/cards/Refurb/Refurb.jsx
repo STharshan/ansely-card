@@ -117,13 +117,12 @@ export default function RefurbDoctor() {
                         <h3 className="text-lg font-semibold mb-4 text-center">Key Services</h3>
                         <ul className="space-y-3">
                             {services.map((service) => (
-                                <li key={service.label} className="flex text-center justify-center items-center gap-3">
-                                    <span className="h-2 w-2 rounded-full bg-primary" />
+                                <li key={service.label}>
                                     <a
                                         href={service.href}
                                         target="_blank"
                                         rel="noreferrer"
-                                        className="text-white hover:underline"
+                                        className="flex w-full items-center justify-center rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-center text-white transition hover:border-cyan-300/40 hover:bg-white/8"
                                     >
                                         {service.label}
                                     </a>
