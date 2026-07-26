@@ -62,6 +62,7 @@ import Maautoelectrics from "./pages/maautoelectrics.jsx";
 import Ttautosgarage from "./pages/ttautosgarage.jsx";
 import Jsautomotivedoncaster from "./pages/jsautomotivedoncaster.jsx";
 import Kmlaccidentrepaircentre from "./pages/kmlaccidentrepaircentre.jsx";
+import Kgpractice from "./pages/kgpractice.jsx";
 function App() {
   return (
     <Router>
@@ -139,6 +140,7 @@ function App() {
         <Route path="/ttautosgarage" element={<Ttautosgarage />} />
         <Route path="/jsautomotivedoncaster" element={<Jsautomotivedoncaster />} />
         <Route path="/kmlaccidentrepaircentre" element={<Kmlaccidentrepaircentre />} />
+        <Route path="/kgpractice" element={<Kgpractice />} />
       </Routes>
     </Router>
   );
