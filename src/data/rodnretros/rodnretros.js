@@ -17,19 +17,19 @@ export const digitalCardData = {
   about:
     "Rods N Retros helps owners of classics and custom vehicles with restoration, paint, fabrication, and repair work, delivering careful craftsmanship from their Sheffield workshop.",
   services: [
-    { label: "Bare Metal Resprays" },
-    { label: "Full Restorations" },
-    { label: "Touch Ups & Smart Repairs" },
-    { label: "Welding & Fabrication" },
-    { label: "Fiberglass Repairs" },
+    { label: "Bare Metal Resprays", href: "https://rodsnretros.co.uk/services/bare-metal-resprays" },
+    { label: "Full Restorations", href: "https://rodsnretros.co.uk/services/full-restorations" },
+    { label: "Touch Ups & Smart Repairs", href: "https://rodsnretros.co.uk/services/touch-ups" },
+    { label: "Welding & Fabrication", href: "https://rodsnretros.co.uk/services/welding-fabrication" },
+    { label: "Fiberglass Repairs", href: "https://rodsnretros.co.uk/services/fiberglass-repairs" },
   ],
   rating: {
     value: "Google Reviews",
     text: "Tap to view Rods N Retros on Google.",
-    href: "https://www.google.com/search?q=rod+n+retros",
+    href: "https://share.google/tcCpVmWlKZ2jxTuUn",
   },
   location: "23A Mansfield Road, Sheffield, United Kingdom",
-  locationHref: "https://maps.app.goo.gl/wKrkfNquHBcAZfe88",
+  locationHref: "https://maps.app.goo.gl/8qA5vdt9xDki6Z7R8",
   socialLinks: [],
 };
 
