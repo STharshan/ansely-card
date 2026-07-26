@@ -67,6 +67,9 @@ import Dog from "./pages/cards/Dog/Dog.jsx";
 import Santinos from "./pages/cards/Santinos/Santinos.jsx";
 import Braai from "./pages/cards/Braai/Braai.jsx";
 import WongKwei from "./pages/cards/WongKwei/WongKwei.jsx";
+
+import Uktintz from "./pages/uktintz.jsx";
+
 function App() {
   return (
     <Router>
@@ -150,6 +153,8 @@ function App() {
         <Route path="/santinos-gym-studio" element={<Santinos />} />
         <Route path="/braai" element={<Braai />} />
         <Route path="/wongkwei" element={<WongKwei />} />
+
+        <Route path="/uktintz" element={<Uktintz />} />
       </Routes>
     </Router>
   );
