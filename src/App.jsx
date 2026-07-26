@@ -56,6 +56,7 @@ import Nottscarboncleaning from "./pages/nottscarboncleaning.jsx";
 
 import EliteWheelsGlasgow from "./pages/elitewheelsglasgow.jsx";
 import Alansautodetailing from "./pages/alansautodetailing.jsx";
+import Sowafurniture from "./pages/sowafurniture.jsx";
 function App() {
   return (
     <Router>
@@ -125,6 +126,7 @@ function App() {
         <Route path="/notts-carboncleaning" element={<Nottscarboncleaning />} />
         <Route path="/elitewheelsglasgow" element={<EliteWheelsGlasgow />} />
         <Route path="/alansautodetailing" element={<Alansautodetailing />} />
+        <Route path="/sowafurniture" element={<Sowafurniture />} />
       </Routes>
     </Router>
   );
