@@ -59,6 +59,7 @@ import Alansautodetailing from "./pages/alansautodetailing.jsx";
 import Sowafurniture from "./pages/sowafurniture.jsx";
 import Crystalclean from "./pages/crystalclean.jsx";
 import Maautoelectrics from "./pages/maautoelectrics.jsx";
+import Ttautosgarage from "./pages/ttautosgarage.jsx";
 function App() {
   return (
     <Router>
@@ -133,6 +134,7 @@ function App() {
         <Route path="/sowafurniture" element={<Sowafurniture />} />
         <Route path="/crystalclean" element={<Crystalclean />} />
         <Route path="/maautoelectrics" element={<Maautoelectrics />} />
+        <Route path="/ttautosgarage" element={<Ttautosgarage />} />
       </Routes>
     </Router>
   );
