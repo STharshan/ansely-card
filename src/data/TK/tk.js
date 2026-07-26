@@ -15,20 +15,20 @@ export const digitalCardData = {
   about:
     "TK Automotive works across performance tuning, rolling road testing, diagnostics, motorsport prep, and mechanical repair for drivers who want precise, dependable results.",
   services: [
-    { label: "ECU Remapping & Tuning" },
-    { label: "Rolling Road / Wheel Dyno" },
-    { label: "Motorsport & Rally Preparation" },
-    { label: "DPF-EGR-AdBlue Solutions" },
-    { label: "Diagnostics" },
-    { label: "Mechanical Repairs" },
+    { label: "ECU Remapping & Tuning", href: "https://www.tkautomotive.im/ecu-remapping-tuning" },
+    { label: "Rolling Road / Wheel Dyno", href: "https://www.tkautomotive.im/rolling-road-wheel-dyno" },
+    { label: "Motorsport & Rally Preparation", href: "https://www.tkautomotive.im/motorsport-rally-preparation" },
+    { label: "DPF-EGR-AdBlue Solutions", href: "https://www.tkautomotive.im/dpf-egr-adblue-solutions" },
+    { label: "Diagnostics", href: "https://www.tkautomotive.im/diagnostics" },
+    { label: "Mechanical Repairs", href: "https://www.tkautomotive.im/mechanical-repairs" },
   ],
   rating: {
     value: "5.0",
     text: "Tap to view TK Automotive on Google.",
-    href: "https://www.google.com/search?q=TK+Automotive+%E2%80%94+Professional+Performance+Services&rlz=1C1CHBD_enLK1213LK1213&biw=1920&bih=945&sca_esv=fc2a7f6adb56bd6b&sxsrf=APpeQnuzMifHB73daohYflAohdwZBry2vg%3A1784828048272&ei=kFBiaoOhEKCrseMP5eGv2QQ&ved=0ahUKEwiDqbXOqumVAxWgVWwGHeXwK0sQ4dUDCBA&uact=5&oq=TK+Automotive+%E2%80%94+Professional+Performance+Services&gs_lp=Egxnd3Mtd2l6LXNlcnAiM1RLIEF1dG9tb3RpdmUg4oCUIFByb2Zlc3Npb25hbCBQZXJmb3JtYW5jZSBTZXJ2aWNlczIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwVI4wdQxQJYxQJwAXgBkAEAmAHJAqAByQKqAQMzLTG4AQPIAQD4AQH4AQKYAgKgAvkCqAIRwgIHECMY6gIYJ8ICFhAAGIAEGIoFGEMY5wYY6gIYtALYAQHCAhAQABgDGI8BGOoCGLQC2AEBwgIQEC4YAxiPARjqAhi0AtgBAZgDH_EFBsxp4TO_8S66BgYIARABGAGSBwUxLjMtMaAH4QWyBwMzLTG4B9kCwgcHMi0xLjAuMcgHHoAIAQ&sclient=gws-wiz-serp",
+    href: "",
   },
   location: "Lower Ballacottier, Ballacottier Rd, Onchan IM4 5BQ, Isle of Man",
-  locationHref: "https://maps.google.com/?q=Lower+Ballacottier+Ballacottier+Rd+Onchan+IM4+5BQ+Isle+of+Man",
+  locationHref: "https://maps.app.goo.gl/YaRtaAFD8JLQpwfR6",
   socialLinks: [],
 };
 
