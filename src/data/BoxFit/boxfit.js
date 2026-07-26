@@ -12,12 +12,6 @@ export const digitalCardData = {
     { type: "Call", href: "tel:07737163987", icon: "Phone", styleClass: "bg-primary" },
     { type: "WhatsApp", href: "https://wa.me/447737163987", icon: "MessageCircle", styleClass: "bg-whatsapp" },
     { type: "Website", href: "https://boxfitcoaching.co.uk/", icon: "Globe", styleClass: "bg-primary" },
-    {
-      type: "Facebook",
-      href: "https://web.facebook.com/boxfitcoachingacademy?_rdc=1&_rdr#",
-      icon: "Facebook",
-      styleClass: "bg-primary",
-    },
   ],
   about:
     "Boxfit Coaching creates an inclusive space for juniors, women, beginners, squads, and wellbeing-focused members to build skill, strength, and confidence through boxing.",

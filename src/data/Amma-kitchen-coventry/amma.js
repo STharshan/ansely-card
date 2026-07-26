@@ -27,7 +27,7 @@ export const digitalCardData = {
   rating: {
     value: "5.0",
     text: "Tap to view Amma Kitchen Coventry on Google.",
-    href: "https://www.google.com/search?q=Amma+Kitchen+Coventry&rlz=1C1CHBD_enLK1213LK1213&biw=1920&bih=945&sca_esv=fc2a7f6adb56bd6b&sxsrf=APpeQnu_NW2e_VM9hMLLHSoIYDFsdd-pTw%3A1784827308576&ei=rE1iarvmIsqX4-EPnJqFeA&ved=0ahUKEwi77Nntp-mVAxXKyzgGHRxNAQ8Q4dUDCBA&uact=5&oq=Amma+Kitchen+Coventry&gs_lp=Egxnd3Mtd2l6LXNlcnAiFUFtbWEgS2l0Y2hlbiBDb3ZlbnRyeTIHECMY6gIYJzIHECMY6gIYJzIHECMY6gIYJzIHECMY6gIYJzIHECMY6gIYJzIHECMY6gIYJzIHECMY6gIYJzIHECMY6gIYJzIHECMY6gIYJzIHECMY6gIYJzIXEAAYgAQYigUYkQIY5wYY6gIYtALYAQEyFxAAGIAEGIoFGJECGOcGGOoCGLQC2AEBMhcQABiABBiKBRiRAhjnBhjqAhi0AtgBATIXEAAYgAQYigUYkQIY5wYY6gIYtALYAQEyFxAAGIAEGIoFGJECGOcGGOoCGLQC2AEBMhcQABiABBiKBRiRAhjnBhjqAhi0AtgBAUjDCFDfA1jfA3ABeAGQAQCYAQCgAQCqAQC4AQPIAQD4AQH4AQKYAgGgAhWoAhCYAxXiAwUSATEgQPEF-dMnVP9aV5a6BgYIARABGAGSBwExoAcAsgcAuAcAwgcDMy0xyAcSgAgB&sclient=gws-wiz-serp",
+    href: "https://share.google/NeEcls84PxN3NNNG2",
   },
   location: "477 Beake Ave, Coventry CV6 2HT, United Kingdom",
   locationHref: "https://maps.app.goo.gl/JuhckJ5LSQ6MjvkTA",

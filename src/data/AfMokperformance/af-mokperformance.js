@@ -27,7 +27,7 @@ export const digitalCardData = {
   rating: {
     value: "5.0",
     text: "Tap to view AF MOK Performance on Google.",
-    href: "https://www.google.com/search?q=ovi+body+shop&rlz=1C1CHBD_enLK1213LK1213&oq=ovi+body+shop&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTINCAEQABiGAxiABBiKBTIHCAIQABjvBTIHCAMQABjvBTIKCAQQABiABBiiBDIHCAUQABjvBTIKCAYQABiABBiiBNIBBzcwNWowajeoAgCwAgA&sourceid=chrome&source=chrome.ob&ie=UTF-8",
+    href: "https://share.google/Qu0XFyXQNgpC270IC",
   },
   location: "UNIT 7, Wynns Venture Centre, Broad St, Cannock WS11 0XL, United Kingdom",
   locationHref: "https://maps.app.goo.gl/ck1ahsqozPhCd2m56",

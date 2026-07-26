@@ -27,7 +27,7 @@ export const digitalCardData = {
     href: "https://www.google.com/search?q=empire+scaffolding+nottingham&sca_esv=fc2a7f6adb56bd6b&rlz=1C1CHBD_enLK1213LK1213&biw=1920&bih=945&sxsrf=APpeQnuoo9CSMM0DHV97Ffu2oVJYXWZqgQ%3A1784824917577&ei=VURiaubcIsPe2roPpoSDiQE&oq=Empire+scaf&gs_lp=Egxnd3Mtd2l6LXNlcnAiC0VtcGlyZSBzY2FmKgIIATIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIokdQ6wNY3DNwA3gAkAEBmAHLC6ABvy6qAQsyLTIuMS4yLjctM7gBAcgBAPgBAfgBApgCCqACpiSoAhDCAgcQIxjqAhgnwgIXEAAYgAQYigUYkQIY5wYY6gIYtALYAQHCAgsQABiABBiKBRiRAsICChAAGIAEGIoFGEPCAgoQLhiABBiKBRhDwgIKEAAYgAQYFBiHAsICBRAuGIAEwgILEC4YgAQYxwEY0QPCAgkQABiABBgKGAuYA0XxBa3Uwi8Niwl4ugYGCAEQARgBkgcNMy4wLjIuMS4yLjctMqAH7TayBwsyLTIuMS4yLjctMrgHxyPCBwkyLTMuNS4xLjHIB4oBgAgB&sclient=gws-wiz-serp",
   },
   location: "Empire Scaffolding (GB) Ltd, Hucknall, Nottinghamshire, United Kingdom",
-  locationHref: "https://maps.google.com/?q=Hucknall,+Nottinghamshire,+United+Kingdom",
+  locationHref: "https://maps.app.goo.gl/s5fNUbbhgZAjJGCm9",
   socialLinks: [],
 };
 

@@ -26,7 +26,7 @@ export const digitalCardData = {
   rating: {
     value: "Google",
     text: "Tap to view Yorkshire Insulation on Google.",
-    href: "https://www.google.com/search?q=Yorkshire+Insulation+%7C+Loft%2C+Cavity+Wall+%26+Spray+Foam+Experts",
+    href: "",
   },
   location: "Yorkshire, United Kingdom",
   locationHref: "https://maps.app.goo.gl/kiuKFGLaznq5CiWe9",

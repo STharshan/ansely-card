@@ -119,6 +119,7 @@ export default function Auraautocare() {
           <section className="mb-10">
             <h3 className="text-lg font-semibold mb-4 text-center">Services</h3>
             <ul className="space-y-3">
+<<<<<<< HEAD
               {services.map((service) => {
                 const serviceLabel = typeof service === "string" ? service : service.label;
                 const serviceHref = typeof service === "string" ? websiteHref : service.href || websiteHref;
@@ -136,24 +137,56 @@ export default function Auraautocare() {
                   </li>
                 );
               })}
+=======
+              {services.map((service) => (
+                <li key={service.label}>
+                  {service.href ? (
+                    <a
+                      href={service.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex w-full text-center justify-center items-center rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-white transition hover:border-cyan-300/40 hover:bg-white/8"
+                    >
+                      <span>{service.label}</span>
+                    </a>
+                  ) : (
+                    <div className="flex text-center justify-center items-center rounded-lg border border-white/10 bg-white/5 px-4 py-3">
+                      <span className="text-white">{service.label}</span>
+                    </div>
+                  )}
+                </li>
+              ))}
+>>>>>>> 2c0e893adccf7d1e5371083bb349d20efc5c7fb6
             </ul>
           </section>
 
           {rating ? (
-            <a
-              href={rating.href}
-              target="_blank"
-              rel="noreferrer"
-              className="block rounded-xl p-6 text-center mb-10 border border-white/10 bg-white/5 backdrop-blur-md transition hover:border-cyan-300/40 hover:bg-white/8"
-            >
-              <div className="flex justify-center gap-1 mb-2">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                ))}
+            rating.href ? (
+              <a
+                href={rating.href}
+                target="_blank"
+                rel="noreferrer"
+                className="block rounded-xl p-6 text-center mb-10 border border-white/10 bg-white/5 backdrop-blur-md transition hover:border-cyan-300/40 hover:bg-white/8"
+              >
+                <div className="flex justify-center gap-1 mb-2">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+                <p className="font-semibold mt-4">{rating.value}</p>
+                <p className="text-sm text-gray-400 italic mt-2">{rating.text}</p>
+              </a>
+            ) : (
+              <div className="block rounded-xl p-6 text-center mb-10 border border-white/10 bg-white/5 backdrop-blur-md">
+                <div className="flex justify-center gap-1 mb-2">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+                <p className="font-semibold mt-4">{rating.value}</p>
+                <p className="text-sm text-gray-400 italic mt-2">{rating.text}</p>
               </div>
-              <p className="font-semibold mt-4">{rating.value}</p>
-              <p className="text-sm text-gray-400 italic mt-2">{rating.text}</p>
-            </a>
+            )
           ) : null}
 
           {location && locationHref ? (
