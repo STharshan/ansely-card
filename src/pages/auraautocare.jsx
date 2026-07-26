@@ -34,6 +34,7 @@ export default function Auraautocare() {
     locationHref,
     socialLinks,
   } = digitalCardData;
+  const websiteHref = contacts.find((contact) => contact.type === "Website")?.href || "#";
 
   return (
     <main className="relative min-h-screen text-white flex justify-center bg-[var(--bg-main)]">

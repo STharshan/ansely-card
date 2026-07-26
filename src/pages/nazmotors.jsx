@@ -30,6 +30,7 @@ export default function Nazmotors() {
     locationHref,
     socialLinks,
   } = digitalCardData;
+  const websiteHref = contacts.find((contact) => contact.type === "Website")?.href || "#";
 
   return (
     <main className="relative min-h-screen text-white flex justify-center bg-[var(--bg-main)]">
@@ -127,6 +128,23 @@ export default function Nazmotors() {
           <section className="mb-10">
             <h3 className="text-lg font-semibold mb-4 text-center">Services</h3>
             <ul className="space-y-3">
+              {services.map((service) => {
+                const serviceLabel = typeof service === "string" ? service : service.label;
+                const serviceHref = typeof service === "string" ? websiteHref : service.href || websiteHref;
+
+                return (
+                  <li key={serviceLabel} className="flex text-center justify-center items-center rounded-lg border border-white/10 bg-white/5 px-4 py-3">
+                    <a
+                      href={serviceHref}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-white hover:underline"
+                    >
+                      {serviceLabel}
+                    </a>
+                  </li>
+                );
+              })}
               {services.map((service) => (
                 <li key={service.label}>
                   {service.href ? (
