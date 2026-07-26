@@ -17,15 +17,15 @@ export const digitalCardData = {
   about:
     "DT Details provides careful paint enhancement, deep cleaning, ceramic coating protection, and maintenance detailing for owners who want their vehicle looking its best.",
   services: [
-    { label: "Paint Enhancement" },
-    { label: "Maintenance Clean" },
-    { label: "Ceramic Coating Protection" },
-    { label: "Deep Clean" },
+    { label: "Paint Enhancement", href: "https://www.dtdetails.co.uk/paint-enhancement" },
+    { label: "Maintenance Clean", href: "https://www.dtdetails.co.uk/maintenance-clean" },
+    { label: "Ceramic Coating Protection", href: "https://www.dtdetails.co.uk/ceramic-coating" },
+    { label: "Deep Clean", href: "https://www.dtdetails.co.uk/deep-clean" },
   ],
   rating: {
     value: "Google Reviews",
     text: "Tap to view DT Details on Google.",
-    href: "https://www.google.com/search?q=DT+detailing",
+    href: "",
   },
   location: "",
   locationHref: "",
