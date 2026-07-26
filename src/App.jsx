@@ -57,6 +57,7 @@ import Nottscarboncleaning from "./pages/nottscarboncleaning.jsx";
 import EliteWheelsGlasgow from "./pages/elitewheelsglasgow.jsx";
 import Alansautodetailing from "./pages/alansautodetailing.jsx";
 import Sowafurniture from "./pages/sowafurniture.jsx";
+import Crystalclean from "./pages/crystalclean.jsx";
 function App() {
   return (
     <Router>
@@ -124,9 +125,12 @@ function App() {
         <Route path="/berkleyestates" element={<BerkleyEstates />} />
         <Route path="/acg" element={<ACG />} />
         <Route path="/notts-carboncleaning" element={<Nottscarboncleaning />} />
+
+
         <Route path="/elitewheelsglasgow" element={<EliteWheelsGlasgow />} />
         <Route path="/alansautodetailing" element={<Alansautodetailing />} />
         <Route path="/sowafurniture" element={<Sowafurniture />} />
+        <Route path="/crystalclean" element={<Crystalclean />} />
       </Routes>
     </Router>
   );
