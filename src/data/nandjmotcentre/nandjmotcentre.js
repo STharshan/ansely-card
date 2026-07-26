@@ -5,7 +5,7 @@ export const digitalCardData = {
     logo: "/nandjmotcentre.png",
   },
   founder: {
-    name: "N&J MOT CENTRE",
+    name: "Jen",
     title: "Vehicle Testing, Repairs, and Specialist Garage Services",
   },
   contacts: [
@@ -16,16 +16,19 @@ export const digitalCardData = {
   about:
     "N&J MOT CENTRE supports local drivers with MOT testing, servicing, repairs, air conditioning re-gas, engine tuning, and wet belt work from its Skegness site.",
   services: [
-    { label: "Services & Repairs" },
-    { label: "Air Con Re-gas" },
-    { label: "Engine Tuning" },
-    { label: "MOT Class 4, 5 & 7" },
-    { label: "Wet Belts" },
+    { label: "Services & Repairs", href: "https://nandjmotcentre.co.uk/service" },
+    { label: "Air Con Re-gas", href: "https://nandjmotcentre.co.uk/service" },
+    { label: "Engine Tuning", href: "https://nandjmotcentre.co.uk/service" },
+    { label: "MOT Class 4, 5 & 7", href: "https://nandjmotcentre.co.uk/service" },
+    { label: "Wet Belts", href: "https://nandjmotcentre.co.uk/service" },
   ],
-  rating: null,
+  rating: {
+    value: "Google Reviews",
+    text: "Tap to view N&J MOT CENTRE on Google.",
+    href: "https://share.google/Mo4VjT0J7ZyNE6Tm2",
+  },
   location: "Grantham Dr, Skegness PE25 3RN, United Kingdom",
-  locationHref:
-    "https://www.google.com/maps/dir//N%26J+Mot+Centre+Grantham+Dr+Skegness+PE25+3RN+United+Kingdom/@53.1457689,0.3306119,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x47d7c71ee265360b:0x9c93d005c64c0cd2",
+  locationHref: "https://maps.app.goo.gl/eNcww9dkjNeRxmAc7",
   socialLinks: [],
 };
 
