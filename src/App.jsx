@@ -53,6 +53,8 @@ import BerkleyEstates from "./pages/BerkleyEstates.jsx";
 import ACG from "./pages/ACG.jsx";
 import Nottscarboncleaning from "./pages/nottscarboncleaning.jsx";
 
+
+import EliteWheelsGlasgow from "./pages/elitewheelsglasgow.jsx";
 function App() {
   return (
     <Router>
@@ -120,6 +122,7 @@ function App() {
         <Route path="/berkleyestates" element={<BerkleyEstates />} />
         <Route path="/acg" element={<ACG />} />
         <Route path="/notts-carboncleaning" element={<Nottscarboncleaning />} />
+        <Route path="/elitewheelsglasgow" element={<EliteWheelsGlasgow />} />
       </Routes>
     </Router>
   );
