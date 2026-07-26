@@ -22,9 +22,13 @@ export const digitalCardData = {
     { label: "MOT Class 4", href: "https://nandjmotstation.co.uk/service" },
     { label: "Wet Belts", href: "https://nandjmotstation.co.uk/service" },
   ],
-  rating: null,
+  rating: {
+    value: "Google Reviews",
+    text: "Tap to view N&J MOT Testing Station on Google.",
+    href: "https://share.google/nujX5gCbWfZFvcDZ8",
+  },
   location: "41 Dentons Green Ln, Windle, Saint Helens WA10 2QF, United Kingdom",
-  locationHref: "https://maps.app.goo.gl/7nFJASEnPddduwo48",
+  locationHref: "https://maps.app.goo.gl/Gj6GWF241dnoDyxP9",
   socialLinks: [],
 };
 
