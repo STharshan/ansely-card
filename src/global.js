@@ -974,7 +974,7 @@ export const digitalCardDataAlino = {
 export const digitalCardDataScuffsEtc = {
   company: {
     name: "Scuffs ETC LTD",
-    tagline: "Precision body repairs, flawless finishes, and expert craftsmanship that restores confidence on every drive.",
+    tagline: "Restoring every panel, curve, and finish with precision craftsmanship you can trust.",
     logo: "/scuff.png",
   },
   founder: {

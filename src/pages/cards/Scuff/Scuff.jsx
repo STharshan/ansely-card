@@ -65,7 +65,7 @@ export default function ShahzTyres() {
                             src={company.logo}
                             alt={founder.name}
                             loading="lazy"
-                            className="relative object-cover w-30 h-30 md:w-28 md:h-24"
+                            className="relative object-cover w-50 h-50"
                         />
                     </div>
                 </header>
