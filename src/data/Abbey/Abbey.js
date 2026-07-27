@@ -10,6 +10,7 @@ export const digitalCardData = {
   },
   contacts: [
     { type: "Call", href: "tel:07737985510", icon: "Phone", styleClass: "bg-primary" },
+    { type: "Email", href: "mailto:Safsah@abbey-tyres.co.uk", icon: "Mail", styleClass: "bg-primary" },
     { type: "Website", href: "https://abbey-tyres.co.uk/", icon: "Globe", styleClass: "bg-primary" },
   ],
   about:
@@ -28,15 +29,23 @@ export const digitalCardData = {
     value: "5.0",
     text: "Tap to view Abbey Tyres on Google.",
     href: "https://share.google/gpLjWNGbiknW0H69T",
+  },
   location: "146 Prestwold Rd, Leicester LE5 0EX, United Kingdom",
-  locationHref: "https://share.google/gpLjWNGbiknW0H69T",
-  socialLinks: [],
+  locationHref: "https://maps.app.goo.gl/H5DpmU4516bQiaWd7",
+  socialLinks: [
+    {
+      label: "Instagram",
+      icon: "Instagram",
+      href: "https://www.instagram.com/kml_accident_repair_centre/",
+    },
+  ],
 };
 
 export function downloadVCF() {
   const { founder, company, contacts, location } = digitalCardData;
 
   const phone = contacts.find((contact) => contact.type === "Call")?.href.replace("tel:", "") || "";
+  const email = contacts.find((contact) => contact.type === "Email")?.href.replace("mailto:", "") || "";
   const website = contacts.find((contact) => contact.type === "Website")?.href || "";
 
   const vcfData = `
@@ -46,6 +55,7 @@ FN:${founder.name}
 ORG:${company.name}
 TITLE:${founder.title}
 TEL;TYPE=WORK,VOICE:${phone}
+EMAIL;TYPE=WORK:${email}
 ADR;TYPE=WORK:;;${location};;;;
 URL:${website}
 END:VCARD

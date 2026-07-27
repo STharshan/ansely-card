@@ -1,9 +1,11 @@
 import {
   Phone,
+  Mail,
   Globe,
   MapPin,
   Download,
   Star,
+  Instagram,
 } from "lucide-react";
 
 import { digitalCardData ,downloadVCF } from "../data/Abbey/Abbey.js";
@@ -15,7 +17,7 @@ const WebGLPlaceholder = () => (
   <div className="fixed inset-0 bg-[var(--bg-main)]" />
 );
 
-const iconMap = { Phone, Globe };
+const iconMap = { Phone, Mail, Globe, Instagram };
 
 export default function Abbey() {
   const [logoFailed, setLogoFailed] = useState(false);
