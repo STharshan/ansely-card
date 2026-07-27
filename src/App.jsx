@@ -74,7 +74,7 @@ import ScuffsEtc from "./pages/cards/ScuffsEtc/ScuffsEtc.jsx";
 
 
 import Dynamicvehicleservices from "./pages/dynamicvehicleservices.jsx";
-
+import Derbygarage from "./pages/derbygarage.jsx";
 function App() {
   return (
     <Router>
@@ -164,6 +164,8 @@ function App() {
         <Route path="/scuffsetc" element={<ScuffsEtc /> } />
 
         <Route path="/dynamicvehicleservices" element={<Dynamicvehicleservices />} />
+        <Route path="/derbygarage" element={<Derbygarage />} />
+
 
       </Routes>
     </Router>
