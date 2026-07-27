@@ -48,11 +48,6 @@ export const digitalCardData = {
       href: "https://www.tiktok.com/@newbrightstreetcargarage",
       label: "TikTok",
     },
-    {
-      icon: "Facebook",
-      href: "https://api.whatsapp.com/send/?phone=447502060801&text&type=phone_number&app_absent=0",
-      label: "WhatsApp",
-    },
   ],
 };
 

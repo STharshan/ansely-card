@@ -30,7 +30,7 @@ export const digitalCardData = {
     href: "https://share.google/n5DkirgPHyrEtFVol",
   },
   location: "Link Rd, Anstey, Leicester LE7 7ED, United Kingdom",
-  locationHref: "https://maps.app.goo.gl/3AiErseXifzBnMPM8",
+  locationHref: "https://maps.app.goo.gl/YX6v2bHG7rSYYhTB6",
   socialLinks: [],
 };
 
