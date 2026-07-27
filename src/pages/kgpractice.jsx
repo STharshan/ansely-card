@@ -12,7 +12,7 @@ import { lazy, Suspense, useState } from "react";
 const FloatingLines = lazy(() => import("../components/FloatingLines.jsx"));
 
 const WebGLPlaceholder = () => (
-  <div className="fixed inset-0 bg-[var(--bg-main)]" />
+  <div className="fixed inset-0 bg-[radial-gradient(circle_at_top,_rgba(236,114,153,0.18),_rgba(24,16,20,0.96)_42%,_rgba(0,0,0,1)_100%)]" />
 );
 
 const iconMap = { Globe, MapPin, Linkedin, X: FaXTwitter };
@@ -32,7 +32,9 @@ export default function Kgpractice() {
   } = digitalCardData;
 
   return (
-    <main className="relative min-h-screen text-white flex justify-center bg-[var(--bg-main)]">
+    <main className="relative min-h-screen overflow-hidden text-white flex justify-center bg-[radial-gradient(circle_at_top,_rgba(236,114,153,0.22),_rgba(34,18,25,0.96)_28%,_rgba(11,8,10,0.98)_58%,_rgba(0,0,0,1)_100%)]">
+
+      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.05),transparent_18%,transparent_78%,rgba(236,114,153,0.08))]" />
 
       {/* Background Animation */}
       <div className="fixed inset-0 z-0 pointer-events-none">
@@ -45,7 +47,7 @@ export default function Kgpractice() {
             bendStrength={4}
             interactive={true}
             parallax={true}
-            linesGradient={["#001F7F", "#0045EF", "#0066FF", "#3399FF", "#66B3FF"]}
+            linesGradient={["#44212C", "#7F3C55", "#C9688B", "#EC7299", "#F8D6E2"]}
           />
         </Suspense>
       </div>
@@ -56,7 +58,7 @@ export default function Kgpractice() {
         {/* Company Name - Usually wider/full width for impact */}
         <header className="w-full max-w-md px-4 pt-16 pb-6 flex flex-col items-center justify-center gap-4 text-center">
           <div className="relative shrink-0">
-            <div className="absolute inset-0 rounded-3xl bg-cyan-400/15 blur-2xl scale-110" />
+            <div className="absolute inset-0 rounded-3xl bg-pink-300/15 blur-2xl scale-110" />
             {logoFailed || !company.logo ? (
               <div className="relative flex w-20 h-20 md:w-28 md:h-28 items-center justify-center rounded-3xl border border-white/10 bg-slate-950 shadow-2xl">
                 <div className="text-center leading-none">

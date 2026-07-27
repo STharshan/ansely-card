@@ -5,12 +5,12 @@ export const digitalCardData = {
     logo: "/elitewheelsglasgow.png",
   },
   founder: {
-    name: "Elite Wheels Glasgow",
+    name: "Darren",
     title: "Alloy Wheel Refurbishment Specialists",
   },
   contacts: [
     { type: "Call", href: "tel:07909445101", icon: "Phone", styleClass: "bg-primary" },
-    { type: "Email", href: "https://elitewheelsglasgow.co.uk/", icon: "Mail", styleClass: "bg-primary" },
+    { type: "Email", href: "mailto:Tune-itscotland@hotmail.com", icon: "Mail", styleClass: "bg-primary" },
     { type: "Website", href: "https://elitewheelsglasgow.co.uk/", icon: "Globe", styleClass: "bg-primary" },
   ],
   about:

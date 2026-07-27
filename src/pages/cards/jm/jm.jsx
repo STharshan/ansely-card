@@ -18,7 +18,7 @@ import { lazy, Suspense } from "react";
 const FloatingLines = lazy(() => import("../../../components/FloatingLines.tsx"));
 
 const WebGLPlaceholder = () => (
-    <div className="fixed inset-0 bg-[var(--bg-main)]" />
+    <div className="fixed inset-0 bg-[radial-gradient(circle_at_top,_rgba(72,170,180,0.18),_rgba(10,24,28,0.96)_42%,_rgba(0,0,0,1)_100%)]" />
 );
 
 const iconMap = { Phone, MessageCircle, Mail, Facebook, Instagram, Twitter };
@@ -38,7 +38,9 @@ export default function JMVehicleAssist() {
     } = digitalCardDataJM;
 
     return (
-        <main className="relative min-h-screen text-white flex justify-center bg-[var(--bg-main)]">
+        <main className="relative min-h-screen overflow-hidden text-white flex justify-center bg-[radial-gradient(circle_at_top,_rgba(72,170,180,0.22),_rgba(11,34,39,0.96)_30%,_rgba(7,14,17,0.98)_58%,_rgba(0,0,0,1)_100%)]">
+
+            <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.05),transparent_18%,transparent_78%,rgba(72,170,180,0.08))]" />
 
             {/* Background Animation */}
             <div className="fixed inset-0 z-0 pointer-events-none">
@@ -51,7 +53,7 @@ export default function JMVehicleAssist() {
                         bendStrength={4}
                         interactive={true}
                         parallax={true}
-                        linesGradient={["#001F7F", "#0045EF", "#0066FF", "#3399FF", "#66B3FF"]}
+                        linesGradient={["#16363B", "#205860", "#2E8790", "#49ACB5", "#C8F4F7"]}
                     />
                 </Suspense>
             </div>
@@ -62,7 +64,7 @@ export default function JMVehicleAssist() {
                 {/* Company Name - Usually wider/full width for impact */}
                 <header className="w-full max-w-md px-6 pt-16 pb-6 flex items-center justify-center text-center">
                     <div className="relative shrink-0">
-                        <div className="absolute inset-0 blur-2xl rounded-full scale-110" />
+                        <div className="absolute inset-0 blur-2xl rounded-full scale-110 bg-cyan-300/15" />
                         <img
                             src={company.logo}
                             alt={founder.name}

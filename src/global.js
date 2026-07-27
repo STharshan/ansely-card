@@ -800,7 +800,7 @@ export const digitalCardDataDogGrooming = {
     logo: "/dog.png",
   },
   founder: {
-    name: "Leicester Dog Grooming",
+    name: "Bernie",
     title: "Dog Grooming",
   },
   contacts: [
@@ -833,7 +833,7 @@ export const digitalCardDataSantinos = {
     logo: "/santino.png",
   },
   founder: {
-    name: "Santino's GYM & STUDIO",
+    name: "Will",
     title: "Gym & Studio",
   },
   contacts: [
@@ -981,7 +981,7 @@ export const digitalCardDataScuffsEtc = {
     logo: "/scuff.png",
   },
   founder: {
-    name: "Scuffs ETC LTD",
+    name: "Darren",
     title: "Vehicle Body Repair Specialists",
   },
   contacts: [

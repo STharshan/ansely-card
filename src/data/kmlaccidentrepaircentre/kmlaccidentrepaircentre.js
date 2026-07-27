@@ -5,7 +5,7 @@ export const digitalCardData = {
     logo: "",
   },
   founder: {
-    name: "KML Accident Repair Centre",
+    name: "Will",
     title: "Accident Repair and Bodywork Specialists",
   },
   contacts: [

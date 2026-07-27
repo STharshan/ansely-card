@@ -6,20 +6,32 @@ import {
   MapPin,
   Download,
   Star,
+  Instagram,
+  Music2,
 } from "lucide-react";
+import { FaFacebookF } from "react-icons/fa6";
 
-import { digitalCardData, downloadVCF } from "../data/alansautodetailing/alansautodetailing.js";
+import { digitalCardData ,downloadVCF } from "../data/newbridgestreetcargarage/newbridgestreetcargarage.js";
 import { lazy, Suspense, useState } from "react";
 
-const FloatingLines = lazy(() => import("../components/FloatingLines.jsx"));
+const FloatingLines = lazy(() => import("../components/FloatingLines.tsx"));
 
 const WebGLPlaceholder = () => (
-  <div className="fixed inset-0 bg-[radial-gradient(circle_at_top,_rgba(72,106,171,0.18),_rgba(10,16,28,0.96)_42%,_rgba(0,0,0,1)_100%)]" />
+  <div className="fixed inset-0 bg-[var(--bg-main)]" />
 );
 
-const iconMap = { Phone, MessageCircle, Mail, Globe, MapPin };
+const iconMap = {
+  Phone,
+  MessageCircle,
+  Mail,
+  Globe,
+  MapPin,
+  Instagram,
+  Facebook: FaFacebookF,
+  TikTok: Music2,
+};
 
-export default function Alansautodetailing() {
+export default function Newbridgestreetcargarage() {
   const [logoFailed, setLogoFailed] = useState(false);
   const {
     company,
@@ -34,8 +46,9 @@ export default function Alansautodetailing() {
   } = digitalCardData;
 
   return (
-    <main className="relative min-h-screen overflow-hidden bg-[radial-gradient(circle_at_top,_rgba(85,126,201,0.2),_rgba(13,20,34,0.96)_28%,_rgba(6,10,18,0.98)_58%,_rgba(0,0,0,1)_100%)] text-white flex justify-center">
-      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.06),transparent_18%,transparent_78%,rgba(105,145,220,0.08))]" />
+    <main className="relative min-h-screen text-white flex justify-center bg-[var(--bg-main)]">
+
+      {/* Background Animation */}
       <div className="fixed inset-0 z-0 pointer-events-none">
         <Suspense fallback={<WebGLPlaceholder />}>
           <FloatingLines
@@ -46,50 +59,60 @@ export default function Alansautodetailing() {
             bendStrength={4}
             interactive={true}
             parallax={true}
-            linesGradient={["#14233D", "#27406C", "#486AAB", "#6E96E7", "#C7DCF9"]}
+            linesGradient={["#001F7F", "#0045EF", "#0066FF", "#3399FF", "#66B3FF"]}
           />
         </Suspense>
       </div>
 
+      {/* Content Layer */}
       <div className="relative z-10 w-full flex flex-col items-center">
-        <header className="w-full max-w-md px-4 pt-16 pb-6 flex flex-col items-center justify-center gap-4 text-center">
+
+        {/* Company Name - Usually wider/full width for impact */}
+        <header className="w-full max-w-md px-6 pt-16 pb-6 flex flex-col items-center justify-center gap-5 text-center">
           <div className="relative shrink-0">
-            <div className="absolute inset-0 rounded-3xl bg-blue-300/15 blur-2xl scale-110" />
+            <div className="absolute inset-0 rounded-3xl bg-cyan-400/15 blur-2xl scale-110" />
             {logoFailed ? (
-              <div className="relative flex w-20 h-20 md:w-28 md:h-28 items-center justify-center rounded-3xl border border-white/10 bg-slate-950 shadow-2xl">
+              <div className="relative flex w-28 h-28 items-center justify-center rounded-3xl border border-white/10 bg-slate-950 shadow-2xl">
                 <div className="text-center leading-none">
-                  <div className="text-2xl md:text-3xl font-black tracking-[0.18em] text-white">AAD</div>
-                  <div className="mt-1 text-[0.48rem] md:text-[0.58rem] font-semibold uppercase tracking-[0.2em] text-cyan-200">
-                    Detailing
+                  <div className="text-3xl font-black tracking-[0.12em] text-white">NCC</div>
+                  <div className="mt-1 text-[0.58rem] font-semibold uppercase tracking-[0.22em] text-cyan-200">
+                    New Bridge
                   </div>
                 </div>
               </div>
             ) : (
-              <div className="relative flex w-18 h-18 md:w-28 md:h-28 items-center justify-center rounded-3xl p-1 shadow-2xl shadow-black/30">
+              <div className="relative flex w-40 h-28 items-center justify-center overflow-hidden rounded-3xl bg-black/45 p-3 shadow-2xl shadow-black/30 ring-1 ring-white/10 backdrop-blur-sm sm:w-48 sm:h-32">
                 <img
                   src={company.logo}
                   alt={company.name}
                   loading="lazy"
                   onError={() => setLogoFailed(true)}
-                  className="h-full w-full object-contain drop-shadow-[0_4px_18px_rgba(15,23,42,0.35)]"
+                  className="h-full w-full object-contain drop-shadow-[0_8px_24px_rgba(0,0,0,0.45)]"
                 />
               </div>
             )}
           </div>
         </header>
 
+        {/* Consistent Width Container 
+            All elements below this line will have the exact same width 
+        */}
         <div className="w-full max-w-md px-4 pb-20">
+
+          {/* Tagline - Now matched to the width of the cards/buttons */}
           <div className="text-center mb-10">
             <p className="text-white text-[24px] md:text-[28px] tracking-tight leading-snug">
               {company.tagline}
             </p>
           </div>
 
+          {/* Founder */}
           <section className="text-center mb-10">
             <h2 className="text-2xl font-semibold">{founder.name}</h2>
             <p className="text-white mt-1 opacity-80">{founder.title}</p>
           </section>
 
+          {/* Contact Buttons */}
           <section className="mb-10">
             <div className="grid grid-cols-2 gap-3">
               {contacts.map((contact) => {
@@ -99,7 +122,6 @@ export default function Alansautodetailing() {
                     key={contact.type}
                     href={contact.href}
                     target={contact.type === "Website" || contact.type === "WhatsApp" ? "_blank" : "_self"}
-                    rel={contact.type === "Website" || contact.type === "WhatsApp" ? "noreferrer" : undefined}
                     className={`flex items-center justify-center gap-2 h-14 rounded-lg transition hover:scale-[1.02] active:scale-95 ${contact.styleClass}`}
                   >
                     <IconComponent className="w-5 h-5" />
@@ -110,28 +132,37 @@ export default function Alansautodetailing() {
             </div>
           </section>
 
+          {/* About Card */}
           <div className="rounded-xl p-6 text-center mb-10 border border-white/10 bg-white/5 backdrop-blur-md">
             <p className="text-white font-bold leading-relaxed">{about}</p>
           </div>
 
+          {/* Services */}
           <section className="mb-10">
             <h3 className="text-lg font-semibold mb-4 text-center">Services</h3>
             <ul className="space-y-3">
               {services.map((service) => (
                 <li key={service.label}>
-                  <a
-                    href={service.href}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex text-center justify-center items-center rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-white transition hover:border-cyan-300/40 hover:bg-white/8"
-                  >
-                    <span>{service.label}</span>
-                  </a>
+                  {service.href ? (
+                    <a
+                      href={service.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex text-center justify-center items-center rounded-lg border border-white/10 bg-white/5 px-4 py-3 transition hover:border-cyan-300/40 hover:bg-white/10"
+                    >
+                      <span className="text-white">{service.label}</span>
+                    </a>
+                  ) : (
+                    <div className="flex text-center justify-center items-center rounded-lg border border-white/10 bg-white/5 px-4 py-3">
+                      <span className="text-white">{service.label}</span>
+                    </div>
+                  )}
                 </li>
               ))}
             </ul>
           </section>
 
+          {/* Rating */}
           {rating ? (
             <a
               href={rating.href}
@@ -149,27 +180,20 @@ export default function Alansautodetailing() {
             </a>
           ) : null}
 
-          {locationHref ? (
-            <a
-              href={locationHref}
-              target="_blank"
-              rel="noreferrer"
-              className="flex justify-center items-center gap-2 text-white mb-10 hover:text-cyan-300 transition text-center"
-            >
-              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/10">
-                <MapPin className="w-4 h-4 text-primary" />
-              </span>
-              {location}
-            </a>
-          ) : (
-            <div className="flex justify-center items-center gap-2 text-white mb-10 text-center">
-              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/10">
-                <MapPin className="w-4 h-4 text-primary" />
-              </span>
-              {location}
-            </div>
-          )}
+          {/* Location */}
+          <a
+            href={locationHref}
+            target="_blank"
+            rel="noreferrer"
+            className="flex justify-center items-center gap-2 text-white mb-10 hover:text-cyan-300 transition text-center"
+          >
+            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/10">
+              <MapPin className="w-4 h-4 text-primary" />
+            </span>
+            {location}
+          </a>
 
+          {/* Social */}
           {socialLinks.length ? (
             <section className="flex justify-center gap-4 mb-10">
               {socialLinks.map((social) => {
@@ -189,6 +213,7 @@ export default function Alansautodetailing() {
             </section>
           ) : null}
 
+          {/* Save Contact Button */}
           <section className="mb-10">
             <button
               onClick={downloadVCF}
@@ -199,6 +224,7 @@ export default function Alansautodetailing() {
             </button>
           </section>
 
+          {/* Footer */}
           <footer className="text-center text-sm text-gray-400 opacity-60">
             <p>
               Powered by{" "}
