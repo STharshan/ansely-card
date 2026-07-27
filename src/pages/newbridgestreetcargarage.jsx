@@ -17,7 +17,7 @@ import { lazy, Suspense, useState } from "react";
 const FloatingLines = lazy(() => import("../components/FloatingLines.tsx"));
 
 const WebGLPlaceholder = () => (
-  <div className="fixed inset-0 bg-[var(--bg-main)]" />
+  <div className="fixed inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,40,24,0.18),_rgba(28,10,10,0.96)_42%,_rgba(0,0,0,1)_100%)]" />
 );
 
 const iconMap = {
@@ -46,7 +46,9 @@ export default function Newbridgestreetcargarage() {
   } = digitalCardData;
 
   return (
-    <main className="relative min-h-screen text-white flex justify-center bg-[var(--bg-main)]">
+    <main className="relative min-h-screen overflow-hidden text-white flex justify-center bg-[radial-gradient(circle_at_top,_rgba(255,40,24,0.22),_rgba(34,10,10,0.96)_28%,_rgba(10,8,8,0.98)_58%,_rgba(0,0,0,1)_100%)]">
+
+      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.05),transparent_18%,transparent_78%,rgba(203,213,225,0.08))]" />
 
       {/* Background Animation */}
       <div className="fixed inset-0 z-0 pointer-events-none">
@@ -59,7 +61,7 @@ export default function Newbridgestreetcargarage() {
             bendStrength={4}
             interactive={true}
             parallax={true}
-            linesGradient={["#001F7F", "#0045EF", "#0066FF", "#3399FF", "#66B3FF"]}
+            linesGradient={["#3E0E0E", "#782020", "#C53127", "#D4D9E5", "#F6F8FC"]}
           />
         </Suspense>
       </div>
@@ -70,7 +72,7 @@ export default function Newbridgestreetcargarage() {
         {/* Company Name - Usually wider/full width for impact */}
         <header className="w-full max-w-md px-6 pt-16 pb-6 flex flex-col items-center justify-center gap-5 text-center">
           <div className="relative shrink-0">
-            <div className="absolute inset-0 rounded-3xl bg-cyan-400/15 blur-2xl scale-110" />
+            <div className="absolute inset-0 rounded-3xl bg-red-400/15 blur-2xl scale-110" />
             {logoFailed ? (
               <div className="relative flex w-28 h-28 items-center justify-center rounded-3xl border border-white/10 bg-slate-950 shadow-2xl">
                 <div className="text-center leading-none">
