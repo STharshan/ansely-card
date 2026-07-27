@@ -44,7 +44,7 @@ export const digitalCardData = {
     text: "Tap to view Crystal Clean on Google.",
     href: "https://share.google/dYsZbSeAmKbCsMNYz",
   },
-  location: "Exeter, United Kingdom",
+  location: "Unit 1B Cranmere Rd, Okehampton EX20 1UE, United Kingdom",
   locationHref: "https://maps.app.goo.gl/UyVenrVPFshkhfv58",
   socialLinks: [
     {
