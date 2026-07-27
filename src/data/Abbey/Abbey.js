@@ -27,8 +27,7 @@ export const digitalCardData = {
   rating: {
     value: "5.0",
     text: "Tap to view Abbey Tyres on Google.",
-    href: "https://www.google.com/search?q=Abbey+Tyres+Leicester+%7C+Tyres%2C+MOT+%26+Vehicle+Servicing+&rlz=1C1CHBD_enLK1213LK1213&biw=1920&bih=945&sca_esv=fc2a7f6adb56bd6b&sxsrf=APpeQnsrSNdRQQun3GGUh6YSJgIGshodGw%3A1784826468671&ei=ZEpiauLEKJPhseMPwL3wqQQ&ved=0ahUKEwjihprdpOmVAxWTcGwGHcAePEUQ4dUDCBA&uact=5&oq=Abbey+Tyres+Leicester+%7C+Tyres%2C+MOT+%26+Vehicle+Servicing+&gs_lp=Egxnd3Mtd2l6LXNlcnAiN0FiYmV5IFR5cmVzIExlaWNlc3RlciB8IFR5cmVzLCBNT1QgJiBWZWhpY2xlIFNlcnZpY2luZyAyBxAjGK4CGCcyBRAAGO8FMgUQABjvBTIFEAAY7wUyCBAAGIAEGKIEMgUQABjvBUidDFCiCViiCXACeACQAQCYAegBoAHoAaoBAzItMbgBA8gBAPgBAZgCA6AC-QHCAggQABjvBRiwA8ICCxAAGIAEGKIEGLADmAMAiAYBkAYFkgcFMi4wLjGgB70FsgcDMi0xuAfuAcIHBTAuMS4yyAcLgAgB&sclient=gws-wiz-serp",
-  },
+    href: "https://share.google/gpLjWNGbiknW0H69T",
   location: "146 Prestwold Rd, Leicester LE5 0EX, United Kingdom",
   locationHref: "https://share.google/gpLjWNGbiknW0H69T",
   socialLinks: [],
