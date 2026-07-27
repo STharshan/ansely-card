@@ -5,7 +5,7 @@ export const digitalCardData = {
     logo: "/ttautosgarage.png",
   },
   founder: {
-    name: "TT Autos Garage",
+    name: "Hinai",
     title: "Garage Services and Vehicle Repair Specialists",
   },
   contacts: [
