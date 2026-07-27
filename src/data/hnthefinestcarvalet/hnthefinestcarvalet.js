@@ -5,7 +5,7 @@ export const digitalCardData = {
     logo: "/hn.webp",
   },
   founder: {
-    name: "H.N The Finest Car Valet",
+    name: "Roshan",
     title: "Valeting and Detailing Specialists",
   },
   contacts: [
@@ -54,7 +54,7 @@ export const digitalCardData = {
     href: "https://share.google/4Uz80TAu00e9PWj9o",
   },
   location: "Nottingham, Leicester, Mansfield, Derby",
-  locationHref: "https://www.google.com/maps/search/?api=1&query=H.N+The+Finest+Car+Valet+%26+Detailing",
+  locationHref: "https://maps.app.goo.gl/GX1uSsgz9KjGKrMW6",
   socialLinks: [
     {
       label: "Facebook",
