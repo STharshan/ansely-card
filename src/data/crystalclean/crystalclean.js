@@ -5,7 +5,7 @@ export const digitalCardData = {
     logo: "/crystalclean.png",
   },
   founder: {
-    name: "Crystal Clean",
+    name: "Chris",
     title: "Detailing and Paint Protection Specialists",
   },
   contacts: [
