@@ -70,6 +70,7 @@ import WongKwei from "./pages/cards/WongKwei/WongKwei.jsx";
 
 import Uktintz from "./pages/uktintz.jsx";
 import Alino from "./pages/cards/Alino/Alino.jsx";
+import ScuffsEtc from "./pages/cards/ScuffsEtc/ScuffsEtc.jsx";
 
 function App() {
   return (
@@ -156,6 +157,8 @@ function App() {
         <Route path="/wongkwei" element={<WongKwei />} />
         <Route path="/alino" element={<Alino />} />
         <Route path="/uktintz" element={<Uktintz />} />
+        <Route path="/scuffs" element={<ScuffsEtc /> } />
+        <Route path="/scuffsetc" element={<ScuffsEtc /> } />
       </Routes>
     </Router>
   );

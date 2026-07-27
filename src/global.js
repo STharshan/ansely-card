@@ -971,6 +971,50 @@ export const digitalCardDataAlino = {
   ],
 };
 
+export const digitalCardDataScuffsEtc = {
+  company: {
+    name: "Scuffs ETC LTD",
+    tagline: "Restoring every panel, curve, and finish with precision craftsmanship you can trust.",
+    logo: "/scuff.png",
+  },
+  founder: {
+    name: "Scuffs ETC LTD",
+    title: "Vehicle Body Repair Specialists",
+  },
+  contacts: [
+    { type: "Call", href: "tel:+447776300300", icon: "Phone", styleClass: "bg-primary" },
+    { type: "WhatsApp", href: "https://wa.me/447776300300", icon: "MessageCircle", styleClass: "bg-[#25D366]" },
+    { type: "Email", href: "mailto:info@scuffsetc.co.uk", icon: "Mail", styleClass: "bg-primary" },
+    { type: "Website", href: "https://scuffsetc.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+  ],
+  about: "Professional vehicle body repair services in Sheffield. Restoring your vehicle to perfection with quality craftsmanship and attention to detail.",
+  services: [
+    { label: "Alloy Wheel Repair", href: "https://scuffsetc.co.uk/services/alloy-wheel-repair" },
+    { label: "Bodywork Scuffs & Dents", href: "https://scuffsetc.co.uk/services/bodywork-repair" },
+    { label: "Textured Plastic Repairs", href: "https://scuffsetc.co.uk/services/textured-plastic-repair" },
+    { label: "Panel Damage", href: "https://scuffsetc.co.uk/services/panel-damage" },
+    { label: "Full Respray", href: "https://scuffsetc.co.uk/services/full-respray" },
+    { label: "Quality Guarantee", href: "https://scuffsetc.co.uk/services/quality-guarantee" },
+    { label: "Smart Repair", href: "https://scuffsetc.co.uk/services/bodywork-repair" },
+    { label: "PDR", href: "https://scuffsetc.co.uk/services/bodywork-repair" },
+    { label: "Vandal Damage", href: "https://scuffsetc.co.uk/services/bodywork-repair" },
+    { label: "Crash Damage", href: "https://scuffsetc.co.uk/services/panel-damage" },
+    { label: "Plastic Welding", href: "https://scuffsetc.co.uk/services/textured-plastic-repair" },
+  ],
+  rating: {
+    value: "5.0",
+    text: "Trusted for high-quality repairs and attention to detail.",
+  },
+  location: "Sheffield, United Kingdom",
+  locationUrl: "https://maps.app.goo.gl/UxZAgmZHMExJSXck9",
+  ratingUrl: "https://www.google.com/search?sca_esv=28e22e78b1f4eede&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=APpeQnvKBAYaTUMaBNrsA3Dq_HS28pt-RA:1785089342938&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_zvGxa_cgUUUlT4Jz4hPMy_Gy7A4tb3GB1JO-VQWpOXMhqEyH9dcQbe4Hc3rnS7BlkIJBXrXSG8vX6IoRSLJtpY0ncdDnMrDzg-okTRXh-eDWR8jc8wikUzmVhfTWTSUybTl6FojmZCzGNXMgfFNTBc4IkIC&q=Scuffs+Etc+Ltd+-+Vehicle+body+repair+Specialists+Reviews&sa=X&ved=2ahUKEwisj7aB-PCVAxVbkuEIHQsIHaQQ0bkNegQIRBAI&biw=1366&bih=633&dpr=1",
+  socialLinks: [
+    { icon: "Facebook", href: "https://web.facebook.com/scuffs.etc?_rdc=1&_rdr#" },
+    { icon: "Instagram", href: "https://www.instagram.com/scuffs_etc_ltd" },
+    { icon: "TikTok", href: "https://www.tiktok.com/@scuffsetc" },
+  ],
+};
+
 
 
 
