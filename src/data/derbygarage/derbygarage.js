@@ -5,7 +5,7 @@ export const digitalCardData = {
     logo: "/derbygarage.png",
   },
   founder: {
-    name: "Derby Garage",
+    name: "John",
     title: "Servicing, MOT, Diagnostics, and Mechanical Repair Specialists",
   },
   contacts: [
