@@ -6,6 +6,8 @@ import {
     MapPin,
     Download,
     Star,
+    Facebook,
+    Instagram,
 } from "lucide-react";
 
 import { digitalCardDataRefurb } from "../../../global";
@@ -18,7 +20,7 @@ const WebGLPlaceholder = () => (
     <div className="fixed inset-0 bg-[var(--bg-main)]" />
 );
 
-const iconMap = { Phone, MessageCircle, Mail, Globe };
+const iconMap = { Phone, MessageCircle, Mail, Globe, Facebook, Instagram };
 
 export default function RefurbDoctor() {
     const {
@@ -97,9 +99,9 @@ export default function RefurbDoctor() {
                                         key={contact.type}
                                         href={contact.href}
                                         target={contact.type === "Website" || contact.type === "WhatsApp" ? "_blank" : "_self"}
-                                        className={`flex items-center justify-center gap-2 h-14 rounded-lg transition hover:scale-[1.02] active:scale-95 ${contact.styleClass}`}
-                                    >
-                                        <IconComponent className="w-5 h-5" />
+                                    className={`flex items-center justify-center gap-2 h-14 rounded-lg transition hover:scale-[1.02] active:scale-95 ${contact.styleClass}`}
+                                >
+                                        {IconComponent ? <IconComponent className="w-5 h-5" /> : null}
                                         {contact.type}
                                     </a>
                                 );
@@ -168,7 +170,7 @@ export default function RefurbDoctor() {
                                     href={social.href}
                                     className="h-12 w-12 rounded-full flex items-center justify-center transition bg-white/10 hover:bg-[var(--primary)]"
                                 >
-                                    <IconComponent className="w-5 h-5" />
+                                    {IconComponent ? <IconComponent className="w-5 h-5" /> : null}
                                 </a>
                             );
                         })}

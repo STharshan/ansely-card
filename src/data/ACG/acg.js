@@ -17,7 +17,6 @@ export const digitalCardData = {
   about:
     "ACG Auto Centre supports Nottingham drivers with MOT testing, servicing, wheel alignment, gearbox and clutch work, and diagnostic repairs from its city workshop.",
   services: [
-    { label: "All Services", href: "https://acgautocentre.co.uk/services/" },
     { label: "MOT", href: "https://acgautocentre.co.uk/services/mot/" },
     { label: "Wheel Alignment and Tracking", href: "https://acgautocentre.co.uk/services/wheel-alignment/" },
     { label: "Car Servicing", href: "https://acgautocentre.co.uk/services/car-servicing/" },

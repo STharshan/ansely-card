@@ -132,8 +132,8 @@ export const digitalCardDataBurnsHairDesign = {
   locationUrl: "https://maps.app.goo.gl/ow3AspknmLn8qBqV6",
   ratingUrl: "https://www.google.com/search?sca_esv=0aa30729732e2704&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=APpeQnszvAe4HDb8hG9-wg_PjOe6KDT-5g:1784817474916&si=APenkKn5T4YN59srr511wD6k6Pufj9DEzRUvB1XJSwUeeT5afm0ofCotfUkZyppiwgr8oO2dhkKsMDmd8w0PPMKgHTjtWg-fEvWexW5wlv5CuodNmQ83d-tKlWrfP6iTwGAtL9GhP3ju&q=Burns+Hair+Design+Reviews&sa=X&ved=2ahUKEwis8dKcg-mVAxWXT2wGHY7kGg8Q0bkNegQIJBAI&biw=1366&bih=633&dpr=1",
   socialLinks: [
-     { icon: "Facebook", href: "https://www.facebook.com/burnshairdesign" },
-     { icon: "Instagram", href: "https://www.instagram.com/burns_hair_design_/" }
+    { icon: "Facebook", href: "https://www.facebook.com/burnshairdesign" },
+    { icon: "Instagram", href: "https://www.instagram.com/burns_hair_design_/" }
   ],
 };
 
@@ -194,8 +194,8 @@ export const digitalCardDataNikita = {
     { label: "MOT" },
     { label: "Mechanical Repairs" },
     { label: "Smart Repairs", },
-    { label: "Diagnostics",},
-    { label: "Dent Repair"},
+    { label: "Diagnostics", },
+    { label: "Dent Repair" },
   ],
   rating: {
     value: "5.0",
@@ -480,14 +480,14 @@ export const digitalCardDataRefurb = {
   ],
   about: "Professional auto repair services for all makes and models. Quality work guaranteed.",
   services: [
-    { label: "Full Respray", href: "https://refurbdoctor.co.uk/" },
-    { label: "Car Part Damage", href: "https://refurbdoctor.co.uk/" },
-    { label: "Accident Repair", href: "https://refurbdoctor.co.uk/" },
-    { label: "Vandal Scratches", href: "https://refurbdoctor.co.uk/" },
-    { label: "Paintless Dent Removal", href: "https://refurbdoctor.co.uk/" },
-    { label: "Alloy Wheel Repair", href: "https://refurbdoctor.co.uk/" },
-    { label: "Machine Polishing", href: "https://refurbdoctor.co.uk/" },
-    { label: "Mobile Repair", href: "https://refurbdoctor.co.uk/" },
+    { label: "Full Respray", href: "http://refurbdoctor.co.uk/services/full-respray" },
+    { label: "Car Part Damage", href: "https://refurbdoctor.co.uk/services/car-part-damage-repair" },
+    { label: "Accident Repair", href: "https://refurbdoctor.co.uk/services/accident-repair" },
+    { label: "Vandal Scratches", href: "https://refurbdoctor.co.uk/services/vandal-scratch-removal" },
+    { label: "Paintless Dent Removal", href: "https://refurbdoctor.co.uk/services/paintless-dent-removal" },
+    { label: "Alloy Wheel Repair", href: "https://refurbdoctor.co.uk/services/alloy-wheel-repair" },
+    { label: "Machine Polishing", href: "https://refurbdoctor.co.uk/services/machine-polishing" },
+    { label: "Mobile Repair", href: "https://refurbdoctor.co.uk/services/mobile-repair" },
   ],
   rating: {
     value: "5.0",
@@ -496,7 +496,10 @@ export const digitalCardDataRefurb = {
   location: "Coventry, United Kingdom",
   locationUrl: "https://maps.app.goo.gl/TXDXdqLJ68NBBXW27",
   ratingUrl: "https://www.google.com/search?sca_esv=bc14e0ce34e04a14&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=APpeQns6FHzVTr95l8Nq0VYk7i-Wkld7XQ:1784902065825&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_y94f9sRgIMKHs-HrB1e3e0G3SqUoBBm6wnt2HPgxE8pDmivmpzsHSsdVJbhuLjG-BgEhO6solUu3lqC4Ucf91L_Ji8V&q=Refurbdoctor+Reviews&sa=X&ved=2ahUKEwj9ld6svuuVAxUGyDgGHVP5IGIQ0bkNegQIIBAI&biw=1366&bih=633&dpr=1",
-  socialLinks: [],
+  socialLinks: [
+    { icon: "Facebook", href: "https://www.facebook.com/RefurbdoctorLtd/?_rdc=2&_rdr#" },
+    { icon: "Instagram", href: "https://www.instagram.com/refurbdoctor_ltd/#" },
+  ],
 };
 
 export const digitalCardDataSmash = {
@@ -704,13 +707,13 @@ export const digitalCardDataCollingwood = {
   ],
   about: "From oil changes to engine diagnostics, our fully equipped vans ensure your vehicle runs smoothly without the hassle of visiting a workshop.",
   services: [
-    { label: "MOT Repair", href: "https://collingwoodmotors.com/" },
-    { label: "Mechanical", href: "https://collingwoodmotors.com/" },
-    { label: "Car Services", href: "https://collingwoodmotors.com/" },
-    { label: "Diagnostics", href: "https://collingwoodmotors.com/" },
-    { label: "Wheel Alignment", href: "https://collingwoodmotors.com/" },
-    { label: "Window Tint", href: "https://collingwoodmotors.com/" },
-    { label: "Belts & Chains", href: "https://collingwoodmotors.com/" },
+    { label: "MOT Repair", href: "https://collingwoodmotors.com/services/mot" },
+    { label: "Mechanical", href: "https://collingwoodmotors.com/services/mechanical" },
+    { label: "Car Services", href: "https://collingwoodmotors.com/services/service" },
+    { label: "Diagnostics", href: "https://collingwoodmotors.com/services/diagnostics" },
+    { label: "Wheel Alignment", href: "https://collingwoodmotors.com/services/wheel-alignment" },
+    { label: "Window Tint", href: "https://collingwoodmotors.com/services/window-tint" },
+    { label: "Belts & Chains", href: "https://collingwoodmotors.com/services/belts-chains" },
   ],
   rating: {
     value: "5.0",

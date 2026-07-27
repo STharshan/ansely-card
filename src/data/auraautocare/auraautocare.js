@@ -27,7 +27,7 @@ export const digitalCardData = {
   rating: {
     value: "Google Reviews",
     text: "Tap to view Aura Auto Care on Google.",
-    href: "",
+    href: "https://www.google.com/search?sca_esv=bde0b90e1f00e769&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=APpeQnsqJiF__76t-sDSo2UJBhIwPAWHww:1785167908645&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_-SWv-OXI_rwf7IE4lh4CabbTmXL4wOkZrzJ6EEs2btAfVC69YjU5P1DQU_dMbmcjusOO8QdEqEwNy48lKeMyuH_X_ul&q=Aura+AutoCare+Reviews&sa=X&ved=2ahUKEwjMhrzYnPOVAxVih68BHUiADjUQ0bkNegQIIRAF&biw=1366&bih=633&dpr=1",
   },
   location: "Nottingham, East Midlands, United Kingdom",
   locationHref: "https://maps.app.goo.gl/e1S2etqinvH3EkZr7",

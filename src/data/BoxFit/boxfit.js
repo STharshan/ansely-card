@@ -16,11 +16,11 @@ export const digitalCardData = {
   about:
     "Boxfit Coaching creates an inclusive space for juniors, women, beginners, squads, and wellbeing-focused members to build skill, strength, and confidence through boxing.",
   services: [
-    { label: "Junior Boxers" },
-    { label: "Womens Boxing" },
-    { label: "SQUAD" },
-    { label: "BFC Wellbeing Programme" },
-    { label: "Beginners" },
+    { label: "Junior Boxers", href:"https://boxfitcoaching.co.uk/" },
+    { label: "Womens Boxing", href:"https://boxfitcoaching.co.uk/" },
+    { label: "SQUAD", href:"https://boxfitcoaching.co.uk/"  },
+    { label: "BFC Wellbeing Programme", href:"https://boxfitcoaching.co.uk/"  },
+    { label: "Beginners", href:"https://boxfitcoaching.co.uk/"  },
   ],
   rating: {
     value: "5.0",

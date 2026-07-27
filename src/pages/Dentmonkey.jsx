@@ -47,7 +47,7 @@ export default function Dentmonkey() {
             bendStrength={4}
             interactive={true}
             parallax={true}
-            linesGradient={["#001F7F", "#0045EF", "#0066FF", "#3399FF", "#66B3FF"]}
+            linesGradient={["#7d7d7d", "#7d7d7d", "#7d7d7d", "#7d7d7d", "#7d7d7d"]}
           />
         </Suspense>
       </div>
@@ -58,7 +58,7 @@ export default function Dentmonkey() {
         {/* Company Name - Usually wider/full width for impact */}
         <header className="w-full max-w-md px-6 pt-16 pb-6 flex flex-col items-center justify-center gap-5 text-center">
           <div className="relative shrink-0">
-            <div className="absolute inset-0 rounded-3xl bg-cyan-400/15 blur-2xl scale-110" />
+            <div className="absolute inset-0 rounded-3xl blur-2xl scale-110" />
             {logoFailed ? (
               <div className="relative flex w-28 h-28 items-center justify-center rounded-3xl border border-white/10 bg-slate-950 shadow-2xl">
                 <div className="text-center leading-none">

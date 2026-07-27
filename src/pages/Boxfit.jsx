@@ -50,7 +50,7 @@ export default function Boxfit() {
             bendStrength={4}
             interactive={true}
             parallax={true}
-            linesGradient={["#001F7F", "#0045EF", "#0066FF", "#3399FF", "#66B3FF"]}
+            linesGradient={["#FF0000", "#FF1A1A", "#FF3333", "#FF6666", "#FF9999"]}
           />
         </Suspense>
       </div>
@@ -133,12 +133,15 @@ export default function Boxfit() {
             <h3 className="text-lg font-semibold mb-4 text-center">Services</h3>
             <div className="space-y-3">
               {services.map((service) => (
-                <div
+                <a
                   key={service.label}
+                  href={service.href}
+                  target="_blank"
+                  rel="noreferrer"
                   className="flex min-h-14 items-center justify-center rounded-xl border border-white/10 bg-white/5 px-4 py-4 text-center text-white backdrop-blur-md"
                 >
                   {service.label}
-                </div>
+                </a>
               ))}
             </div>
           </section>

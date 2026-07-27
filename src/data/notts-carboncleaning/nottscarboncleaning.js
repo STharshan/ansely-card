@@ -1,3 +1,5 @@
+import { href } from "react-router-dom";
+
 export const digitalCardData = {
   company: {
     name: "Nottingham Carbon Cleaning",
@@ -16,13 +18,13 @@ export const digitalCardData = {
   about:
     "Nottingham Carbon Cleaning provides fully mobile engine care across Nottingham, helping drivers improve performance, reduce carbon build-up, and support cleaner running with specialist on-site treatments.",
   services: [
-    { label: "Diagnostic" },
-    { label: "Carbon Clean" },
-    { label: "360 Clean" },
-    { label: "EGR Clean" },
-    { label: "Complete Engine Detox" },
-    { label: "Forced Regen" },
-    { label: "DPF Chemical Clean" },
+    { label: "Diagnostic", href:"https://notts-carboncleaning.co.uk/" },
+    { label: "Carbon Clean", href:"https://notts-carboncleaning.co.uk/" },
+    { label: "360 Clean",  href:"https://notts-carboncleaning.co.uk/"  },
+    { label: "EGR Clean",  href:"https://notts-carboncleaning.co.uk/"  },
+    { label: "Complete Engine Detox",  href:"https://notts-carboncleaning.co.uk/"  },
+    { label: "Forced Regen",  href:"https://notts-carboncleaning.co.uk/"  },
+    { label: "DPF Chemical Clean",  href:"https://notts-carboncleaning.co.uk/"  },
   ],
   rating: {
     value: "5.0",

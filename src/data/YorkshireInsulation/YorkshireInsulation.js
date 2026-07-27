@@ -26,7 +26,7 @@ export const digitalCardData = {
   rating: {
     value: "Google",
     text: "Tap to view Yorkshire Insulation on Google.",
-    href: "",
+    href: "https://www.google.com/search?sca_esv=bde0b90e1f00e769&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=APpeQnv4Jv9jzT14YDQSiWwX6WSVwvsXeg:1785169713799&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_3Pc3ZGAxqXrQkiQRCVxxF2-XfRhLKLYgoxexetbeaqYHfChYoUlJh-pJWtH31vCKQq_pWZ6ixwul-E2RfcQnsh57AZyIo7qsCEjP2IfTIR0DVqrQliguXXe913I72KHdvBE5Vg%3D&q=Yorkshire+Insulation+Solutions+Ltd+Reviews&sa=X&ved=2ahUKEwjSj561o_OVAxWkzDgGHckvDrkQ0bkNegQIGxAF&biw=1366&bih=633&dpr=1",
   },
   location: "Yorkshire, United Kingdom",
   locationHref: "https://maps.app.goo.gl/kiuKFGLaznq5CiWe9",
