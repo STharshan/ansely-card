@@ -72,6 +72,9 @@ import Uktintz from "./pages/uktintz.jsx";
 import Alino from "./pages/cards/Alino/Alino.jsx";
 import ScuffsEtc from "./pages/cards/ScuffsEtc/ScuffsEtc.jsx";
 
+
+import Dynamicvehicleservices from "./pages/dynamicvehicleservices.jsx";
+
 function App() {
   return (
     <Router>
@@ -159,6 +162,9 @@ function App() {
         <Route path="/uktintz" element={<Uktintz />} />
         <Route path="/scuffs" element={<ScuffsEtc /> } />
         <Route path="/scuffsetc" element={<ScuffsEtc /> } />
+
+        <Route path="/dynamicvehicleservices" element={<Dynamicvehicleservices />} />
+
       </Routes>
     </Router>
   );
