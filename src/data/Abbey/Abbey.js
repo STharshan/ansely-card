@@ -32,13 +32,7 @@ export const digitalCardData = {
   },
   location: "146 Prestwold Rd, Leicester LE5 0EX, United Kingdom",
   locationHref: "https://maps.app.goo.gl/H5DpmU4516bQiaWd7",
-  socialLinks: [
-    {
-      label: "Instagram",
-      icon: "Instagram",
-      href: "https://www.instagram.com/kml_accident_repair_centre/",
-    },
-  ],
+  socialLinks: [],
 };
 
 export function downloadVCF() {
