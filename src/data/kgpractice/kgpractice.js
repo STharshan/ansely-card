@@ -5,7 +5,7 @@ export const digitalCardData = {
     logo: "/kgpractice.png",
   },
   founder: {
-    name: "Ketan Gajjar",
+    name: "Ketan",
     title: "Consultant Gynaecologist and Gynaecological Oncologist",
   },
   contacts: [
