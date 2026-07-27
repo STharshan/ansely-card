@@ -1,6 +1,7 @@
 import {
   Phone,
   Mail,
+  MessageCircle,
   Globe,
   MapPin,
   Download,
@@ -17,7 +18,7 @@ const WebGLPlaceholder = () => (
   <div className="fixed inset-0 bg-[var(--bg-main)]" />
 );
 
-const iconMap = { Phone, Mail, Globe, Instagram };
+const iconMap = { Phone, Mail, MessageCircle, Globe, Instagram };
 
 export default function Abbey() {
   const [logoFailed, setLogoFailed] = useState(false);

@@ -10,6 +10,7 @@ export const digitalCardData = {
   },
   contacts: [
     { type: "Call", href: "tel:07737985510", icon: "Phone", styleClass: "bg-primary" },
+    { type: "WhatsApp", href: "https://wa.me/447737985510", icon: "MessageCircle", styleClass: "bg-whatsapp" },
     { type: "Email", href: "mailto:Safsah@abbey-tyres.co.uk", icon: "Mail", styleClass: "bg-primary" },
     { type: "Website", href: "https://abbey-tyres.co.uk/", icon: "Globe", styleClass: "bg-primary" },
   ],
