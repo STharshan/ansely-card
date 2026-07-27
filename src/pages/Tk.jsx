@@ -1,5 +1,6 @@
 import {
   Phone,
+  Mail,
   Globe,
   MapPin,
   Download,
@@ -15,7 +16,7 @@ const WebGLPlaceholder = () => (
   <div className="fixed inset-0 bg-[var(--bg-main)]" />
 );
 
-const iconMap = { Phone, Globe };
+const iconMap = { Phone, Mail, Globe };
 
 export default function TK() {
   const [logoFailed, setLogoFailed] = useState(false);
@@ -110,7 +111,7 @@ export default function TK() {
                     target={contact.type === "Website" || contact.type === "WhatsApp" ? "_blank" : "_self"}
                     className={`flex items-center justify-center gap-2 h-14 rounded-lg transition hover:scale-[1.02] active:scale-95 ${contact.styleClass}`}
                   >
-                    <IconComponent className="w-5 h-5" />
+                    {IconComponent ? <IconComponent className="w-5 h-5" /> : null}
                     {contact.type}
                   </a>
                 );
@@ -204,7 +205,7 @@ export default function TK() {
                     rel="noreferrer"
                     className="h-12 w-12 rounded-full flex items-center justify-center transition bg-white/10 hover:bg-[var(--primary)]"
                   >
-                    <IconComponent className="w-5 h-5" />
+                    {IconComponent ? <IconComponent className="w-5 h-5" /> : null}
                   </a>
                 );
               })}

@@ -50,7 +50,7 @@ export default function Slsmartrepair() {
             bendStrength={4}
             interactive={true}
             parallax={true}
-            linesGradient={["#001F7F", "#0045EF", "#0066FF", "#3399FF", "#66B3FF"]}
+            linesGradient={["FF0000", "#FF0000", "#FF0000", "#FFFFFF", "#FF0000"]}
           />
         </Suspense>
       </div>
@@ -133,8 +133,15 @@ export default function Slsmartrepair() {
             <h3 className="text-lg font-semibold mb-4 text-center">Services</h3>
             <ul className="space-y-3">
               {services.map((service) => (
-                <li key={service.label} className="flex text-center justify-center items-center rounded-lg border border-white/10 bg-white/5 px-4 py-3">
-                  <span className="text-white">{service.label}</span>
+                <li key={service.label}>
+                  <a
+                    href={service.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex text-center justify-center items-center rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-white transition hover:border-cyan-300/40 hover:bg-white/8"
+                  >
+                    <span>{service.label}</span>
+                  </a>
                 </li>
               ))}
             </ul>

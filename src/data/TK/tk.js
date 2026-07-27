@@ -11,6 +11,7 @@ export const digitalCardData = {
   contacts: [
     { type: "Call", href: "tel:01624860209", icon: "Phone", styleClass: "bg-primary" },
     { type: "Website", href: "https://www.tkautomotive.im/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Email", href: "tkautomotiveiom@gmail.com", icon: "Email", styleClass: "bg-primary" },
   ],
   about:
     "TK Automotive works across performance tuning, rolling road testing, diagnostics, motorsport prep, and mechanical repair for drivers who want precise, dependable results.",

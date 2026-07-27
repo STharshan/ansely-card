@@ -16,7 +16,7 @@ import { lazy, Suspense, useState } from "react";
 const FloatingLines = lazy(() => import("../components/FloatingLines.jsx"));
 
 const WebGLPlaceholder = () => (
-  <div className="fixed inset-0 bg-[#FF0000]" />
+  <div className="fixed inset-0" />
 );
 
 const iconMap = { Phone, MessageCircle, Mail, Globe, MapPin, Instagram, TikTok: Music2 };
@@ -37,7 +37,7 @@ export default function Auraautocare() {
   const websiteHref = contacts.find((contact) => contact.type === "Website")?.href || "#";
 
   return (
-    <main className="relative min-h-screen text-white flex justify-center bg-[#FF0000]">
+    <main className="relative min-h-screen text-white flex justify-center">
       <div className="fixed inset-0 z-0 pointer-events-none">
         <Suspense fallback={<WebGLPlaceholder />}>
           <FloatingLines

@@ -139,7 +139,7 @@ export default function Empire() {
                       href={serviceHref}
                       target="_blank"
                       rel="noreferrer"
-                      className="text-white hover:underline"
+                      className="text-white"
                     >
                       {serviceLabel}
                     </a>

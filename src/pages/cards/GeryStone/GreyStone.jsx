@@ -48,7 +48,7 @@ export default function Greystone() {
                         bendStrength={4}
                         interactive={true}
                         parallax={true}
-                        linesGradient={["#001F7F", "#0045EF", "#0066FF", "#3399FF", "#66B3FF"]}
+                        linesGradient={["#E39638", "#EAA14D", "#F0AC62", "#F5B777", "#F9C28C"]}
                     />
                 </Suspense>
             </div>
@@ -58,13 +58,13 @@ export default function Greystone() {
 
                 {/* Company Name - Usually wider/full width for impact */}
                 <header className="w-full max-w-md px-6 pt-16 pb-6 flex items-center justify-center text-center">
-                    <div className="relative shrink-0">
-                        <div className="absolute inset-0 blur-2xl rounded-full scale-110" />
+                    <div className="relative flex w-36 h-24 md:w-52 md:h-32 items-center justify-center overflow-hidden rounded-3xl bg-black/45 p-3 shadow-2xl shadow-black/30 ring-1 ring-white/10 backdrop-blur-sm">
                         <img
                             src={company.logo}
-                            alt={founder.name}
+                            alt={company.name}
                             loading="lazy"
-                            className="relative object-cover w-92 h-20 md:w-95 md:h-24"
+                            onError={() => setLogoFailed(true)}
+                            className="h-full w-full object-contain drop-shadow-[0_8px_24px_rgba(0,0,0,0.45)]"
                         />
                     </div>
                 </header>

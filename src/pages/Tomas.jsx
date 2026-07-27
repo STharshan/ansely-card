@@ -37,7 +37,7 @@ export default function Tomas() {
   } = digitalCardData;
 
   return (
-    <main className="relative min-h-screen text-white flex justify-center bg-[#FF0000]">
+    <main className="relative min-h-screen text-white flex justify-center">
 
       {/* Background Animation */}
       <div className="fixed inset-0 z-0 pointer-events-none">

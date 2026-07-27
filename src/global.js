@@ -293,7 +293,7 @@ export const digitalCardDataGreystone = {
   },
   contacts: [
     { type: "Call", href: "tel:+447545213989", icon: "Phone", styleClass: "bg-primary" },
-    { type: "WhatsApp", href: "https://wa.me/447545213989", icon: "MessageCircle", styleClass: "bg-primary" },
+    { type: "WhatsApp", href: "https://wa.me/447545213989", icon: "MessageCircle", styleClass: "bg-[#25D366]" },
     { type: "Email", href: "mailto:justin.day@live.co.uk", icon: "Mail", styleClass: "bg-primary" },
     { type: "Website", href: "https://www.greystoneauto.com/", icon: "Globe", styleClass: "bg-primary" },
   ],

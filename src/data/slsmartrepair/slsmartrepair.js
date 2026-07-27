@@ -17,12 +17,12 @@ export const digitalCardData = {
   about:
     "SL Smart Repair helps drivers restore paintwork, lights, trims, and panels with focused repair work designed to keep vehicles looking sharp and resale-ready.",
   services: [
-    { label: "Scratches" },
-    { label: "Headlight Restoration" },
-    { label: "Dent Removal" },
-    { label: "Wheels & Calipers" },
-    { label: "Lease Returns" },
-    { label: "Bumper Scuffs" },
+    { label: "Scratches", href:"https://www.slsmartrepair.co.uk/#services" },
+    { label: "Headlight Restoration", href:"https://www.slsmartrepair.co.uk/#services" },
+    { label: "Dent Removal", href:"https://www.slsmartrepair.co.uk/#services" },
+    { label: "Wheels & Calipers", href:"https://www.slsmartrepair.co.uk/#services" },
+    { label: "Lease Returns", href:"https://www.slsmartrepair.co.uk/#services" },
+    { label: "Bumper Scuffs", href:"https://www.slsmartrepair.co.uk/#services" },
   ],
   rating: {
     value: "5.0",
@@ -30,7 +30,7 @@ export const digitalCardData = {
     href: "https://www.google.com/search?q=S.L+smart+repairs+30+Laxton+Close+Wigston+LE18+3WJ",
   },
   location: "30 Laxton Close, Leicester Wigston LE18 3WJ",
-  locationHref: "https://www.google.com/maps/dir//Leicester,+Wigston+LE18+3WJ,+United+Kingdom",
+  locationHref: "https://maps.app.goo.gl/dCwzjactK8AuNi8s6",
   socialLinks: [
     { icon: "Facebook", href: "https://web.facebook.com/S.LValetingDetailingServices/?_rdc=1&_rdr#", label: "Facebook" },
     { icon: "Instagram", href: "https://www.instagram.com/sl_smart_repair/?hl=en", label: "Instagram" },

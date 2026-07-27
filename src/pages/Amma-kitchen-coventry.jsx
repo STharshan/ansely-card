@@ -48,7 +48,7 @@ export default function Amma() {
             bendStrength={4}
             interactive={true}
             parallax={true}
-            linesGradient={["#001F7F", "#0045EF", "#0066FF", "#3399FF", "#66B3FF"]}
+            linesGradient={["#45EC66", "#45EC66", "#45EC66", "#45EC66", "#45EC66"]}
           />
         </Suspense>
       </div>
@@ -128,7 +128,7 @@ export default function Amma() {
 
           {/* Services */}
           <section className="mb-10">
-            <h3 className="text-lg font-semibold mb-4 text-center">Services</h3>
+            <h3 className="text-lg font-semibold mb-4 text-center">What We Offer</h3>
             <ul className="space-y-3">
               {services.map((service) => {
                 const serviceLabel = typeof service === "string" ? service : service.label;
