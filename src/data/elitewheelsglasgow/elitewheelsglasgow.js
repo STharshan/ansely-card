@@ -5,7 +5,7 @@ export const digitalCardData = {
     logo: "/elitewheelsglasgow.png",
   },
   founder: {
-    name: "Elite Wheels Glasgow",
+    name: "Darren",
     title: "Alloy Wheel Refurbishment Specialists",
   },
   contacts: [
