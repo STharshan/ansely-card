@@ -612,7 +612,7 @@ export const digitalCardDataSRK = {
 export const digitalCardDataUnit4 = {
   company: {
     name: "UNIT 4",
-    tagline: "Based in the heart of Leicester, Unit Four specialises in enhancing vehicle performance, reliability, and efficiency.",
+    tagline: "Unit Four specialises in enhancing vehicle performance, reliability, and efficiency.",
     logo: "/unit.png",
   },
   founder: {
@@ -621,6 +621,7 @@ export const digitalCardDataUnit4 = {
   },
   contacts: [
     { type: "Call", href: "tel:01162669749", icon: "Phone", styleClass: "bg-primary" },
+    { type: "WhatsApp", href: "https://wa.me/447771238883", icon: "MessageCircle", styleClass: "bg-[#25D366]" },
     { type: "Email", href: "mailto:info@unit-three.co.uk", icon: "Mail", styleClass: "bg-primary" },
     { type: "Website", href: "https://unit4remaps.co.uk/", icon: "Globe", styleClass: "bg-primary" },
   ],

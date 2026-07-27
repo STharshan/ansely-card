@@ -17,7 +17,7 @@ import { lazy, Suspense, useState } from "react";
 const FloatingLines = lazy(() => import("../components/FloatingLines.jsx"));
 
 const WebGLPlaceholder = () => (
-  <div className="fixed inset-0 bg-[var(--bg-main)]" />
+  <div className="fixed inset-0" />
 );
 
 const iconMap = { Phone, MessageCircle, Mail, Globe, Instagram, Facebook, Linkedin };
@@ -37,7 +37,7 @@ export default function Tomas() {
   } = digitalCardData;
 
   return (
-    <main className="relative min-h-screen text-white flex justify-center bg-[var(--bg-main)]">
+    <main className="relative min-h-screen text-white flex justify-center bg-[#FF0000]">
 
       {/* Background Animation */}
       <div className="fixed inset-0 z-0 pointer-events-none">
@@ -50,7 +50,7 @@ export default function Tomas() {
             bendStrength={4}
             interactive={true}
             parallax={true}
-            linesGradient={["#001F7F", "#0045EF", "#0066FF", "#3399FF", "#66B3FF"]}
+            linesGradient={["#FF0000", "#FF0000", "#FFffff", "#FF0000", "#FF0000"]}
           />
         </Suspense>
       </div>

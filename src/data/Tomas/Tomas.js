@@ -30,7 +30,7 @@ export const digitalCardData = {
   rating: {
     value: "5.0",
     text: "Tap to view Tomas Exteriors on Google.",
-    href: "https://share.google/TrkiETV9rdFjAWeVB",
+    href: "https://www.google.com/search?sca_esv=fc2a7f6adb56bd6b&rlz=1C1CHBD_enLK1213LK1213&sxsrf=APpeQnv5NyNwjHo6S-VPHM2-vpZsNJSyyA:1785172943419&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_7kqxZQUOn1X9ZXpWN_WZHU-xqh6crXlTmmrcmnrfcrJWy1yvWOMBziVLZEbpaT-VSfg-XCVGQ0zAo22vkGE26TXvJmfiibC4YeqElUqP-cFXMo2_QpHRgaVYV-udh0Nf196ZRg%3D&q=Tomas+Exteriors+professional+window+tinting+Reviews&sa=X&ved=2ahUKEwiMsp65r_OVAxXphVYBHWFwPIcQ0bkNegQIJhAI&biw=1366&bih=633&dpr=1",
   },
   location: "Unit 16 Croft St, Bury, BL9 7BG, United Kingdom",
   locationHref: "https://maps.app.goo.gl/GPi6frsETUX1cu4VA",
