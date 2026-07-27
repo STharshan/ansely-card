@@ -67,13 +67,13 @@ export default function TK() {
                 </div>
               </div>
             ) : (
-              <div className="relative flex">
+              <div className="relative flex w-36 h-24 md:w-52 md:h-32 items-center justify-center overflow-hidden rounded-3xl bg-black/45 p-3 shadow-2xl shadow-black/30 ring-1 ring-white/10 backdrop-blur-sm">
                 <img
                   src={company.logo}
                   alt={company.name}
                   loading="lazy"
                   onError={() => setLogoFailed(true)}
-                  className="h-full w-full object-contain drop-shadow-[0_4px_18px_rgba(15,23,42,0.35)]"
+                  className="h-full w-full object-contain drop-shadow-[0_8px_24px_rgba(0,0,0,0.45)]"
                 />
               </div>
             )}
