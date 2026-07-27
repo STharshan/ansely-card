@@ -1,23 +1,37 @@
 import {
   Phone,
+  MessageCircle,
+  Mail,
   Globe,
   MapPin,
   Download,
   Star,
+  Instagram,
+  Music2,
 } from "lucide-react";
+import { FaFacebookF } from "react-icons/fa6";
 
-import { digitalCardData ,downloadVCF } from "../data/TK/tk.js";
+import { digitalCardData ,downloadVCF } from "../data/newbridgestreetcargarage/newbridgestreetcargarage.js";
 import { lazy, Suspense, useState } from "react";
 
-const FloatingLines = lazy(() => import("../components/FloatingLines.jsx"));
+const FloatingLines = lazy(() => import("../components/FloatingLines.tsx"));
 
 const WebGLPlaceholder = () => (
   <div className="fixed inset-0 bg-[var(--bg-main)]" />
 );
 
-const iconMap = { Phone, Globe };
+const iconMap = {
+  Phone,
+  MessageCircle,
+  Mail,
+  Globe,
+  MapPin,
+  Instagram,
+  Facebook: FaFacebookF,
+  TikTok: Music2,
+};
 
-export default function TK() {
+export default function Newbridgestreetcargarage() {
   const [logoFailed, setLogoFailed] = useState(false);
   const {
     company,
@@ -54,20 +68,20 @@ export default function TK() {
       <div className="relative z-10 w-full flex flex-col items-center">
 
         {/* Company Name - Usually wider/full width for impact */}
-        <header className="w-full max-w-md px-4 pt-16 pb-6 flex flex-col items-center justify-center gap-4 text-center">
+        <header className="w-full max-w-md px-6 pt-16 pb-6 flex flex-col items-center justify-center gap-5 text-center">
           <div className="relative shrink-0">
             <div className="absolute inset-0 rounded-3xl bg-cyan-400/15 blur-2xl scale-110" />
             {logoFailed ? (
-              <div className="relative flex w-20 h-20 md:w-28 md:h-28 items-center justify-center rounded-3xl border border-white/10 bg-slate-950 shadow-2xl">
+              <div className="relative flex w-28 h-28 items-center justify-center rounded-3xl border border-white/10 bg-slate-950 shadow-2xl">
                 <div className="text-center leading-none">
-                  <div className="text-2xl md:text-3xl font-black tracking-[0.18em] text-white">TK</div>
-                  <div className="mt-1 text-[0.48rem] md:text-[0.58rem] font-semibold uppercase tracking-[0.28em] text-cyan-200">
-                    Auto
+                  <div className="text-3xl font-black tracking-[0.12em] text-white">NCC</div>
+                  <div className="mt-1 text-[0.58rem] font-semibold uppercase tracking-[0.22em] text-cyan-200">
+                    New Bridge
                   </div>
                 </div>
               </div>
             ) : (
-              <div className="relative flex w-36 h-24 md:w-52 md:h-32 items-center justify-center overflow-hidden rounded-3xl bg-black/45 p-3 shadow-2xl shadow-black/30 ring-1 ring-white/10 backdrop-blur-sm">
+              <div className="relative flex w-40 h-28 items-center justify-center overflow-hidden rounded-3xl bg-black/45 p-3 shadow-2xl shadow-black/30 ring-1 ring-white/10 backdrop-blur-sm sm:w-48 sm:h-32">
                 <img
                   src={company.logo}
                   alt={company.name}
@@ -134,9 +148,9 @@ export default function TK() {
                       href={service.href}
                       target="_blank"
                       rel="noreferrer"
-                      className="flex w-full text-center justify-center items-center rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-white transition hover:border-cyan-300/40 hover:bg-white/8"
+                      className="flex text-center justify-center items-center rounded-lg border border-white/10 bg-white/5 px-4 py-3 transition hover:border-cyan-300/40 hover:bg-white/10"
                     >
-                      <span>{service.label}</span>
+                      <span className="text-white">{service.label}</span>
                     </a>
                   ) : (
                     <div className="flex text-center justify-center items-center rounded-lg border border-white/10 bg-white/5 px-4 py-3">
@@ -150,32 +164,20 @@ export default function TK() {
 
           {/* Rating */}
           {rating ? (
-            rating.href ? (
-              <a
-                href={rating.href}
-                target="_blank"
-                rel="noreferrer"
-                className="block rounded-xl p-6 text-center mb-10 border border-white/10 bg-white/5 backdrop-blur-md transition hover:border-cyan-300/40 hover:bg-white/8"
-              >
-                <div className="flex justify-center gap-1 mb-2">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-                <p className="font-semibold mt-4">{rating.value} Google Rating</p>
-                <p className="text-sm text-gray-400 italic mt-2">{rating.text}</p>
-              </a>
-            ) : (
-              <div className="block rounded-xl p-6 text-center mb-10 border border-white/10 bg-white/5 backdrop-blur-md">
-                <div className="flex justify-center gap-1 mb-2">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-                <p className="font-semibold mt-4">{rating.value} Google Rating</p>
-                <p className="text-sm text-gray-400 italic mt-2">{rating.text}</p>
+            <a
+              href={rating.href}
+              target="_blank"
+              rel="noreferrer"
+              className="block rounded-xl p-6 text-center mb-10 border border-white/10 bg-white/5 backdrop-blur-md transition hover:border-cyan-300/40 hover:bg-white/8"
+            >
+              <div className="flex justify-center gap-1 mb-2">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                ))}
               </div>
-            )
+              <p className="font-semibold mt-4">{rating.value} Google Rating</p>
+              <p className="text-sm text-gray-400 italic mt-2">{rating.text}</p>
+            </a>
           ) : null}
 
           {/* Location */}
