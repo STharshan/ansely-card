@@ -5,7 +5,7 @@ export const digitalCardData = {
     logo: "/maautoelectrics.png",
   },
   founder: {
-    name: "MA Auto Electrics",
+    name: "Muj",
     title: "Auto Electrical and Vehicle Diagnostics Specialists",
   },
   contacts: [
