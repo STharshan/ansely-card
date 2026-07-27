@@ -978,7 +978,7 @@ export const digitalCardDataScuffsEtc = {
     logo: "/scuff.png",
   },
   founder: {
-    name: "Scuffs ETC LTD",
+    name: "Darren",
     title: "Vehicle Body Repair Specialists",
   },
   contacts: [

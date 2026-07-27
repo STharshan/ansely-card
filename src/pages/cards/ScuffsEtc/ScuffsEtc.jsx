@@ -16,7 +16,7 @@ import { lazy, Suspense } from "react";
 const FloatingLines = lazy(() => import("../../../components/FloatingLines.tsx"));
 
 const WebGLPlaceholder = () => (
-  <div className="fixed inset-0 bg-[var(--bg-main)]" />
+  <div className="fixed inset-0 bg-[radial-gradient(circle_at_top,_rgba(124,252,0,0.16),_rgba(11,20,11,0.96)_42%,_rgba(0,0,0,1)_100%)]" />
 );
 
 const iconMap = {
@@ -44,7 +44,8 @@ export default function ScuffsEtc() {
   } = digitalCardDataScuffsEtc;
 
   return (
-    <main className="relative min-h-screen text-white flex justify-center bg-[var(--bg-main)]">
+    <main className="relative min-h-screen overflow-hidden text-white flex justify-center bg-[radial-gradient(circle_at_top,_rgba(124,252,0,0.18),_rgba(18,31,18,0.95)_28%,_rgba(7,12,7,0.98)_58%,_rgba(0,0,0,1)_100%)]">
+      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.04),transparent_20%,transparent_78%,rgba(124,252,0,0.08))]" />
       <div className="fixed inset-0 z-0 pointer-events-none">
         <Suspense fallback={<WebGLPlaceholder />}>
           <FloatingLines
@@ -55,7 +56,7 @@ export default function ScuffsEtc() {
             bendStrength={4}
             interactive={true}
             parallax={true}
-            linesGradient={["#001F7F", "#0045EF", "#0066FF", "#3399FF", "#66B3FF"]}
+            linesGradient={["#1D3317", "#3F6A24", "#76B92F", "#A8E857", "#E9FFD0"]}
           />
         </Suspense>
       </div>
@@ -63,6 +64,7 @@ export default function ScuffsEtc() {
       <div className="relative z-10 w-full flex flex-col items-center">
         <header className="w-full max-w-md px-6 pt-16 pb-6 flex items-center justify-center text-center">
           <div className="relative">
+            <div className="absolute inset-0 rounded-full bg-lime-300/15 blur-2xl scale-110" />
             <img
               src={company.logo}
               alt={company.name}
