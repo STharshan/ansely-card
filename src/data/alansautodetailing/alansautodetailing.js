@@ -33,7 +33,7 @@ export const digitalCardData = {
     href: "https://share.google/dBvSyXDXVNU9aXwTb",
   },
   location: "Manchester (M7), United Kingdom",
-  locationHref: "https://maps.app.goo.gl/HZ2yZdVVRquBFNYp7",
+  locationHref: "https://maps.app.goo.gl/pMNtXZLMNnNcecjY7",
   socialLinks: [],
 };
 
