@@ -5,7 +5,7 @@ export const digitalCardData = {
     logo: "",
   },
   founder: {
-    name: "JS Automotive Doncaster",
+    name: "Joe",
     title: "Garage Services and Vehicle Repair Specialists",
   },
   contacts: [
