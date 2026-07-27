@@ -797,7 +797,7 @@ export const digitalCardDataDogGrooming = {
     logo: "/dog.png",
   },
   founder: {
-    name: "Leicester Dog Grooming",
+    name: "Bernie",
     title: "Dog Grooming",
   },
   contacts: [
