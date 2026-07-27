@@ -5,7 +5,7 @@ export const digitalCardData = {
     logo: "/sowafurniture.webp",
   },
   founder: {
-    name: "Sowa Furniture",
+    name: "Tomas",
     title: "Hospitality Furniture Refurbishment Specialists",
   },
   contacts: [
@@ -51,8 +51,8 @@ export const digitalCardData = {
     text: "Tap to view Sowa Furniture on Google.",
     href: "https://share.google/yUBXII6IZkhDQcZGu",
   },
-  location: "Manchester, United Kingdom",
-  locationHref: "https://maps.app.goo.gl/mkYwEVZRxafppCP7A",
+  location: "M40 2HJ, Lord North Street, Gate 1",
+  locationHref: "https://maps.app.goo.gl/fjGuhd33R22ZwaR76",
   socialLinks: [
     {
       label: "Instagram",
