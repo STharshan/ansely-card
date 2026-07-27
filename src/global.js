@@ -830,7 +830,7 @@ export const digitalCardDataSantinos = {
     logo: "/santino.png",
   },
   founder: {
-    name: "Santino's GYM & STUDIO",
+    name: "Will",
     title: "Gym & Studio",
   },
   contacts: [

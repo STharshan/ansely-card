@@ -16,7 +16,7 @@ import { lazy, Suspense } from "react";
 const FloatingLines = lazy(() => import("../../../components/FloatingLines.tsx"));
 
 const WebGLPlaceholder = () => (
-    <div className="fixed inset-0 bg-[var(--bg-main)]" />
+    <div className="fixed inset-0 bg-[radial-gradient(circle_at_top,_rgba(164,24,32,0.2),_rgba(20,8,10,0.96)_42%,_rgba(0,0,0,1)_100%)]" />
 );
 
 const iconMap = {
@@ -43,7 +43,8 @@ export default function Santinos() {
     } = digitalCardDataSantinos;
 
     return (
-        <main className="relative min-h-screen text-white flex justify-center bg-[var(--bg-main)]">
+        <main className="relative min-h-screen overflow-hidden text-white flex justify-center bg-[radial-gradient(circle_at_top,_rgba(164,24,32,0.24),_rgba(34,8,12,0.96)_28%,_rgba(10,5,6,0.98)_58%,_rgba(0,0,0,1)_100%)]">
+            <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.04),transparent_18%,transparent_78%,rgba(164,24,32,0.09))]" />
             <div className="fixed inset-0 z-0 pointer-events-none">
                 <Suspense fallback={<WebGLPlaceholder />}>
                     <FloatingLines
@@ -54,7 +55,7 @@ export default function Santinos() {
                         bendStrength={4}
                         interactive={true}
                         parallax={true}
-                        linesGradient={["#001F7F", "#0045EF", "#0066FF", "#3399FF", "#66B3FF"]}
+                        linesGradient={["#3A0B12", "#6B121C", "#A41820", "#D4474F", "#F4C9CC"]}
                     />
                 </Suspense>
             </div>
@@ -62,7 +63,7 @@ export default function Santinos() {
             <div className="relative z-10 w-full flex flex-col items-center">
                 <header className="w-full max-w-md px-6 pt-16 pb-6 flex items-center justify-center text-center">
                     <div className="relative shrink-0">
-                        <div className="absolute inset-0 blur-2xl rounded-full scale-110" />
+                        <div className="absolute inset-0 blur-2xl rounded-full scale-110 bg-red-400/15" />
                         <img
                             src={company.logo}
                             alt={founder.name}
