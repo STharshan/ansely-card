@@ -5,7 +5,7 @@ export const digitalCardData = {
     logo: "/aalan.png",
   },
   founder: {
-    name: "Alan's Auto Detailing",
+    name: "Alan",
     title: "Car Detailing and Deep Cleaning Specialists",
   },
   contacts: [
