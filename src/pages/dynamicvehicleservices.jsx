@@ -7,6 +7,7 @@ import {
   Download,
   Star,
   Instagram,
+  Facebook,
   Music2,
 } from "lucide-react";
 
@@ -19,7 +20,7 @@ const WebGLPlaceholder = () => (
   <div className="fixed inset-0 bg-[var(--bg-main)]" />
 );
 
-const iconMap = { Phone, MessageCircle, Mail, Globe, MapPin, Instagram, TikTok: Music2 };
+const iconMap = { Phone, MessageCircle, Mail, Globe, MapPin, Instagram, Facebook, TikTok: Music2 };
 
 export default function Dynamicvehicleservices() {
   const [logoFailed, setLogoFailed] = useState(false);

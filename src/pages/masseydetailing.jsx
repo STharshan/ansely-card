@@ -48,7 +48,7 @@ export default function Masseydetailing() {
             bendStrength={4}
             interactive={true}
             parallax={true}
-            linesGradient={["#001F7F", "#0045EF", "#0066FF", "#3399FF", "#66B3FF"]}
+            linesGradient={["#DCAE3B", "#DCAE3B", "#DCAE3B", "#DCAE3B", "#DCAE3B"]}
           />
         </Suspense>
       </div>
@@ -56,7 +56,7 @@ export default function Masseydetailing() {
       <div className="relative z-10 w-full flex flex-col items-center">
         <header className="w-full max-w-md px-6 pt-16 pb-6 flex flex-col items-center justify-center gap-4 text-center">
           <div className="relative shrink-0">
-            <div className="absolute inset-0 rounded-3xl bg-cyan-400/15 blur-2xl scale-110" />
+            <div className="absolute scale-110" />
             {logoFailed ? (
               <div className="relative flex w-20 h-20 md:w-28 md:h-28 items-center justify-center rounded-3xl border border-white/10 bg-slate-950 shadow-2xl">
                 <div className="text-center leading-none">
@@ -67,7 +67,7 @@ export default function Masseydetailing() {
                 </div>
               </div>
             ) : (
-              <div className="relative flex w-20 h-20 md:w-28 md:h-28 items-center justify-center rounded-3xl p-1 shadow-2xl shadow-black/30">
+              <div className="relative flex w-20 h-20 md:w-28 md:h-28 items-center justify-center">
                 <img
                   src={company.logo}
                   alt={company.name}

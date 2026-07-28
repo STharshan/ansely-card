@@ -17,12 +17,12 @@ export const digitalCardData = {
   about:
     "Dynamic Vehicle Services offers dependable vehicle care from Anstey, covering everything from routine servicing and brake work to MOT support, diagnostics, and cam belt replacement.",
   services: [
-    { label: "Mechanical Services" },
-    { label: "Brake Services" },
-    { label: "MOT" },
-    { label: "Cam Belt Replacement" },
-    { label: "Diagnostics" },
-    { label: "Car Servicing" },
+    { label: "Mechanical Services", href: "https://www.dynamic-vehicleservices.co.uk/" },
+    { label: "Brake Services", href: "https://www.dynamic-vehicleservices.co.uk/" },
+    { label: "MOT", href: "https://www.dynamic-vehicleservices.co.uk/" },
+    { label: "Cam Belt Replacement", href: "https://www.dynamic-vehicleservices.co.uk/" },
+    { label: "Diagnostics", href: "https://www.dynamic-vehicleservices.co.uk/" },
+    { label: "Car Servicing", href: "https://www.dynamic-vehicleservices.co.uk/" },
   ],
   rating: {
     value: "Google Reviews",
@@ -31,7 +31,9 @@ export const digitalCardData = {
   },
   location: "Link Rd, Anstey, Leicester LE7 7ED, United Kingdom",
   locationHref: "https://maps.app.goo.gl/YX6v2bHG7rSYYhTB6",
-  socialLinks: [],
+  socialLinks: [
+    { label: "Facebook", href: "https://www.facebook.com/DVSLEIC/", icon: "Facebook" },
+  ],
 };
 
 export function downloadVCF() {
