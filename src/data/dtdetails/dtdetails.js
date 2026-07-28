@@ -27,7 +27,7 @@ export const digitalCardData = {
     text: "Tap to view DT Details on Google.",
     href: "https://www.google.com/search?kgmid=/g/11vzb92mv3&hl=en-GB&q=DT+DETAILS&shem=epsd1,ltae,rimspwouoe&shndl=30&source=sh/x/loc/osrp/m5/1&kgs=a82c8e51590ea09c&utm_source=epsd1,ltae,rimspwouoe,sh/x/loc/osrp/m5/1",
   },
-  location: "Sheffield, UK",
+  location: "Sheffield / Doncaster, UK",
   locationHref: "https://maps.app.goo.gl/aohjqa257easwwZD7",
   socialLinks: [
     { icon: "Instagram", href: "https://www.instagram.com/dt_details_/", label: "Instagram" },
