@@ -16,7 +16,7 @@ import { lazy, Suspense } from "react";
 const FloatingLines = lazy(() => import("../../components/FloatingLines.tsx"));
 
 const WebGLPlaceholder = () => (
-    <div className="fixed inset-0 bg-[var(--bg-main)]" />
+    <div className="fixed inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,58,43,0.2),_rgba(31,10,10,0.96)_42%,_rgba(0,0,0,1)_100%)]" />
 );
 
 const iconMap = { Phone, MessageCircle, Mail, Globe, Facebook: FaFacebook, Instagram: FaInstagram, TikTok: FaTiktok };
@@ -37,7 +37,9 @@ export default function CenturionFastFit() {
     } = digitalCardDataCenturion;
 
     return (
-        <main className="relative min-h-screen text-white flex justify-center bg-[var(--bg-main)]">
+        <main className="relative min-h-screen overflow-hidden text-white flex justify-center bg-[radial-gradient(circle_at_top,_rgba(255,58,43,0.24),_rgba(39,10,10,0.96)_28%,_rgba(10,8,8,0.98)_58%,_rgba(0,0,0,1)_100%)]">
+
+            <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(255,214,102,0.05),transparent_18%,transparent_78%,rgba(203,213,225,0.08))]" />
 
             {/* Background Animation */}
             <div className="fixed inset-0 z-0 pointer-events-none">
@@ -50,7 +52,7 @@ export default function CenturionFastFit() {
                         bendStrength={4}
                         interactive={true}
                         parallax={true}
-                        linesGradient={["#001F7F", "#0045EF", "#0066FF", "#3399FF", "#66B3FF"]}
+                        linesGradient={["#4A0D0D", "#8A1F1F", "#E5392B", "#D4D9E5", "#FFB347"]}
                     />
                 </Suspense>
             </div>
@@ -61,7 +63,7 @@ export default function CenturionFastFit() {
                 {/* Company Name - Usually wider/full width for impact */}
                 <header className="w-full max-w-md px-6 pt-16 pb-6 flex items-center justify-center text-center">
                     <div className="relative shrink-0">
-                        <div className="absolute inset-0 blur-2xl rounded-full scale-110" />
+                        <div className="absolute inset-0 blur-2xl rounded-full scale-110 bg-red-400/15" />
                         <img
                             src={company.logo}
                             alt={founder.name}
@@ -117,14 +119,14 @@ export default function CenturionFastFit() {
                     {/* Services */}
                     <section className="mb-10">
                         <h3 className="text-lg font-semibold mb-4 text-center">What We Offer</h3>
-                        <ul className="space-y-3">
+                        <ul className="grid grid-cols-2 gap-3">
                             {services.map((service) => (
                                 <li key={service.label}>
                                     <a
                                         href={service.href}
                                         target="_blank"
                                         rel="noreferrer"
-                                        className="flex w-full items-center justify-center rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-center text-white transition hover:border-cyan-300/40 hover:bg-white/8"
+                                        className="flex min-h-24 w-full items-center justify-center rounded-lg border border-white/10 bg-white/5 px-3 py-3 text-center text-sm leading-snug text-white transition hover:border-cyan-300/40 hover:bg-white/8"
                                     >
                                         {service.label}
                                     </a>
