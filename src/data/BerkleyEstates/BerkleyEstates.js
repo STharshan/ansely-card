@@ -16,9 +16,14 @@ export const digitalCardData = {
   about:
     "Berkley Estate & Letting Agents Ltd helps clients with residential property sales and lettings from its Leicester office, combining local market knowledge with direct customer support.",
   services: [
-    { label: "Property Sales" },
-    { label: "Lettings" },
-    { label: "Residential Property Support" },
+    { label: "HOMEOWNERS", href: "https://berkleyestates.co.uk/homeowners" },
+    { label: "PROPERTY MANAGEMENT", href: "https://berkleyestates.co.uk/property-management" },
+    { label: "LET WITH US", href: "https://berkleyestates.co.uk/let" },
+    { label: "SELL WITH US", href: "https://berkleyestates.co.uk/sell-berkley-estate" },
+    { label: "SELL DISCREETLY", href: "https://berkleyestates.co.uk/sell-discreetly" },
+    { label: "MAINTENANCE", href: "https://berkleyestates.co.uk/maintenance" },
+    { label: "WE ARE BERKLEY", href: "https://berkleyestates.co.uk/about" },
+    { label: "PROPERTIES", href: "https://berkleyestates.co.uk/properties" },
   ],
   rating: {
     value: "Google Reviews",
