@@ -54,15 +54,13 @@ export default function Braai() {
             <div className="relative z-10 w-full flex flex-col items-center">
                 <header className="w-full max-w-md px-6 pt-16 pb-6 flex items-center justify-center text-center">
                     <div className="relative">
-                        <div className="absolute inset-0 rounded-full bg-orange-400/15 blur-2xl scale-110" />
-                        <div className="relative flex h-28 w-28 items-center justify-center rounded-full border border-white/10 bg-gradient-to-br from-orange-500/25 via-amber-500/15 to-red-500/25 text-center shadow-2xl shadow-black/30">
-                            <div>
-                                <div className="text-xl font-black tracking-[0.18em]">BRAAI</div>
-                                <div className="mt-1 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-orange-100">
-                                    Master
-                                </div>
-                            </div>
-                        </div>
+                        <div className="absolute inset-0 rounded-full bg-yellow-300/15 blur-2xl scale-110" />
+                        <img
+                            src="/braai.png"
+                            alt={company.name}
+                            loading="lazy"
+                            className="relative h-38 w-48 object-contain"
+                        />
                     </div>
                 </header>
 
