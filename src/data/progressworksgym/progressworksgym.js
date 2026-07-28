@@ -15,10 +15,10 @@ export const digitalCardData = {
   about:
     "Progress Works Gym offers a welcoming Glenfield training space with flexible ways to train, including pay-as-you-go access, direct debit memberships, special memberships, and day passes.",
   services: [
-    { label: "Pay As You Go" },
-    { label: "Direct Debit Membership" },
-    { label: "Special Memberships" },
-    { label: "Day Passes" },
+    { label: "Cash Membership", href: "https://www.progressworksgym.com/cash-membership" },
+    { label: "Plans & Pricing", href: "https://www.progressworksgym.com/plans-pricing" },
+    { label: "Special Memberships", href: "https://www.progressworksgym.com/special-memberships" },
+    { label: "Day Passes", href: "https://www.progressworksgym.com/day-passes" },
   ],
   rating: {
     value: "4.8",

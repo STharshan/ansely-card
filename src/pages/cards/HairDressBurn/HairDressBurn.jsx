@@ -63,13 +63,15 @@ export default function HairDressBurn() {
         {/* Company Name - Usually wider/full width for impact */}
         <header className="w-full max-w-md px-6 pt-16 pb-6 flex items-center justify-center">
           <div className="relative shrink-0">
-            <div className="absolute inset-0 blur-2xl rounded-full scale-110" />
-            <img
-              src="/burns-logo.webp"
-              alt={founder.name}
-              loading="lazy"
-              className="relative object-cover h-20 w-35 md:h-24"
-            />
+            <div className="absolute inset-0 rounded-3xl bg-amber-300/15 blur-2xl scale-110" />
+            <div className="relative flex h-24 w-44 items-center justify-center overflow-hidden rounded-3xl bg-white/95 px-4 py-3 shadow-2xl shadow-black/30 ring-1 ring-white/20 md:h-28 md:w-52">
+              <img
+                src="/burns-logo.webp"
+                alt={founder.name}
+                loading="lazy"
+                className="h-full w-full object-contain drop-shadow-[0_6px_20px_rgba(15,23,42,0.18)]"
+              />
+            </div>
           </div>
         </header>
 
