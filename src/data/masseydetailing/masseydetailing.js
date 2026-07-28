@@ -12,6 +12,7 @@ export const digitalCardData = {
     { type: "Call", href: "tel:07399539744", icon: "Phone", styleClass: "bg-primary" },
     { type: "Email", href: "mailto:info@masseydetailing.co.uk", icon: "Mail", styleClass: "bg-primary" },
     { type: "Website", href: "https://www.masseydetailing.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "WhatsApp", href: "https://wa.me/447399539744", icon: "MessageCircle", styleClass: "bg-whatsapp" },
   ],
   about:
     "Massey Detailing is a mobile valeting and detailing business based in Wakefield, covering the surrounding Yorkshire areas with industry-leading products, careful technique, and premium car care.",

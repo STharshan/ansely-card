@@ -161,7 +161,6 @@ function App() {
         <Route path="/wongkwei" element={<WongKwei />} />
         <Route path="/alino" element={<Alino />} />
         <Route path="/uktintz" element={<Uktintz />} />
-        <Route path="/scuffs" element={<ScuffsEtc /> } />
         <Route path="/scuffsetc" element={<ScuffsEtc /> } />
 
         <Route path="/dynamicvehicleservices" element={<Dynamicvehicleservices />} />

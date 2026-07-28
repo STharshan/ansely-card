@@ -760,8 +760,8 @@ export const digitalCardDataCambridge = {
     text: "Trusted for quality automotive care and diagnostics.",
   },
   location: "Cambridge, United Kingdom",
-  locationUrl: "https://maps.app.goo.gl/P2JYUWtnwvzh9EzFA",
-  ratingUrl: "https://www.google.com/search?sca_esv=128d3fbf1687292d&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=APpeQntxRoyDcNEEo7bTMvMwUwwQPTrbYQ:1784915309285&si=APenkKn5T4YN59srr511wD6k6Pufj9DEzRUvB1XJSwUeeT5afnWPhI9xAd0oT4UmnyghhEvAkHgb4fKl1fex6U2iw_zLpdvk0kcGSBnbZpiFvNnPqXYnnEtwh3HmrmFPpbljztCoAkOiHmBNi9FQCXzOjQw_dgdcnQ%3D%3D&q=Cambridge+Vehicle+Services+Ltd+Reviews&sa=X&ved=2ahUKEwja7NrX7-uVAxVVSmwGHS6YDdEQ0bkNegQIFxAI&biw=1366&bih=633&dpr=1",
+  locationUrl: "",
+  ratingUrl: "",
   socialLinks: [],
 };
 
@@ -825,7 +825,7 @@ export const digitalCardDataDogGrooming = {
   },
   location: "Leicestershire, UK",
   locationUrl: "https://maps.app.goo.gl/Kz4LijXGAw1sPcBAA",
-  ratingUrl: "https://leicesterdoggrooming.co.uk/",
+  ratingUrl: "https://www.google.com/search?sca_esv=c9e03337c92c222f&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=APpeQnuj2U618WT9ZhAF_-gXiFFCVJpUhw:1785247140060&si=APenkKn5T4YN59srr511wD6k6Pufj9DEzRUvB1XJSwUeeT5afismY8gvOl3_5241VXqJaqkiwitmx_F-4SQZZTTITvFBwMokHigzVykkk1NodguExLbsLaVFxKiSdUFCI-ZaYVzmzG8ZfJjfuum0fItf3mDaQLBFVw%3D%3D&q=Leicester+Dog+Grooming+Reviews&sa=X&ved=2ahUKEwjqjfrsw_WVAxUJSGwGHdCVCeIQ0bkNegQIJhAI&biw=1366&bih=633&dpr=1",
   socialLinks: [
     { icon: "Instagram", href: "https://www.instagram.com/leicesterdoggrooming/?igsh=ejVmOXZjc212NTZy" },
     { icon: "Facebook", href: "https://web.facebook.com/profile.php?id=100093093552115#" },
