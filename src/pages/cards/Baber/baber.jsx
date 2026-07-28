@@ -17,7 +17,7 @@ import { lazy, Suspense } from "react";
 const FloatingLines = lazy(() => import("../../../components/FloatingLines.tsx"));
 
 const WebGLPlaceholder = () => (
-  <div className="fixed inset-0 bg-[var(--bg-main)]" />
+  <div className="fixed inset-0 bg-[radial-gradient(circle_at_top,_rgba(245,180,53,0.2),_rgba(28,18,8,0.96)_42%,_rgba(0,0,0,1)_100%)]" />
 );
 
 const iconMap = { Phone, MessageCircle, Mail, Globe, Instagram, Facebook };
@@ -37,7 +37,9 @@ export default function Baber() {
   } = digitalCardDataTwentyEight;
 
   return (
-    <main className="relative min-h-screen text-white flex justify-center bg-[var(--bg-main)]">
+    <main className="relative min-h-screen overflow-hidden text-white flex justify-center bg-[radial-gradient(circle_at_top,_rgba(245,180,53,0.24),_rgba(36,22,9,0.96)_28%,_rgba(10,8,4,0.98)_58%,_rgba(0,0,0,1)_100%)]">
+
+      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(255,239,184,0.06),transparent_18%,transparent_78%,rgba(245,180,53,0.09))]" />
 
       {/* Background Animation */}
       <div className="fixed inset-0 z-0 pointer-events-none">
@@ -50,7 +52,7 @@ export default function Baber() {
             bendStrength={4}
             interactive={true}
             parallax={true}
-            linesGradient={["#001F7F", "#0045EF", "#0066FF", "#3399FF", "#66B3FF"]}
+            linesGradient={["#4B2E09", "#8A5612", "#C6851C", "#F5B435", "#FFE8A1"]}
           />
         </Suspense>
       </div>
@@ -61,7 +63,7 @@ export default function Baber() {
         {/* Company Name - Usually wider/full width for impact */}
         <header className="w-full max-w-md px-6 pt-16 pb-6 flex items-center justify-center">
           <div className="relative shrink-0">
-            <div className="absolute inset-0 blur-2xl rounded-full scale-110" />
+            <div className="absolute inset-0 blur-2xl rounded-full scale-110 bg-amber-300/20" />
               <img
               src={company.logo}
               alt={founder.name}

@@ -17,7 +17,7 @@ import { lazy, Suspense, useState } from "react";
 const FloatingLines = lazy(() => import("../components/FloatingLines.jsx"));
 
 const WebGLPlaceholder = () => (
-  <div className="fixed inset-0 bg-[var(--bg-main)]" />
+  <div className="fixed inset-0 bg-[radial-gradient(circle_at_top,_rgba(220,38,38,0.2),_rgba(28,8,8,0.96)_42%,_rgba(0,0,0,1)_100%)]" />
 );
 
 const iconMap = { Phone, MessageCircle, Mail, Globe, Instagram, Facebook, Linkedin };
@@ -38,7 +38,9 @@ export default function OviBodyShop() {
   const websiteHref = contacts.find((contact) => contact.type === "Website")?.href || "#";
 
   return (
-    <main className="relative min-h-screen text-white flex justify-center bg-[var(--bg-main)]">
+    <main className="relative min-h-screen overflow-hidden text-white flex justify-center bg-[radial-gradient(circle_at_top,_rgba(220,38,38,0.24),_rgba(40,8,8,0.96)_28%,_rgba(12,6,6,0.98)_58%,_rgba(0,0,0,1)_100%)]">
+
+      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.04),transparent_18%,transparent_78%,rgba(220,38,38,0.09))]" />
 
       {/* Background Animation */}
       <div className="fixed inset-0 z-0 pointer-events-none">
@@ -51,7 +53,7 @@ export default function OviBodyShop() {
             bendStrength={4}
             interactive={true}
             parallax={true}
-            linesGradient={["#001F7F", "#0045EF", "#0066FF", "#3399FF", "#66B3FF"]}
+            linesGradient={["#450A0A", "#7F1D1D", "#B91C1C", "#EF4444", "#FECACA"]}
           />
         </Suspense>
       </div>
@@ -62,7 +64,7 @@ export default function OviBodyShop() {
         {/* Company Name - Usually wider/full width for impact */}
         <header className="w-full max-w-md px-4 pt-16 pb-6 flex flex-col items-center justify-center gap-4 text-center">
           <div className="relative shrink-0">
-            <div className="absolute inset-0 rounded-3xl bg-cyan-400/15 blur-2xl scale-110" />
+            <div className="absolute inset-0 rounded-3xl bg-red-400/15 blur-2xl scale-110" />
             {logoFailed ? (
               <div className="relative flex w-20 h-20 md:w-28 md:h-28 items-center justify-center rounded-3xl border border-white/10 bg-slate-950 shadow-2xl">
                 <div className="text-center leading-none">

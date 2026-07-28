@@ -60,13 +60,15 @@ export default function MehranGarages() {
                 {/* Company Name - Usually wider/full width for impact */}
                 <header className="w-full max-w-md px-6 pt-16 pb-6 flex items-center justify-center text-center">
                     <div className="relative shrink-0">
-                        <div className="absolute inset-0 blur-2xl rounded-full scale-110" />
-                        <img
-                            src={company.logo}
-                            alt={founder.name}
-                            loading="lazy"
-                            className="relative object-cover w-40 h-15 md:w-48 md:h-20"
-                        />
+                        <div className="absolute inset-0 rounded-3xl bg-blue-400/15 blur-2xl scale-110" />
+                        <div className="relative flex w-48 h-20 md:w-56 md:h-24 items-center justify-center overflow-hidden rounded-3xl bg-[linear-gradient(180deg,rgba(10,29,61,0.96)_0%,rgba(14,42,84,0.96)_52%,rgba(255,255,255,0.97)_52%,rgba(255,255,255,0.99)_100%)] px-4 py-3 shadow-2xl shadow-black/30 ring-1 ring-white/20">
+                            <img
+                                src={company.logo}
+                                alt={founder.name}
+                                loading="lazy"
+                                className="h-full w-full object-contain drop-shadow-[0_6px_20px_rgba(15,23,42,0.22)]"
+                            />
+                        </div>
                     </div>
                 </header>
 
