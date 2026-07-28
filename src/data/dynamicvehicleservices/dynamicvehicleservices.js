@@ -5,7 +5,7 @@ export const digitalCardData = {
     logo: "/dynamicvehicleservices.png",
   },
   founder: {
-    name: "Kasey",
+    name: "Kaycee",
     title: "Dynamic Vehicle Services",
   },
   contacts: [
