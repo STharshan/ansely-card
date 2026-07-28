@@ -13,7 +13,7 @@ import { lazy, Suspense, useState } from "react";
 const FloatingLines = lazy(() => import("../components/FloatingLines.jsx"));
 
 const WebGLPlaceholder = () => (
-  <div className="fixed inset-0 bg-[var(--bg-main)]" />
+  <div className="fixed inset-0 bg-[radial-gradient(circle_at_top,_rgba(220,38,38,0.2),_rgba(24,8,8,0.96)_42%,_rgba(0,0,0,1)_100%)]" />
 );
 
 const iconMap = { Phone, Globe, MapPin, Instagram };
@@ -33,7 +33,9 @@ export default function Progressworksgym() {
   } = digitalCardData;
 
   return (
-    <main className="relative min-h-screen text-white flex justify-center bg-[var(--bg-main)]">
+    <main className="relative min-h-screen overflow-hidden text-white flex justify-center bg-[radial-gradient(circle_at_top,_rgba(220,38,38,0.24),_rgba(35,8,8,0.96)_28%,_rgba(10,6,6,0.98)_58%,_rgba(0,0,0,1)_100%)]">
+
+      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.04),transparent_18%,transparent_78%,rgba(220,38,38,0.09))]" />
 
       {/* Background Animation */}
       <div className="fixed inset-0 z-0 pointer-events-none">
@@ -46,7 +48,7 @@ export default function Progressworksgym() {
             bendStrength={4}
             interactive={true}
             parallax={true}
-            linesGradient={["#001F7F", "#0045EF", "#0066FF", "#3399FF", "#66B3FF"]}
+            linesGradient={["#450A0A", "#7F1D1D", "#B91C1C", "#EF4444", "#FECACA"]}
           />
         </Suspense>
       </div>
@@ -57,7 +59,7 @@ export default function Progressworksgym() {
         {/* Company Name - Usually wider/full width for impact */}
         <header className="w-full max-w-md px-6 pt-16 pb-6 flex flex-col items-center justify-center gap-5 text-center">
           <div className="relative shrink-0">
-            <div className="absolute inset-0 rounded-3xl bg-cyan-400/15 blur-2xl scale-110" />
+            <div className="absolute inset-0 rounded-3xl bg-red-400/15 blur-2xl scale-110" />
             {logoFailed ? (
               <div className="relative flex w-28 h-28 items-center justify-center rounded-3xl border border-white/10 bg-slate-950 shadow-2xl">
                 <div className="text-center leading-none">
@@ -127,10 +129,17 @@ export default function Progressworksgym() {
           {/* Services */}
           <section className="mb-10">
             <h3 className="text-lg font-semibold mb-4 text-center">Services</h3>
-            <ul className="space-y-3">
+            <ul className="grid grid-cols-2 gap-3">
               {services.map((service) => (
-                <li key={service.label} className="flex text-center justify-center items-center rounded-lg border border-white/10 bg-white/5 px-4 py-3">
-                  <span className="text-white">{service.label}</span>
+                <li key={service.label}>
+                  <a
+                    href={service.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex min-h-24 items-center justify-center rounded-lg border border-white/10 bg-white/5 px-3 py-3 text-center text-sm leading-snug text-white transition hover:border-red-300/40 hover:bg-white/8"
+                  >
+                    <span>{service.label}</span>
+                  </a>
                 </li>
               ))}
             </ul>
