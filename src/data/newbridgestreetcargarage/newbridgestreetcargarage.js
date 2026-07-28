@@ -5,7 +5,7 @@ export const digitalCardData = {
     logo: "/newbridgestreetcargarage.webp",
   },
   founder: {
-    name: "New Bridge Street Car Garage",
+    name: "Lowdi",
     title: "Diagnostics, Repairs, MOT, and Recovery Specialists",
   },
   contacts: [
