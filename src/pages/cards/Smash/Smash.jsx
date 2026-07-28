@@ -48,7 +48,7 @@ export default function Smashed() {
                         bendStrength={4}
                         interactive={true}
                         parallax={true}
-                        linesGradient={["#001F7F", "#0045EF", "#0066FF", "#3399FF", "#66B3FF"]}
+                        linesGradient={["#D98A0A", "#D98A0A", "#D98A0A", "#D98A0A", "#D98A0A"]}
                     />
                 </Suspense>
             </div>
