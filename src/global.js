@@ -514,11 +514,11 @@ export const digitalCardDataSmash = {
     logo: "/smash.png",
   },
   founder: {
-    name: "Smashed Burgers & Shakes",
+    name: "Shaq",
     title: "Burgers & Shakes",
   },
   contacts: [
-    { type: "Call", href: "tel:01509416655", icon: "Phone", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:01530648708", icon: "Phone", styleClass: "bg-primary" },
     { type: "Email", href: "mailto:smashedashby@gmail.com", icon: "Mail", styleClass: "bg-primary" },
     { type: "Website", href: "https://smashed-uk.com/", icon: "Globe", styleClass: "bg-primary" },
   ],
@@ -534,7 +534,7 @@ export const digitalCardDataSmash = {
     value: "5.0",
     text: "Loved for signature burgers and crave-worthy comfort food.",
   },
-  location: "Ashby-de-la-Zouch, UK",
+  location: "85 Market Street, Ashby LE65 1AH",
   locationUrl: "https://maps.app.goo.gl/Yq7EqmDntHqm8fd27",
   ratingUrl: "",
   socialLinks: [
@@ -760,8 +760,8 @@ export const digitalCardDataCambridge = {
     text: "Trusted for quality automotive care and diagnostics.",
   },
   location: "Cambridge, United Kingdom",
-  locationUrl: "",
-  ratingUrl: "",
+  locationUrl: "https://maps.app.goo.gl/vkX22keEZqMPxzcu7",
+  ratingUrl: "https://www.google.com/search?sca_esv=5e6c1f1176e333b8&rlz=1C5CHFA_enCA1132CA1132&cs=1&output=search&kgmid=/g/1tj90t3q&q=Cambridge+Automotive+Ltd&shem=dlvs1,epsd1,ltae,rimspwouoe&shndl=30&source=sh/x/loc/uni/m1/1&kgs=382b9eb2423bb235&utm_source=dlvs1,epsd1,ltae,rimspwouoe,sh/x/loc/uni/m1/1",
   socialLinks: [],
 };
 
@@ -872,7 +872,7 @@ export const digitalCardDataBraai = {
     tagline: "Smoky flames, bold flavors, and barbecue done right in the heart of Leicester.",
   },
   founder: {
-    name: "Braai Master",
+    name: "Braai",
     title: "BBQ & Fire-Inspired Cuisine",
   },
   contacts: [

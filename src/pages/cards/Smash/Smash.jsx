@@ -133,7 +133,6 @@ export default function Smashed() {
 
                     {/* Rating */}
                     <a
-                        href={ratingUrl}
                         target="_blank"
                         rel="noreferrer"
                         className="block rounded-xl p-6 text-center mb-10 border border-white/10 bg-white/5 backdrop-blur-md transition hover:scale-[1.01] active:scale-[0.99]"
