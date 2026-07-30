@@ -991,10 +991,10 @@ export const digitalCardDataScuffsEtc = {
     title: "Vehicle Body Repair Specialists",
   },
   contacts: [
-    { type: "Call", href: "tel:+447776300300", icon: "Phone", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:+447776300300", icon: "Phone", styleClass: "bg-[#76B92F] hover:bg-[#A8E857]" },
     { type: "WhatsApp", href: "https://wa.me/447776300300", icon: "MessageCircle", styleClass: "bg-[#25D366]" },
-    { type: "Email", href: "mailto:info@scuffsetc.co.uk", icon: "Mail", styleClass: "bg-primary" },
-    { type: "Website", href: "https://scuffsetc.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Email", href: "mailto:info@scuffsetc.co.uk", icon: "Mail", styleClass: "bg-[#76B92F] hover:bg-[#A8E857]" },
+    { type: "Website", href: "https://scuffsetc.co.uk/", icon: "Globe", styleClass: "bg-[#76B92F] hover:bg-[#A8E857]" },
   ],
   about: "Professional vehicle body repair services in Sheffield. Restoring your vehicle to perfection with quality craftsmanship and attention to detail.",
   services: [
