@@ -518,9 +518,9 @@ export const digitalCardDataSmash = {
     title: "Burgers & Shakes",
   },
   contacts: [
-    { type: "Call", href: "tel:01530648708", icon: "Phone", styleClass: "bg-primary" },
-    { type: "Email", href: "mailto:smashedashby@gmail.com", icon: "Mail", styleClass: "bg-primary" },
-    { type: "Website", href: "https://smashed-uk.com/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:01530648708", icon: "Phone", styleClass: "bg-[#D98A0A] hover:bg-[#E6A53A]" },
+    { type: "Email", href: "mailto:smashedashby@gmail.com", icon: "Mail", styleClass: "bg-[#D98A0A] hover:bg-[#E6A53A]" },
+    { type: "Website", href: "https://smashed-uk.com/", icon: "Globe", styleClass: "bg-[#D98A0A] hover:bg-[#E6A53A]" },
   ],
   about: "Where comfort meets crave-worthy. Bite into our signature burgers, golden fries, and urban-inspired eats in the heart of the city.",
   services: [
