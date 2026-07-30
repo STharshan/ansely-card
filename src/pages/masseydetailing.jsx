@@ -61,7 +61,7 @@ export default function Masseydetailing() {
               <div className="relative flex w-20 h-20 md:w-28 md:h-28 items-center justify-center rounded-3xl border border-white/10 bg-slate-950 shadow-2xl">
                 <div className="text-center leading-none">
                   <div className="text-2xl md:text-3xl font-black tracking-[0.18em] text-white">MD</div>
-                  <div className="mt-1 text-[0.48rem] md:text-[0.58rem] font-semibold uppercase tracking-[0.28em] text-cyan-200">
+                  <div className="mt-1 text-[0.48rem] md:text-[0.58rem] font-semibold uppercase tracking-[0.28em] text-[#E3C76A]">
                     Detailing
                   </div>
                 </div>
@@ -126,7 +126,7 @@ export default function Masseydetailing() {
                       href={service.href}
                       target="_blank"
                       rel="noreferrer"
-                      className="flex items-center justify-center rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-center text-white transition hover:border-cyan-300/40 hover:bg-white/8"
+                      className="flex items-center justify-center rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-center text-white transition hover:border-[#E3C76A]/40 hover:bg-white/8"
                     >
                       <span>{service.label}</span>
                     </a>
@@ -145,7 +145,7 @@ export default function Masseydetailing() {
               href={rating.href}
               target="_blank"
               rel="noreferrer"
-              className="mb-10 block rounded-xl border border-white/10 bg-white/5 p-6 text-center backdrop-blur-md transition hover:border-cyan-300/40 hover:bg-white/8"
+              className="mb-10 block rounded-xl border border-white/10 bg-white/5 p-6 text-center backdrop-blur-md transition hover:border-[#E3C76A]/40 hover:bg-white/8"
             >
               <div className="mb-2 flex justify-center gap-1">
                 {[...Array(5)].map((_, i) => (
@@ -162,10 +162,10 @@ export default function Masseydetailing() {
               href={locationHref}
               target="_blank"
               rel="noreferrer"
-              className="mb-10 flex items-center justify-center gap-2 text-center text-white transition hover:text-cyan-300"
+              className="mb-10 flex items-center justify-center gap-2 text-center text-white transition hover:text-[#E3C76A]"
             >
               <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/10">
-                <MapPin className="h-4 w-4 text-primary" />
+                <MapPin className="h-4 w-4 text-[#E3C76A]" />
               </span>
               {location}
             </a>
@@ -182,7 +182,7 @@ export default function Masseydetailing() {
                     target="_blank"
                     rel="noreferrer"
                     aria-label={social.label}
-                    className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 transition hover:bg-[var(--primary)]"
+                    className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 transition hover:bg-[#DCAE3B] hover:text-black"
                   >
                     <IconComponent className="h-5 w-5" />
                   </a>
@@ -194,7 +194,7 @@ export default function Masseydetailing() {
           <section className="mb-10">
             <button
               onClick={downloadVCF}
-              className="flex h-14 w-full items-center justify-center gap-2 rounded-lg bg-primary font-semibold transition-all"
+              className="flex h-14 w-full items-center justify-center gap-2 rounded-lg bg-[#DCAE3B] font-semibold text-black transition-all hover:bg-[#E3C76A]"
             >
               <Download className="h-5 w-5" />
               Save Contact
@@ -208,7 +208,7 @@ export default function Masseydetailing() {
                 href="https://www.ansely.co.uk/"
                 target="_blank"
                 rel="noreferrer"
-                className="text-white transition hover:text-cyan-300 hover:underline"
+                className="text-white transition hover:text-[#E3C76A] hover:underline"
               >
                 Ansely
               </a>
