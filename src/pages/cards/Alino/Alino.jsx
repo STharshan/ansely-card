@@ -153,7 +153,7 @@ export default function Alino() {
                         rel="noreferrer"
                         className="flex justify-center items-center gap-2 text-white mb-10 transition hover:opacity-90"
                     >
-                        <MapPin className="w-5 h-5 text-primary" />
+                        <MapPin className="w-5 h-5 text-[#FFD90F]" />
                         {location}
                     </a>
 
@@ -166,7 +166,7 @@ export default function Alino() {
                                     href={social.href}
                                     target="_blank"
                                     rel="noreferrer"
-                                    className="h-12 w-12 rounded-full flex items-center justify-center transition bg-white/10 hover:bg-[var(--primary)]"
+                                    className="h-12 w-12 rounded-full flex items-center justify-center transition bg-white/10 hover:bg-[#C8A81B]"
                                 >
                                     <IconComponent className="w-5 h-5" />
                                 </a>
@@ -177,7 +177,7 @@ export default function Alino() {
                     <section className="mb-10">
                         <button
                             onClick={downloadVCF}
-                            className="w-full h-14 flex items-center justify-center gap-2 rounded-lg font-semibold bg-primary transition-all"
+                            className="w-full h-14 flex items-center justify-center gap-2 rounded-lg font-semibold bg-[#C8A81B] transition-all hover:bg-[#FFD90F]"
                         >
                             <Download className="w-5 h-5" />
                             Save Contact

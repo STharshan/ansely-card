@@ -956,10 +956,10 @@ export const digitalCardDataAlino = {
     title: "Restaurant Bar",
   },
   contacts: [
-    { type: "Call", href: "tel:07737098045", icon: "Phone", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:07737098045", icon: "Phone", styleClass: "bg-[#C8A81B] hover:bg-[#FFD90F]" },
     { type: "WhatsApp", href: "https://wa.me/447737098045", icon: "MessageCircle", styleClass: "bg-[#25D366]" },
-    { type: "Email", href: "mailto:alinoltd@gmail.com", icon: "Mail", styleClass: "bg-primary" },
-    { type: "Website", href: "https://alino.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Email", href: "mailto:alinoltd@gmail.com", icon: "Mail", styleClass: "bg-[#C8A81B] hover:bg-[#FFD90F]" },
+    { type: "Website", href: "https://alino.co.uk/", icon: "Globe", styleClass: "bg-[#C8A81B] hover:bg-[#FFD90F]" },
   ],
   about: "Serving delicious meals with love and passion. Enjoy our cozy ambiance, fast delivery, and gourmet menu.",
   services: [
