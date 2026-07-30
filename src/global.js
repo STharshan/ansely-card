@@ -661,9 +661,9 @@ export const digitalCardDataCenturion = {
     title: "Service Centre",
   },
   contacts: [
-    { type: "Call", href: "tel:+442476638999", icon: "Phone", styleClass: "bg-primary" },
-    { type: "Email", href: "mailto:centurionfastfit@gmail.com", icon: "Mail", styleClass: "bg-primary" },
-    { type: "Website", href: "https://centurionfastfit.uk/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:+442476638999", icon: "Phone", styleClass: "bg-[#E5392B] hover:bg-[#FF6B5F]" },
+    { type: "Email", href: "mailto:centurionfastfit@gmail.com", icon: "Mail", styleClass: "bg-[#E5392B] hover:bg-[#FF6B5F]" },
+    { type: "Website", href: "https://centurionfastfit.uk/", icon: "Globe", styleClass: "bg-[#E5392B] hover:bg-[#FF6B5F]" },
   ],
     about: "Centurion Service Centre provides quality car service and repairs with experienced professionals using the latest technology.",
     services: [
