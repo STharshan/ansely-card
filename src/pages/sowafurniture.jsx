@@ -66,7 +66,7 @@ export default function Sowafurniture() {
               <div className="relative flex w-20 h-20 md:w-28 md:h-28 items-center justify-center rounded-3xl border border-white/10 bg-slate-950 shadow-2xl">
                 <div className="text-center leading-none">
                   <div className="text-2xl md:text-3xl font-black tracking-[0.18em] text-white">SOWA</div>
-                  <div className="mt-1 text-[0.48rem] md:text-[0.58rem] font-semibold uppercase tracking-[0.2em] text-cyan-200">
+                  <div className="mt-1 text-[0.48rem] md:text-[0.58rem] font-semibold uppercase tracking-[0.2em] text-[#F3E9BE]">
                     Furniture
                   </div>
                 </div>
@@ -139,7 +139,7 @@ export default function Sowafurniture() {
                     href={service.href}
                     target="_blank"
                     rel="noreferrer"
-                    className="flex text-center justify-center items-center rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-white transition hover:border-cyan-300/40 hover:bg-white/8"
+                    className="flex text-center justify-center items-center rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-white transition hover:border-[#D8CB8A]/40 hover:bg-white/8"
                   >
                     <span>{service.label}</span>
                   </a>
@@ -154,7 +154,7 @@ export default function Sowafurniture() {
               href={rating.href}
               target="_blank"
               rel="noreferrer"
-              className="block rounded-xl p-6 text-center mb-10 border border-white/10 bg-white/5 backdrop-blur-md transition hover:border-cyan-300/40 hover:bg-white/8"
+              className="block rounded-xl p-6 text-center mb-10 border border-white/10 bg-white/5 backdrop-blur-md transition hover:border-[#D8CB8A]/40 hover:bg-white/8"
             >
               <div className="flex justify-center gap-1 mb-2">
                 {[...Array(5)].map((_, i) => (
@@ -171,10 +171,10 @@ export default function Sowafurniture() {
             href={locationHref}
             target="_blank"
             rel="noreferrer"
-            className="flex justify-center items-center gap-2 text-white mb-10 hover:text-cyan-300 transition text-center text-sm md:text-base"
+            className="flex justify-center items-center gap-2 text-white mb-10 hover:text-[#D8CB8A] transition text-center text-sm md:text-base"
           >
             <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/10">
-              <MapPin className="w-4 h-4 text-primary" />
+              <MapPin className="w-4 h-4 text-[#D8CB8A]" />
             </span>
             {location}
           </a>
@@ -190,7 +190,7 @@ export default function Sowafurniture() {
                     href={social.href}
                     target="_blank"
                     rel="noreferrer"
-                    className="h-12 w-12 rounded-full flex items-center justify-center transition bg-white/10 hover:bg-[var(--primary)]"
+                    className="h-12 w-12 rounded-full flex items-center justify-center transition bg-white/10 hover:bg-[#B1A062] hover:text-black"
                   >
                     <IconComponent className="w-5 h-5" />
                   </a>
@@ -203,7 +203,7 @@ export default function Sowafurniture() {
           <section className="mb-10">
             <button
               onClick={downloadVCF}
-              className="w-full h-14 flex items-center justify-center gap-2 rounded-lg font-semibold bg-primary transition-all"
+              className="w-full h-14 flex items-center justify-center gap-2 rounded-lg font-semibold bg-[#B1A062] text-black transition-all hover:bg-[#D8CB8A]"
             >
               <Download className="w-5 h-5" />
               Save Contact
@@ -218,7 +218,7 @@ export default function Sowafurniture() {
                 href="https://www.ansely.co.uk/"
                 target="_blank"
                 rel="noreferrer"
-                className="text-white transition hover:text-cyan-300 hover:underline"
+                className="text-white transition hover:text-[#D8CB8A] hover:underline"
               >
                 Ansely
               </a>
