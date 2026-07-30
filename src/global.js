@@ -114,9 +114,9 @@ export const digitalCardDataBurnsHairDesign = {
     title: "Owner & Stylist",
   },
   contacts: [
-    { type: "Call", href: "tel:+441159374180", icon: "Phone", styleClass: "bg-primary" },
-    { type: "Email", href: "mailto:harrietburns1989@gmail.com", icon: "Mail", styleClass: "bg-primary" },
-    { type: "Website", href: "https://burnshairdesign.com/", icon: "Globe", styleClass: "bg-primary" }
+    { type: "Call", href: "tel:+441159374180", icon: "Phone", styleClass: "bg-orange-600 hover:bg-orange-500" },
+    { type: "Email", href: "mailto:harrietburns1989@gmail.com", icon: "Mail", styleClass: "bg-orange-600 hover:bg-orange-500" },
+    { type: "Website", href: "https://burnshairdesign.com/", icon: "Globe", styleClass: "bg-orange-600 hover:bg-orange-500" }
   ],
   about: "Established in 1956 — Burns Hair Design continues a tradition of three generations delivering exceptional hair care and styling.",
 

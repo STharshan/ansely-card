@@ -16,7 +16,7 @@ import { lazy, Suspense } from "react";
 const FloatingLines = lazy(() => import("../../../components/FloatingLines.tsx"));
 
 const WebGLPlaceholder = () => (
-  <div className="fixed inset-0 bg-[var(--bg-main)]" />
+  <div className="fixed inset-0 bg-orange-500" />
 );
 
 const iconMap = { Phone, MessageCircle, Mail, Globe };
@@ -39,7 +39,7 @@ export default function HairDressBurn() {
   } = digitalCardDataBurnsHairDesign;
 
   return (
-    <main className="relative min-h-screen text-white flex justify-center bg-[var(--bg-main)]">
+    <main className="relative min-h-screen text-white flex justify-center bg-orange-500">
 
       {/* Background Animation */}
       <div className="fixed inset-0 z-0 pointer-events-none">
@@ -52,7 +52,7 @@ export default function HairDressBurn() {
             bendStrength={4}
             interactive={true}
             parallax={true}
-            linesGradient={["#001F7F", "#0045EF", "#0066FF", "#3399FF", "#66B3FF"]}
+            linesGradient={["#7C2D12", "#C2410C", "#EA580C", "#F97316", "#FDBA74"]}
           />
         </Suspense>
       </div>
@@ -128,7 +128,7 @@ export default function HairDressBurn() {
                     href={service.href}
                     target="_blank"
                     rel="noreferrer"
-                    className="flex w-full items-center justify-center rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-center text-white transition hover:border-cyan-300/40 hover:bg-white/8"
+                    className="flex w-full items-center justify-center rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-center text-white transition hover:border-white/20 hover:bg-white/8"
                   >
                     {service.label}
                   </a>
@@ -160,7 +160,7 @@ export default function HairDressBurn() {
             rel="noreferrer"
             className="flex justify-center items-center gap-2 text-white mb-10 transition hover:opacity-90"
           >
-            <MapPin className="w-5 h-5 text-primary" />
+            <MapPin className="w-5 h-5 text-orange-300" />
             {location}
           </a>
 
@@ -180,7 +180,7 @@ export default function HairDressBurn() {
                     href={social.href}
                     target="_blank"
                     rel="noreferrer"
-                    className="h-12 w-12 rounded-full flex items-center justify-center transition bg-white/10 hover:bg-[var(--primary)]"
+                    className="h-12 w-12 rounded-full flex items-center justify-center transition bg-orange-400/30 hover:bg-orange-400/50"
                     aria-label={social.icon}
                   >
                     <SocialIcon className="w-5 h-5" />
@@ -194,7 +194,7 @@ export default function HairDressBurn() {
           <section className="mb-10">
             <button
               onClick={downloadVCF}
-              className="w-full h-14 flex items-center justify-center gap-2 rounded-lg font-semibold bg-primary transition-all"
+              className="w-full h-14 flex items-center justify-center gap-2 rounded-lg font-semibold bg-orange-600 transition-all hover:bg-orange-500"
             >
               <Download className="w-5 h-5" />
               Save Contact
