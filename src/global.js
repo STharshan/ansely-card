@@ -402,10 +402,10 @@ export const digitalCardDataJM = {
     title: "Your Local Mobile Mechanic",
   },
   contacts: [
-    { type: "Call", href: "tel:+447477167363", icon: "Phone", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:+447477167363", icon: "Phone", styleClass: "bg-[#2E8790] hover:bg-[#49ACB5]" },
     { type: "WhatsApp", href: "https://wa.me/447477167363", icon: "MessageCircle", styleClass: "bg-[#25D366]" },
-    { type: "Email", href: "mailto:JMVehicleAssist@gmail.com", icon: "Mail", styleClass: "bg-primary" },
-    { type: "Website", href: "https://jmvehicleassist.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Email", href: "mailto:JMVehicleAssist@gmail.com", icon: "Mail", styleClass: "bg-[#2E8790] hover:bg-[#49ACB5]" },
+    { type: "Website", href: "https://jmvehicleassist.co.uk/", icon: "Globe", styleClass: "bg-[#2E8790] hover:bg-[#49ACB5]" },
   ],
   about: "JM Vehicle Assist delivers precision performance solutions - driving innovation, efficiency, and excellence across industries.",
   services: [

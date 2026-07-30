@@ -127,7 +127,7 @@ export default function JMVehicleAssist() {
                                         href={service.href}
                                         target="_blank"
                                         rel="noreferrer"
-                                        className="flex w-full items-center justify-center rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-center text-white transition hover:border-cyan-300/40 hover:bg-white/8"
+                                        className="flex w-full items-center justify-center rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-center text-white transition hover:border-[#49ACB5]/40 hover:bg-white/8"
                                     >
                                         {service.label}
                                     </a>
@@ -159,7 +159,7 @@ export default function JMVehicleAssist() {
                         rel="noreferrer"
                         className="flex justify-center items-center gap-2 text-white mb-10 transition hover:opacity-90"
                     >
-                        <MapPin className="w-5 h-5 text-primary" />
+                        <MapPin className="w-5 h-5 text-[#49ACB5]" />
                         {location}
                     </a>
 
@@ -174,7 +174,7 @@ export default function JMVehicleAssist() {
                                     href={social.href}
                                     target="_blank"
                                     rel="noreferrer"
-                                    className="h-12 w-12 rounded-full flex items-center justify-center transition bg-white/10 hover:bg-[var(--primary)]"
+                                    className="h-12 w-12 rounded-full flex items-center justify-center transition bg-white/10 hover:bg-[#2E8790]"
                                 >
                                     <IconComponent className="w-5 h-5" />
                                 </a>
@@ -187,7 +187,7 @@ export default function JMVehicleAssist() {
                     <section className="mb-10">
                         <button
                             onClick={downloadVCF}
-                            className="w-full h-14 flex items-center justify-center gap-2 rounded-lg font-semibold bg-primary transition-all"
+                            className="w-full h-14 flex items-center justify-center gap-2 rounded-lg font-semibold bg-[#2E8790] transition-all hover:bg-[#49ACB5]"
                         >
                             <Download className="w-5 h-5" />
                             Save Contact
