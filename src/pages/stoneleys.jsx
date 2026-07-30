@@ -56,12 +56,12 @@ export default function Stoneleys() {
         {/* Company Name - Usually wider/full width for impact */}
         <header className="w-full max-w-md px-4 pt-16 pb-6 flex flex-col items-center justify-center gap-4 text-center">
           <div className="relative shrink-0">
-            <div className="absolute inset-0 rounded-3xl bg-cyan-400/15 blur-2xl scale-110" />
+            <div className="absolute inset-0 rounded-3xl bg-[#00E500]/20 blur-2xl scale-110" />
             {logoFailed ? (
               <div className="relative flex w-20 h-20 md:w-28 md:h-28 items-center justify-center rounded-3xl border border-white/10 bg-slate-950 shadow-2xl">
                 <div className="text-center leading-none">
                   <div className="text-2xl md:text-3xl font-black tracking-[0.18em] text-white">SG</div>
-                  <div className="mt-1 text-[0.48rem] md:text-[0.58rem] font-semibold uppercase tracking-[0.28em] text-cyan-200">
+                  <div className="mt-1 text-[0.48rem] md:text-[0.58rem] font-semibold uppercase tracking-[0.28em] text-[#CCFFCC]">
                     Garage
                   </div>
                 </div>
@@ -134,7 +134,7 @@ export default function Stoneleys() {
                       href={service.href}
                       target="_blank"
                       rel="noreferrer"
-                      className="flex w-full text-center justify-center items-center rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-white transition hover:border-cyan-300/40 hover:bg-white/8"
+                      className="flex w-full text-center justify-center items-center rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-white transition hover:border-[#33EA33]/40 hover:bg-white/8"
                     >
                       <span>{service.label}</span>
                     </a>
@@ -154,7 +154,7 @@ export default function Stoneleys() {
               href={rating.href}
               target="_blank"
               rel="noreferrer"
-              className="block rounded-xl p-6 text-center mb-10 border border-white/10 bg-white/5 backdrop-blur-md transition hover:border-cyan-300/40 hover:bg-white/8"
+              className="block rounded-xl p-6 text-center mb-10 border border-white/10 bg-white/5 backdrop-blur-md transition hover:border-[#33EA33]/40 hover:bg-white/8"
             >
               <div className="flex justify-center gap-1 mb-2">
                 {[...Array(5)].map((_, i) => (
@@ -171,10 +171,10 @@ export default function Stoneleys() {
             href={locationHref}
             target="_blank"
             rel="noreferrer"
-            className="flex justify-center items-center gap-2 text-white mb-10 hover:text-cyan-300 transition text-center"
+            className="flex justify-center items-center gap-2 text-white mb-10 hover:text-[#66F066] transition text-center"
           >
             <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/10">
-              <MapPin className="w-4 h-4 text-primary" />
+              <MapPin className="w-4 h-4 text-[#66F066]" />
             </span>
             {location}
           </a>
@@ -190,7 +190,7 @@ export default function Stoneleys() {
                     href={social.href}
                     target="_blank"
                     rel="noreferrer"
-                    className="h-12 w-12 rounded-full flex items-center justify-center transition bg-white/10 hover:bg-[var(--primary)]"
+                    className="h-12 w-12 rounded-full flex items-center justify-center transition bg-white/10 hover:bg-[#00E500]"
                   >
                     <IconComponent className="w-5 h-5" />
                   </a>
@@ -203,7 +203,7 @@ export default function Stoneleys() {
           <section className="mb-10">
             <button
               onClick={downloadVCF}
-              className="w-full h-14 flex items-center justify-center gap-2 rounded-lg font-semibold bg-primary transition-all"
+              className="w-full h-14 flex items-center justify-center gap-2 rounded-lg font-semibold bg-[#00E500] transition-all hover:bg-[#33EA33]"
             >
               <Download className="w-5 h-5" />
               Save Contact
@@ -218,7 +218,7 @@ export default function Stoneleys() {
                 href="https://www.ansely.co.uk/"
                 target="_blank"
                 rel="noreferrer"
-                className="text-white transition hover:text-cyan-300 hover:underline"
+                className="text-white transition hover:text-[#66F066] hover:underline"
               >
                 Ansely
               </a>

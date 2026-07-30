@@ -9,8 +9,8 @@ export const digitalCardData = {
     title: "Garage Services, Diagnostics, and Vehicle Repair Specialists",
   },
   contacts: [
-    { type: "Call", href: "tel:+441623623759", icon: "Phone", styleClass: "bg-primary" },
-    { type: "Website", href: "https://www.stoneleys.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:+441623623759", icon: "Phone", styleClass: "bg-[#00E500] hover:bg-[#33EA33]" },
+    { type: "Website", href: "https://www.stoneleys.co.uk/", icon: "Globe", styleClass: "bg-[#00E500] hover:bg-[#33EA33]" },
   ],
   about:
     "Stoneley's supports drivers with MOTs, servicing, diagnostics, tyres, alignment, air conditioning, and engine care from its Mansfield garage.",
