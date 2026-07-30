@@ -292,10 +292,10 @@ export const digitalCardDataGreystone = {
     title: "Automotive Service Provider",
   },
   contacts: [
-    { type: "Call", href: "tel:+447545213989", icon: "Phone", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:+447545213989", icon: "Phone", styleClass: "bg-[#E39638] hover:bg-[#F0AC62]" },
     { type: "WhatsApp", href: "https://wa.me/447545213989", icon: "MessageCircle", styleClass: "bg-[#25D366]" },
-    { type: "Email", href: "mailto:justin.day@live.co.uk", icon: "Mail", styleClass: "bg-primary" },
-    { type: "Website", href: "https://www.greystoneauto.com/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Email", href: "mailto:justin.day@live.co.uk", icon: "Mail", styleClass: "bg-[#E39638] hover:bg-[#F0AC62]" },
+    { type: "Website", href: "https://www.greystoneauto.com/", icon: "Globe", styleClass: "bg-[#E39638] hover:bg-[#F0AC62]" },
   ],
   about: "Your trusted automotive service provider with over 20 years of experience. We're committed to keeping your vehicle safe, reliable, and running smoothly.",
   services: [
