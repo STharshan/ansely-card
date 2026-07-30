@@ -27,6 +27,7 @@ export default function Ukplatelab() {
     founder,
     contacts,
     about,
+    services,
     rating,
     location,
     locationHref,
@@ -65,13 +66,13 @@ export default function Ukplatelab() {
                 </div>
               </div>
             ) : (
-              <div className="relative flex w-full max-w-[16rem] items-center justify-center rounded-3xl p-1 shadow-2xl shadow-black/30">
+              <div className="relative flex w-full max-w-[16rem] items-center justify-center overflow-hidden rounded-3xl bg-black/55 p-3 shadow-2xl shadow-black/30 ring-1 ring-white/10 backdrop-blur-sm">
                 <img
                   src={company.logo}
                   alt={company.name}
                   loading="lazy"
                   onError={() => setLogoFailed(true)}
-                  className="h-full w-full object-contain drop-shadow-[0_4px_18px_rgba(15,23,42,0.35)]"
+                  className="h-full w-full object-contain drop-shadow-[0_8px_24px_rgba(0,0,0,0.45)]"
                 />
               </div>
             )}
@@ -113,6 +114,21 @@ export default function Ukplatelab() {
           <div className="rounded-xl p-6 text-center mb-10 border border-white/10 bg-white/5 backdrop-blur-md">
             <p className="text-white font-bold leading-relaxed">{about}</p>
           </div>
+
+          {services.length ? (
+            <section className="mb-10">
+              <h3 className="text-lg font-semibold mb-4 text-center">Services</h3>
+              <ul className="space-y-3">
+                {services.map((service) => (
+                  <li key={service.label}>
+                    <div className="flex items-center justify-center rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-center text-white transition hover:border-[#EC4899]/40 hover:bg-white/8">
+                      {service.label}
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ) : null}
 
           {rating ? (
             <a

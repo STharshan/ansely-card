@@ -30,7 +30,19 @@ export const digitalCardData = {
   ],
   about:
     "UK Plate Lab creates custom number plates with a strong eye for presentation, detail, and standout styling for drivers who want something cleaner and sharper.",
-  services: [],
+  services: [
+    { label: "Road Legal Plates" },
+    { label: "Show Plates" },
+    { label: "Single Plates" },
+    { label: "Standard Plates" },
+    { label: "3D Gel Plates" },
+    { label: "4D Plates" },
+    { label: "4D Gel Plates" },
+    { label: "Standard Number Plates Pair" },
+    { label: "3D Gel Number Plates Pair" },
+    { label: "4D Number Plate Pair" },
+    { label: "4D Gel Number Plate Pair" },
+  ],
   rating: {
     value: "Google Reviews",
     text: "Tap to view UK Plate Lab on Google.",
