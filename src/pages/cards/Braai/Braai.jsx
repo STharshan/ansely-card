@@ -139,7 +139,7 @@ export default function Braai() {
                         rel="noreferrer"
                         className="flex justify-center items-center gap-2 text-white mb-10 transition hover:opacity-90"
                     >
-                        <MapPin className="w-5 h-5 text-primary" />
+                        <MapPin className="w-5 h-5 text-[#FF8A33]" />
                         {location}
                     </a>
 
@@ -152,7 +152,7 @@ export default function Braai() {
                                     href={social.href}
                                     target="_blank"
                                     rel="noreferrer"
-                                    className="h-12 w-12 rounded-full flex items-center justify-center transition bg-white/10 hover:bg-[var(--primary)]"
+                                    className="h-12 w-12 rounded-full flex items-center justify-center transition bg-white/10 hover:bg-[#FF6000]"
                                 >
                                     <IconComponent className="w-5 h-5" />
                                 </a>
@@ -163,7 +163,7 @@ export default function Braai() {
                     <section className="mb-10">
                         <button
                             onClick={downloadVCF}
-                            className="w-full h-14 flex items-center justify-center gap-2 rounded-lg font-semibold bg-primary transition-all"
+                            className="w-full h-14 flex items-center justify-center gap-2 rounded-lg font-semibold bg-[#FF6000] transition-all hover:bg-[#FF8A33]"
                         >
                             <Download className="w-5 h-5" />
                             Save Contact

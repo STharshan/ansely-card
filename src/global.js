@@ -876,9 +876,9 @@ export const digitalCardDataBraai = {
     title: "BBQ & Fire-Inspired Cuisine",
   },
   contacts: [
-    { type: "Call", href: "tel:01162734557", icon: "Phone", styleClass: "bg-primary" },
-    { type: "Email", href: "mailto:braaimaster2020@icloud.com", icon: "Mail", styleClass: "bg-primary" },
-    { type: "Website", href: "https://thebraaimaster.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:01162734557", icon: "Phone", styleClass: "bg-[#FF6000] hover:bg-[#FF8A33]" },
+    { type: "Email", href: "mailto:braaimaster2020@icloud.com", icon: "Mail", styleClass: "bg-[#FF6000] hover:bg-[#FF8A33]" },
+    { type: "Website", href: "https://thebraaimaster.co.uk/", icon: "Globe", styleClass: "bg-[#FF6000] hover:bg-[#FF8A33]" },
   ],
   about: "Where smoke meets flavor. Experience our signature BBQ meats and fire-inspired cuisine in the heart of the city.",
   services: [
