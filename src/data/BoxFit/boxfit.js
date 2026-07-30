@@ -9,9 +9,9 @@ export const digitalCardData = {
     title: "Coaching Academy and Community Boxing Programmes",
   },
   contacts: [
-    { type: "Call", href: "tel:07737163987", icon: "Phone", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:07737163987", icon: "Phone", styleClass: "bg-red-600 hover:bg-red-500" },
     { type: "WhatsApp", href: "https://wa.me/447737163987", icon: "MessageCircle", styleClass: "bg-whatsapp" },
-    { type: "Website", href: "https://boxfitcoaching.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Website", href: "https://boxfitcoaching.co.uk/", icon: "Globe", styleClass: "bg-red-600 hover:bg-red-500" },
   ],
   about:
     "Boxfit Coaching creates an inclusive space for juniors, women, beginners, squads, and wellbeing-focused members to build skill, strength, and confidence through boxing.",
