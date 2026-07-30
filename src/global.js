@@ -590,10 +590,10 @@ export const digitalCardDataSRK = {
     title: "Hospitality & Dining",
   },
   contacts: [
-    { type: "Call", href: "tel:07466093996", icon: "Phone", styleClass: "bg-primary" },
-    { type: "WhatsApp", href: "https://wa.me/447466093996", icon: "MessageCircle", styleClass: "bg-primary" },
-    { type: "Email", href: "mailto:info@srkhospitality.co.uk", icon: "Mail", styleClass: "bg-primary" },
-    { type: "Website", href: "https://srkhospitality.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:07466093996", icon: "Phone", styleClass: "bg-[#D4AF37] hover:bg-[#F7E7A1] text-black" },
+    { type: "WhatsApp", href: "https://wa.me/447466093996", icon: "MessageCircle", styleClass: "bg-[#25D366] hover:opacity-90" },
+    { type: "Email", href: "mailto:info@srkhospitality.co.uk", icon: "Mail", styleClass: "bg-[#D4AF37] hover:bg-[#F7E7A1] text-black" },
+    { type: "Website", href: "https://srkhospitality.co.uk/", icon: "Globe", styleClass: "bg-[#D4AF37] hover:bg-[#F7E7A1] text-black" },
   ],
   about: "SRK stands as a symbol of independent hospitality and heartfelt service. With over two decades of experience",
   services: [

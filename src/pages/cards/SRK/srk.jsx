@@ -164,7 +164,7 @@ export default function SRK() {
                                 <a
                                     key={social.icon}
                                     href={social.href}
-                                    className="h-12 w-12 rounded-full flex items-center justify-center transition bg-white/10 hover:bg-[var(--primary)]"
+                                    className="h-12 w-12 rounded-full flex items-center justify-center transition bg-white/10 hover:bg-[#D4AF37] hover:text-black"
                                 >
                                     <IconComponent className="w-5 h-5" />
                                 </a>
@@ -176,7 +176,7 @@ export default function SRK() {
                     <section className="mb-10">
                         <button
                             onClick={downloadVCF}
-                            className="w-full h-14 flex items-center justify-center gap-2 rounded-lg font-semibold bg-primary transition-all"
+                            className="w-full h-14 flex items-center justify-center gap-2 rounded-lg font-semibold bg-[#D4AF37] text-black transition-all hover:bg-[#F7E7A1]"
                         >
                             <Download className="w-5 h-5" />
                             Save Contact
