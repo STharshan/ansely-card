@@ -9,10 +9,10 @@ export const digitalCardData = {
     title: "Restoration and Bodywork Specialists",
   },
   contacts: [
-    { type: "Call", href: "tel:+447521224620", icon: "Phone", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:+447521224620", icon: "Phone", styleClass: "bg-[#D4AF37] hover:bg-[#E6C766] text-black" },
     { type: "WhatsApp", href: "https://wa.me/447521224620", icon: "MessageCircle", styleClass: "bg-green-400" },
-    { type: "Email", href: "mailto:RodsnRetros@hotmail.com", icon: "Mail", styleClass: "bg-primary" },
-    { type: "Website", href: "https://rodsnretros.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Email", href: "mailto:RodsnRetros@hotmail.com", icon: "Mail", styleClass: "bg-[#D4AF37] hover:bg-[#E6C766] text-black" },
+    { type: "Website", href: "https://rodsnretros.co.uk/", icon: "Globe", styleClass: "bg-[#D4AF37] hover:bg-[#E6C766] text-black" },
   ],
   about:
     "Rods N Retros helps owners of classics and custom vehicles with restoration, paint, fabrication, and repair work, delivering careful craftsmanship from their Sheffield workshop.",
