@@ -9,9 +9,9 @@ export const digitalCardData = {
     title: "Alloy Wheel Refurbishment Specialists",
   },
   contacts: [
-    { type: "Call", href: "tel:07909445101", icon: "Phone", styleClass: "bg-primary" },
-    { type: "Email", href: "mailto:Tune-itscotland@hotmail.com", icon: "Mail", styleClass: "bg-primary" },
-    { type: "Website", href: "https://elitewheelsglasgow.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:07909445101", icon: "Phone", styleClass: "bg-[#C89B3C] hover:bg-[#F4C95E] text-black" },
+    { type: "Email", href: "mailto:Tune-itscotland@hotmail.com", icon: "Mail", styleClass: "bg-[#C89B3C] hover:bg-[#F4C95E] text-black" },
+    { type: "Website", href: "https://elitewheelsglasgow.co.uk/", icon: "Globe", styleClass: "bg-[#C89B3C] hover:bg-[#F4C95E] text-black" },
   ],
   about:
     "Elite Wheels Glasgow delivers high-end alloy wheel restoration with premium powder coating, colour changes, diamond cutting, and full refurbishments for drivers who want a factory-fresh finish.",
