@@ -78,6 +78,7 @@ import Derbygarage from "./pages/derbygarage.jsx";
 import Newbridgestreetcargarage from "./pages/newbridgestreetcargarage.jsx";
 import Loughboroughpride from "./pages/loughboroughpride.jsx";
 import Advanced from "./pages/advanced.jsx";
+import Ukplatelab from "./pages/ukplatelab.jsx";
 function App() {
   return (
     <Router>
@@ -170,6 +171,7 @@ function App() {
         <Route path="/newbridgestreetcargarage" element={<Newbridgestreetcargarage />} />
         <Route path="/loughboroughpride" element={<Loughboroughpride />} />
         <Route path="/advanced" element={<Advanced />} />
+        <Route path="/ukplatelab" element={<Ukplatelab />} />
 
       </Routes>
     </Router>
