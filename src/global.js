@@ -220,9 +220,9 @@ export const digitalCardDataTwentyEight = {
     title: "Contemporary Barbershop",
   },
   contacts: [
-    { type: "Call", href: "tel:01159586628", icon: "Phone", styleClass: "bg-primary" },
-    { type: "Email", href: "mailto:jaybo28@me.com", icon: "Mail", styleClass: "bg-primary" },
-    { type: "Website", href: "https://twentyeighthair.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:01159586628", icon: "Phone", styleClass: "bg-[#C6851C] hover:bg-[#F5B435]" },
+    { type: "Email", href: "mailto:jaybo28@me.com", icon: "Mail", styleClass: "bg-[#C6851C] hover:bg-[#F5B435]" },
+    { type: "Website", href: "https://twentyeighthair.co.uk/", icon: "Globe", styleClass: "bg-[#C6851C] hover:bg-[#F5B435]" },
   ],
   about: "Contemporary and modern with a resident DJ on Saturdays. Twenty Eight is the perfect atmosphere to relax, from cuts to colours we have your Barnett sorted.",
   services: [
