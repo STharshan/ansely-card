@@ -77,7 +77,7 @@ export default function Newbridgestreetcargarage() {
               <div className="relative flex w-28 h-28 items-center justify-center rounded-3xl border border-white/10 bg-slate-950 shadow-2xl">
                 <div className="text-center leading-none">
                   <div className="text-3xl font-black tracking-[0.12em] text-white">NCC</div>
-                  <div className="mt-1 text-[0.58rem] font-semibold uppercase tracking-[0.22em] text-cyan-200">
+                  <div className="mt-1 text-[0.58rem] font-semibold uppercase tracking-[0.22em] text-red-200">
                     New Bridge
                   </div>
                 </div>
@@ -150,7 +150,7 @@ export default function Newbridgestreetcargarage() {
                       href={service.href}
                       target="_blank"
                       rel="noreferrer"
-                      className="flex text-center justify-center items-center rounded-lg border border-white/10 bg-white/5 px-4 py-3 transition hover:border-cyan-300/40 hover:bg-white/10"
+                      className="flex text-center justify-center items-center rounded-lg border border-white/10 bg-white/5 px-4 py-3 transition hover:border-red-300/40 hover:bg-white/10"
                     >
                       <span className="text-white">{service.label}</span>
                     </a>
@@ -170,7 +170,7 @@ export default function Newbridgestreetcargarage() {
               href={rating.href}
               target="_blank"
               rel="noreferrer"
-              className="block rounded-xl p-6 text-center mb-10 border border-white/10 bg-white/5 backdrop-blur-md transition hover:border-cyan-300/40 hover:bg-white/8"
+              className="block rounded-xl p-6 text-center mb-10 border border-white/10 bg-white/5 backdrop-blur-md transition hover:border-red-300/40 hover:bg-white/8"
             >
               <div className="flex justify-center gap-1 mb-2">
                 {[...Array(5)].map((_, i) => (
@@ -187,10 +187,10 @@ export default function Newbridgestreetcargarage() {
             href={locationHref}
             target="_blank"
             rel="noreferrer"
-            className="flex justify-center items-center gap-2 text-white mb-10 hover:text-cyan-300 transition text-center"
+            className="flex justify-center items-center gap-2 text-white mb-10 hover:text-red-300 transition text-center"
           >
             <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/10">
-              <MapPin className="w-4 h-4 text-primary" />
+              <MapPin className="w-4 h-4 text-red-300" />
             </span>
             {location}
           </a>
@@ -206,7 +206,7 @@ export default function Newbridgestreetcargarage() {
                     href={social.href}
                     target="_blank"
                     rel="noreferrer"
-                    className="h-12 w-12 rounded-full flex items-center justify-center transition bg-white/10 hover:bg-[var(--primary)]"
+                    className="h-12 w-12 rounded-full flex items-center justify-center transition bg-white/10 hover:bg-[#C53127]"
                   >
                     <IconComponent className="w-5 h-5" />
                   </a>
@@ -219,7 +219,7 @@ export default function Newbridgestreetcargarage() {
           <section className="mb-10">
             <button
               onClick={downloadVCF}
-              className="w-full h-14 flex items-center justify-center gap-2 rounded-lg font-semibold bg-primary transition-all"
+              className="w-full h-14 flex items-center justify-center gap-2 rounded-lg font-semibold bg-[#C53127] transition-all hover:bg-[#EF4D43]"
             >
               <Download className="w-5 h-5" />
               Save Contact
@@ -234,7 +234,7 @@ export default function Newbridgestreetcargarage() {
                 href="https://www.ansely.co.uk/"
                 target="_blank"
                 rel="noreferrer"
-                className="text-white transition hover:text-cyan-300 hover:underline"
+                className="text-white transition hover:text-red-300 hover:underline"
               >
                 Ansely
               </a>
