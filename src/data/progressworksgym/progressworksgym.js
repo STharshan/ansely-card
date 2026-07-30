@@ -9,8 +9,8 @@ export const digitalCardData = {
     title: "Strength, Fitness, and Membership Training Space",
   },
   contacts: [
-    { type: "Call", href: "tel:01162877667", icon: "Phone", styleClass: "bg-primary" },
-    { type: "Website", href: "https://www.progressworksgym.com/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:01162877667", icon: "Phone", styleClass: "bg-red-600 hover:bg-red-500" },
+    { type: "Website", href: "https://www.progressworksgym.com/", icon: "Globe", styleClass: "bg-red-600 hover:bg-red-500" },
   ],
   about:
     "Progress Works Gym offers a welcoming Glenfield training space with flexible ways to train, including pay-as-you-go access, direct debit memberships, special memberships, and day passes.",
