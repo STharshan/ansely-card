@@ -843,10 +843,10 @@ export const digitalCardDataSantinos = {
     title: "Gym & Studio",
   },
   contacts: [
-    { type: "Call", href: "tel:+447565603231", icon: "Phone", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:+447565603231", icon: "Phone", styleClass: "bg-[#A41820] hover:bg-[#D4474F]" },
     { type: "WhatsApp", href: "https://wa.me/447565603231", icon: "MessageCircle", styleClass: "bg-[#25D366]" },
-    { type: "Email", href: "mailto:santinosgym@gmail.com", icon: "Mail", styleClass: "bg-primary" },
-    { type: "Website", href: "https://santinosgym.com/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Email", href: "mailto:santinosgym@gmail.com", icon: "Mail", styleClass: "bg-[#A41820] hover:bg-[#D4474F]" },
+    { type: "Website", href: "https://santinosgym.com/", icon: "Globe", styleClass: "bg-[#A41820] hover:bg-[#D4474F]" },
   ],
   about: "Building strength, discipline, and community. Join our family and start your fitness journey today.",
   services: [
