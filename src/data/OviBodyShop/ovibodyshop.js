@@ -9,10 +9,10 @@ export const digitalCardData = {
     title: "Vehicle Body Repair and Refinishing Specialists",
   },
   contacts: [
-    { type: "Call", href: "tel:07788275026", icon: "Phone", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:07788275026", icon: "Phone", styleClass: "bg-red-600 hover:bg-red-500" },
     { type: "WhatsApp", href: "https://wa.me/447788275026", icon: "MessageCircle", styleClass: "bg-whatsapp" },
-    { type: "Email", href: "mailto:vanyek_bogdan@yahoo.com", icon: "Mail", styleClass: "bg-primary" },
-    { type: "Website", href: "https://ovicars.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Email", href: "mailto:vanyek_bogdan@yahoo.com", icon: "Mail", styleClass: "bg-red-600 hover:bg-red-500" },
+    { type: "Website", href: "https://ovicars.co.uk/", icon: "Globe", styleClass: "bg-red-600 hover:bg-red-500" },
   ],
   about:
     "Ovi Body Shop handles everything from panel correction to full resprays, helping drivers restore their vehicles with careful workmanship and dependable service.",

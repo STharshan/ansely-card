@@ -9,9 +9,9 @@ export const digitalCardData = {
     title: "Car Detailing and Deep Cleaning Specialists",
   },
   contacts: [
-    { type: "Call", href: "tel:07731633647", icon: "Phone", styleClass: "bg-primary" },
-    { type: "Email", href: "mailto:alans.auto.detailing@outlook.com", icon: "Mail", styleClass: "bg-primary" },
-    { type: "Website", href: "https://alansautodetailing.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:07731633647", icon: "Phone", styleClass: "bg-[#486AAB] hover:bg-[#6E96E7]" },
+    { type: "Email", href: "mailto:alans.auto.detailing@outlook.com", icon: "Mail", styleClass: "bg-[#486AAB] hover:bg-[#6E96E7]" },
+    { type: "Website", href: "https://alansautodetailing.co.uk/", icon: "Globe", styleClass: "bg-[#486AAB] hover:bg-[#6E96E7]" },
     {
       type: "WhatsApp",
       href: "https://api.whatsapp.com/send/?phone=447731633647&text&type=phone_number&app_absent=0",

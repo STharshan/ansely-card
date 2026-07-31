@@ -11,9 +11,9 @@ export const digitalCardData = {
     title: "Mobile Engine Carbon Cleaning Specialists",
   },
   contacts: [
-    { type: "Call", href: "tel:07752549740", icon: "Phone", styleClass: "bg-primary" },
-    { type: "Email", href: "mailto:Nottsccs@yahoo.com", icon: "Mail", styleClass: "bg-primary" },
-    { type: "Website", href: "https://notts-carboncleaning.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:07752549740", icon: "Phone", styleClass: "bg-red-600 hover:bg-red-500" },
+    { type: "Email", href: "mailto:Nottsccs@yahoo.com", icon: "Mail", styleClass: "bg-red-600 hover:bg-red-500" },
+    { type: "Website", href: "https://notts-carboncleaning.co.uk/", icon: "Globe", styleClass: "bg-red-600 hover:bg-red-500" },
   ],
   about:
     "Nottingham Carbon Cleaning provides fully mobile engine care across Nottingham, helping drivers improve performance, reduce carbon build-up, and support cleaner running with specialist on-site treatments.",

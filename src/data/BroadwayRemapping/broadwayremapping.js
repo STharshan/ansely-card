@@ -9,10 +9,10 @@ export const digitalCardData = {
     title: "ECU Remapping and Performance Tuning Specialists",
   },
   contacts: [
-    { type: "Call", href: "tel:+447392791919", icon: "Phone", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:+447392791919", icon: "Phone", styleClass: "bg-red-600 hover:bg-red-500" },
     { type: "WhatsApp", href: "https://wa.me/447392791919", icon: "MessageCircle", styleClass: "bg-whatsapp" },
-    { type: "Email", href: "mailto:enquiries@broadwayremapping.co.uk", icon: "Mail", styleClass: "bg-primary" },
-    { type: "Website", href: "https://broadwayremapping.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Email", href: "mailto:enquiries@broadwayremapping.co.uk", icon: "Mail", styleClass: "bg-red-600 hover:bg-red-500" },
+    { type: "Website", href: "https://broadwayremapping.co.uk/", icon: "Globe", styleClass: "bg-red-600 hover:bg-red-500" },
   ],
   about:
     "Broadway Remapping delivers bespoke tuning solutions focused on stronger performance, smoother drivability, and dependable results for cars and vans.",

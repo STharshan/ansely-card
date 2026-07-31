@@ -122,7 +122,7 @@ export default function Smashed() {
                                         href={service.href}
                                         target="_blank"
                                         rel="noreferrer"
-                                        className="flex w-full items-center justify-center rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-center text-white transition hover:border-cyan-300/40 hover:bg-white/8"
+                                        className="flex w-full items-center justify-center rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-center text-white transition hover:border-[#E6A53A]/40 hover:bg-white/8"
                                     >
                                         {service.label}
                                     </a>
@@ -153,7 +153,7 @@ export default function Smashed() {
                         rel="noreferrer"
                         className="flex justify-center items-center gap-2 text-white mb-10 transition hover:opacity-90"
                     >
-                        <MapPin className="w-5 h-5 text-primary" />
+                        <MapPin className="w-5 h-5 text-[#E6A53A]" />
                         {location}
                     </a>
 
@@ -165,7 +165,7 @@ export default function Smashed() {
                                 <a
                                     key={social.icon}
                                     href={social.href}
-                                    className="h-12 w-12 rounded-full flex items-center justify-center transition bg-white/10 hover:bg-[var(--primary)]"
+                                    className="h-12 w-12 rounded-full flex items-center justify-center transition bg-white/10 hover:bg-[#D98A0A]"
                                 >
                                     <IconComponent className="w-5 h-5" />
                                 </a>
@@ -177,7 +177,7 @@ export default function Smashed() {
                     <section className="mb-10">
                         <button
                             onClick={downloadVCF}
-                            className="w-full h-14 flex items-center justify-center gap-2 rounded-lg font-semibold bg-primary transition-all"
+                            className="w-full h-14 flex items-center justify-center gap-2 rounded-lg font-semibold bg-[#D98A0A] transition-all hover:bg-[#E6A53A]"
                         >
                             <Download className="w-5 h-5" />
                             Save Contact

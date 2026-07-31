@@ -1,37 +1,26 @@
 import {
   Phone,
   MessageCircle,
-  Mail,
   Globe,
   MapPin,
   Download,
   Star,
   Instagram,
-  Music2,
+  Facebook,
 } from "lucide-react";
-import { FaFacebookF } from "react-icons/fa6";
 
-import { digitalCardData ,downloadVCF } from "../data/newbridgestreetcargarage/newbridgestreetcargarage.js";
+import { digitalCardData, downloadVCF } from "../data/ukplatelab/ukplatelab.js";
 import { lazy, Suspense, useState } from "react";
 
-const FloatingLines = lazy(() => import("../components/FloatingLines.tsx"));
+const FloatingLines = lazy(() => import("../components/FloatingLines.jsx"));
 
 const WebGLPlaceholder = () => (
-  <div className="fixed inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,40,24,0.18),_rgba(28,10,10,0.96)_42%,_rgba(0,0,0,1)_100%)]" />
+  <div className="fixed inset-0 bg-[radial-gradient(circle_at_top,_rgba(236,72,153,0.16),_rgba(16,10,16,0.96)_42%,_rgba(0,0,0,1)_100%)]" />
 );
 
-const iconMap = {
-  Phone,
-  MessageCircle,
-  Mail,
-  Globe,
-  MapPin,
-  Instagram,
-  Facebook: FaFacebookF,
-  TikTok: Music2,
-};
+const iconMap = { Phone, MessageCircle, Globe, MapPin, Instagram, Facebook };
 
-export default function Newbridgestreetcargarage() {
+export default function Ukplatelab() {
   const [logoFailed, setLogoFailed] = useState(false);
   const {
     company,
@@ -46,11 +35,8 @@ export default function Newbridgestreetcargarage() {
   } = digitalCardData;
 
   return (
-    <main className="relative min-h-screen overflow-hidden text-white flex justify-center bg-[radial-gradient(circle_at_top,_rgba(255,40,24,0.22),_rgba(34,10,10,0.96)_28%,_rgba(10,8,8,0.98)_58%,_rgba(0,0,0,1)_100%)]">
-
-      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.05),transparent_18%,transparent_78%,rgba(203,213,225,0.08))]" />
-
-      {/* Background Animation */}
+    <main className="relative min-h-screen overflow-hidden bg-[radial-gradient(circle_at_top,_rgba(236,72,153,0.16),_rgba(20,12,20,0.95)_28%,_rgba(6,6,8,0.98)_58%,_rgba(0,0,0,1)_100%)] text-white flex justify-center">
+      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.04),transparent_18%,transparent_78%,rgba(244,114,182,0.08))]" />
       <div className="fixed inset-0 z-0 pointer-events-none">
         <Suspense fallback={<WebGLPlaceholder />}>
           <FloatingLines
@@ -61,29 +47,26 @@ export default function Newbridgestreetcargarage() {
             bendStrength={4}
             interactive={true}
             parallax={true}
-            linesGradient={["#3E0E0E", "#782020", "#C53127", "#D4D9E5", "#F6F8FC"]}
+            linesGradient={["#0A0A0A", "#FFFFFF", "#F472B6", "#EC4899", "#FBCFE8"]}
           />
         </Suspense>
       </div>
 
-      {/* Content Layer */}
       <div className="relative z-10 w-full flex flex-col items-center">
-
-        {/* Company Name - Usually wider/full width for impact */}
-        <header className="w-full max-w-md px-6 pt-16 pb-6 flex flex-col items-center justify-center gap-5 text-center">
+        <header className="w-full max-w-md px-6 pt-16 pb-6 flex flex-col items-center justify-center gap-4 text-center">
           <div className="relative shrink-0">
-            <div className="absolute inset-0 rounded-3xl bg-red-400/15 blur-2xl scale-110" />
+            <div className="absolute inset-0 rounded-3xl bg-pink-400/15 blur-2xl scale-110" />
             {logoFailed ? (
-              <div className="relative flex w-28 h-28 items-center justify-center rounded-3xl border border-white/10 bg-slate-950 shadow-2xl">
+              <div className="relative flex w-44 h-24 items-center justify-center rounded-3xl border border-white/10 bg-black/60 shadow-2xl">
                 <div className="text-center leading-none">
-                  <div className="text-3xl font-black tracking-[0.12em] text-white">NCC</div>
-                  <div className="mt-1 text-[0.58rem] font-semibold uppercase tracking-[0.22em] text-red-200">
-                    New Bridge
+                  <div className="text-2xl font-black tracking-[0.08em] text-white">UK PLATE</div>
+                  <div className="mt-2 text-sm font-semibold uppercase tracking-[0.2em] text-[#EC4899]">
+                    Lab
                   </div>
                 </div>
               </div>
             ) : (
-              <div className="relative flex w-40 h-28 items-center justify-center overflow-hidden rounded-3xl bg-black/45 p-3 shadow-2xl shadow-black/30 ring-1 ring-white/10 backdrop-blur-sm sm:w-48 sm:h-32">
+              <div className="relative flex w-full max-w-[16rem] items-center justify-center overflow-hidden rounded-3xl bg-black/55 p-3 shadow-2xl shadow-black/30 ring-1 ring-white/10 backdrop-blur-sm">
                 <img
                   src={company.logo}
                   alt={company.name}
@@ -96,25 +79,18 @@ export default function Newbridgestreetcargarage() {
           </div>
         </header>
 
-        {/* Consistent Width Container 
-            All elements below this line will have the exact same width 
-        */}
         <div className="w-full max-w-md px-4 pb-20">
-
-          {/* Tagline - Now matched to the width of the cards/buttons */}
           <div className="text-center mb-10">
             <p className="text-white text-[24px] md:text-[28px] tracking-tight leading-snug">
               {company.tagline}
             </p>
           </div>
 
-          {/* Founder */}
           <section className="text-center mb-10">
             <h2 className="text-2xl font-semibold">{founder.name}</h2>
             <p className="text-white mt-1 opacity-80">{founder.title}</p>
           </section>
 
-          {/* Contact Buttons */}
           <section className="mb-10">
             <div className="grid grid-cols-2 gap-3">
               {contacts.map((contact) => {
@@ -123,7 +99,8 @@ export default function Newbridgestreetcargarage() {
                   <a
                     key={contact.type}
                     href={contact.href}
-                    target={contact.type === "Website" || contact.type === "WhatsApp" ? "_blank" : "_self"}
+                    target={contact.type === "Call" ? "_self" : "_blank"}
+                    rel={contact.type === "Call" ? undefined : "noreferrer"}
                     className={`flex items-center justify-center gap-2 h-14 rounded-lg transition hover:scale-[1.02] active:scale-95 ${contact.styleClass}`}
                   >
                     <IconComponent className="w-5 h-5" />
@@ -134,68 +111,54 @@ export default function Newbridgestreetcargarage() {
             </div>
           </section>
 
-          {/* About Card */}
           <div className="rounded-xl p-6 text-center mb-10 border border-white/10 bg-white/5 backdrop-blur-md">
             <p className="text-white font-bold leading-relaxed">{about}</p>
           </div>
 
-          {/* Services */}
-          <section className="mb-10">
-            <h3 className="text-lg font-semibold mb-4 text-center">Services</h3>
-            <ul className="space-y-3">
-              {services.map((service) => (
-                <li key={service.label}>
-                  {service.href ? (
-                    <a
-                      href={service.href}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="flex text-center justify-center items-center rounded-lg border border-white/10 bg-white/5 px-4 py-3 transition hover:border-red-300/40 hover:bg-white/10"
-                    >
-                      <span className="text-white">{service.label}</span>
-                    </a>
-                  ) : (
-                    <div className="flex text-center justify-center items-center rounded-lg border border-white/10 bg-white/5 px-4 py-3">
-                      <span className="text-white">{service.label}</span>
+          {services.length ? (
+            <section className="mb-10">
+              <h3 className="text-lg font-semibold mb-4 text-center">Services</h3>
+              <ul className="space-y-3">
+                {services.map((service) => (
+                  <li key={service.label}>
+                    <div className="flex items-center justify-center rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-center text-white transition hover:border-[#EC4899]/40 hover:bg-white/8">
+                      {service.label}
                     </div>
-                  )}
-                </li>
-              ))}
-            </ul>
-          </section>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ) : null}
 
-          {/* Rating */}
           {rating ? (
             <a
               href={rating.href}
               target="_blank"
               rel="noreferrer"
-              className="block rounded-xl p-6 text-center mb-10 border border-white/10 bg-white/5 backdrop-blur-md transition hover:border-red-300/40 hover:bg-white/8"
+              className="block rounded-xl p-6 text-center mb-10 border border-white/10 bg-white/5 backdrop-blur-md transition hover:border-[#EC4899]/40 hover:bg-white/8"
             >
               <div className="flex justify-center gap-1 mb-2">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                 ))}
               </div>
-              <p className="font-semibold mt-4">{rating.value} Google Rating</p>
+              <p className="font-semibold mt-4">{rating.value}</p>
               <p className="text-sm text-gray-400 italic mt-2">{rating.text}</p>
             </a>
           ) : null}
 
-          {/* Location */}
           <a
             href={locationHref}
             target="_blank"
             rel="noreferrer"
-            className="flex justify-center items-center gap-2 text-white mb-10 hover:text-red-300 transition text-center"
+            className="flex justify-center items-center gap-2 text-white mb-10 transition hover:text-[#EC4899] text-center"
           >
             <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/10">
-              <MapPin className="w-4 h-4 text-red-300" />
+              <MapPin className="w-4 h-4 text-[#EC4899]" />
             </span>
             {location}
           </a>
 
-          {/* Social */}
           {socialLinks.length ? (
             <section className="flex justify-center gap-4 mb-10">
               {socialLinks.map((social) => {
@@ -206,7 +169,7 @@ export default function Newbridgestreetcargarage() {
                     href={social.href}
                     target="_blank"
                     rel="noreferrer"
-                    className="h-12 w-12 rounded-full flex items-center justify-center transition bg-white/10 hover:bg-[#C53127]"
+                    className="h-12 w-12 rounded-full flex items-center justify-center transition bg-white/10 hover:bg-[#EC4899]"
                   >
                     <IconComponent className="w-5 h-5" />
                   </a>
@@ -215,18 +178,16 @@ export default function Newbridgestreetcargarage() {
             </section>
           ) : null}
 
-          {/* Save Contact Button */}
           <section className="mb-10">
             <button
               onClick={downloadVCF}
-              className="w-full h-14 flex items-center justify-center gap-2 rounded-lg font-semibold bg-[#C53127] transition-all hover:bg-[#EF4D43]"
+              className="w-full h-14 flex items-center justify-center gap-2 rounded-lg font-semibold bg-[linear-gradient(90deg,#0A0A0A_0%,#3F3F46_18%,#FFFFFF_48%,#F472B6_72%,#EC4899_100%)] text-black transition-all hover:brightness-110"
             >
               <Download className="w-5 h-5" />
               Save Contact
             </button>
           </section>
 
-          {/* Footer */}
           <footer className="text-center text-sm text-gray-400 opacity-60">
             <p>
               Powered by{" "}
@@ -234,7 +195,7 @@ export default function Newbridgestreetcargarage() {
                 href="https://www.ansely.co.uk/"
                 target="_blank"
                 rel="noreferrer"
-                className="text-white transition hover:text-red-300 hover:underline"
+                className="text-white transition hover:text-[#EC4899] hover:underline"
               >
                 Ansely
               </a>

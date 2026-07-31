@@ -9,7 +9,7 @@ export const digitalCardData = {
     title: "Consultant Gynaecologist and Gynaecological Oncologist",
   },
   contacts: [
-    { type: "Website", href: "https://kgpractice.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Website", href: "https://kgpractice.co.uk/", icon: "Globe", styleClass: "bg-[#C9688B] hover:bg-[#EC7299]" },
   ],
   about:
     "KG Practice combines extensive experience in gynaecology and gynaecological oncology, offering care through both NHS and private practice with a focus on specialist women's health support.",

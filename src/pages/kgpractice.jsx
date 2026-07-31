@@ -63,7 +63,7 @@ export default function Kgpractice() {
               <div className="relative flex w-20 h-20 md:w-28 md:h-28 items-center justify-center rounded-3xl border border-white/10 bg-slate-950 shadow-2xl">
                 <div className="text-center leading-none">
                   <div className="text-2xl md:text-3xl font-black tracking-[0.18em] text-white">KG</div>
-                  <div className="mt-1 text-[0.48rem] md:text-[0.58rem] font-semibold uppercase tracking-[0.2em] text-cyan-200">
+                  <div className="mt-1 text-[0.48rem] md:text-[0.58rem] font-semibold uppercase tracking-[0.2em] text-[#F8D6E2]">
                     Practice
                   </div>
                 </div>
@@ -136,7 +136,7 @@ export default function Kgpractice() {
                       href={service.href}
                       target="_blank"
                       rel="noreferrer"
-                      className="flex text-center justify-center items-center rounded-lg border border-white/10 bg-white/5 px-4 py-3 transition hover:border-cyan-300/40 hover:bg-white/10"
+                      className="flex text-center justify-center items-center rounded-lg border border-white/10 bg-white/5 px-4 py-3 transition hover:border-[#EC7299]/40 hover:bg-white/10"
                     >
                       <span className="text-white">{service.label}</span>
                     </a>
@@ -156,17 +156,17 @@ export default function Kgpractice() {
               href={locationHref}
               target="_blank"
               rel="noreferrer"
-              className="flex justify-center items-center gap-2 text-white mb-10 hover:text-cyan-300 transition text-center"
+              className="flex justify-center items-center gap-2 text-white mb-10 hover:text-[#EC7299] transition text-center"
             >
               <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/10">
-                <MapPin className="w-4 h-4 text-primary" />
+                <MapPin className="w-4 h-4 text-[#EC7299]" />
               </span>
               {location}
             </a>
           ) : (
             <div className="flex justify-center items-center gap-2 text-white mb-10 text-center">
               <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/10">
-                <MapPin className="w-4 h-4 text-primary" />
+                <MapPin className="w-4 h-4 text-[#EC7299]" />
               </span>
               {location}
             </div>
@@ -183,7 +183,7 @@ export default function Kgpractice() {
                     href={social.href}
                     target="_blank"
                     rel="noreferrer"
-                    className="h-12 w-12 rounded-full flex items-center justify-center transition bg-white/10 hover:bg-[var(--primary)]"
+                    className="h-12 w-12 rounded-full flex items-center justify-center transition bg-white/10 hover:bg-[#C9688B]"
                   >
                     <IconComponent className="w-5 h-5" />
                   </a>
@@ -196,7 +196,7 @@ export default function Kgpractice() {
           <section className="mb-10">
             <button
               onClick={downloadVCF}
-              className="w-full h-14 flex items-center justify-center gap-2 rounded-lg font-semibold bg-primary transition-all"
+              className="w-full h-14 flex items-center justify-center gap-2 rounded-lg font-semibold bg-[#C9688B] transition-all hover:bg-[#EC7299]"
             >
               <Download className="w-5 h-5" />
               Save Contact
@@ -211,7 +211,7 @@ export default function Kgpractice() {
                 href="https://www.ansely.co.uk/"
                 target="_blank"
                 rel="noreferrer"
-                className="text-white transition hover:text-cyan-300 hover:underline"
+                className="text-white transition hover:text-[#EC7299] hover:underline"
               >
                 Ansely
               </a>

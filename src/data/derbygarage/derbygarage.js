@@ -9,10 +9,10 @@ export const digitalCardData = {
     title: "Servicing, MOT, Diagnostics, and Mechanical Repair Specialists",
   },
   contacts: [
-    { type: "Call", href: "tel:+447939490098", icon: "Phone", styleClass: "bg-primary" },
-    { type: "Phone", href: "tel:01332349670", icon: "Phone", styleClass: "bg-primary" },
-    { type: "Email", href: "mailto:derbygarage.de223se@gmail.com", icon: "Mail", styleClass: "bg-primary" },
-    { type: "Website", href: "https://derby-garage.com/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:+447939490098", icon: "Phone", styleClass: "bg-[#C53127] hover:bg-[#EF4D43]" },
+    { type: "Phone", href: "tel:01332349670", icon: "Phone", styleClass: "bg-[#C53127] hover:bg-[#EF4D43]" },
+    { type: "Email", href: "mailto:derbygarage.de223se@gmail.com", icon: "Mail", styleClass: "bg-[#C53127] hover:bg-[#EF4D43]" },
+    { type: "Website", href: "https://derby-garage.com/", icon: "Globe", styleClass: "bg-[#C53127] hover:bg-[#EF4D43]" },
     { type: "WhatsApp", href: "https://wa.me/447939490098", icon: "MessageCircle", styleClass: "bg-whatsapp" },
   ],
   about:

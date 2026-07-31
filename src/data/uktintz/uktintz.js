@@ -10,10 +10,10 @@ export const digitalCardData = {
     title: "Owner",
   },
   contacts: [
-    { type: "Call", href: "tel:07506717961", icon: "Phone", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:07506717961", icon: "Phone", styleClass: "bg-[#C40000] hover:bg-[#FF1A1A]" },
     { type: "WhatsApp", href: "https://wa.me/447506717961", icon: "MessageCircle", styleClass: "bg-whatsapp" },
-    { type: "Email", href: "mailto:Peterattaway1987@gmail.com", icon: "Mail", styleClass: "bg-primary" },
-    { type: "Website", href: "https://uktintz.com/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Email", href: "mailto:Peterattaway1987@gmail.com", icon: "Mail", styleClass: "bg-[#C40000] hover:bg-[#FF1A1A]" },
+    { type: "Website", href: "https://uktintz.com/", icon: "Globe", styleClass: "bg-[#C40000] hover:bg-[#FF1A1A]" },
   ],
   about:
     "UK Tintz provides vehicle and property tinting alongside stereo fitting, reverse cameras, parking sensors, dashcams, and vinyl wrapping from their Nottingham base.",

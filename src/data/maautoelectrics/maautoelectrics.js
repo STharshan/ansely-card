@@ -9,15 +9,15 @@ export const digitalCardData = {
     title: "Auto Electrical and Vehicle Diagnostics Specialists",
   },
   contacts: [
-    { type: "Call", href: "tel:+447889133123", icon: "Phone", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:+447889133123", icon: "Phone", styleClass: "bg-[#59A33A] hover:bg-[#73CB4A]" },
     {
       type: "WhatsApp",
       href: "https://api.whatsapp.com/send/?phone=447889133123&text&type=phone_number&app_absent=0",
       icon: "MessageCircle",
       styleClass: "bg-[#25D366]",
     },
-    { type: "Email", href: "mailto:maautoelectrics@gmail.com", icon: "Mail", styleClass: "bg-primary" },
-    { type: "Website", href: "https://maautoelectrics.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Email", href: "mailto:maautoelectrics@gmail.com", icon: "Mail", styleClass: "bg-[#59A33A] hover:bg-[#73CB4A]" },
+    { type: "Website", href: "https://maautoelectrics.co.uk/", icon: "Globe", styleClass: "bg-[#59A33A] hover:bg-[#73CB4A]" },
   ],
   about:
     "MA Auto Electrics supports drivers with diagnostics, electrical fault finding, installations, repairs, and workshop services, covering everything from parking sensors and handsfree kits to ECU, AdBlue, and mechanical work.",

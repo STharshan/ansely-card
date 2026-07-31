@@ -9,9 +9,9 @@ export const digitalCardData = {
     title: "Diagnostics, Repairs, MOT, and Recovery Specialists",
   },
   contacts: [
-    { type: "Call", href: "tel:01164782001", icon: "Phone", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:01164782001", icon: "Phone", styleClass: "bg-[#C53127] hover:bg-[#EF4D43]" },
     { type: "WhatsApp", href: "https://wa.me/447502060801", icon: "MessageCircle", styleClass: "bg-whatsapp" },
-    { type: "Website", href: "https://newbridgestreetcargarage.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Website", href: "https://newbridgestreetcargarage.co.uk/", icon: "Globe", styleClass: "bg-[#C53127] hover:bg-[#EF4D43]" },
   ],
   about:
     "New Bridge Street Car Garage delivers practical vehicle care in Leicester with diagnostics, servicing, MOT work, welding, aircon servicing, clutch and transmission repairs, engine replacement, and recovery support.",

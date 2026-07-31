@@ -9,9 +9,9 @@ export const digitalCardData = {
     title: "Garage Services and Vehicle Repair Specialists",
   },
   contacts: [
-    { type: "Call", href: "tel:+441709863222", icon: "Phone", styleClass: "bg-primary" },
-    { type: "Email", href: "mailto:Js.automotive1@outlook.com", icon: "Mail", styleClass: "bg-primary" },
-    { type: "Website", href: "https://jsautomotivedoncaster.com/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:+441709863222", icon: "Phone", styleClass: "bg-[#00D6AB] hover:bg-[#33E0BC] text-black" },
+    { type: "Email", href: "mailto:Js.automotive1@outlook.com", icon: "Mail", styleClass: "bg-[#00D6AB] hover:bg-[#33E0BC] text-black" },
+    { type: "Website", href: "https://jsautomotivedoncaster.com/", icon: "Globe", styleClass: "bg-[#00D6AB] hover:bg-[#33E0BC] text-black" },
   ],
   about:
     "JS Automotive Doncaster supports local drivers with MOT testing, full servicing, diagnostics, brake work, DPF cleaning, and cam belt replacement from its Doncaster base.",

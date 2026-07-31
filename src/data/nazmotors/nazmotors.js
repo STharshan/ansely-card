@@ -9,8 +9,8 @@ export const digitalCardData = {
     title: "Garage Services, MOT Testing, and Vehicle Parts Specialists",
   },
   contacts: [
-    { type: "Call", href: "tel:01162515961", icon: "Phone", styleClass: "bg-primary" },
-    { type: "Website", href: "https://www.nazmotors.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:01162515961", icon: "Phone", styleClass: "bg-red-600 hover:bg-red-500" },
+    { type: "Website", href: "https://www.nazmotors.co.uk/", icon: "Globe", styleClass: "bg-red-600 hover:bg-red-500" },
   ],
   about:
     "Naz Motors supports drivers with MOT testing, servicing, repairs, tyres, aircon work, scrapping, and second-hand parts for practical, everyday vehicle needs.",

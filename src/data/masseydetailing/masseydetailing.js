@@ -9,9 +9,9 @@ export const digitalCardData = {
     title: "Mobile Valeting and Detailing Specialists",
   },
   contacts: [
-    { type: "Call", href: "tel:07399539744", icon: "Phone", styleClass: "bg-primary" },
-    { type: "Email", href: "mailto:info@masseydetailing.co.uk", icon: "Mail", styleClass: "bg-primary" },
-    { type: "Website", href: "https://www.masseydetailing.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:07399539744", icon: "Phone", styleClass: "bg-[#DCAE3B] hover:bg-[#E3C76A] text-black" },
+    { type: "Email", href: "mailto:info@masseydetailing.co.uk", icon: "Mail", styleClass: "bg-[#DCAE3B] hover:bg-[#E3C76A] text-black" },
+    { type: "Website", href: "https://www.masseydetailing.co.uk/", icon: "Globe", styleClass: "bg-[#DCAE3B] hover:bg-[#E3C76A] text-black" },
     { type: "WhatsApp", href: "https://wa.me/447399539744", icon: "MessageCircle", styleClass: "bg-whatsapp" },
   ],
   about:

@@ -9,10 +9,10 @@ export const digitalCardData = {
     title: "MOT, Servicing, and Repair Specialists",
   },
   contacts: [
-    { type: "Call", href: "tel:+447752364546", icon: "Phone", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:+447752364546", icon: "Phone", styleClass: "bg-[#FF5500] hover:bg-[#FF7A33]" },
     { type: "WhatsApp", href: "https://wa.me/447752364546", icon: "MessageCircle", styleClass: "bg-whatsapp" },
-    { type: "Email", href: "mailto:tom@acgautocentre.co.uk", icon: "Mail", styleClass: "bg-primary" },
-    { type: "Website", href: "https://acgautocentre.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Email", href: "mailto:tom@acgautocentre.co.uk", icon: "Mail", styleClass: "bg-[#FF5500] hover:bg-[#FF7A33]" },
+    { type: "Website", href: "https://acgautocentre.co.uk/", icon: "Globe", styleClass: "bg-[#FF5500] hover:bg-[#FF7A33]" },
   ],
   about:
     "ACG Auto Centre supports Nottingham drivers with MOT testing, servicing, wheel alignment, gearbox and clutch work, and diagnostic repairs from its city workshop.",

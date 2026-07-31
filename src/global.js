@@ -114,9 +114,9 @@ export const digitalCardDataBurnsHairDesign = {
     title: "Owner & Stylist",
   },
   contacts: [
-    { type: "Call", href: "tel:+441159374180", icon: "Phone", styleClass: "bg-primary" },
-    { type: "Email", href: "mailto:harrietburns1989@gmail.com", icon: "Mail", styleClass: "bg-primary" },
-    { type: "Website", href: "https://burnshairdesign.com/", icon: "Globe", styleClass: "bg-primary" }
+    { type: "Call", href: "tel:+441159374180", icon: "Phone", styleClass: "bg-orange-600 hover:bg-orange-500" },
+    { type: "Email", href: "mailto:harrietburns1989@gmail.com", icon: "Mail", styleClass: "bg-orange-600 hover:bg-orange-500" },
+    { type: "Website", href: "https://burnshairdesign.com/", icon: "Globe", styleClass: "bg-orange-600 hover:bg-orange-500" }
   ],
   about: "Established in 1956 — Burns Hair Design continues a tradition of three generations delivering exceptional hair care and styling.",
 
@@ -220,9 +220,9 @@ export const digitalCardDataTwentyEight = {
     title: "Contemporary Barbershop",
   },
   contacts: [
-    { type: "Call", href: "tel:01159586628", icon: "Phone", styleClass: "bg-primary" },
-    { type: "Email", href: "mailto:jaybo28@me.com", icon: "Mail", styleClass: "bg-primary" },
-    { type: "Website", href: "https://twentyeighthair.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:01159586628", icon: "Phone", styleClass: "bg-[#C6851C] hover:bg-[#F5B435]" },
+    { type: "Email", href: "mailto:jaybo28@me.com", icon: "Mail", styleClass: "bg-[#C6851C] hover:bg-[#F5B435]" },
+    { type: "Website", href: "https://twentyeighthair.co.uk/", icon: "Globe", styleClass: "bg-[#C6851C] hover:bg-[#F5B435]" },
   ],
   about: "Contemporary and modern with a resident DJ on Saturdays. Twenty Eight is the perfect atmosphere to relax, from cuts to colours we have your Barnett sorted.",
   services: [
@@ -292,10 +292,10 @@ export const digitalCardDataGreystone = {
     title: "Automotive Service Provider",
   },
   contacts: [
-    { type: "Call", href: "tel:+447545213989", icon: "Phone", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:+447545213989", icon: "Phone", styleClass: "bg-[#E39638] hover:bg-[#F0AC62]" },
     { type: "WhatsApp", href: "https://wa.me/447545213989", icon: "MessageCircle", styleClass: "bg-[#25D366]" },
-    { type: "Email", href: "mailto:justin.day@live.co.uk", icon: "Mail", styleClass: "bg-primary" },
-    { type: "Website", href: "https://www.greystoneauto.com/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Email", href: "mailto:justin.day@live.co.uk", icon: "Mail", styleClass: "bg-[#E39638] hover:bg-[#F0AC62]" },
+    { type: "Website", href: "https://www.greystoneauto.com/", icon: "Globe", styleClass: "bg-[#E39638] hover:bg-[#F0AC62]" },
   ],
   about: "Your trusted automotive service provider with over 20 years of experience. We're committed to keeping your vehicle safe, reliable, and running smoothly.",
   services: [
@@ -402,10 +402,10 @@ export const digitalCardDataJM = {
     title: "Your Local Mobile Mechanic",
   },
   contacts: [
-    { type: "Call", href: "tel:+447477167363", icon: "Phone", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:+447477167363", icon: "Phone", styleClass: "bg-[#2E8790] hover:bg-[#49ACB5]" },
     { type: "WhatsApp", href: "https://wa.me/447477167363", icon: "MessageCircle", styleClass: "bg-[#25D366]" },
-    { type: "Email", href: "mailto:JMVehicleAssist@gmail.com", icon: "Mail", styleClass: "bg-primary" },
-    { type: "Website", href: "https://jmvehicleassist.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Email", href: "mailto:JMVehicleAssist@gmail.com", icon: "Mail", styleClass: "bg-[#2E8790] hover:bg-[#49ACB5]" },
+    { type: "Website", href: "https://jmvehicleassist.co.uk/", icon: "Globe", styleClass: "bg-[#2E8790] hover:bg-[#49ACB5]" },
   ],
   about: "JM Vehicle Assist delivers precision performance solutions - driving innovation, efficiency, and excellence across industries.",
   services: [
@@ -518,9 +518,9 @@ export const digitalCardDataSmash = {
     title: "Burgers & Shakes",
   },
   contacts: [
-    { type: "Call", href: "tel:01530648708", icon: "Phone", styleClass: "bg-primary" },
-    { type: "Email", href: "mailto:smashedashby@gmail.com", icon: "Mail", styleClass: "bg-primary" },
-    { type: "Website", href: "https://smashed-uk.com/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:01530648708", icon: "Phone", styleClass: "bg-[#D98A0A] hover:bg-[#E6A53A]" },
+    { type: "Email", href: "mailto:smashedashby@gmail.com", icon: "Mail", styleClass: "bg-[#D98A0A] hover:bg-[#E6A53A]" },
+    { type: "Website", href: "https://smashed-uk.com/", icon: "Globe", styleClass: "bg-[#D98A0A] hover:bg-[#E6A53A]" },
   ],
   about: "Where comfort meets crave-worthy. Bite into our signature burgers, golden fries, and urban-inspired eats in the heart of the city.",
   services: [
@@ -590,10 +590,10 @@ export const digitalCardDataSRK = {
     title: "Hospitality & Dining",
   },
   contacts: [
-    { type: "Call", href: "tel:07466093996", icon: "Phone", styleClass: "bg-primary" },
-    { type: "WhatsApp", href: "https://wa.me/447466093996", icon: "MessageCircle", styleClass: "bg-primary" },
-    { type: "Email", href: "mailto:info@srkhospitality.co.uk", icon: "Mail", styleClass: "bg-primary" },
-    { type: "Website", href: "https://srkhospitality.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:07466093996", icon: "Phone", styleClass: "bg-[#D4AF37] hover:bg-[#F7E7A1] text-black" },
+    { type: "WhatsApp", href: "https://wa.me/447466093996", icon: "MessageCircle", styleClass: "bg-[#25D366] hover:opacity-90" },
+    { type: "Email", href: "mailto:info@srkhospitality.co.uk", icon: "Mail", styleClass: "bg-[#D4AF37] hover:bg-[#F7E7A1] text-black" },
+    { type: "Website", href: "https://srkhospitality.co.uk/", icon: "Globe", styleClass: "bg-[#D4AF37] hover:bg-[#F7E7A1] text-black" },
   ],
   about: "SRK stands as a symbol of independent hospitality and heartfelt service. With over two decades of experience",
   services: [
@@ -661,9 +661,9 @@ export const digitalCardDataCenturion = {
     title: "Service Centre",
   },
   contacts: [
-    { type: "Call", href: "tel:+442476638999", icon: "Phone", styleClass: "bg-primary" },
-    { type: "Email", href: "mailto:centurionfastfit@gmail.com", icon: "Mail", styleClass: "bg-primary" },
-    { type: "Website", href: "https://centurionfastfit.uk/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:+442476638999", icon: "Phone", styleClass: "bg-[#E5392B] hover:bg-[#FF6B5F]" },
+    { type: "Email", href: "mailto:centurionfastfit@gmail.com", icon: "Mail", styleClass: "bg-[#E5392B] hover:bg-[#FF6B5F]" },
+    { type: "Website", href: "https://centurionfastfit.uk/", icon: "Globe", styleClass: "bg-[#E5392B] hover:bg-[#FF6B5F]" },
   ],
     about: "Centurion Service Centre provides quality car service and repairs with experienced professionals using the latest technology.",
     services: [
@@ -843,10 +843,10 @@ export const digitalCardDataSantinos = {
     title: "Gym & Studio",
   },
   contacts: [
-    { type: "Call", href: "tel:+447565603231", icon: "Phone", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:+447565603231", icon: "Phone", styleClass: "bg-[#A41820] hover:bg-[#D4474F]" },
     { type: "WhatsApp", href: "https://wa.me/447565603231", icon: "MessageCircle", styleClass: "bg-[#25D366]" },
-    { type: "Email", href: "mailto:santinosgym@gmail.com", icon: "Mail", styleClass: "bg-primary" },
-    { type: "Website", href: "https://santinosgym.com/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Email", href: "mailto:santinosgym@gmail.com", icon: "Mail", styleClass: "bg-[#A41820] hover:bg-[#D4474F]" },
+    { type: "Website", href: "https://santinosgym.com/", icon: "Globe", styleClass: "bg-[#A41820] hover:bg-[#D4474F]" },
   ],
   about: "Building strength, discipline, and community. Join our family and start your fitness journey today.",
   services: [
@@ -876,9 +876,9 @@ export const digitalCardDataBraai = {
     title: "BBQ & Fire-Inspired Cuisine",
   },
   contacts: [
-    { type: "Call", href: "tel:01162734557", icon: "Phone", styleClass: "bg-primary" },
-    { type: "Email", href: "mailto:braaimaster2020@icloud.com", icon: "Mail", styleClass: "bg-primary" },
-    { type: "Website", href: "https://thebraaimaster.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:01162734557", icon: "Phone", styleClass: "bg-[#FF6000] hover:bg-[#FF8A33]" },
+    { type: "Email", href: "mailto:braaimaster2020@icloud.com", icon: "Mail", styleClass: "bg-[#FF6000] hover:bg-[#FF8A33]" },
+    { type: "Website", href: "https://thebraaimaster.co.uk/", icon: "Globe", styleClass: "bg-[#FF6000] hover:bg-[#FF8A33]" },
   ],
   about: "Where smoke meets flavor. Experience our signature BBQ meats and fire-inspired cuisine in the heart of the city.",
   services: [
@@ -956,10 +956,10 @@ export const digitalCardDataAlino = {
     title: "Restaurant Bar",
   },
   contacts: [
-    { type: "Call", href: "tel:07737098045", icon: "Phone", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:07737098045", icon: "Phone", styleClass: "bg-[#C8A81B] hover:bg-[#FFD90F]" },
     { type: "WhatsApp", href: "https://wa.me/447737098045", icon: "MessageCircle", styleClass: "bg-[#25D366]" },
-    { type: "Email", href: "mailto:alinoltd@gmail.com", icon: "Mail", styleClass: "bg-primary" },
-    { type: "Website", href: "https://alino.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Email", href: "mailto:alinoltd@gmail.com", icon: "Mail", styleClass: "bg-[#C8A81B] hover:bg-[#FFD90F]" },
+    { type: "Website", href: "https://alino.co.uk/", icon: "Globe", styleClass: "bg-[#C8A81B] hover:bg-[#FFD90F]" },
   ],
   about: "Serving delicious meals with love and passion. Enjoy our cozy ambiance, fast delivery, and gourmet menu.",
   services: [
@@ -991,10 +991,10 @@ export const digitalCardDataScuffsEtc = {
     title: "Vehicle Body Repair Specialists",
   },
   contacts: [
-    { type: "Call", href: "tel:+447776300300", icon: "Phone", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:+447776300300", icon: "Phone", styleClass: "bg-[#76B92F] hover:bg-[#A8E857]" },
     { type: "WhatsApp", href: "https://wa.me/447776300300", icon: "MessageCircle", styleClass: "bg-[#25D366]" },
-    { type: "Email", href: "mailto:info@scuffsetc.co.uk", icon: "Mail", styleClass: "bg-primary" },
-    { type: "Website", href: "https://scuffsetc.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Email", href: "mailto:info@scuffsetc.co.uk", icon: "Mail", styleClass: "bg-[#76B92F] hover:bg-[#A8E857]" },
+    { type: "Website", href: "https://scuffsetc.co.uk/", icon: "Globe", styleClass: "bg-[#76B92F] hover:bg-[#A8E857]" },
   ],
   about: "Professional vehicle body repair services in Sheffield. Restoring your vehicle to perfection with quality craftsmanship and attention to detail.",
   services: [

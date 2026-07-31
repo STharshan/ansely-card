@@ -156,7 +156,7 @@ export default function Amma() {
               href={rating.href}
               target="_blank"
               rel="noreferrer"
-              className="block rounded-xl p-6 text-center mb-10 border border-white/10 bg-white/5 backdrop-blur-md transition hover:border-cyan-300/40 hover:bg-white/8"
+              className="block rounded-xl p-6 text-center mb-10 border border-white/10 bg-white/5 backdrop-blur-md transition hover:border-[#63F080]/40 hover:bg-white/8"
             >
               <div className="flex justify-center gap-1 mb-2">
                 {[...Array(5)].map((_, i) => (
@@ -173,10 +173,10 @@ export default function Amma() {
             href={locationHref}
             target="_blank"
             rel="noreferrer"
-            className="flex justify-center items-center gap-2 text-white mb-10 hover:text-cyan-300 transition text-center"
+            className="flex justify-center items-center gap-2 text-white mb-10 hover:text-[#63F080] transition text-center"
           >
             <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/10">
-              <MapPin className="w-4 h-4 text-primary" />
+              <MapPin className="w-4 h-4 text-[#63F080]" />
             </span>
             {location}
           </a>
@@ -192,7 +192,7 @@ export default function Amma() {
                     href={social.href}
                     target="_blank"
                     rel="noreferrer"
-                    className="h-12 w-12 rounded-full flex items-center justify-center transition bg-white/10 hover:bg-[var(--primary)]"
+                    className="h-12 w-12 rounded-full flex items-center justify-center transition bg-white/10 hover:bg-[#45EC66]"
                   >
                     <IconComponent className="w-5 h-5" />
                   </a>
@@ -205,7 +205,7 @@ export default function Amma() {
           <section className="mb-10">
             <button
               onClick={downloadVCF}
-              className="w-full h-14 flex items-center justify-center gap-2 rounded-lg font-semibold bg-primary transition-all"
+              className="w-full h-14 flex items-center justify-center gap-2 rounded-lg font-semibold bg-[#45EC66] transition-all hover:bg-[#63F080]"
             >
               <Download className="w-5 h-5" />
               Save Contact
@@ -220,7 +220,7 @@ export default function Amma() {
                 href="https://www.ansely.co.uk/"
                 target="_blank"
                 rel="noreferrer"
-                className="text-white transition hover:text-cyan-300 hover:underline"
+                className="text-white transition hover:text-[#63F080] hover:underline"
               >
                 Ansely
               </a>

@@ -126,7 +126,7 @@ export default function CenturionFastFit() {
                                         href={service.href}
                                         target="_blank"
                                         rel="noreferrer"
-                                        className="flex min-h-24 w-full items-center justify-center rounded-lg border border-white/10 bg-white/5 px-3 py-3 text-center text-sm leading-snug text-white transition hover:border-cyan-300/40 hover:bg-white/8"
+                                        className="flex min-h-24 w-full items-center justify-center rounded-lg border border-white/10 bg-white/5 px-3 py-3 text-center text-sm leading-snug text-white transition hover:border-[#FF6B5F]/40 hover:bg-white/8"
                                     >
                                         {service.label}
                                     </a>
@@ -158,7 +158,7 @@ export default function CenturionFastFit() {
                         rel="noreferrer"
                         className="flex justify-center items-center gap-2 text-white mb-10 transition hover:opacity-90"
                     >
-                        <MapPin className="w-5 h-5 text-primary" />
+                        <MapPin className="w-5 h-5 text-[#FF6B5F]" />
                         {location}
                     </a>
 
@@ -170,7 +170,7 @@ export default function CenturionFastFit() {
                                 <a
                                     key={social.icon}
                                     href={social.href}
-                                    className="h-12 w-12 rounded-full flex items-center justify-center transition bg-white/10 hover:bg-[var(--primary)]"
+                                    className="h-12 w-12 rounded-full flex items-center justify-center transition bg-white/10 hover:bg-[#E5392B]"
                                 >
                                     <IconComponent className="w-5 h-5" />
                                 </a>
@@ -182,7 +182,7 @@ export default function CenturionFastFit() {
                     <section className="mb-10">
                         <button
                             onClick={downloadVCF}
-                            className="w-full h-14 flex items-center justify-center gap-2 rounded-lg font-semibold bg-primary transition-all"
+                            className="w-full h-14 flex items-center justify-center gap-2 rounded-lg font-semibold bg-[#E5392B] transition-all hover:bg-[#FF6B5F]"
                         >
                             <Download className="w-5 h-5" />
                             Save Contact

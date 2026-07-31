@@ -9,8 +9,8 @@ export const digitalCardData = {
     title: "Hospitality Furniture Refurbishment Specialists",
   },
   contacts: [
-    { type: "Call", href: "tel:+447952971273", icon: "Phone", styleClass: "bg-primary" },
-    { type: "Website", href: "https://sowafurniture.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:+447952971273", icon: "Phone", styleClass: "bg-[#B1A062] hover:bg-[#D8CB8A] text-black" },
+    { type: "Website", href: "https://sowafurniture.co.uk/", icon: "Globe", styleClass: "bg-[#B1A062] hover:bg-[#D8CB8A] text-black" },
     {
       type: "WhatsApp",
       href: "https://api.whatsapp.com/send/?phone=447952971273&text&type=phone_number&app_absent=0",

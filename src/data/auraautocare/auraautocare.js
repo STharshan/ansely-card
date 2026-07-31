@@ -9,10 +9,10 @@ export const digitalCardData = {
     title: "Valeting and Detailing Specialists",
   },
   contacts: [
-    { type: "Call", href: "tel:+447305794353", icon: "Phone", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:+447305794353", icon: "Phone", styleClass: "bg-red-600 hover:bg-red-500" },
     { type: "WhatsApp", href: "https://wa.me/447305794353", icon: "MessageCircle", styleClass: "bg-whatsapp" },
-    { type: "Email", href: "mailto:auraautocare1@gmail.com", icon: "Mail", styleClass: "bg-primary" },
-    { type: "Website", href: "https://auraautocare.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Email", href: "mailto:auraautocare1@gmail.com", icon: "Mail", styleClass: "bg-red-600 hover:bg-red-500" },
+    { type: "Website", href: "https://auraautocare.co.uk/", icon: "Globe", styleClass: "bg-red-600 hover:bg-red-500" },
   ],
   about:
     "Aura Auto Care helps drivers across Nottingham and the East Midlands keep their vehicles protected and looking their best with valeting, correction, restoration, and long-term care packages.",

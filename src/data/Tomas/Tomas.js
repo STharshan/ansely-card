@@ -9,10 +9,10 @@ export const digitalCardData = {
     title: "Professional Window Tinting and Exterior Enhancement Specialists",
   },
   contacts: [
-    { type: "Call", href: "tel:+447851823807", icon: "Phone", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:+447851823807", icon: "Phone", styleClass: "bg-red-600 hover:bg-red-500" },
     { type: "WhatsApp", href: "https://wa.me/447851823807", icon: "MessageCircle", styleClass: "bg-whatsapp" },
-    { type: "Email", href: "mailto:Tomasexteriors@gmail.com", icon: "Mail", styleClass: "bg-primary" },
-    { type: "Website", href: "https://www.tomasexteriors.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Email", href: "mailto:Tomasexteriors@gmail.com", icon: "Mail", styleClass: "bg-red-600 hover:bg-red-500" },
+    { type: "Website", href: "https://www.tomasexteriors.co.uk/", icon: "Globe", styleClass: "bg-red-600 hover:bg-red-500" },
   ],
   about:
     "Tomas Exteriors delivers specialist tinting, restoration, and trim enhancement work designed to improve appearance, finish quality, and everyday comfort.",

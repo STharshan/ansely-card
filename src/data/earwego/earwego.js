@@ -9,9 +9,9 @@ export const digitalCardData = {
     title: "Micro Suction Ear Care Specialists",
   },
   contacts: [
-    { type: "Call", href: "tel:08081371961", icon: "Phone", styleClass: "bg-primary" },
-    { type: "Email", href: "mailto:earwegosales@gmail.com", icon: "Mail", styleClass: "bg-primary" },
-    { type: "Website", href: "https://earwego.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:08081371961", icon: "Phone", styleClass: "bg-[#3DA585] hover:bg-[#57BC9D]" },
+    { type: "Email", href: "mailto:earwegosales@gmail.com", icon: "Mail", styleClass: "bg-[#3DA585] hover:bg-[#57BC9D]" },
+    { type: "Website", href: "https://earwego.co.uk/", icon: "Globe", styleClass: "bg-[#3DA585] hover:bg-[#57BC9D]" },
   ],
   about:
     "Ear We Go offers focused ear care services with a simple approach, helping clients access safe and comfortable micro suction treatment.",

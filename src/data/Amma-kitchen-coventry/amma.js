@@ -9,8 +9,8 @@ export const digitalCardData = {
     title: "Freshly Prepared Food and Takeaway Specialists",
   },
   contacts: [
-    { type: "Call", href: "tel:+442475090098", icon: "Phone", styleClass: "bg-primary" },
-    { type: "Website", href: "https://amma-kitchen.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:+442475090098", icon: "Phone", styleClass: "bg-[#45EC66] hover:bg-[#63F080]" },
+    { type: "Website", href: "https://amma-kitchen.co.uk/", icon: "Globe", styleClass: "bg-[#45EC66] hover:bg-[#63F080]" },
     { type: "WhatsApp", href: "https://wa.me/447897550930", icon: "MessageCircle", styleClass: "bg-[#25D366]" },
   ],
   about:

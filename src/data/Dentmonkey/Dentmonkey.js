@@ -9,10 +9,10 @@ export const digitalCardData = {
     title: "Paintless Dent Removal Specialists",
   },
   contacts: [
-    { type: "Call", href: "tel:07775397007", icon: "Phone", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:07775397007", icon: "Phone", styleClass: "bg-[#7d7d7d] hover:bg-[#9a9a9a] text-white" },
     { type: "WhatsApp", href: "https://wa.me/447775397007", icon: "MessageCircle", styleClass: "bg-whatsapp" },
-    { type: "Email", href: "mailto:dentmonkey.nottingham@gmail.com", icon: "Mail", styleClass: "bg-primary" },
-    { type: "Website", href: "https://www.dentmonkey-nottingham.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Email", href: "mailto:dentmonkey.nottingham@gmail.com", icon: "Mail", styleClass: "bg-[#7d7d7d] hover:bg-[#9a9a9a] text-white" },
+    { type: "Website", href: "https://www.dentmonkey-nottingham.co.uk/", icon: "Globe", styleClass: "bg-[#7d7d7d] hover:bg-[#9a9a9a] text-white" },
   ],
   about:
     "Dent Monkey provides specialist paintless dent removal from its Nottingham base, helping drivers with everything from car park dings to complex dents while preserving the original finish.",

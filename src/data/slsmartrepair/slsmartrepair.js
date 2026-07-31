@@ -9,10 +9,10 @@ export const digitalCardData = {
     title: "Mobile Smart Repair and Detailing Specialists",
   },
   contacts: [
-    { type: "Call", href: "tel:07989668752", icon: "Phone", styleClass: "bg-primary" },
+    { type: "Call", href: "tel:07989668752", icon: "Phone", styleClass: "bg-red-600 hover:bg-red-500" },
     { type: "WhatsApp", href: "https://wa.me/447989668752", icon: "MessageCircle", styleClass: "bg-whatsapp" },
-    { type: "Email", href: "mailto:Sldetailingservices@gmail.com", icon: "Mail", styleClass: "bg-primary" },
-    { type: "Website", href: "https://www.slsmartrepair.co.uk/", icon: "Globe", styleClass: "bg-primary" },
+    { type: "Email", href: "mailto:Sldetailingservices@gmail.com", icon: "Mail", styleClass: "bg-red-600 hover:bg-red-500" },
+    { type: "Website", href: "https://www.slsmartrepair.co.uk/", icon: "Globe", styleClass: "bg-red-600 hover:bg-red-500" },
   ],
   about:
     "SL Smart Repair helps drivers restore paintwork, lights, trims, and panels with focused repair work designed to keep vehicles looking sharp and resale-ready.",
