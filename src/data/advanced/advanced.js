@@ -5,7 +5,7 @@ export const digitalCardData = {
     logo: "/advanced.png",
   },
   founder: {
-    name: "Advanced Autobody Solutions",
+    name: "Wes-advanced",
     title: "Body Repair Specialists",
   },
   contacts: [

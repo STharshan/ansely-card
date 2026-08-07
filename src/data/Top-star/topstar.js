@@ -5,7 +5,7 @@ export const digitalCardData = {
     logo: "/topstar.png",
   },
   founder: {
-    name: "Top Star Training Limited",
+    name: "Collette-top star",
     title: "NVQ and Plant Training Support",
   },
   contacts: [

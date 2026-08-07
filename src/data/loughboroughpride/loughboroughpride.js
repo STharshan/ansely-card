@@ -5,7 +5,7 @@ export const digitalCardData = {
     logo: "/loughboroughpride.png",
   },
   founder: {
-    name: "Loughborough Pride",
+    name: "Ashley-pride",
     title: "Community Organisation",
   },
   contacts: [

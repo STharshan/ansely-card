@@ -5,7 +5,7 @@ export const digitalCardData = {
     logo: "/kerbcreteltd.png",
   },
   founder: {
-    name: "Kerbcrete Ltd",
+    name: "Josh-kerb",
     title: "Kerbing Specialist",
   },
   contacts: [

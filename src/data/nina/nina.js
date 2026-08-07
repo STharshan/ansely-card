@@ -5,7 +5,7 @@ export const digitalCardData = {
     logo: "/nina.png",
   },
   founder: {
-    name: "Nina's Coffee Shop",
+    name: "Steve",
     title: "Friendly Coffee Shop in Loughborough",
   },
   contacts: [

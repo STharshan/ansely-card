@@ -5,7 +5,7 @@ export const digitalCardData = {
     logo: "/ukplatelab.png",
   },
   founder: {
-    name: "UK Plate Lab",
+    name: "Linsey-ukplates",
     title: "Custom Plate Specialists",
   },
   contacts: [
